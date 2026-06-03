@@ -14,7 +14,7 @@ L'interface est organisée autour de trois usages :
 
 1. **Lire la synthèse** : comprendre l'essentiel en quelques minutes.
 2. **Explorer le guide complet** : lire le rapport détaillé par grands thèmes.
-3. **Faire le questionnaire** : obtenir une auto-orientation opérationnelle avec scores, priorités, actions recommandées, copie/téléchargement de synthèse et stockage local dans le navigateur.
+3. **Faire le questionnaire** : obtenir une auto-orientation opérationnelle avec scores par domaine, plan d’action sur 7 jours, priorités probables, points forts à maintenir, copie/téléchargement de synthèse et stockage local dans le navigateur.
 
 Pour lancer le site en local :
 
@@ -58,10 +58,10 @@ Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) publie aut
 ## Usage recommandé
 
 1. Lire d'abord la [`synthèse exécutive`](docs/09-synthese-executive.md).
-2. Passer le [`questionnaire opérationnel`](docs/questionnaire-operationnel.md).
-3. Reporter les scores dans le [`tableau de bord`](docs/tableau-de-bord-risques-bonheur.md).
-4. Choisir 1 à 3 actions dans la [`matrice actions`](docs/matrice-actions.md), en privilégiant sommeil, relations, activité physique, autonomie et réduction des expositions toxiques.
-5. Utiliser le [`rapport complet`](docs/00-rapport-complet.md) comme version canonique.
+2. Passer le questionnaire interactif du site pour repérer 1 à 3 domaines prioritaires.
+3. Appliquer une à trois actions concrètes pendant 7 jours, sans transformer le questionnaire en diagnostic.
+4. Conserver les domaines protecteurs identifiés dans la synthèse.
+5. Réévaluer dans 2 à 4 semaines, puis approfondir avec le [`tableau de bord`](docs/tableau-de-bord-risques-bonheur.md), la [`matrice actions`](docs/matrice-actions.md) ou le [`rapport complet`](docs/00-rapport-complet.md).
 
 ## Avertissement
 

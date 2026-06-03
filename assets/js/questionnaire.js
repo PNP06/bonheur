@@ -1,7 +1,9 @@
 const QuestionnaireApp = (() => {
-  const STORAGE_KEY = 'bonheur-questionnaire-v2';
+  const STORAGE_KEY = 'bonheur-questionnaire-v3';
+  const MIN_ANSWERS_FOR_GUIDANCE = 3;
   let currentIndex = 0;
   let copyMessage = '';
+  let pendingQuestionFocus = null;
 
   function emptyState() {
     return {
@@ -10,22 +12,35 @@ const QuestionnaireApp = (() => {
     };
   }
 
+  function normalizeAnswers(state) {
+    const fresh = emptyState();
+    QUESTIONNAIRE_DOMAINS.forEach((domain) => {
+      const values = Array.isArray(state.answers?.[domain.id]) ? state.answers[domain.id] : [];
+      fresh.answers[domain.id] = domain.questions.map((_, index) => {
+        const value = values[index];
+        return Number.isInteger(value) && value >= 0 && value <= 4 ? value : null;
+      });
+      fresh.skipped[domain.id] = Boolean(state.skipped?.[domain.id]);
+    });
+    return fresh;
+  }
+
   function loadState() {
     try {
       const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY));
-      return parsed ? { ...emptyState(), ...parsed } : emptyState();
+      return parsed ? normalizeAnswers(parsed) : emptyState();
     } catch (error) {
       return emptyState();
     }
   }
 
   function saveState(state) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(normalizeAnswers(state)));
   }
 
   function getDomainScore(state, domain) {
     if (state.skipped[domain.id]) {
-      return { skipped: true, answered: 0, total: domain.questions.length, score: null };
+      return { skipped: true, answered: 0, total: domain.questions.length, complete: false, score: null };
     }
 
     const answers = state.answers[domain.id] || [];
@@ -80,29 +95,107 @@ const QuestionnaireApp = (() => {
       .filter((domain) => !domain.skipped && domain.complete && domain.score !== null);
   }
 
+  function getGuidanceCandidates(state) {
+    return getSummaries(state)
+      .filter((domain) => !domain.skipped && domain.score !== null && domain.answered >= MIN_ANSWERS_FOR_GUIDANCE)
+      .sort((a, b) => {
+        if (a.complete !== b.complete) {
+          return a.complete ? -1 : 1;
+        }
+        return a.score - b.score;
+      });
+  }
+
   function getPriorities(state) {
+    return getGuidanceCandidates(state)
+      .filter((domain) => domain.score <= 2.6)
+      .slice(0, 3);
+  }
+
+  function getProtectors(state) {
     return getCompletedSummaries(state)
+      .filter((domain) => domain.score >= 3.5)
+      .sort((a, b) => b.score - a.score);
+  }
+
+  function getConsolidations(state) {
+    return getCompletedSummaries(state)
+      .filter((domain) => domain.score >= 2.5 && domain.score < 3.5)
       .sort((a, b) => a.score - b.score)
       .slice(0, 3);
   }
 
-  function buildTextSummary(state) {
-    const completed = getCompletedSummaries(state);
+  function getActionPlan(state) {
     const priorities = getPriorities(state);
-    const protectors = completed.filter((domain) => domain.score >= 3.5);
+    const source = priorities.length
+      ? priorities
+      : getGuidanceCandidates(state).filter((domain) => domain.score < 3.5).slice(0, 2);
+
+    return source.flatMap((domain) => {
+      const actionCount = domain.score <= 1.4 ? 2 : 1;
+      return (domain.primaryActions || [domain.actions])
+        .slice(0, actionCount)
+        .map((action) => ({ domain, action }));
+    }).slice(0, 5);
+  }
+
+  function statusText(domain) {
+    if (domain.skipped) {
+      return 'non pris en compte';
+    }
+    if (domain.score === null) {
+      return `${domain.answered}/${domain.total} réponses`;
+    }
+    const suffix = domain.complete ? '' : ' provisoire';
+    return `${domain.score.toFixed(1)}/4 · ${domain.status.label}${suffix}`;
+  }
+
+  function getNextQuestionIndex(state, domain, currentQuestionIndex) {
+    const answers = state.answers[domain.id] || [];
+    for (let index = currentQuestionIndex + 1; index < domain.questions.length; index += 1) {
+      if (!Number.isInteger(answers[index])) {
+        return index;
+      }
+    }
+
+    for (let index = 0; index < currentQuestionIndex; index += 1) {
+      if (!Number.isInteger(answers[index])) {
+        return index;
+      }
+    }
+
+    return null;
+  }
+
+  function buildTextSummary(state) {
+    const priorities = getPriorities(state);
+    const actionPlan = getActionPlan(state);
+    const protectors = getProtectors(state);
+    const consolidations = getConsolidations(state);
     const lines = [
       'Synthèse personnelle du questionnaire - Guide opérationnel du bonheur',
       '',
       'Priorités probables :',
       ...(priorities.length
-        ? priorities.map((domain, index) => `${index + 1}. ${domain.title} - ${domain.score.toFixed(1)}/4 - ${domain.actions}`)
-        : ['Aucune priorité calculée : complétez au moins un domaine.']),
+        ? priorities.map((domain, index) => `${index + 1}. ${domain.title} - ${statusText(domain)}`)
+        : ['Aucune priorité calculée : complétez au moins 3 réponses dans un domaine.']),
       '',
-      'Domaines protecteurs :',
+      'Actions à essayer cette semaine :',
+      ...(actionPlan.length
+        ? actionPlan.map(({ domain, action }) => `- ${domain.title} : ${action}`)
+        : ['Complétez davantage le questionnaire pour obtenir un plan d’action.']),
+      '',
+      'À maintenir :',
       ...(protectors.length
-        ? protectors.map((domain) => `- ${domain.title} - ${domain.score.toFixed(1)}/4`)
+        ? protectors.map((domain) => `- ${domain.title} - ${domain.score.toFixed(1)}/4 : ${domain.maintain}`)
         : ['Aucun domaine protecteur complet pour le moment.']),
       '',
+      'À consolider :',
+      ...(consolidations.length
+        ? consolidations.map((domain) => `- ${domain.title} - ${domain.score.toFixed(1)}/4 : ${domain.maintain}`)
+        : ['Aucun domaine en consolidation pour le moment.']),
+      '',
+      'Lecture prudente : cette synthèse sert à orienter l’action. Elle ne constitue pas un diagnostic médical.',
       'Réévaluation recommandée : dans 2 à 4 semaines.'
     ];
 
@@ -135,7 +228,13 @@ const QuestionnaireApp = (() => {
     return `
       <div class="domain-nav" aria-label="Domaines du questionnaire">
         ${summaries.map((domain) => `
-          <button type="button" data-domain-index="${domain.index}" class="${domain.complete ? 'is-complete' : ''} ${domain.skipped ? 'is-skipped' : ''}" aria-current="${domain.index === currentIndex}">
+          <button
+            type="button"
+            data-domain-index="${domain.index}"
+            class="${domain.complete ? 'is-complete' : ''} ${domain.skipped ? 'is-skipped' : ''}"
+            aria-current="${domain.index === currentIndex}"
+            title="${MarkdownRenderer.escapeHtml(domain.title)} · ${MarkdownRenderer.escapeHtml(statusText(domain))}"
+          >
             ${domain.index + 1}
           </button>
         `).join('')}
@@ -146,9 +245,15 @@ const QuestionnaireApp = (() => {
   function renderScale(state, domain, questionIndex) {
     const current = state.answers[domain.id]?.[questionIndex];
     return `
-      <div class="scale" role="group" aria-label="Échelle de réponse">
+      <div class="scale" role="group" aria-label="Échelle de réponse pour la question ${questionIndex + 1}">
         ${SCALE_LABELS.map((label, value) => `
-          <button type="button" data-answer-domain="${domain.id}" data-answer-question="${questionIndex}" data-answer-value="${value}" aria-pressed="${current === value}">
+          <button
+            type="button"
+            data-answer-domain="${domain.id}"
+            data-answer-question="${questionIndex}"
+            data-answer-value="${value}"
+            aria-pressed="${current === value}"
+          >
             <strong>${value}</strong>
             <span>${MarkdownRenderer.escapeHtml(label)}</span>
           </button>
@@ -160,7 +265,8 @@ const QuestionnaireApp = (() => {
   function renderCurrentDomain(state, summaries) {
     const domain = summaries[currentIndex] || summaries[0];
     const rawDomain = QUESTIONNAIRE_DOMAINS[currentIndex];
-    const scoreLabel = domain.score === null ? `${domain.answered}/${domain.total} réponses` : `${domain.score.toFixed(1)}/4`;
+    const scoreLabel = statusText(domain);
+    const domainProgress = Math.round((domain.answered / domain.total) * 100);
 
     return `
       <section class="domain-body">
@@ -168,9 +274,15 @@ const QuestionnaireApp = (() => {
           <div>
             <p class="questionnaire-step">Domaine ${currentIndex + 1}/${QUESTIONNAIRE_DOMAINS.length}</p>
             <h2>${MarkdownRenderer.escapeHtml(rawDomain.title)}</h2>
-            <p class="lead">${rawDomain.optional ? 'Domaine optionnel : ignorez-le si la question n’est pas pertinente actuellement.' : 'Répondez selon votre situation des derniers jours ou semaines.'}</p>
+            <p class="domain-focus">${MarkdownRenderer.escapeHtml(rawDomain.focus)}</p>
+            <p class="lead">${rawDomain.optional ? 'Domaine optionnel : ignorez-le si la question n’est pas pertinente actuellement.' : 'Répondez selon votre situation réelle des derniers jours ou semaines.'}</p>
           </div>
-          <span class="status-badge ${domain.status.className}">${domain.status.label} · ${scoreLabel}</span>
+          <span class="status-badge ${domain.status.className}">${MarkdownRenderer.escapeHtml(scoreLabel)}</span>
+        </div>
+
+        <div class="domain-meter" aria-label="${domain.answered}/${domain.total} réponses dans ce domaine">
+          <span>${domain.answered}/${domain.total} réponses</span>
+          <div class="progress-track" aria-hidden="true"><span style="width: ${domainProgress}%"></span></div>
         </div>
 
         ${rawDomain.optional ? `
@@ -182,63 +294,144 @@ const QuestionnaireApp = (() => {
 
         <div class="question-list">
           ${rawDomain.questions.map((question, questionIndex) => `
-            <article class="question-card">
-              <p>${questionIndex + 1}. ${MarkdownRenderer.escapeHtml(question)}</p>
+            <article class="question-card" data-question-card="${rawDomain.id}-${questionIndex}">
+              <p><span>Question ${questionIndex + 1}</span>${MarkdownRenderer.escapeHtml(question)}</p>
               ${renderScale(state, rawDomain, questionIndex)}
             </article>
           `).join('')}
         </div>
 
-        <div class="domain-actions">
-          <strong>Actions si ce domaine ressort bas</strong>
-          <p>${MarkdownRenderer.escapeHtml(rawDomain.actions)}</p>
+        <div class="domain-help-grid">
+          <div class="domain-actions">
+            <strong>Si ce domaine ressort bas</strong>
+            <p>${MarkdownRenderer.escapeHtml(rawDomain.primaryActions?.[0] || rawDomain.actions)}</p>
+          </div>
+          <div class="domain-actions domain-actions-maintain">
+            <strong>Si ce domaine est solide</strong>
+            <p>${MarkdownRenderer.escapeHtml(rawDomain.maintain)}</p>
+          </div>
         </div>
       </section>
     `;
   }
 
+  function renderActionPlan(actionPlan) {
+    if (!actionPlan.length) {
+      return `
+        <p>Répondez à au moins 3 questions dans un domaine pour obtenir des actions ciblées.</p>
+      `;
+    }
+
+    return `
+      <div class="action-plan">
+        ${actionPlan.map(({ domain, action }, index) => `
+          <article class="action-card">
+            <span>${index + 1}</span>
+            <div>
+              <strong>${MarkdownRenderer.escapeHtml(domain.title)}</strong>
+              <p>${MarkdownRenderer.escapeHtml(action)}</p>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function renderPriorityCards(priorities) {
+    if (!priorities.length) {
+      return '<p>Complétez au moins 3 réponses dans un domaine pour faire apparaître des priorités probables.</p>';
+    }
+
+    return `
+      <div class="priority-list">
+        ${priorities.map((domain, index) => `
+          <article class="priority-card">
+            <span class="priority-rank">${index + 1}</span>
+            <div>
+              <strong>${MarkdownRenderer.escapeHtml(domain.title)}</strong>
+              <p>${MarkdownRenderer.escapeHtml(statusText(domain))}</p>
+              <ul>
+                ${(domain.primaryActions || [domain.actions]).slice(0, 2).map((action) => `
+                  <li>${MarkdownRenderer.escapeHtml(action)}</li>
+                `).join('')}
+              </ul>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function renderMaintainCards(protectors, consolidations) {
+    if (!protectors.length && !consolidations.length) {
+      return '<p>Les domaines à maintenir apparaîtront dès qu’un domaine complet atteint un score protecteur.</p>';
+    }
+
+    return `
+      <div class="maintain-list">
+        ${protectors.map((domain) => `
+          <article class="maintain-card">
+            <strong>${MarkdownRenderer.escapeHtml(domain.title)} · ${domain.score.toFixed(1)}/4</strong>
+            <p>${MarkdownRenderer.escapeHtml(domain.maintain)}</p>
+          </article>
+        `).join('')}
+        ${consolidations.map((domain) => `
+          <article class="maintain-card is-consolidation">
+            <strong>${MarkdownRenderer.escapeHtml(domain.title)} · à consolider</strong>
+            <p>${MarkdownRenderer.escapeHtml(domain.maintain)}</p>
+          </article>
+        `).join('')}
+      </div>
+    `;
+  }
+
   function renderResults(state, summaries) {
     const priorities = getPriorities(state);
-    const protectors = getCompletedSummaries(state).filter((domain) => domain.score >= 3.5);
-    const completedCount = getCompletedSummaries(state).length;
+    const protectors = getProtectors(state);
+    const consolidations = getConsolidations(state);
+    const actionPlan = getActionPlan(state);
+    const coveredCount = summaries.filter((domain) => domain.complete || domain.skipped).length;
 
     return `
       <aside class="questionnaire-results" aria-label="Synthèse du questionnaire">
-        <p class="section-label">Synthèse</p>
-        <h2>${completedCount}/${QUESTIONNAIRE_DOMAINS.length} domaines complétés</h2>
-        <p>Les résultats donnent une orientation pratique, pas un diagnostic.</p>
+        <p class="section-label">Résultats vivants</p>
+        <h2>${coveredCount}/${QUESTIONNAIRE_DOMAINS.length} domaines parcourus</h2>
+        <p>Orientation pratique uniquement : les scores aident à choisir quoi tester, ils ne remplacent pas une évaluation clinique.</p>
 
-        <div class="score-list">
-          ${summaries.map((domain) => `
-            <div class="score-item">
-              <div>
-                <strong>${MarkdownRenderer.escapeHtml(domain.title)}</strong>
-                <span>${domain.skipped ? 'Non pris en compte' : `${domain.answered}/${domain.total} réponses`}</span>
-              </div>
-              <span class="score-value">${domain.score === null ? '—' : domain.score.toFixed(1)}</span>
-            </div>
-          `).join('')}
-        </div>
+        <section class="result-section result-highlight">
+          <p class="result-kicker">Plan 7 jours</p>
+          <h3>À faire cette semaine</h3>
+          ${renderActionPlan(actionPlan)}
+        </section>
 
         <section class="result-section">
           <h3>Vos priorités probables</h3>
-          ${priorities.length ? `
-            <ol>
-              ${priorities.map((domain) => `<li><strong>${MarkdownRenderer.escapeHtml(domain.title)}</strong> · ${domain.score.toFixed(1)}/4<br>${MarkdownRenderer.escapeHtml(domain.actions)}</li>`).join('')}
-            </ol>
-          ` : '<p>Complétez au moins un domaine pour obtenir une priorité.</p>'}
+          ${renderPriorityCards(priorities)}
         </section>
 
         <section class="result-section">
-          <h3>Domaines protecteurs</h3>
-          ${protectors.length ? `
-            <ul>${protectors.map((domain) => `<li>${MarkdownRenderer.escapeHtml(domain.title)} · ${domain.score.toFixed(1)}/4</li>`).join('')}</ul>
-          ` : '<p>Aucun domaine protecteur complet pour le moment.</p>'}
+          <h3>À maintenir</h3>
+          ${renderMaintainCards(protectors, consolidations)}
         </section>
 
         <section class="result-section">
-          <h3>Premières actions recommandées</h3>
-          <p>Choisissez une à trois actions maximum, puis réévaluez dans 2 à 4 semaines.</p>
+          <h3>Scores par domaine</h3>
+          <div class="score-list is-compact">
+            ${summaries.map((domain) => `
+              <div class="score-item">
+                <div>
+                  <strong>${MarkdownRenderer.escapeHtml(domain.title)}</strong>
+                  <span>${MarkdownRenderer.escapeHtml(statusText(domain))}</span>
+                </div>
+                <span class="score-value">${domain.score === null ? '—' : domain.score.toFixed(1)}</span>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+
+        <section class="result-section">
+          <h3>Exporter</h3>
+          <p>Gardez une trace courte, puis réévaluez dans 2 à 4 semaines.</p>
           <div class="reader-actions">
             <button class="button button-primary" type="button" data-copy-summary>Copier ma synthèse</button>
             <button class="button button-secondary" type="button" data-download-summary>Télécharger ma synthèse</button>
@@ -250,10 +443,28 @@ const QuestionnaireApp = (() => {
     `;
   }
 
+  function focusPendingQuestion(container) {
+    if (!pendingQuestionFocus) {
+      return;
+    }
+
+    const { domainId, questionIndex } = pendingQuestionFocus;
+    pendingQuestionFocus = null;
+    const target = container.querySelector(`[data-question-card="${domainId}-${questionIndex}"]`);
+
+    if (!target) {
+      return;
+    }
+
+    target.setAttribute('tabindex', '-1');
+    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    window.setTimeout(() => target.focus({ preventScroll: true }), 220);
+  }
+
   function render(container) {
     const state = loadState();
     const summaries = getSummaries(state);
-    const answered = summaries.reduce((sum, domain) => sum + domain.answered, 0);
+    const answered = summaries.reduce((sum, domain) => sum + (domain.skipped ? domain.total : domain.answered), 0);
     const total = QUESTIONNAIRE_DOMAINS.reduce((sum, domain) => sum + domain.questions.length, 0);
     const progress = Math.round((answered / total) * 100);
 
@@ -263,7 +474,7 @@ const QuestionnaireApp = (() => {
           <div>
             <p class="eyebrow">Auto-orientation opérationnelle</p>
             <h1>Faire le questionnaire</h1>
-            <p class="lead">Répondez domaine par domaine. L’objectif est de repérer les facteurs qui pèsent le plus aujourd’hui, puis de choisir peu d’actions, mesurables, à réévaluer dans 2 à 4 semaines.</p>
+            <p class="lead">Répondez domaine par domaine. Le résultat met en avant vos priorités probables, les actions à tester cette semaine et les points forts à maintenir.</p>
           </div>
           <aside class="hero-panel">
             <strong>Échelle de réponse</strong>
@@ -276,7 +487,7 @@ const QuestionnaireApp = (() => {
             <div class="questionnaire-intro">
               <p class="questionnaire-step">Progression globale</p>
               <h2>${progress}% répondu</h2>
-              <p>Les réponses sont conservées uniquement dans votre navigateur.</p>
+              <p>Les réponses restent uniquement dans votre navigateur. Vous pouvez commencer par les domaines qui vous semblent les plus importants.</p>
               <div class="progress-track" aria-hidden="true"><span style="width: ${progress}%"></span></div>
             </div>
             ${renderDomainNav(summaries)}
@@ -292,6 +503,7 @@ const QuestionnaireApp = (() => {
     `;
 
     bind(container, state);
+    focusPendingQuestion(container);
   }
 
   function bind(container, state) {
@@ -300,8 +512,15 @@ const QuestionnaireApp = (() => {
         const domainId = button.dataset.answerDomain;
         const questionIndex = Number(button.dataset.answerQuestion);
         const value = Number(button.dataset.answerValue);
+        const domain = QUESTIONNAIRE_DOMAINS.find((item) => item.id === domainId);
         state.answers[domainId][questionIndex] = value;
         state.skipped[domainId] = false;
+        pendingQuestionFocus = domain
+          ? { domainId, questionIndex: getNextQuestionIndex(state, domain, questionIndex) }
+          : null;
+        if (pendingQuestionFocus?.questionIndex === null) {
+          pendingQuestionFocus = null;
+        }
         copyMessage = '';
         saveState(state);
         render(container);
@@ -311,6 +530,7 @@ const QuestionnaireApp = (() => {
     container.querySelectorAll('[data-domain-index]').forEach((button) => {
       button.addEventListener('click', () => {
         currentIndex = Number(button.dataset.domainIndex);
+        pendingQuestionFocus = null;
         copyMessage = '';
         render(container);
       });
@@ -318,18 +538,21 @@ const QuestionnaireApp = (() => {
 
     container.querySelector('[data-prev-domain]')?.addEventListener('click', () => {
       currentIndex = Math.max(0, currentIndex - 1);
+      pendingQuestionFocus = null;
       copyMessage = '';
       render(container);
     });
 
     container.querySelector('[data-next-domain]')?.addEventListener('click', () => {
       currentIndex = Math.min(QUESTIONNAIRE_DOMAINS.length - 1, currentIndex + 1);
+      pendingQuestionFocus = null;
       copyMessage = '';
       render(container);
     });
 
     container.querySelector('[data-skip-domain]')?.addEventListener('change', (event) => {
       state.skipped[event.target.dataset.skipDomain] = event.target.checked;
+      pendingQuestionFocus = null;
       copyMessage = '';
       saveState(state);
       render(container);
@@ -338,6 +561,7 @@ const QuestionnaireApp = (() => {
     container.querySelector('[data-reset-questionnaire]')?.addEventListener('click', () => {
       localStorage.removeItem(STORAGE_KEY);
       currentIndex = 0;
+      pendingQuestionFocus = null;
       copyMessage = 'Réponses réinitialisées.';
       render(container);
     });
@@ -349,6 +573,7 @@ const QuestionnaireApp = (() => {
       } catch (error) {
         copyMessage = 'Copie indisponible. Utilisez le téléchargement.';
       }
+      pendingQuestionFocus = null;
       render(container);
     });
 
@@ -361,6 +586,7 @@ const QuestionnaireApp = (() => {
       link.click();
       URL.revokeObjectURL(url);
       copyMessage = 'Téléchargement préparé.';
+      pendingQuestionFocus = null;
       render(container);
     });
   }
