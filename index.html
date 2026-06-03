@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Le Guide Opérationnel du Bonheur Humain</title>
-  <meta name="description" content="Site de lecture du Guide Opérationnel du Bonheur Humain : rapport scientifique, synthèse, déterminants, questionnaire, tableau de bord et matrice d'actions.">
-  <meta name="theme-color" content="#111513">
+  <meta name="description" content="Une interface claire pour comprendre les leviers du bonheur, explorer le guide scientifique et obtenir une auto-orientation opérationnelle.">
+  <meta name="theme-color" content="#f7f8f4">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -13,87 +13,46 @@
     <span id="readingProgress"></span>
   </div>
 
-  <button class="mobile-menu-button" id="menuButton" type="button" aria-controls="siteSidebar" aria-expanded="false">
-    Sommaire
-  </button>
-  <div class="sidebar-backdrop" id="sidebarBackdrop" hidden></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#/accueil" aria-label="Accueil">
+      <span class="brand-mark">BH</span>
+      <span>
+        <strong>Bonheur humain</strong>
+        <small>Guide opérationnel</small>
+      </span>
+    </a>
 
-  <div class="app-shell">
-    <aside class="site-sidebar" id="siteSidebar" aria-label="Sommaire du site">
-      <a class="brand" href="#/synthese" aria-label="Accueil du guide">
-        <span class="brand-mark">BH</span>
-        <span>
-          <strong>Bonheur humain</strong>
-          <small>Guide opérationnel</small>
-        </span>
-      </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-controls="primaryNav" aria-expanded="false">
+      Menu
+    </button>
 
-      <div class="search-block">
-        <label for="searchInput">Rechercher dans le rapport</label>
-        <input id="searchInput" type="search" autocomplete="off" placeholder="Sommeil, dopamine, argent...">
-        <div class="search-results" id="searchResults" hidden></div>
-      </div>
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigation principale">
+      <a href="#/accueil" data-nav="accueil">Accueil</a>
+      <a href="#/synthese" data-nav="synthese">Synthèse</a>
+      <a href="#/guide" data-nav="guide">Guide complet</a>
+      <a href="#/questionnaire" data-nav="questionnaire">Questionnaire</a>
+      <a href="#/tableau-de-bord" data-nav="tableau-de-bord">Tableau de bord</a>
+      <a href="#/sources" data-nav="sources">Sources</a>
+    </nav>
+  </header>
 
-      <nav class="doc-nav" id="docNav" aria-label="Documents"></nav>
-
-      <div class="sidebar-note">
-        <strong>Avertissement</strong>
-        <p>Information scientifique générale. En cas de trouble sévère, douleur chronique, addiction, traumatisme ou idées suicidaires, demander une aide professionnelle.</p>
-      </div>
-    </aside>
-
-    <main class="reader-main">
-      <header class="site-hero" aria-labelledby="siteTitle">
-        <p class="eyebrow">Rapport scientifique, critique et orienté action</p>
-        <h1 id="siteTitle">Le Guide Opérationnel du Bonheur Humain</h1>
-        <p class="hero-lead">Un site clair pour lire le rapport complet, comparer les niveaux de preuve, repérer les vrais déterminants du bien-être et passer vers des actions mesurables.</p>
-
-        <div class="hero-actions" aria-label="Accès rapides">
-          <a class="button button-primary" href="#/synthese">Lire la synthèse</a>
-          <a class="button button-secondary" href="#/questionnaire">Faire le questionnaire</a>
-          <a class="button button-secondary" href="#/tableau-de-bord">Ouvrir le tableau de bord</a>
-        </div>
-
-        <div class="metric-row" aria-label="Résumé du contenu">
-          <div><strong>9</strong><span>parties scientifiques</span></div>
-          <div><strong>12</strong><span>domaines d'auto-évaluation</span></div>
-          <div><strong>50</strong><span>références commentées</span></div>
-          <div><strong>A-D</strong><span>échelle de preuve</span></div>
-        </div>
-      </header>
-
-      <section class="reader-grid" aria-label="Lecteur du rapport">
-        <article class="document-panel" aria-live="polite">
-          <header class="document-header">
-            <div>
-              <p class="document-kicker" id="documentKicker">Chargement</p>
-              <h2 id="documentTitle">Chargement du document</h2>
-              <p id="documentDescription">Le contenu du rapport va s'afficher ici.</p>
-            </div>
-            <a class="source-link" id="sourceLink" href="docs/09-synthese-executive.md">Source Markdown</a>
-          </header>
-
-          <div class="document-status" id="documentStatus" role="status">Chargement du contenu...</div>
-          <div class="prose" id="markdownContent"></div>
-        </article>
-
-        <aside class="section-sidebar" aria-label="Sommaire de la page">
-          <p>Dans cette page</p>
-          <nav id="sectionToc"></nav>
-        </aside>
-      </section>
-    </main>
-  </div>
+  <main id="app" tabindex="-1"></main>
 
   <footer class="site-footer">
-    <p><strong>Le Guide Opérationnel du Bonheur Humain.</strong> Site statique basé sur les documents Markdown du dépôt.</p>
-    <a href="#/references">Bibliographie</a>
+    <div>
+      <strong>Information générale, pas diagnostic.</strong>
+      <p>Ce guide aide à réfléchir et à prioriser des actions. Il ne remplace pas une évaluation médicale, psychologique ou sociale lorsque la situation l’exige.</p>
+    </div>
+    <a href="#/sources">Voir les références</a>
   </footer>
 
   <noscript>
-    <div class="noscript">Activez JavaScript pour utiliser le lecteur, la recherche et le sommaire dynamique.</div>
+    <div class="noscript">Activez JavaScript pour utiliser la navigation et le questionnaire interactif.</div>
   </noscript>
 
-  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/content.js?v=20260603-refonte" defer></script>
+  <script src="assets/js/markdown.js?v=20260603-refonte" defer></script>
+  <script src="assets/js/questionnaire.js?v=20260603-refonte" defer></script>
+  <script src="assets/js/app.js?v=20260603-refonte" defer></script>
 </body>
 </html>

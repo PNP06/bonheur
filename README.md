@@ -6,9 +6,17 @@ Objectif : conserver l'intégralité du rapport initial, ses sources, ses distin
 
 ## Site web
 
-Le dépôt contient aussi un site statique de lecture dans [`index.html`](index.html). Il charge les fichiers Markdown du dossier `docs/`, génère un sommaire latéral, propose une recherche locale et met en forme les tableaux du rapport.
+Le dépôt contient un site statique publié avec GitHub Pages :
 
-Pour le lancer en local :
+<https://pnp06.github.io/bonheur/>
+
+L'interface est organisée autour de trois usages :
+
+1. **Lire la synthèse** : comprendre l'essentiel en quelques minutes.
+2. **Explorer le guide complet** : lire le rapport détaillé par grands thèmes.
+3. **Faire le questionnaire** : obtenir une auto-orientation opérationnelle avec scores, priorités, actions recommandées, copie/téléchargement de synthèse et stockage local dans le navigateur.
+
+Pour lancer le site en local :
 
 ```bash
 python -m http.server 8000
@@ -16,7 +24,7 @@ python -m http.server 8000
 
 Puis ouvrir `http://localhost:8000`.
 
-Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) publie le site sur GitHub Pages à chaque push sur `main`.
+Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) publie automatiquement le site sur GitHub Pages à chaque push sur `main`.
 
 ## Structure du dépôt
 
