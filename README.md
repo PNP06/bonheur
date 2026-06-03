@@ -9,6 +9,7 @@ Objectif : conserver l'intégralité du rapport initial, ses sources, ses distin
 | Fichier | Contenu |
 |---|---|
 | [`docs/00-index-du-guide.md`](docs/00-index-du-guide.md) | Sommaire général, méthode, mode d'emploi et chemin de lecture. |
+| [`docs/00-rapport-complet.md`](docs/00-rapport-complet.md) | Rapport consolidé complet en un seul fichier, pour éviter toute perte de contenu. |
 | [`docs/01-definir-le-bonheur.md`](docs/01-definir-le-bonheur.md) | Définitions scientifiques : plaisir, satisfaction, bien-être subjectif, eudémonie, sens, qualité de vie, flourishing et santé mentale. |
 | [`docs/02-neuroscience.md`](docs/02-neuroscience.md) | Neuroscience du bien-être : circuits, neurotransmetteurs, erreurs de vulgarisation et niveau de preuve. |
 | [`docs/03-determinants-majeurs.md`](docs/03-determinants-majeurs.md) | Déterminants majeurs du bonheur, classement, mécanismes et tableau comparatif. |
@@ -38,6 +39,7 @@ Objectif : conserver l'intégralité du rapport initial, ses sources, ses distin
 2. Passer le [`questionnaire opérationnel`](docs/questionnaire-operationnel.md).
 3. Reporter les scores dans le [`tableau de bord`](docs/tableau-de-bord-risques-bonheur.md).
 4. Choisir 1 à 3 actions dans la [`matrice actions`](docs/matrice-actions.md), en privilégiant sommeil, relations, activité physique, autonomie et réduction des expositions toxiques.
+5. Utiliser le [`rapport complet`](docs/00-rapport-complet.md) comme version canonique.
 
 ## Avertissement
 
