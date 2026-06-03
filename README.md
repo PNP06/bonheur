@@ -4,6 +4,20 @@ Ce dépôt contient un rapport scientifique, critique et opérationnel sur le bo
 
 Objectif : conserver l'intégralité du rapport initial, ses sources, ses distinctions méthodologiques et ses conclusions pratiques, puis ajouter des supports d'analyse utilisables : tableaux de bord, infographies proposées, questionnaire d'auto-orientation et matrice d'actions.
 
+## Site web
+
+Le dépôt contient aussi un site statique de lecture dans [`index.html`](index.html). Il charge les fichiers Markdown du dossier `docs/`, génère un sommaire latéral, propose une recherche locale et met en forme les tableaux du rapport.
+
+Pour le lancer en local :
+
+```bash
+python -m http.server 8000
+```
+
+Puis ouvrir `http://localhost:8000`.
+
+Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) publie le site sur GitHub Pages à chaque push sur `main`.
+
 ## Structure du dépôt
 
 | Fichier | Contenu |
