@@ -225,6 +225,48 @@ const App = (() => {
     `;
   }
 
+  function getReaderSequence(doc) {
+    if (GUIDE_DOCS.some((item) => item.id === doc.id)) {
+      return GUIDE_DOCS;
+    }
+
+    if (UTILITY_DOCS.some((item) => item.id === doc.id)) {
+      return UTILITY_DOCS;
+    }
+
+    return [];
+  }
+
+  function docHref(doc) {
+    return doc.route || `#/lire/${doc.id}`;
+  }
+
+  function renderReaderNav(doc, placement) {
+    const sequence = getReaderSequence(doc);
+    const index = sequence.findIndex((item) => item.id === doc.id);
+    if (index === -1) return '';
+
+    const previous = sequence[index - 1];
+    const next = sequence[index + 1];
+
+    return `
+      <nav class="reader-step-nav reader-step-nav-${placement}" aria-label="Navigation entre les parties">
+        ${previous ? `
+          <a class="reader-step-link is-previous" href="${docHref(previous)}">
+            <span>Partie précédente</span>
+            <strong>${MarkdownRenderer.escapeHtml(previous.title)}</strong>
+          </a>
+        ` : '<span></span>'}
+        ${next ? `
+          <a class="reader-step-link is-next" href="${docHref(next)}">
+            <span>Partie suivante</span>
+            <strong>${MarkdownRenderer.escapeHtml(next.title)}</strong>
+          </a>
+        ` : '<span></span>'}
+      </nav>
+    `;
+  }
+
   function filterGuide(query) {
     const normalized = query.trim().toLowerCase();
     document.querySelectorAll('[data-guide-card]').forEach((card) => {
@@ -268,13 +310,19 @@ const App = (() => {
                 <a class="button button-secondary" href="#/guide">Retour au guide complet</a>
                 <a class="button button-primary" href="#/questionnaire">Faire le questionnaire</a>
               </div>
+              ${renderReaderNav(doc, 'top')}
             </header>
+            <section class="reader-toc reader-toc-inline" aria-label="Plan de cette partie">
+              <strong>Plan de cette partie</strong>
+              <nav id="readerTocInline"></nav>
+            </section>
             <div class="load-state" id="readerStatus">Chargement...</div>
             <div class="prose" id="readerContent"></div>
+            ${renderReaderNav(doc, 'bottom')}
           </article>
-          <aside class="reader-toc">
-            <strong>Dans cette partie</strong>
-            <nav id="readerToc"></nav>
+          <aside class="reader-toc reader-toc-side">
+            <strong>Plan de cette partie</strong>
+            <nav id="readerTocSide"></nav>
           </aside>
         </div>
       </section>
@@ -286,7 +334,7 @@ const App = (() => {
       const context = { docId: doc.id, pathToDoc };
       document.getElementById('readerContent').innerHTML = MarkdownRenderer.render(markdown, context);
       document.getElementById('readerStatus').hidden = true;
-      renderReaderToc(doc.id);
+      renderReaderTocs(doc.id);
       await renderMermaid();
       scrollToAnchor(anchor);
     } catch (error) {
@@ -294,12 +342,15 @@ const App = (() => {
     }
   }
 
-  function renderReaderToc(docId) {
-    const toc = document.getElementById('readerToc');
+  function renderReaderTocs(docId) {
+    const tocs = [...document.querySelectorAll('#readerTocInline, #readerTocSide')];
     const headings = currentHeadings.filter((heading) => heading.level >= 2 && heading.level <= 3);
-    toc.innerHTML = headings.length
+    const html = headings.length
       ? headings.map((heading) => `<a href="#/lire/${docId}/${heading.id}" data-heading="${heading.id}" data-level="${heading.level}">${MarkdownRenderer.escapeHtml(heading.text)}</a>`).join('')
       : '<span class="empty-state">Aucun sous-titre.</span>';
+    tocs.forEach((toc) => {
+      toc.innerHTML = html;
+    });
   }
 
   function scrollToAnchor(anchor) {

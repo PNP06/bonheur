@@ -99,10 +99,11 @@ const MarkdownRenderer = (() => {
     const body = lines.slice(2).map(parseTableRow);
     const headHtml = header.map((cell) => `<th>${renderInline(cell, context)}</th>`).join('');
     const bodyHtml = body.map((row) => {
-      const cells = row.map((cell) => {
+      const cells = row.map((cell, index) => {
         const clean = stripMarkdown(cell);
         const evidence = /^[A-D](?:-[A-D])?$/.test(clean) ? ` data-evidence="${clean}"` : '';
-        return `<td${evidence}>${renderInline(cell, context)}</td>`;
+        const label = header[index] ? ` data-label="${escapeHtml(stripMarkdown(header[index]))}"` : '';
+        return `<td${label}${evidence}>${renderInline(cell, context)}</td>`;
       }).join('');
       return `<tr>${cells}</tr>`;
     }).join('');
