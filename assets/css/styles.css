@@ -447,6 +447,36 @@ h3 {
   margin: 20px 0;
 }
 
+.guide-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px;
+  margin: 0 0 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.guide-filter-tabs button {
+  min-height: 36px;
+  padding: 8px 11px;
+  color: var(--muted);
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 0.88rem;
+  font-weight: 780;
+}
+
+.guide-filter-tabs button:hover,
+.guide-filter-tabs button:focus-visible,
+.guide-filter-tabs button[aria-pressed="true"] {
+  color: var(--ink);
+  outline: none;
+  background: var(--accent-soft);
+}
+
 .search-field {
   display: grid;
   gap: 7px;
@@ -505,6 +535,32 @@ h3 {
   color: var(--blue);
 }
 
+.guide-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.guide-card-head .card-label {
+  margin-bottom: 0;
+}
+
+.guide-card-topic {
+  max-width: 62%;
+  overflow: hidden;
+  padding: 4px 7px;
+  color: var(--accent-dark);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-soft);
+  font-size: 0.72rem;
+  font-weight: 820;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .reader-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 270px;
@@ -521,6 +577,48 @@ h3 {
   padding: 28px;
   border-bottom: 1px solid var(--line);
   background: linear-gradient(180deg, #fff, #f5f8f4);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+}
+
+.breadcrumb a {
+  color: var(--accent-dark);
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  outline: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.breadcrumb a::after,
+.breadcrumb span:not(:last-child)::after {
+  content: "/";
+  margin-left: 6px;
+  color: var(--faint);
+}
+
+.breadcrumb span[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 780;
 }
 
 .reader-header h1 {

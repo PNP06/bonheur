@@ -6,7 +6,9 @@ const App = (() => {
   const contentCache = new Map();
   const allDocsById = new Map(ALL_DOCS.map((doc) => [doc.id, doc]));
   const pathToDoc = new Map(ALL_DOCS.map((doc) => [MarkdownRenderer.normalizeDocPath(doc.path), doc]));
+  const utilityGroupLabel = 'Outils complémentaires';
   let currentHeadings = [];
+  let activeGuideFilter = '';
 
   function route() {
     const hash = decodeURIComponent(window.location.hash || '#/accueil');
@@ -167,6 +169,7 @@ const App = (() => {
   function renderGuide() {
     setPageTitle('Guide complet');
     const groups = [...new Set(GUIDE_DOCS.map((doc) => doc.group))];
+    const filterGroups = [...groups, utilityGroupLabel];
 
     app.innerHTML = `
       <section class="page">
@@ -189,19 +192,28 @@ const App = (() => {
           </div>
         </div>
 
+        <div class="guide-filter-tabs" aria-label="Filtrer les parties du guide">
+          <button type="button" data-guide-filter="" aria-pressed="${activeGuideFilter === ''}">Tout</button>
+          ${filterGroups.map((group) => `
+            <button type="button" data-guide-filter="${MarkdownRenderer.escapeHtml(group)}" aria-pressed="${activeGuideFilter === group}">
+              ${MarkdownRenderer.escapeHtml(group)}
+            </button>
+          `).join('')}
+        </div>
+
         <div class="guide-groups" id="guideGroups">
           ${groups.map((group) => `
             <section class="guide-group" data-guide-group>
               <h2>${MarkdownRenderer.escapeHtml(group)}</h2>
               <div class="guide-grid">
-                ${GUIDE_DOCS.filter((doc) => doc.group === group).map(renderGuideCard).join('')}
+                ${GUIDE_DOCS.filter((doc) => doc.group === group).map((doc) => Ui.guideCard(doc)).join('')}
               </div>
             </section>
           `).join('')}
           <section class="guide-group" data-guide-group>
             <h2>Outils complémentaires</h2>
             <div class="guide-grid">
-              ${UTILITY_DOCS.map(renderGuideCard).join('')}
+              ${UTILITY_DOCS.map((doc) => Ui.guideCard(doc, { group: utilityGroupLabel })).join('')}
             </div>
           </section>
         </div>
@@ -210,19 +222,8 @@ const App = (() => {
 
     const input = document.getElementById('guideSearch');
     input.addEventListener('input', () => filterGuide(input.value));
+    bindGuideFilters(input);
     prepareGuideSearchIndex(input);
-  }
-
-  function renderGuideCard(doc) {
-    const href = doc.route || `#/lire/${doc.id}`;
-    return `
-      <a class="guide-card" href="${href}" data-guide-card data-search="${MarkdownRenderer.escapeHtml(`${doc.title} ${doc.description}`.toLowerCase())}">
-        <p class="card-label">${MarkdownRenderer.escapeHtml(doc.order)}</p>
-        <h3>${MarkdownRenderer.escapeHtml(doc.title)}</h3>
-        <p>${MarkdownRenderer.escapeHtml(doc.description)}</p>
-        <span class="button button-secondary">Lire</span>
-      </a>
-    `;
   }
 
   function getReaderSequence(doc) {
@@ -237,10 +238,6 @@ const App = (() => {
     return [];
   }
 
-  function docHref(doc) {
-    return doc.route || `#/lire/${doc.id}`;
-  }
-
   function renderReaderNav(doc, placement) {
     const sequence = getReaderSequence(doc);
     const index = sequence.findIndex((item) => item.id === doc.id);
@@ -249,31 +246,36 @@ const App = (() => {
     const previous = sequence[index - 1];
     const next = sequence[index + 1];
 
-    return `
-      <nav class="reader-step-nav reader-step-nav-${placement}" aria-label="Navigation entre les parties">
-        ${previous ? `
-          <a class="reader-step-link is-previous" href="${docHref(previous)}">
-            <span>Partie précédente</span>
-            <strong>${MarkdownRenderer.escapeHtml(previous.title)}</strong>
-          </a>
-        ` : '<span></span>'}
-        ${next ? `
-          <a class="reader-step-link is-next" href="${docHref(next)}">
-            <span>Partie suivante</span>
-            <strong>${MarkdownRenderer.escapeHtml(next.title)}</strong>
-          </a>
-        ` : '<span></span>'}
-      </nav>
-    `;
+    return Ui.readerStepNav({ previous, next, placement });
+  }
+
+  function readerGroupLabel(doc) {
+    if (doc.group) return doc.group;
+    if (UTILITY_DOCS.some((item) => item.id === doc.id)) return utilityGroupLabel;
+    return 'Synthèse';
   }
 
   function filterGuide(query) {
     const normalized = query.trim().toLowerCase();
     document.querySelectorAll('[data-guide-card]').forEach((card) => {
-      card.hidden = normalized && !card.dataset.search.includes(normalized);
+      const matchesSearch = !normalized || card.dataset.search.includes(normalized);
+      const matchesTopic = !activeGuideFilter || card.dataset.guideTopic === activeGuideFilter;
+      card.hidden = !matchesSearch || !matchesTopic;
     });
     document.querySelectorAll('[data-guide-group]').forEach((group) => {
       group.hidden = ![...group.querySelectorAll('[data-guide-card]')].some((card) => !card.hidden);
+    });
+  }
+
+  function bindGuideFilters(input) {
+    document.querySelectorAll('[data-guide-filter]').forEach((button) => {
+      button.addEventListener('click', () => {
+        activeGuideFilter = button.dataset.guideFilter || '';
+        document.querySelectorAll('[data-guide-filter]').forEach((item) => {
+          item.setAttribute('aria-pressed', String((item.dataset.guideFilter || '') === activeGuideFilter));
+        });
+        filterGuide(input.value);
+      });
     });
   }
 
@@ -281,7 +283,7 @@ const App = (() => {
     await Promise.all([...GUIDE_DOCS, ...UTILITY_DOCS].map(async (doc) => {
       try {
         const markdown = await loadDocument(doc);
-        const card = document.querySelector(`[href="${doc.route || `#/lire/${doc.id}`}"]`);
+        const card = document.querySelector(`[href="${Ui.docHref(doc)}"]`);
         if (card) {
           card.dataset.search = `${doc.title} ${doc.description} ${MarkdownRenderer.stripMarkdown(markdown)}`.toLowerCase();
         }
@@ -303,6 +305,11 @@ const App = (() => {
         <div class="reader-layout">
           <article class="reader-card">
             <header class="reader-header">
+              ${Ui.breadcrumb([
+                { label: 'Guide complet', href: '#/guide' },
+                { label: readerGroupLabel(doc) },
+                { label: doc.title }
+              ])}
               <p class="reader-kicker">Guide détaillé</p>
               <h1>${MarkdownRenderer.escapeHtml(doc.title)}</h1>
               <p class="lead">${MarkdownRenderer.escapeHtml(doc.description)}</p>
