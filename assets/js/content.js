@@ -170,6 +170,45 @@ const SUMMARY_ACTIONS = [
   'Surveiller les signaux précoces : isolement, irritabilité, fatigue, évitement.'
 ];
 
+const CONTENT_USAGE = [
+  {
+    title: 'Rapport scientifique',
+    role: 'Le fond complet',
+    description: 'Il nourrit les parties détaillées du guide : définitions, neuroscience, déterminants, illusions, philosophies, système de pilotage et plan d’action.',
+    route: '#/guide'
+  },
+  {
+    title: 'Synthèse exécutive',
+    role: 'Comprendre vite',
+    description: 'Elle transforme le rapport en idées clés, erreurs fréquentes et actions prioritaires lisibles en quelques minutes.',
+    route: '#/synthese'
+  },
+  {
+    title: 'Questionnaire opérationnel',
+    role: 'S’orienter',
+    description: 'Il devient le formulaire interactif qui calcule les domaines prioritaires, les points à maintenir et les premières actions à tester.',
+    route: '#/questionnaire'
+  },
+  {
+    title: 'Tableau de bord',
+    role: 'Suivre les signaux',
+    description: 'Il sert à suivre sommeil, relations, activité, stress, finances et autres indicateurs avec seuils d’alerte.',
+    route: '#/tableau-de-bord'
+  },
+  {
+    title: 'Matrice d’actions',
+    role: 'Choisir quoi faire',
+    description: 'Elle classe les actions par bénéfice attendu, preuve, difficulté, délai d’effet et limites pratiques.',
+    route: '#/lire/matrice-actions'
+  },
+  {
+    title: 'Références scientifiques',
+    role: 'Vérifier les preuves',
+    description: 'Elles documentent les sources, les niveaux de preuve et les limites du rapport.',
+    route: '#/sources'
+  }
+];
+
 const SCALE_LABELS = [
   'très défavorable',
   'fragile',

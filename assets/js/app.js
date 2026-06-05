@@ -93,6 +93,17 @@ const App = (() => {
         <section class="section-block">
           <div class="section-head">
             <div>
+              <p class="section-label">Comment le contenu est utilisé</p>
+              <h2>Chaque bloc a un rôle précis</h2>
+              <p>Le site ne présente pas seulement un long rapport. Il transforme les contenus en parcours distincts : comprendre vite, approfondir, s’auto-orienter, suivre des indicateurs et vérifier les preuves.</p>
+            </div>
+          </div>
+          ${Ui.contentUsageGrid(CONTENT_USAGE)}
+        </section>
+
+        <section class="section-block">
+          <div class="section-head">
+            <div>
               <p class="section-label">Ce qui compte vraiment</p>
               <h2>Les leviers les plus robustes</h2>
             </div>
@@ -184,6 +195,15 @@ const App = (() => {
             <p>Commencez par la synthèse, puis revenez ici pour vérifier le niveau de preuve et les limites.</p>
           </aside>
         </div>
+
+        <section class="content-usage-panel">
+          <div>
+            <p class="section-label">Carte des contenus</p>
+            <h2>Du rapport aux outils pratiques</h2>
+            <p>Les contenus sont reliés entre eux : le rapport explique, la synthèse résume, le questionnaire oriente, le tableau de bord suit, la matrice aide à choisir et les références vérifient.</p>
+          </div>
+          ${Ui.contentUsageGrid(CONTENT_USAGE)}
+        </section>
 
         <div class="guide-toolbar">
           <div class="search-field">

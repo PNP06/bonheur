@@ -440,6 +440,81 @@ h3 {
   font-weight: 760;
 }
 
+.content-usage-panel {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  margin: 8px 0 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow-soft);
+}
+
+.content-usage-panel h2 {
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.content-usage-panel p {
+  max-width: 820px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.content-usage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.content-usage-card {
+  display: grid;
+  gap: 8px;
+  min-height: 170px;
+  padding: 16px;
+  color: inherit;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  text-decoration: none;
+  transition: 140ms ease;
+}
+
+.content-usage-card:hover,
+.content-usage-card:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-1px);
+}
+
+.content-usage-card span {
+  width: fit-content;
+  padding: 4px 8px;
+  color: var(--accent-dark);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.74rem;
+  font-weight: 850;
+}
+
+.content-usage-card strong {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.content-usage-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 .guide-toolbar {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
@@ -1444,7 +1519,8 @@ h3 {
 
   .guide-grid,
   .action-grid,
-  .card-grid {
+  .card-grid,
+  .content-usage-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1486,8 +1562,13 @@ h3 {
   .action-grid,
   .card-grid,
   .two-card-grid,
-  .domain-help-grid {
+  .domain-help-grid,
+  .content-usage-grid {
     grid-template-columns: 1fr;
+  }
+
+  .content-usage-panel {
+    padding: 18px;
   }
 
   .section-head {

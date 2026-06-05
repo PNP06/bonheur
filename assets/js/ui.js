@@ -60,8 +60,23 @@ const Ui = (() => {
     `;
   }
 
+  function contentUsageGrid(items) {
+    return `
+      <div class="content-usage-grid">
+        ${items.map((item) => `
+          <a class="content-usage-card" href="${escape(item.route)}">
+            <span>${escape(item.role)}</span>
+            <strong>${escape(item.title)}</strong>
+            <p>${escape(item.description)}</p>
+          </a>
+        `).join('')}
+      </div>
+    `;
+  }
+
   return {
     breadcrumb,
+    contentUsageGrid,
     docHref,
     guideCard,
     readerStepNav
