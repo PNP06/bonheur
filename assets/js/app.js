@@ -275,6 +275,175 @@ const App = (() => {
     return 'Synthèse';
   }
 
+  function getReportModules() {
+    return GUIDE_DOCS.map((doc, index) => ({
+      ...doc,
+      order: String(index + 1).padStart(2, '0'),
+      href: Ui.docHref(doc)
+    }));
+  }
+
+  function renderReportModuleCard(module) {
+    return `
+      <article class="report-module-card">
+        <div class="report-module-number">${MarkdownRenderer.escapeHtml(module.order)}</div>
+        <div>
+          <span>${MarkdownRenderer.escapeHtml(readerGroupLabel(module))}</span>
+          <h3>${MarkdownRenderer.escapeHtml(module.title)}</h3>
+          <p>${MarkdownRenderer.escapeHtml(module.description)}</p>
+          <a class="button button-secondary" href="${MarkdownRenderer.escapeHtml(module.href)}">Lire cette partie</a>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderReportToolCard(item) {
+    return `
+      <a class="report-tool-card" href="${MarkdownRenderer.escapeHtml(item.href)}">
+        <span>${MarkdownRenderer.escapeHtml(item.kicker)}</span>
+        <strong>${MarkdownRenderer.escapeHtml(item.title)}</strong>
+        <p>${MarkdownRenderer.escapeHtml(item.description)}</p>
+      </a>
+    `;
+  }
+
+  function renderReportHub(anchor = '') {
+    const modules = getReportModules();
+    const tools = [
+      {
+        kicker: 'S’orienter',
+        title: 'Questionnaire interactif',
+        description: 'Transformer le rapport en priorités personnelles, points à maintenir et actions à tester.',
+        href: '#/questionnaire'
+      },
+      {
+        kicker: 'Piloter',
+        title: 'Tableau de bord',
+        description: 'Suivre les signaux hebdomadaires : sommeil, relations, activité, stress, finances.',
+        href: '#/tableau-de-bord'
+      },
+      {
+        kicker: 'Décider',
+        title: 'Matrice d’actions',
+        description: 'Comparer les actions par preuve, effort, délai et limites pratiques.',
+        href: '#/lire/matrice-actions'
+      },
+      {
+        kicker: 'Vérifier',
+        title: 'Sources et preuves',
+        description: 'Retrouver les références scientifiques et le classement des niveaux de preuve.',
+        href: '#/sources'
+      }
+    ];
+    const navItems = [
+      { id: 'rapport-parcours', label: 'Parcours conseillé' },
+      { id: 'rapport-parties', label: 'Les 9 parties' },
+      { id: 'rapport-outils', label: 'Outils pratiques' },
+      { id: 'rapport-preuves', label: 'Niveaux de preuve' }
+    ];
+
+    currentHeadings = navItems.map((item) => ({ ...item, text: item.label, level: 2 }));
+    setPageTitle('Rapport complet');
+
+    app.innerHTML = `
+      <section class="page report-page">
+        <div class="report-layout">
+          <main class="report-main">
+            <header class="report-hero">
+              ${Ui.breadcrumb([
+                { label: 'Guide complet', href: '#/guide' },
+                { label: 'Outils complémentaires' },
+                { label: 'Rapport complet' }
+              ])}
+              <p class="eyebrow">Rapport complet</p>
+              <h1>Lire le rapport sans se perdre</h1>
+              <p class="lead">Le rapport complet est organisé comme une documentation : neuf parties de fond, des outils pratiques et des sources. Choisissez un parcours, puis avancez partie par partie.</p>
+              <div class="reader-actions">
+                <a class="button button-primary" href="#/lire/definir">Commencer la lecture</a>
+                <a class="button button-secondary" href="#/synthese">Lire la synthèse d’abord</a>
+                <a class="button button-quiet" href="#/questionnaire">Faire le questionnaire</a>
+              </div>
+            </header>
+
+            <details class="report-jump">
+              <summary>Aller à une section</summary>
+              <nav>
+                ${navItems.map((item) => `<a href="#/lire/rapport-complet/${item.id}" data-heading="${item.id}">${MarkdownRenderer.escapeHtml(item.label)}</a>`).join('')}
+              </nav>
+            </details>
+
+            <section class="report-section" id="rapport-parcours">
+              <p class="section-label">Parcours conseillé</p>
+              <h2>Trois manières d’utiliser le rapport</h2>
+              <div class="report-mode-grid">
+                <a href="#/synthese" class="report-mode-card">
+                  <span>01</span>
+                  <strong>Comprendre vite</strong>
+                  <p>Commencez par la synthèse, puis ouvrez seulement les parties qui nécessitent une vérification.</p>
+                </a>
+                <a href="#/lire/definir" class="report-mode-card">
+                  <span>02</span>
+                  <strong>Lire dans l’ordre</strong>
+                  <p>Suivez les neuf parties comme un livre : définitions, science, déterminants, biais, action.</p>
+                </a>
+                <a href="#/questionnaire" class="report-mode-card">
+                  <span>03</span>
+                  <strong>Passer à l’action</strong>
+                  <p>Utilisez le questionnaire, puis revenez aux parties qui expliquent vos priorités.</p>
+                </a>
+              </div>
+            </section>
+
+            <section class="report-section" id="rapport-parties">
+              <div class="section-head">
+                <div>
+                  <p class="section-label">Les 9 parties</p>
+                  <h2>Structure du rapport</h2>
+                  <p>Chaque carte ouvre une partie autonome. Le lecteur garde ensuite un plan visible et des liens précédent/suivant.</p>
+                </div>
+              </div>
+              <div class="report-module-list">
+                ${modules.map(renderReportModuleCard).join('')}
+              </div>
+            </section>
+
+            <section class="report-section" id="rapport-outils">
+              <p class="section-label">Outils pratiques</p>
+              <h2>Ce qui transforme le rapport en décisions</h2>
+              <div class="report-tool-grid">
+                ${tools.map(renderReportToolCard).join('')}
+              </div>
+            </section>
+
+            <section class="report-section" id="rapport-preuves">
+              <p class="section-label">Niveaux de preuve</p>
+              <h2>Lire le fond avec le bon niveau de confiance</h2>
+              <div class="evidence-grid">
+                <article><strong>A</strong><p>Méta-analyses d’essais randomisés, revues systématiques solides, forte convergence.</p></article>
+                <article><strong>B</strong><p>Méta-analyses observationnelles, cohortes longitudinales, mécanismes plausibles.</p></article>
+                <article><strong>C</strong><p>Associations robustes mais causalité incertaine ou forte dépendance au contexte.</p></article>
+                <article><strong>D</strong><p>Hypothèses mécanistiques, données préliminaires ou interprétations spéculatives.</p></article>
+              </div>
+            </section>
+          </main>
+
+          <aside class="report-rail">
+            <strong>Navigation du rapport</strong>
+            <nav>
+              ${navItems.map((item) => `<a href="#/lire/rapport-complet/${item.id}" data-heading="${item.id}">${MarkdownRenderer.escapeHtml(item.label)}</a>`).join('')}
+            </nav>
+            <div class="report-rail-actions">
+              <a class="button button-primary" href="#/lire/definir">Commencer</a>
+              <a class="button button-secondary" href="#/guide">Guide complet</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    `;
+
+    scrollToAnchor(anchor);
+  }
+
   function filterGuide(query) {
     const normalized = query.trim().toLowerCase();
     document.querySelectorAll('[data-guide-card]').forEach((card) => {
@@ -394,10 +563,15 @@ const App = (() => {
         if (!target.hasAttribute('tabindex')) {
           target.setAttribute('tabindex', '-1');
         }
-        target.focus({ preventScroll: false });
-        window.scrollTo(0, finalTop);
+        target.focus({ preventScroll: true });
+        const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = 'auto';
+        window.scrollTo({ left: 0, top: finalTop, behavior: 'auto' });
         document.documentElement.scrollTop = finalTop;
         document.body.scrollTop = finalTop;
+        window.setTimeout(() => {
+          document.documentElement.style.scrollBehavior = previousScrollBehavior;
+        }, 0);
         updateActiveHeading();
         return true;
       }
@@ -476,6 +650,7 @@ const App = (() => {
       QuestionnaireApp.render(app);
     } else if (current.page === 'tableau-de-bord') await renderReader('tableau-de-bord', current.anchor);
     else if (current.page === 'sources') await renderReader('references', current.anchor);
+    else if (current.page === 'lire' && current.docId === 'rapport-complet') renderReportHub(current.anchor);
     else if (current.page === 'lire') await renderReader(current.docId, current.anchor);
     else renderHome();
 
