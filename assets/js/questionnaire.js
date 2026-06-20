@@ -2,6 +2,7 @@ const QuestionnaireApp = (() => {
   const STORAGE_KEY = 'bonheur-questionnaire-v3';
   const MIN_ANSWERS_FOR_GUIDANCE = 3;
   let currentIndex = 0;
+  let currentQuestionIndex = 0;
   let copyMessage = '';
   let pendingQuestionFocus = null;
 
@@ -150,21 +151,20 @@ const QuestionnaireApp = (() => {
     return `${domain.score.toFixed(1)}/4 · ${domain.status.label}${suffix}`;
   }
 
-  function getNextQuestionIndex(state, domain, currentQuestionIndex) {
+  function getFirstOpenQuestionIndex(state, domain) {
     const answers = state.answers[domain.id] || [];
-    for (let index = currentQuestionIndex + 1; index < domain.questions.length; index += 1) {
-      if (!Number.isInteger(answers[index])) {
-        return index;
-      }
-    }
+    const firstOpen = answers.findIndex((value) => !Number.isInteger(value));
+    return firstOpen === -1 ? 0 : firstOpen;
+  }
 
-    for (let index = 0; index < currentQuestionIndex; index += 1) {
-      if (!Number.isInteger(answers[index])) {
-        return index;
-      }
-    }
+  function setCurrentDomainIndex(index, state) {
+    currentIndex = Math.min(Math.max(0, index), QUESTIONNAIRE_DOMAINS.length - 1);
+    currentQuestionIndex = getFirstOpenQuestionIndex(state, QUESTIONNAIRE_DOMAINS[currentIndex]);
+  }
 
-    return null;
+  function setCurrentQuestionIndex(index) {
+    const domain = QUESTIONNAIRE_DOMAINS[currentIndex];
+    currentQuestionIndex = Math.min(Math.max(0, index), domain.questions.length - 1);
   }
 
   function buildTextSummary(state) {
@@ -280,14 +280,8 @@ const QuestionnaireApp = (() => {
   }
 
   function renderMobileSummary(state, summaries) {
-    const actionPlan = getActionPlan(state);
     const coveredCount = summaries.filter((domain) => domain.complete || domain.skipped).length;
     const currentDomain = summaries[currentIndex] || summaries[0];
-    const hasProgress = summaries.some((domain) => domain.answered > 0 || domain.skipped);
-
-    if (!hasProgress) {
-      return '';
-    }
 
     return `
       <section class="questionnaire-mobile-summary" aria-label="Synthèse courte du questionnaire">
@@ -297,9 +291,6 @@ const QuestionnaireApp = (() => {
           <p>${MarkdownRenderer.escapeHtml(currentDomain.title)} · ${MarkdownRenderer.escapeHtml(statusText(currentDomain))}</p>
         </div>
         <a class="button button-quiet" href="#questionnaire-results">Synthèse</a>
-        ${actionPlan.length ? `
-          <p class="mobile-action"><strong>Action en cours</strong>${MarkdownRenderer.escapeHtml(actionPlan[0].action)}</p>
-        ` : ''}
       </section>
     `;
   }
@@ -309,6 +300,9 @@ const QuestionnaireApp = (() => {
     const rawDomain = QUESTIONNAIRE_DOMAINS[currentIndex];
     const scoreLabel = statusText(domain);
     const domainProgress = Math.round((domain.answered / domain.total) * 100);
+    const questionIndex = Math.min(currentQuestionIndex, rawDomain.questions.length - 1);
+    const question = rawDomain.questions[questionIndex];
+    const questionAnswered = Number.isInteger(state.answers[rawDomain.id]?.[questionIndex]);
 
     return `
       <section class="domain-body">
@@ -334,13 +328,19 @@ const QuestionnaireApp = (() => {
           </label>
         ` : ''}
 
-        <div class="question-list">
-          ${rawDomain.questions.map((question, questionIndex) => `
-            <article class="question-card" data-question-card="${rawDomain.id}-${questionIndex}">
-              <p><span>Question ${questionIndex + 1}</span>${MarkdownRenderer.escapeHtml(question)}</p>
-              ${renderScale(state, rawDomain, questionIndex)}
-            </article>
-          `).join('')}
+        <div class="question-stage">
+          <article class="question-card question-card-focus" data-question-card="${rawDomain.id}-${questionIndex}">
+            <div class="question-card-head">
+              <p><span>Question ${questionIndex + 1}/${rawDomain.questions.length}</span>${MarkdownRenderer.escapeHtml(question)}</p>
+              <span class="question-status">${questionAnswered ? 'Répondu' : 'À répondre'}</span>
+            </div>
+            ${renderScale(state, rawDomain, questionIndex)}
+            <div class="question-stepper" aria-label="Navigation entre les questions du domaine">
+              <button class="button button-secondary" type="button" data-prev-question ${questionIndex === 0 ? 'disabled' : ''}>Précédente</button>
+              <span>${questionIndex + 1}/${rawDomain.questions.length}</span>
+              <button class="button button-primary" type="button" data-next-question ${questionIndex === rawDomain.questions.length - 1 ? 'disabled' : ''}>Suivante</button>
+            </div>
+          </article>
         </div>
 
         <div class="domain-help-grid">
@@ -503,6 +503,13 @@ const QuestionnaireApp = (() => {
     window.setTimeout(() => target.focus({ preventScroll: true }), 220);
   }
 
+  function renderPreservingScroll(container) {
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    render(container);
+    window.scrollTo(scrollX, scrollY);
+  }
+
   function render(container) {
     const state = loadState();
     const summaries = getSummaries(state);
@@ -555,49 +562,58 @@ const QuestionnaireApp = (() => {
         const domainId = button.dataset.answerDomain;
         const questionIndex = Number(button.dataset.answerQuestion);
         const value = Number(button.dataset.answerValue);
-        const domain = QUESTIONNAIRE_DOMAINS.find((item) => item.id === domainId);
         state.answers[domainId][questionIndex] = value;
         state.skipped[domainId] = false;
-        pendingQuestionFocus = domain
-          ? { domainId, questionIndex: getNextQuestionIndex(state, domain, questionIndex) }
-          : null;
-        if (pendingQuestionFocus?.questionIndex === null) {
-          pendingQuestionFocus = null;
-        }
+        setCurrentQuestionIndex(questionIndex);
+        pendingQuestionFocus = null;
         copyMessage = '';
         saveState(state);
-        render(container);
+        renderPreservingScroll(container);
       });
+    });
+
+    container.querySelector('[data-prev-question]')?.addEventListener('click', () => {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+      pendingQuestionFocus = null;
+      copyMessage = '';
+      renderPreservingScroll(container);
+    });
+
+    container.querySelector('[data-next-question]')?.addEventListener('click', () => {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      pendingQuestionFocus = null;
+      copyMessage = '';
+      renderPreservingScroll(container);
     });
 
     container.querySelectorAll('[data-domain-index]').forEach((button) => {
       button.addEventListener('click', () => {
-        currentIndex = Number(button.dataset.domainIndex);
+        setCurrentDomainIndex(Number(button.dataset.domainIndex), state);
         pendingQuestionFocus = null;
         copyMessage = '';
-        render(container);
+        renderPreservingScroll(container);
       });
     });
 
     container.querySelector('[data-domain-select]')?.addEventListener('change', (event) => {
-      currentIndex = Number(event.target.value);
+      setCurrentDomainIndex(Number(event.target.value), state);
       pendingQuestionFocus = null;
       copyMessage = '';
-      render(container);
+      renderPreservingScroll(container);
     });
 
     container.querySelector('[data-prev-domain]')?.addEventListener('click', () => {
-      currentIndex = Math.max(0, currentIndex - 1);
+      setCurrentDomainIndex(currentIndex - 1, state);
       pendingQuestionFocus = null;
       copyMessage = '';
-      render(container);
+      renderPreservingScroll(container);
     });
 
     container.querySelector('[data-next-domain]')?.addEventListener('click', () => {
-      currentIndex = Math.min(QUESTIONNAIRE_DOMAINS.length - 1, currentIndex + 1);
+      setCurrentDomainIndex(currentIndex + 1, state);
       pendingQuestionFocus = null;
       copyMessage = '';
-      render(container);
+      renderPreservingScroll(container);
     });
 
     container.querySelector('[data-skip-domain]')?.addEventListener('change', (event) => {
@@ -605,12 +621,13 @@ const QuestionnaireApp = (() => {
       pendingQuestionFocus = null;
       copyMessage = '';
       saveState(state);
-      render(container);
+      renderPreservingScroll(container);
     });
 
     container.querySelector('[data-reset-questionnaire]')?.addEventListener('click', () => {
       localStorage.removeItem(STORAGE_KEY);
       currentIndex = 0;
+      currentQuestionIndex = 0;
       pendingQuestionFocus = null;
       copyMessage = 'Réponses réinitialisées.';
       render(container);
