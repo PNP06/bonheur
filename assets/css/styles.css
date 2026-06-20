@@ -2618,7 +2618,7 @@ h2,
 .domain-body,
 .questionnaire-controls,
 .questionnaire-results {
-  padding: 16px;
+  padding: 12px;
 }
 
 .questionnaire-intro > p:not(.questionnaire-step),
@@ -2626,88 +2626,120 @@ h2,
   display: none;
 }
 
+.questionnaire-intro {
+  display: grid;
+  gap: 7px;
+}
+
+.questionnaire-intro .questionnaire-step {
+  margin: 0;
+  font-size: 0.68rem;
+}
+
 .questionnaire-intro h2,
 .domain-title-row h2 {
-  margin-bottom: 8px;
+  margin-bottom: 0;
   font-family: inherit;
-  font-size: 1.38rem;
-  line-height: 1.18;
+  font-size: 1.08rem;
+  line-height: 1.16;
+}
+
+.questionnaire-intro .progress-track {
+  height: 5px;
+  margin-top: 0;
 }
 
 .domain-select-row {
   display: grid;
-  gap: 5px;
-  padding: 10px 16px;
+  gap: 4px;
+  padding: 8px 12px;
+}
+
+.domain-select-row span {
+  font-size: 0.7rem;
+}
+
+.domain-select-row select {
+  min-height: 38px;
+  padding: 7px 10px;
+  font-size: 0.92rem;
 }
 
 .domain-nav {
   display: none;
 }
 
+.domain-title-row {
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.domain-focus {
+  display: none;
+}
+
+.questionnaire-page .status-badge {
+  padding: 5px 8px;
+  font-size: 0.72rem;
+}
+
+.domain-meter {
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.domain-meter > span {
+  font-size: 0.78rem;
+}
+
+.domain-meter .progress-track {
+  height: 5px;
+}
+
+.question-list {
+  gap: 8px;
+}
+
 .question-card {
-  padding: 14px;
+  padding: 10px;
+}
+
+.question-card.is-answered {
+  border-color: rgba(31, 106, 87, 0.34);
+  background: #fbfdfb;
 }
 
 .question-card p {
-  line-height: 1.42;
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+  line-height: 1.28;
 }
 
-.question-stage {
-  display: grid;
-  gap: 10px;
-}
-
-.question-card-focus {
-  display: grid;
-  gap: 12px;
-}
-
-.question-card-head {
-  display: grid;
-  gap: 8px;
-}
-
-.question-card-head p {
-  margin: 0;
-}
-
-.question-status {
-  width: fit-content;
-  padding: 4px 8px;
-  border-radius: 8px;
-  color: var(--muted);
-  background: var(--surface-soft);
-  font-size: 0.78rem;
-  font-weight: 820;
-}
-
-.question-stepper {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
-  align-items: center;
-  margin-top: 2px;
-}
-
-.question-stepper > span {
-  grid-column: 1 / -1;
-  order: -1;
-  color: var(--muted);
-  font-size: 0.84rem;
-  font-weight: 820;
-  text-align: center;
-}
-
-.question-stepper .button {
-  min-width: 0;
+.question-card p span {
+  display: inline-grid;
+  place-items: center;
+  width: 21px;
+  height: 21px;
+  margin: 0 6px 0 0;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--accent-dark);
+  font-size: 0.72rem;
+  letter-spacing: 0;
 }
 
 .scale {
-  gap: 6px;
+  gap: 4px;
 }
 
 .scale button {
-  min-height: 48px;
+  min-height: 38px;
+  padding: 4px 2px;
+  border-radius: 8px;
+}
+
+.scale button strong {
+  font-size: 1rem;
 }
 
 .scale button span {
@@ -2720,19 +2752,89 @@ h2,
 }
 
 .scale-hints {
-  display: flex;
-  justify-content: space-between;
-  color: var(--muted);
-  font-size: 0.78rem;
+  display: none;
 }
 
 .questionnaire-controls {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 10px 12px;
 }
 
 .questionnaire-controls .button {
   width: 100%;
+  min-height: 38px;
+}
+
+.domain-help-grid {
+  display: none;
+}
+
+.questionnaire-page .questionnaire-intro,
+.questionnaire-page .domain-body,
+.questionnaire-page .questionnaire-controls {
+  padding: 8px 12px;
+}
+
+.questionnaire-page .questionnaire-intro {
+  gap: 6px;
+}
+
+.questionnaire-page .questionnaire-intro h2,
+.questionnaire-page .domain-title-row h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.14;
+  letter-spacing: 0;
+}
+
+.questionnaire-page .questionnaire-step {
+  display: none;
+}
+
+.questionnaire-page .progress-track {
+  height: 5px;
+  margin-top: 0;
+}
+
+.questionnaire-page .domain-select-row {
+  gap: 0;
+  padding: 7px 12px;
+}
+
+.questionnaire-page .domain-select-row span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.questionnaire-page .domain-select-row select {
+  min-height: 36px;
+  padding: 6px 10px;
+}
+
+.questionnaire-page .domain-title-row {
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.questionnaire-page .domain-meter {
+  gap: 0;
+  margin-bottom: 8px;
+}
+
+.questionnaire-page .domain-meter > span {
+  display: none;
+}
+
+.questionnaire-page .status-badge {
+  padding: 4px 7px;
+  font-size: 0.7rem;
 }
 
 .report-layout {
@@ -2811,13 +2913,8 @@ h2,
     padding: 24px;
   }
 
-  .question-stepper {
-    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  }
-
-  .question-stepper > span {
-    grid-column: auto;
-    order: 0;
+  .domain-help-grid {
+    display: grid;
   }
 }
 
