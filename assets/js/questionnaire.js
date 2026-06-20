@@ -226,6 +226,16 @@ const QuestionnaireApp = (() => {
 
   function renderDomainNav(summaries) {
     return `
+      <label class="domain-select-row">
+        <span>Domaine</span>
+        <select data-domain-select aria-label="Choisir un domaine du questionnaire">
+          ${summaries.map((domain) => `
+            <option value="${domain.index}" ${domain.index === currentIndex ? 'selected' : ''}>
+              ${domain.index + 1}. ${MarkdownRenderer.escapeHtml(domain.title)} — ${MarkdownRenderer.escapeHtml(statusText(domain))}
+            </option>
+          `).join('')}
+        </select>
+      </label>
       <div class="domain-nav" aria-label="Domaines du questionnaire">
         ${summaries.map((domain) => `
           <button
@@ -245,20 +255,52 @@ const QuestionnaireApp = (() => {
   function renderScale(state, domain, questionIndex) {
     const current = state.answers[domain.id]?.[questionIndex];
     return `
-      <div class="scale" role="group" aria-label="Échelle de réponse pour la question ${questionIndex + 1}">
-        ${SCALE_LABELS.map((label, value) => `
-          <button
-            type="button"
-            data-answer-domain="${domain.id}"
-            data-answer-question="${questionIndex}"
-            data-answer-value="${value}"
-            aria-pressed="${current === value}"
-          >
-            <strong>${value}</strong>
-            <span>${MarkdownRenderer.escapeHtml(label)}</span>
-          </button>
-        `).join('')}
+      <div class="scale-wrap">
+        <div class="scale" role="group" aria-label="Échelle de réponse pour la question ${questionIndex + 1}">
+          ${SCALE_LABELS.map((label, value) => `
+            <button
+              type="button"
+              data-answer-domain="${domain.id}"
+              data-answer-question="${questionIndex}"
+              data-answer-value="${value}"
+              aria-label="${value} - ${MarkdownRenderer.escapeHtml(label)}"
+              aria-pressed="${current === value}"
+            >
+              <strong>${value}</strong>
+              <span>${MarkdownRenderer.escapeHtml(label)}</span>
+            </button>
+          `).join('')}
+        </div>
+        <div class="scale-hints" aria-hidden="true">
+          <span>0 · défavorable</span>
+          <span>4 · solide</span>
+        </div>
       </div>
+    `;
+  }
+
+  function renderMobileSummary(state, summaries) {
+    const actionPlan = getActionPlan(state);
+    const coveredCount = summaries.filter((domain) => domain.complete || domain.skipped).length;
+    const currentDomain = summaries[currentIndex] || summaries[0];
+    const hasProgress = summaries.some((domain) => domain.answered > 0 || domain.skipped);
+
+    if (!hasProgress) {
+      return '';
+    }
+
+    return `
+      <section class="questionnaire-mobile-summary" aria-label="Synthèse courte du questionnaire">
+        <div>
+          <span>Avancement</span>
+          <strong>${coveredCount}/${QUESTIONNAIRE_DOMAINS.length} domaines parcourus</strong>
+          <p>${MarkdownRenderer.escapeHtml(currentDomain.title)} · ${MarkdownRenderer.escapeHtml(statusText(currentDomain))}</p>
+        </div>
+        <a class="button button-quiet" href="#questionnaire-results">Synthèse</a>
+        ${actionPlan.length ? `
+          <p class="mobile-action"><strong>Action en cours</strong>${MarkdownRenderer.escapeHtml(actionPlan[0].action)}</p>
+        ` : ''}
+      </section>
     `;
   }
 
@@ -393,7 +435,7 @@ const QuestionnaireApp = (() => {
     const coveredCount = summaries.filter((domain) => domain.complete || domain.skipped).length;
 
     return `
-      <aside class="questionnaire-results" aria-label="Synthèse du questionnaire">
+      <aside class="questionnaire-results" id="questionnaire-results" aria-label="Synthèse du questionnaire">
         <p class="section-label">Résultats vivants</p>
         <h2>${coveredCount}/${QUESTIONNAIRE_DOMAINS.length} domaines parcourus</h2>
         <p>Orientation pratique uniquement : les scores aident à choisir quoi tester, ils ne remplacent pas une évaluation clinique.</p>
@@ -469,7 +511,7 @@ const QuestionnaireApp = (() => {
     const progress = Math.round((answered / total) * 100);
 
     container.innerHTML = `
-      <section class="page">
+      <section class="page questionnaire-page">
         <div class="hero">
           <div>
             <p class="eyebrow">Auto-orientation opérationnelle</p>
@@ -490,6 +532,7 @@ const QuestionnaireApp = (() => {
               <p>Les réponses restent uniquement dans votre navigateur. Vous pouvez commencer par les domaines qui vous semblent les plus importants.</p>
               <div class="progress-track" aria-hidden="true"><span style="width: ${progress}%"></span></div>
             </div>
+            ${renderMobileSummary(state, summaries)}
             ${renderDomainNav(summaries)}
             ${renderCurrentDomain(state, summaries)}
             <div class="questionnaire-controls">
@@ -534,6 +577,13 @@ const QuestionnaireApp = (() => {
         copyMessage = '';
         render(container);
       });
+    });
+
+    container.querySelector('[data-domain-select]')?.addEventListener('change', (event) => {
+      currentIndex = Number(event.target.value);
+      pendingQuestionFocus = null;
+      copyMessage = '';
+      render(container);
     });
 
     container.querySelector('[data-prev-domain]')?.addEventListener('click', () => {

@@ -637,22 +637,296 @@ const App = (() => {
     });
   }
 
+  function renderReadableHome() {
+    setPageTitle('');
+    app.innerHTML = `
+      <section class="page home-page">
+        <div class="hero hero-compact">
+          <div>
+            <p class="eyebrow">Guide pratique</p>
+            <h1>Choisir quoi améliorer maintenant.</h1>
+            <p class="lead">Un questionnaire, une synthèse courte, puis le rapport complet si vous voulez vérifier le fond.</p>
+          </div>
+        </div>
+
+        <div class="action-grid priority-flow" aria-label="Entrées principales">
+          <a class="entry-card is-primary" href="#/questionnaire">
+            <span class="entry-number">1</span>
+            <h2>Questionnaire</h2>
+            <p>Repérer vos priorités et obtenir un plan 7 jours.</p>
+            <span class="button button-primary">Commencer</span>
+          </a>
+          <a class="entry-card" href="#/synthese">
+            <span class="entry-number">2</span>
+            <h2>Synthèse</h2>
+            <p>Comprendre les leviers majeurs sans tout lire.</p>
+            <span class="button button-secondary">Lire</span>
+          </a>
+          <a class="entry-card" href="#/guide">
+            <span class="entry-number">3</span>
+            <h2>Guide complet</h2>
+            <p>Vérifier les preuves, les limites et les détails.</p>
+            <span class="button button-secondary">Approfondir</span>
+          </a>
+        </div>
+
+        <section class="section-block compact-section">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Repères</p>
+              <h2>Leviers prioritaires</h2>
+            </div>
+            <a class="button button-quiet" href="#/lire/variables">Voir les variables</a>
+          </div>
+          <ul class="pill-list">
+            ${HOME_PRIORITIES.slice(0, 7).map((item) => `<li>${MarkdownRenderer.escapeHtml(item)}</li>`).join('')}
+          </ul>
+        </section>
+      </section>
+    `;
+  }
+
+  function renderReadableSynthesis() {
+    setPageTitle('Synthèse');
+    app.innerHTML = `
+      <section class="page synthesis-page">
+        <div class="hero hero-compact">
+          <div>
+            <p class="eyebrow">Comprendre vite</p>
+            <h1>La synthèse utile.</h1>
+            <p class="lead">Le bonheur durable dépend surtout de protections concrètes : corps, liens, autonomie, compétence, sens et sécurité.</p>
+          </div>
+        </div>
+
+        <section class="section-block synthesis-actions">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Priorité</p>
+              <h2>Actions à tester</h2>
+            </div>
+            <a class="button button-primary" href="#/questionnaire">Faire le questionnaire</a>
+          </div>
+          <ol class="compact-list action-list">
+            ${SUMMARY_ACTIONS.slice(0, 5).map((item) => `<li>${MarkdownRenderer.escapeHtml(item)}</li>`).join('')}
+          </ol>
+        </section>
+
+        <section class="section-block two-col">
+          <article class="info-card">
+            <p class="section-label">Idées clés</p>
+            <h2>À retenir</h2>
+            <ul class="compact-list">
+              ${SUMMARY_INSIGHTS.slice(0, 3).map((item) => `<li>${MarkdownRenderer.escapeHtml(item)}</li>`).join('')}
+            </ul>
+          </article>
+          <article class="info-card">
+            <p class="section-label">Pièges</p>
+            <h2>À éviter</h2>
+            <ul class="compact-list">
+              ${SUMMARY_ERRORS.slice(0, 4).map((item) => `<li>${MarkdownRenderer.escapeHtml(item)}</li>`).join('')}
+            </ul>
+          </article>
+        </section>
+
+        <section class="section-block compact-section">
+          <div class="section-head">
+            <div>
+              <p class="section-label">Fond complet</p>
+              <h2>Vérifier les preuves</h2>
+            </div>
+            <a class="button button-secondary" href="#/lire/synthese-detail">Lire la synthèse détaillée</a>
+          </div>
+        </section>
+      </section>
+    `;
+  }
+
+  function renderReadableGuide() {
+    setPageTitle('Guide complet');
+    const groups = [...new Set(GUIDE_DOCS.map((doc) => doc.group))];
+    const filterGroups = [...groups, utilityGroupLabel];
+
+    app.innerHTML = `
+      <section class="page guide-page">
+        <div class="hero hero-compact">
+          <div>
+            <p class="eyebrow">Lire le fond</p>
+            <h1>Guide complet.</h1>
+            <p class="lead">Ouvrez seulement la partie dont vous avez besoin.</p>
+          </div>
+        </div>
+
+        <div class="guide-toolbar">
+          <div class="search-field">
+            <label for="guideSearch">Rechercher</label>
+            <input id="guideSearch" type="search" placeholder="Sommeil, argent, relations...">
+          </div>
+        </div>
+
+        <div class="guide-filter-tabs" aria-label="Filtrer les parties du guide">
+          <button type="button" data-guide-filter="" aria-pressed="${activeGuideFilter === ''}">Tout</button>
+          ${filterGroups.map((group) => `
+            <button type="button" data-guide-filter="${MarkdownRenderer.escapeHtml(group)}" aria-pressed="${activeGuideFilter === group}">
+              ${MarkdownRenderer.escapeHtml(group)}
+            </button>
+          `).join('')}
+        </div>
+
+        <div class="guide-groups" id="guideGroups">
+          ${groups.map((group) => `
+            <section class="guide-group" data-guide-group>
+              <h2>${MarkdownRenderer.escapeHtml(group)}</h2>
+              <div class="guide-grid">
+                ${GUIDE_DOCS.filter((doc) => doc.group === group).map((doc) => Ui.guideCard(doc)).join('')}
+              </div>
+            </section>
+          `).join('')}
+          <section class="guide-group" data-guide-group>
+            <h2>Outils</h2>
+            <div class="guide-grid">
+              ${UTILITY_DOCS.map((doc) => Ui.guideCard(doc, { group: utilityGroupLabel })).join('')}
+            </div>
+          </section>
+        </div>
+      </section>
+    `;
+
+    const input = document.getElementById('guideSearch');
+    input.addEventListener('input', () => filterGuide(input.value));
+    bindGuideFilters(input);
+    prepareGuideSearchIndex(input);
+  }
+
+  function renderReadableReportHub(anchor = '') {
+    const modules = getReportModules();
+    const tools = [
+      { kicker: 'Action', title: 'Questionnaire', description: 'Priorités et plan 7 jours.', href: '#/questionnaire' },
+      { kicker: 'Suivi', title: 'Tableau de bord', description: 'Signaux hebdomadaires.', href: '#/tableau-de-bord' },
+      { kicker: 'Choix', title: 'Matrice actions', description: 'Effort, preuve, délai.', href: '#/lire/matrice-actions' },
+      { kicker: 'Preuves', title: 'Sources', description: 'Références et limites.', href: '#/sources' }
+    ];
+    const navItems = [
+      { id: 'rapport-parcours', label: 'Parcours' },
+      { id: 'rapport-parties', label: 'Parties' },
+      { id: 'rapport-outils', label: 'Outils' },
+      { id: 'rapport-preuves', label: 'Preuves' }
+    ];
+
+    currentHeadings = navItems.map((item) => ({ ...item, text: item.label, level: 2 }));
+    setPageTitle('Rapport complet');
+
+    app.innerHTML = `
+      <section class="page report-page">
+        <div class="report-layout">
+          <main class="report-main">
+            <header class="report-hero">
+              ${Ui.breadcrumb([
+                { label: 'Guide complet', href: '#/guide' },
+                { label: 'Rapport complet' }
+              ])}
+              <p class="eyebrow">Rapport complet</p>
+              <h1>Lire sans se perdre.</h1>
+              <p class="lead">Neuf parties de fond, puis des outils pour décider.</p>
+              <div class="reader-actions">
+                <a class="button button-primary" href="#/lire/definir">Commencer</a>
+                <a class="button button-secondary" href="#/questionnaire">Questionnaire</a>
+              </div>
+            </header>
+
+            <details class="report-jump">
+              <summary>Aller à une section</summary>
+              <nav>
+                ${navItems.map((item) => `<a href="#/lire/rapport-complet/${item.id}" data-heading="${item.id}">${MarkdownRenderer.escapeHtml(item.label)}</a>`).join('')}
+              </nav>
+            </details>
+
+            <section class="report-section" id="rapport-parcours">
+              <p class="section-label">Parcours</p>
+              <h2>Choisir une entrée</h2>
+              <div class="report-mode-grid">
+                <a href="#/questionnaire" class="report-mode-card"><span>01</span><strong>Agir</strong><p>Questionnaire et plan court.</p></a>
+                <a href="#/synthese" class="report-mode-card"><span>02</span><strong>Comprendre</strong><p>Synthèse avant lecture longue.</p></a>
+                <a href="#/lire/definir" class="report-mode-card"><span>03</span><strong>Lire</strong><p>Rapport dans l’ordre.</p></a>
+              </div>
+            </section>
+
+            <section class="report-section" id="rapport-parties">
+              <p class="section-label">Parties</p>
+              <h2>Structure</h2>
+              <div class="report-module-list">
+                ${modules.map((module) => `
+                  <a class="report-module-card" href="${MarkdownRenderer.escapeHtml(module.href)}">
+                    <div class="report-module-number">${MarkdownRenderer.escapeHtml(module.order)}</div>
+                    <div>
+                      <span>${MarkdownRenderer.escapeHtml(readerGroupLabel(module))}</span>
+                      <h3>${MarkdownRenderer.escapeHtml(module.title)}</h3>
+                      <p>${MarkdownRenderer.escapeHtml(module.description)}</p>
+                    </div>
+                  </a>
+                `).join('')}
+              </div>
+            </section>
+
+            <section class="report-section" id="rapport-outils">
+              <p class="section-label">Outils</p>
+              <h2>Passer à l’action</h2>
+              <div class="report-tool-grid">
+                ${tools.map(renderReportToolCard).join('')}
+              </div>
+            </section>
+
+            <section class="report-section" id="rapport-preuves">
+              <p class="section-label">Preuves</p>
+              <h2>Niveau de confiance</h2>
+              <div class="evidence-grid">
+                <article><strong>A</strong><p>Revues solides, forte convergence.</p></article>
+                <article><strong>B</strong><p>Cohortes, mécanismes plausibles.</p></article>
+                <article><strong>C</strong><p>Associations robustes, causalité incertaine.</p></article>
+                <article><strong>D</strong><p>Données préliminaires ou spéculatives.</p></article>
+              </div>
+            </section>
+          </main>
+
+          <aside class="report-rail">
+            <strong>Navigation</strong>
+            <nav>
+              ${navItems.map((item) => `<a href="#/lire/rapport-complet/${item.id}" data-heading="${item.id}">${MarkdownRenderer.escapeHtml(item.label)}</a>`).join('')}
+            </nav>
+            <div class="report-rail-actions">
+              <a class="button button-primary" href="#/lire/definir">Commencer</a>
+              <a class="button button-secondary" href="#/guide">Guide</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    `;
+
+    scrollToAnchor(anchor);
+  }
+
   async function renderRoute() {
     const current = route();
     updateActiveNav(current.page);
     closeNav();
     copyFocusReset();
 
-    if (current.page === 'synthese') renderSynthesis();
-    else if (current.page === 'guide') renderGuide();
+    if (current.page === 'synthese') renderReadableSynthesis();
+    else if (current.page === 'guide') renderReadableGuide();
     else if (current.page === 'questionnaire') {
       setPageTitle('Questionnaire');
       QuestionnaireApp.render(app);
     } else if (current.page === 'tableau-de-bord') await renderReader('tableau-de-bord', current.anchor);
     else if (current.page === 'sources') await renderReader('references', current.anchor);
-    else if (current.page === 'lire' && current.docId === 'rapport-complet') renderReportHub(current.anchor);
+    else if (current.page === 'lire' && current.docId === 'rapport-complet') renderReadableReportHub(current.anchor);
     else if (current.page === 'lire') await renderReader(current.docId, current.anchor);
-    else renderHome();
+    else renderReadableHome();
+
+    if (!current.anchor && current.page !== 'lire') {
+      const resetScroll = () => document.getElementById('top')?.scrollIntoView({ block: 'start' });
+      window.setTimeout(resetScroll, 0);
+      window.setTimeout(resetScroll, 80);
+      window.setTimeout(resetScroll, 350);
+    }
 
     updateReadingProgress();
   }
@@ -693,6 +967,9 @@ const App = (() => {
   }
 
   function init() {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
     bind();
     renderRoute();
   }

@@ -7,9 +7,18 @@ const Ui = (() => {
     return doc.route || `#/lire/${doc.id}`;
   }
 
+  function compactText(value, limit = 96) {
+    if (!value || value.length <= limit) {
+      return value || '';
+    }
+    return `${value.slice(0, limit).trim()}...`;
+  }
+
   function guideCard(doc, options = {}) {
     const group = options.group || doc.group || 'Outils complémentaires';
     const search = `${doc.title} ${doc.description}`.toLowerCase();
+    const title = doc.shortTitle || doc.title;
+    const description = compactText(doc.description);
 
     return `
       <a class="guide-card" href="${docHref(doc)}" data-guide-card data-guide-topic="${escape(group)}" data-search="${escape(search)}">
@@ -17,9 +26,8 @@ const Ui = (() => {
           <p class="card-label">${escape(doc.order)}</p>
           <span class="guide-card-topic">${escape(group)}</span>
         </div>
-        <h3>${escape(doc.title)}</h3>
-        <p>${escape(doc.description)}</p>
-        <span class="button button-secondary">Lire</span>
+        <h3>${escape(title)}</h3>
+        <p>${escape(description)}</p>
       </a>
     `;
   }
