@@ -1,0 +1,295 @@
+{
+  "edition": "youth",
+  "rules": [
+    {
+      "id": "rule-41",
+      "order": 41,
+      "title": "Cesser de rejouer un scénario impossible",
+      "summary": "Après un événement, l’esprit peut fabriquer une autre version de la scène : si j’avais répondu autrement, si la personne était arrivée plus tôt, si j’avais choisi une autre porte, tout aurait changé. Cette version peut sembler très précise, mais elle n’a jamais eu lieu et ne peut plus être testée. La rejouer sans fin donne parfois l’impression de rester près du moment, alors qu’elle ne modifie ni les faits ni ce qu’ils ont produit. Il ne s’agit pas de dire que l’événement était juste, ni d’interdire toute réflexion. Il s’agit de reconnaître le scénario comme une possibilité imaginée, puis de revenir à la scène réelle telle qu’elle s’est passée.",
+      "example": "Après avoir raté le départ d’une sortie scolaire, Samir imagine chaque soir la journée qu’il aurait vécue s’il avait quitté la maison deux minutes plus tôt. Dans son film intérieur, il retrouve ses amis, entend leurs blagues et revient avec eux. Mais cette journée-là n’a pas eu lieu : il était déjà dans le bus suivant, puis la classe avait continué sans lui. Quand le film recommence, Samir le reconnaît comme une version impossible du passé. Il peut garder le souvenir de sa déception sans transformer cette journée réelle en une journée imaginaire à corriger.",
+      "advice": [
+        "Séparer les faits établis des scénarios qui recommencent dans ta tête.",
+        "Chercher une réparation, une protection ou une information encore possible.",
+        "Parler à un adulte de confiance si le problème te dépasse ou reste dangereux."
+      ],
+      "key_phrase": "Le passé ne bouge plus ; ton prochain geste, lui, reste ouvert.",
+      "questions": [
+        "Qu’est-ce qui est vraiment terminé, et qu’est-ce qui peut encore changer ?",
+        "Est-ce que je cherche une solution, ou est-ce que je rejoue la scène ?",
+        "Qui peut m’aider à obtenir réparation ou protection ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 41 ; impossibilité de refaire le malheur et distinction avec la nécessité de la règle 39",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Adaptation jeunesse distinguant l’abandon des possibles irréalisés de l’examen des causes, de la réparation et de la demande de protection."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["acceptation", "sécurité"],
+      "image_alt": "Un adolescent reprend un exercice encadré après un incident dans un gymnase",
+      "image_scene": "Illustration narrative jeunesse en contours dessinés et aplats de gouache : un adolescent assis près d’un tapis de gym regarde un adulte vérifier une zone sécurisée, puis tend la main vers une bouteille d’eau et une fiche vierge ; expressions calmes et concentrées, diversité naturelle, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, aucun texte ni logo."
+    },
+    {
+      "id": "rule-42",
+      "order": 42,
+      "title": "Ne pas sacrifier aujourd’hui à une promesse lointaine",
+      "summary": "Un projet éloigné peut donner une direction, mais il ne garantit ni sa réussite ni la forme de la vie qui l’attend. Les obstacles changent, les capacités évoluent et les autres ne répondent pas toujours comme prévu. Si tout le présent est sacrifié à une promesse future, une année peut devenir seulement une salle d’attente. Préparer demain reste utile, mais il faut aussi préserver une part de vie maintenant : un ami, un loisir, un repos ou une curiosité qui existe déjà. Réviser un plan n’est pas forcément échouer. C’est parfois reconnaître qu’un chemin lointain ne doit pas absorber tout ce qui se passe aujourd’hui.",
+      "example": "Élise veut intégrer une équipe régionale de natation l’année prochaine. Elle s’entraîne, mais son poignet lui impose une pause et les horaires familiaux changent. Avec son entraîneuse, elle garde cet objectif tout en continuant à voir ses amies le mercredi et à lire le soir, même quand elle ne peut pas nager. Elle prépare une reprise adaptée et se renseigne sur deux clubs accessibles. Le concours reste une possibilité importante, pas une promesse qui obligerait toute son année à attendre derrière lui.",
+      "advice": [
+        "Découper un projet lointain en une prochaine étape vérifiable.",
+        "Prévoir au moins une autre voie si un obstacle rend le premier chemin impossible.",
+        "Réviser ton plan avec un adulte quand tes capacités, tes envies ou les circonstances changent."
+      ],
+      "key_phrase": "Préparer demain ne doit pas transformer aujourd’hui en simple salle d’attente.",
+      "questions": [
+        "Quelle est la prochaine étape concrète, plutôt que la promesse finale ?",
+        "Que pourrais-je essayer si le premier chemin se ferme ?",
+        "Qu’est-ce qui a changé depuis que j’ai construit ce plan ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 42 ; fragilité des plans étendus par la durée, les obstacles et le changement personnel",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "L’adaptation conserve la fragilité des plans longs sans présenter leur révision comme une réussite garantie."
+      },
+      "themes": ["appréciation"],
+      "needs": ["prévoyance", "mesure"],
+      "image_alt": "Une collégienne ajuste un itinéraire composé de plusieurs étapes",
+      "image_scene": "Illustration narrative jeunesse : une collégienne pose plusieurs cartes colorées sur une table de cuisine pendant qu’un parent observe avec elle un calendrier sans écriture lisible ; un sac de sport et une paire de chaussures suggèrent plusieurs options, lumière du matin, contours dessinés, gouache, palette jeunesse limitée, aucun texte, logo ou filigrane."
+    },
+    {
+      "id": "rule-43",
+      "order": 43,
+      "title": "Garder du temps pour penser et créer",
+      "summary": "Une journée remplie de devoirs, de notifications et d’activités peut laisser peu de place à ce que l’on porte en soi. Pourtant, lire, dessiner, construire, jouer d’un instrument ou réfléchir à une question ne sont pas toujours du temps perdu. Ces activités développent une richesse intérieure qui ne dépend pas entièrement d’une note ou d’un compliment. Elles demandent souvent de la durée et un peu de solitude, mais elles ne doivent pas conduire à s’isoler de toute aide. Le loisir n’efface ni la fatigue ni les contraintes matérielles. Il désigne un espace protégé où une idée ou une curiosité peut avancer sans devoir produire immédiatement un résultat.",
+      "example": "Le mercredi, Noé passe d’un devoir à une vidéo puis à un message, sans réussir à commencer sa maquette de pont. Il en parle avec sa sœur et réserve vingt minutes avant le dîner, téléphone dans une autre pièce. La première séance sert seulement à comprendre pourquoi le carton se plie. Il recommence le lendemain et montre son essai à son professeur de technologie. La maquette n’est pas parfaite et le temps reste court, mais Noé retrouve une activité qu’il mène pour comprendre et fabriquer, pas seulement pour obtenir une récompense.",
+      "advice": [
+        "Réserver un petit moment régulier pour une activité qui nourrit ta curiosité.",
+        "Accepter de chercher ou de créer sans exiger un résultat immédiat.",
+        "Protéger ce moment avec ton entourage sans abandonner tes responsabilités."
+      ],
+      "key_phrase": "Un temps sans rendement peut faire grandir une pensée.",
+      "questions": [
+        "Quelle activité me permet d’explorer plutôt que de seulement réussir ?",
+        "Quel moment réaliste puis-je protéger cette semaine ?",
+        "Est-ce que je me repose, ou est-ce que je m’isole quand j’ai besoin d’aide ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 43 ; loisir nécessaire au développement et à la jouissance des richesses intérieures",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "Le temps protégé et les contraintes sociales sont des applications contemporaines, non des conseils attribués mot pour mot à Schopenhauer."
+      },
+      "themes": ["réduction de la souffrance"],
+      "needs": ["loisir", "attention"],
+      "image_alt": "Un collégien construit une maquette dans un temps calme à la maison",
+      "image_scene": "Illustration narrative jeunesse : un collégien assemble une maquette en carton sur une table près d’une fenêtre, un téléphone posé face contre table, une sœur passe dans l’encadrement de la porte avec un verre d’eau ; scène quotidienne crédible, concentration sans isolement, contours dessinés et gouache grainée, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, aucun texte."
+    },
+    {
+      "id": "rule-44",
+      "order": 44,
+      "title": "Faire place à tes ressources intérieures",
+      "summary": "Quand l’ennui s’installe ou qu’un rôle important disparaît, il reste parfois des ressources intérieures auxquelles on ne pense pas tout de suite. La curiosité peut ouvrir une question, une compétence peut donner une prise, et un goût personnel peut maintenir un lien avec quelque chose qui compte. Ces ressources ne sont pas une réserve magique : elles ne remplacent ni l’argent, ni la sécurité, ni les relations, ni l’aide quand une perte fait mal. Elles peuvent seulement soutenir un passage et rappeler qu’une personne ne se réduit pas à son statut du moment. Les reconnaître demande de regarder ce qui attire encore l’attention, ce que l’on sait faire et ce que l’on aime, sans en faire une obligation de rebondir.",
+      "example": "Après avoir quitté son équipe de basket, Lina n’a plus son rôle de capitaine et les après-midis lui paraissent vides. Une compétence qu’elle avait développée pour les entraînements l’aide à organiser une petite vidéo ; sa curiosité la conduit à chercher comment fonctionne le montage, et son goût pour les histoires lui fait choisir la musique avec soin. Le projet ne remplace pas l’équipe et Lina reste triste de l’avoir quittée. Mais ces appuis lui offrent un endroit où essayer, apprendre et retrouver des échanges, sans prétendre que cela suffit à régler sa perte.",
+      "advice": [
+        "Repérer les situations où ton tempérament t’aide et celles qui te fatiguent.",
+        "Préparer un aménagement concret au lieu de te juger en bloc.",
+        "Demander un soutien scolaire, familial ou médical si la difficulté devient persistante."
+      ],
+      "key_phrase": "Tes ressources intérieures peuvent soutenir un passage sans remplacer l’aide dont tu as besoin.",
+      "questions": [
+        "Quelles conditions me permettent de mieux utiliser mes capacités ?",
+        "Est-ce une différence de tempérament, un obstacle réel, ou les deux ?",
+        "Quel adulte peut m’aider à obtenir un aménagement juste ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 44 ; personnalité, gaieté et intellect comme protections distinctes contre douleur et ennui",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La personnalité est prise en compte sans être présentée comme une maîtrise volontaire ni comme une explication morale de la souffrance."
+      },
+      "themes": ["maîtrise de soi"],
+      "needs": ["identité", "soutien"],
+      "image_alt": "Une collégienne prépare calmement un contrôle avec un aménagement adapté",
+      "image_scene": "Illustration narrative jeunesse : une collégienne lit une feuille de contrôle sur une table calme avec un casque anti-bruit posé à côté, une enseignante se tient à distance avec une expression attentive ; salle de classe ordinaire, aucun signe de honte, contours dessinés, gouache douce, palette jeunesse limitée, aucun texte lisible ni marque."
+    },
+    {
+      "id": "rule-45",
+      "order": 45,
+      "title": "Respecter les différences de sensibilité",
+      "summary": "Deux personnes peuvent recevoir réellement la même scène de manière différente. Une annonce faite devant la classe peut donner à l’une l’envie de participer et faire monter chez l’autre une peur très forte. Cette différence dépend du tempérament, de l’histoire, de la fatigue, des habitudes et de la place que chacun pense avoir dans le groupe. Elle ne prouve pas que l’une est courageuse et l’autre faible, ni que l’une comprend mieux la situation. La réception n’est pas un choix moral que l’on pourrait commander instantanément. La reconnaître aide à comprendre pourquoi une même scène n’a pas le même poids pour tous, et pourquoi chacun peut avoir besoin d’un soutien différent.",
+      "example": "La professeure annonce que chaque élève présentera bientôt un travail devant la classe. Inès se sent stimulée : elle aime expliquer ses recherches et demande déjà quand elle pourra passer. Paul reçoit exactement la même annonce, mais son ventre se serre et il n’arrive plus à écouter la suite. Il ne cherche pas moins à travailler et Inès n’est pas moralement meilleure parce qu’elle se réjouit. Leurs histoires et leurs tempéraments donnent à la même scène deux poids réels. La professeure leur propose donc des préparations différentes, sans transformer leur réaction en classement.",
+      "advice": [
+        "Nommer ton impression première, puis chercher les faits qui la confirment ou la nuancent.",
+        "Attendre un peu avant d’envoyer une réponse qui pourrait aggraver le conflit.",
+        "Signaler les insultes, menaces ou violences à un adulte au lieu de tout gérer seul."
+      ],
+      "key_phrase": "La même scène peut avoir un poids différent sans classer les personnes.",
+      "questions": [
+        "Qu’est-ce que je ressens, et qu’est-ce que je sais réellement ?",
+        "Quelle autre explication peut être vérifiée sans excuser une violence ?",
+        "À partir de quel moment dois-je demander protection ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 45 ; Duskolos et Eukolos, dispositions différentes aux impressions favorables et défavorables",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La disposition est présentée comme une constitution à prendre en compte, et non comme une compétence psychologique aisément acquise."
+      },
+      "themes": ["perspective réaliste"],
+      "needs": ["compréhension", "protection"],
+      "image_alt": "Deux élèves reçoivent différemment la même annonce en classe",
+      "image_scene": "Illustration narrative jeunesse : une enseignante annonce une présentation à une classe, une élève lève la main avec intérêt tandis qu’un autre élève reste tendu mais attentif à sa table ; aucun n’est présenté comme meilleur, scène quotidienne nuancée, contours dessinés, aplats de gouache, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, aucun texte, logo ou filigrane."
+    },
+    {
+      "id": "rule-46",
+      "order": 46,
+      "title": "Faire une place aux idées et à la réflexion",
+      "summary": "Penser ne consiste pas seulement à trouver vite la bonne réponse. Une idée peut demander du temps, une lecture difficile, une discussion ou plusieurs essais. Une vie tournée vers la réflexion ne supprime ni les devoirs ni les problèmes ; elle donne une place à ce qui aide à comprendre ce que l’on poursuit. Lire un roman, examiner une question scientifique ou écrire ce que l’on pense peut rendre les choix moins mécaniques. Il faut toutefois garder des liens et des tâches concrètes : réfléchir ne doit pas devenir une façon de fuir toute décision. Cette règle propose une direction exigeante, pas une méthode garantie pour se sentir bien.",
+      "example": "Pour un exposé, Hugo veut recopier la première réponse trouvée en ligne. Sa professeure lui demande de comparer deux sources et de formuler sa propre question. Il passe une soirée à comprendre un désaccord sur l’énergie, puis explique à son groupe ce qu’il ne sait pas encore. La recherche prend plus de temps, mais le sujet devient le sien. Hugo continue aussi à aider pour les images et à écouter les autres. Réfléchir change sa manière de travailler ; cela ne transforme pas l’exposé en activité facile.",
+      "advice": [
+        "Choisir une question qui mérite plusieurs minutes de recherche ou de discussion.",
+        "Écrire ce que tu comprends, ce qui résiste et ce que tu dois vérifier.",
+        "Partager tes idées avec une personne capable de les discuter sans te rabaisser."
+      ],
+      "key_phrase": "Réfléchir donne de la profondeur à un choix, pas une garantie de facilité.",
+      "questions": [
+        "Quelle question mérite que je ne cherche pas une réponse immédiate ?",
+        "Ma réflexion éclaire-t-elle une décision, ou me sert-elle à la repousser ?",
+        "Qui peut m’aider à examiner cette idée sérieusement ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 46 ; vie philosophique et renvoi à Aristote, Éthique à Nicomaque, X",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Le renvoi à Aristote est conservé comme repère historique ; les modalités de lecture et de discussion sont des applications contemporaines."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["réflexion", "orientation"],
+      "image_alt": "Un adolescent compare des idées avec son groupe de travail",
+      "image_scene": "Illustration narrative jeunesse : trois adolescents de profils variés travaillent autour d’une table de bibliothèque, l’un montre un schéma sans écriture lisible, les autres discutent et prennent des notes sur des feuilles vues de dos ; ambiance studieuse mais vivante, contours dessinés, gouache et grain de papier, palette jeunesse limitée, aucun texte, marque ou filigrane."
+    },
+    {
+      "id": "rule-47",
+      "order": 47,
+      "title": "Construire une amitié réciproque",
+      "summary": "Une amitié n’est pas seulement la présence d’une personne agréable ou utile. Elle devient un lien partagé quand chacun compte pour l’autre, peut parler, écouter et poser des limites. La réciprocité n’exige pas un échange parfaitement égal chaque jour : une maladie, un examen ou un problème familial peuvent déséquilibrer la relation pendant un temps. En revanche, une personne qui prend toujours sans jamais respecter l’autre finit par transformer l’amitié en service obligatoire. Personne ne possède son ami. On peut tenir à quelqu’un et accepter qu’il dise non, qu’il ait d’autres liens ou qu’il demande de l’espace. Les actes, la confiance et les limites comptent davantage qu’une promesse répétée.",
+      "example": "Depuis que son père est hospitalisé, Malik envoie beaucoup de messages à Sacha. Sacha l’écoute, mais n’arrive plus à parler de ses propres soucis. Il propose deux appels par semaine et demande que Malik vérifie s’il est disponible avant de se confier longtemps. Malik comprend qu’il a besoin d’un autre adulte pour les urgences et accepte de demander aussi des nouvelles de Sacha. Leur relation ne devient pas froide : elle devient plus claire. L’épreuve de Malik explique un déséquilibre temporaire, mais elle ne donne pas le droit d’épuiser son ami.",
+      "advice": [
+        "Observer si chacun peut parler, écouter et dire non sans être puni.",
+        "Dire ce que tu peux offrir avant qu’une attente devienne un reproche.",
+        "Chercher un adulte ou un autre soutien quand le problème est trop lourd pour une amitié."
+      ],
+      "key_phrase": "Une amitié rapproche deux personnes sans donner de droit sur l’autre.",
+      "questions": [
+        "Qu’est-ce qui montre concrètement que ce lien est partagé ?",
+        "Quelle limite protégerait l’amitié au lieu de la casser ?",
+        "Le déséquilibre est-il temporaire, ou est-il devenu la règle ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 47 ; amitié comme appartenance réciproque et renvoi à Aristote",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "L’appartenance réciproque est traduite comme un lien partagé, jamais comme domination, surveillance ou droit sur une personne."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["réciprocité", "limites"],
+      "image_alt": "Deux amis se parlent avec une limite claire dans une cour de collège",
+      "image_scene": "Illustration narrative jeunesse : deux amis assis sur un muret de cour discutent à distance respectueuse, l’un tient son sac contre lui et l’autre écoute sans le toucher ; d’autres élèves passent en arrière-plan, scène réaliste et non théâtrale, contours dessinés, aplats de gouache, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, aucun texte ni logo."
+    },
+    {
+      "id": "rule-48",
+      "order": 48,
+      "title": "Être bien avec soi et avec les autres",
+      "summary": "Une personne peut recevoir de l’aide et garder pourtant une part de stabilité qui ne dépend pas d’un seul résultat extérieur. Si toute la confiance repose sur une note, un groupe d’amis, une apparence ou l’approbation d’une personne, chaque changement devient une catastrophe totale. Chercher une suffisance intérieure signifie développer plusieurs appuis : une activité, une compétence, une relation fiable, un lieu sûr et des adultes capables d’aider. Cela ne veut pas dire ne plus avoir besoin de personne. La santé, l’argent, la sécurité et la protection sont des réalités collectives. Demander de l’aide n’est pas un échec. L’autonomie est une marge qui se construit avec les autres, pas une forteresse où l’on devrait tout supporter seul.",
+      "example": "Après une mauvaise note, Zoé quitte le groupe de théâtre et pense qu’elle n’a plus aucune valeur. Son professeur lui montre que la note concerne un devoir précis. Zoé reprend une activité qu’elle aimait, demande à une camarade de relire son travail et parle à sa mère de son sommeil très perturbé. La prochaine note comptera encore, mais elle ne sera plus le seul endroit où Zoé cherche une preuve d’elle-même. Elle reste aidée par les autres ; elle ne leur confie simplement plus toute la définition de sa valeur.",
+      "advice": [
+        "Repérer le résultat extérieur qui prend toute la place dans ton jugement sur toi.",
+        "Entretenir plusieurs appuis, comme une activité, une compétence et une relation fiable.",
+        "Accepter une aide adulte ou professionnelle quand la sécurité, la santé ou la confiance sont atteintes."
+      ],
+      "key_phrase": "Avoir des appuis à soi n’empêche pas de compter sur les autres.",
+      "questions": [
+        "Quel verdict extérieur est devenu l’unique mesure de ma valeur ?",
+        "Quels appuis différents puis-je entretenir autour de moi ?",
+        "De quelle aide ai-je besoin au lieu de faire semblant d’être autonome ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 48 ; autosuffisance du bonheur et renvois à Aristote et Chamfort",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’idée d’une suffisance intérieure est conservée sans en déduire une indépendance émotionnelle ou matérielle complète."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["autonomie", "soutien"],
+      "image_alt": "Une adolescente avance avec plusieurs appuis autour d’elle",
+      "image_scene": "Illustration narrative jeunesse : une adolescente ajuste son sac devant une bibliothèque, une amie lui tend un livre et un adulte l’attend près d’une porte ouverte ; plusieurs objets du quotidien suggèrent activité, repos et lien sans symbolisme lourd, expressions naturelles, contours dessinés et gouache, palette jeunesse limitée, aucun texte, marque ou filigrane."
+    },
+    {
+      "id": "rule-49",
+      "order": 49,
+      "title": "Choisir ce qui rend une journée digne d’être poursuivie",
+      "summary": "Le mot bonheur est parfois si vaste qu’il ne permet aucune décision. Une réflexion philosophique peut alors demander : de quelles conditions une journée ou un projet a-t-il besoin pour rester habitable et digne d’être poursuivi ? Il ne s’agit pas de noter sa propre existence, de promettre une joie parfaite ou d’exiger qu’un jeune règle seul un problème grave. Le corps, les relations, le logement, l’école, la santé et la sécurité comptent réellement. Une petite amélioration peut être utile sans tout réparer. Chercher ces conditions revient à rendre le projet plus précis : un sommeil possible, une personne fiable, une activité signifiante, un endroit protégé ou une étape accessible. Si la souffrance devient trop forte, l’aide d’un adulte et de professionnels est nécessaire.",
+      "example": "Depuis plusieurs semaines, Aïcha dit seulement qu’elle voudrait aller mieux. Avec son père et l’infirmière scolaire, elle précise ce qui rendrait ses journées plus praticables : dormir dans une chambre plus calme, ne pas déjeuner seule, réduire une activité épuisante et garder un atelier de dessin le vendredi. Tout n’est pas réglé et certaines décisions dépendent des adultes. Mais son projet devient lisible : retrouver assez de sécurité et de soutien pour avancer par étapes, sans demander à sa seule volonté de réparer ce qui la dépasse.",
+      "advice": [
+        "Remplacer le mot vague bonheur par deux conditions concrètes et limitées.",
+        "Inclure les obstacles de santé, de sécurité ou de famille au lieu de les attribuer à un manque d’effort.",
+        "Parler rapidement à un adulte de confiance si la souffrance devient persistante ou dangereuse."
+      ],
+      "key_phrase": "Une journée se poursuit mieux quand ses conditions concrètes deviennent visibles.",
+      "questions": [
+        "Quelles conditions rendraient cette journée ou ce projet plus habitable ?",
+        "Quelle limite réelle dois-je intégrer au lieu d’exiger la perfection ?",
+        "Qui peut agir avec moi quand le problème dépasse ma volonté ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 49 ; hypothèse d’une vie heureuse et réserve pessimiste sur sa réalisation",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "Traitement jeunesse sécurisé : l’hypothèse philosophique devient une recherche de conditions concrètes pour poursuivre une journée ou un projet, sans jugement sur le lecteur."
+      },
+      "themes": ["appréciation"],
+      "needs": ["sécurité", "sens"],
+      "image_alt": "Une adolescente organise avec des adultes des conditions concrètes pour un projet",
+      "image_scene": "Illustration narrative jeunesse : une adolescente et deux adultes de confiance organisent autour d’une table un carnet vierge, une lampe, un sac d’école et du matériel de dessin ; chacun a une place, les visages sont attentifs et aucun élément ne dramatise la scène, contours dessinés, aplats de gouache, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, aucun texte, symbole funèbre, logo ou filigrane."
+    },
+    {
+      "id": "rule-50",
+      "order": 50,
+      "title": "Regarder les deux faces d’une situation",
+      "summary": "Ce que nous vivons vient de la rencontre entre une situation et la manière dont elle est reçue. La situation comprend les événements, les personnes, les ressources, les règles et les obstacles. La réception dépend du tempérament, de l’histoire, de la santé, de l’éducation et du contexte. Deux élèves peuvent donc éprouver différemment le même changement, sans qu’une meilleure volonté explique tout. Cette disposition n’est pas entièrement choisie et aucune méthode ne permet de la commander à volonté. Il existe parfois une petite marge pour chercher un soutien ou un aménagement, mais elle dépend aussi des adultes, des moyens et des circonstances. La règle invite à regarder les deux faces sans rendre le jeune responsable de l’ensemble.",
+      "example": "Le nouveau collège plaît à Théo sur le papier, mais le trajet bruyant et les changements de classe l’épuisent. Son corps, son histoire et l’organisation du collège participent ensemble à cette expérience. Une discussion avec sa mère et la professeure principale fait apparaître quelques soutiens possibles : un plan des salles, un trajet plus calme et un avis médical pour ses troubles du sommeil. Rien ne garantit que ces changements régleront tout, et Théo ne pouvait pas commander sa sensibilité. La situation doit donc être regardée des deux côtés, avec prudence et avec l’aide de personnes responsables.",
+      "advice": [
+        "Décrire séparément la circonstance extérieure et ce qu’elle produit en toi.",
+        "Chercher un aménagement réel avant de te reprocher ta sensibilité.",
+        "Observer ce qui t’aide avec un adulte, sans présenter cette aide comme un contrôle total."
+      ],
+      "key_phrase": "Ton expérience rencontre le monde ; aucune face ne suffit à tout expliquer.",
+      "questions": [
+        "Quel élément extérieur pèse sur moi et peut être modifié ?",
+        "Qu’est-ce qui vient de mon histoire ou de ma santé plutôt que d’un choix libre ?",
+        "Quelle aide réelle peut améliorer la situation sans promettre de tout contrôler ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 50 ; moitié objective et moitié subjective de toute réalité vécue",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La disposition subjective est influente mais non entièrement contrôlable ; tempérament, histoire, santé et contexte matériel sont distingués de la marge d’action."
+      },
+      "themes": ["réduction de la souffrance"],
+      "needs": ["lucidité", "adaptation"],
+      "image_alt": "Un adolescent et une adulte regardent ensemble les deux faces d’une situation scolaire",
+      "image_scene": "Illustration narrative jeunesse : un adolescent et une adulte de confiance se tiennent dans un couloir de collège, entre une porte ouverte vers une cour bruyante et un espace plus calme ; ils observent l’environnement avec attention sans posture de solution miracle, expressions prudentes, contours dessinés, gouache grainée, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, aucun texte, logo ou filigrane."
+    }
+  ]
+}

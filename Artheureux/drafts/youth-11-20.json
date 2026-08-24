@@ -1,0 +1,295 @@
+{
+  "edition": "youth",
+  "rules": [
+    {
+      "id": "rule-11",
+      "order": 11,
+      "title": "Après une erreur, préparer la suite sans te condamner",
+      "summary": "Après une erreur, on peut rester fixé sur le moment où elle s’est produite. Pourtant, la scène est passée et tu ne peux pas la rejouer. La regarder sert seulement si elle aide à préparer la suite. Reconnaître ce qui s’est produit ne veut pas dire approuver une injustice, oublier une blessure ou renoncer à réparer. Cela veut dire distinguer la faute commise de la personne que tu es, puis repérer la prochaine étape possible. Tu peux demander une explication, corriger ce qui peut l’être ou changer ta préparation. Si l’erreur révèle un problème sérieux, un adulte peut t’aider : avancer ne signifie pas tout porter seul.",
+      "example": "Pour un devoir de groupe, Lina oublie de vérifier la date et le travail est rendu en retard. Elle se traite d’incapable et n’ose plus préparer la suite. Après avoir reconnu son oubli, elle demande au professeur comment limiter les conséquences, puis inscrit la prochaine échéance dans son agenda. Elle prépare aussi une alerte avec son père. La faute reste réelle, mais elle devient un repère pour organiser la suite, pas une condamnation de Lina.",
+      "advice": [
+        "Nomme le fait terminé sans ajouter « je suis nul » ou une autre étiquette sur toi.",
+        "Note une leçon vérifiable et une seule action pour la prochaine fois.",
+        "Demande l’aide d’un adulte si une erreur cache un problème sérieux ou une situation injuste."
+      ],
+      "key_phrase": "Une erreur est passée ; prépare la suite sans te condamner.",
+      "questions": [
+        "Qu’est-ce qui est vraiment terminé dans cette histoire ?",
+        "Quelle action est encore possible aujourd’hui ?",
+        "Ai-je besoin d’un adulte pour réparer ou me protéger ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §12 ; fait accompli et regrets rétrospectifs",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Adaptation jeunesse du fait accompli : distinguer l’acceptation du passé, l’apprentissage et les recours encore ouverts."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["clarté", "sécurité"],
+      "image_alt": "Une collégienne prépare la prochaine étape après une erreur, avec l’aide calme d’un adulte.",
+      "image_scene": "Illustration jeunesse contemporaine carrée, contours dessinés, aplats de gouache et grain de papier : une collégienne à son bureau entoure une prochaine échéance dans un agenda, un devoir corrigé posé à côté et un adulte l’écoute avec calme ; scène tournée vers la préparation, aucun texte lisible, aucune marque ni dramatisation."
+    },
+    {
+      "id": "rule-12",
+      "order": 12,
+      "title": "Partager ses secrets avec discernement",
+      "summary": "Tout dire à tout le monde n’est pas une preuve de confiance. Une confidence peut rapprocher deux personnes, mais elle peut aussi circuler, être utilisée contre toi ou te rendre dépendant du regard des autres. La prudence consiste à choisir la bonne personne, le bon moment et le but de la conversation. Garder une information privée ne signifie pas rester seul. Au contraire, un secret qui concerne une menace, une violence, du harcèlement ou un danger doit être confié à un adulte capable d’aider. Tu peux parler sans raconter chaque détail à tout le monde. La confiance se construit avec le temps, en observant si l’autre respecte ce que tu lui confies.",
+      "example": "Sur un groupe de discussion, Maël veut raconter une dispute familiale à plusieurs camarades pour obtenir des avis. Il commence par en parler à sa tante, qui l’écoute et lui demande ce qu’il cherche : être rassuré, comprendre ou être protégé. Maël garde les détails privés et ne publie rien. Quand il remarque qu’un camarade reçoit des messages menaçants, il ne promet pas de garder le silence : il montre les messages à un adulte de confiance. La discrétion protège la vie privée, mais elle ne doit pas protéger un danger.",
+      "advice": [
+        "Avant de parler, demande-toi si tu cherches un conseil, du soutien ou une protection.",
+        "Commence par une personne fiable et partage seulement ce qui est utile.",
+        "Si un danger, une violence ou du harcèlement apparaît, préviens rapidement un adulte."
+      ],
+      "key_phrase": "La confiance se choisit ; le danger, lui, doit être signalé.",
+      "questions": [
+        "Cette personne peut-elle réellement m’aider ?",
+        "Qu’est-ce que je préfère garder privé pour le moment ?",
+        "Y a-t-il un risque qui demande l’aide d’un adulte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §35 : silence, discrétion et confiance",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Transposition jeunesse de la prudence dans la parole, avec une exception claire pour la recherche de protection."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["repères", "sécurité"],
+      "image_alt": "Un adolescent montre calmement un message inquiétant à une adulte de confiance.",
+      "image_scene": "Illustration jeunesse de roman graphique, contours souples et aplats de gouache : adolescent assis avec une adulte de confiance devant un téléphone posé entre eux, posture attentive et rassurante, écran sans texte lisible, palette bleu canard, crème et corail, aucun logo."
+    },
+    {
+      "id": "rule-13",
+      "order": 13,
+      "title": "Protéger la gaieté que la santé permet",
+      "summary": "La bonne humeur ne se commande pas comme un bouton. Le sommeil, la douleur, la faim, la maladie, le stress et le tempérament influencent la manière dont une journée est vécue. Prendre soin de ces conditions peut rendre les moments agréables plus accessibles, mais cela ne garantit pas d’être joyeux. Tu n’as pas à sourire pour cacher une souffrance, et tu ne peux pas être tenu responsable de tout ce que ton corps ou ta situation traverse. Une routine simple, une activité plaisante ou une consultation peuvent aider, sans remplacer l’écoute et les soins nécessaires. Quand la tristesse ou l’épuisement durent, la solution ne repose pas sur ta seule volonté : parle à un adulte de confiance.",
+      "example": "Depuis plusieurs jours, Yasmine rentre du collège épuisée et s’énerve pour des détails. Elle pense d’abord qu’elle devrait simplement faire un effort. Puis elle remarque qu’elle dort mal et qu’une douleur persistante l’empêche de se concentrer. Avec son père, elle prend rendez-vous et réorganise ses soirées. Elle garde aussi un moment pour dessiner, sans obligation de réussir. Son humeur ne devient pas parfaite, mais elle comprend que la santé crée des conditions importantes et qu’un soutien extérieur peut être nécessaire.",
+      "advice": [
+        "Observe les liens entre ton humeur, ton sommeil, ta douleur et tes journées.",
+        "Parle à un adulte si un problème de santé ou un épuisement persiste.",
+        "Garde une activité légère qui te fait du bien, sans en faire une performance."
+      ],
+      "key_phrase": "La gaieté peut être soutenue, mais elle ne se force pas contre la souffrance.",
+      "questions": [
+        "Qu’est-ce qui pèse le plus sur mon énergie en ce moment ?",
+        "Quelle aide adulte rendrait la situation plus supportable ?",
+        "Est-ce que je cherche à aller mieux ou seulement à le faire croire ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitres II et V : santé, tempérament et disposition",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "medium",
+        "notes": "La gaieté est reliée à la constitution et à la santé ; l’adaptation refuse d’en faire une obligation morale."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["repères", "sécurité"],
+      "image_alt": "Une collégienne retrouve un peu d’énergie après un échange avec un adulte et un moment de dessin.",
+      "image_scene": "Illustration jeunesse narrative carrée, gouache texturée et contours dessinés : collégienne et adulte assis dans une cuisine lumineuse, carnet de dessin et verre d’eau sur la table, échange calme et expression naturelle ; aucune écriture visible, aucune marque, palette crème, corail et bleu ciel sourd."
+    },
+    {
+      "id": "rule-14",
+      "order": 14,
+      "title": "Préparer demain sans rater aujourd’hui",
+      "summary": "Penser à l’avenir est utile quand cela conduit à une action précise. Cela devient épuisant quand on rejoue sans fin toutes les catastrophes possibles. Le présent n’est pas un obstacle à franchir avant une vie meilleure : c’est le moment où tu peux travailler, te reposer, parler à quelqu’un ou profiter d’une activité. Prévoir ne veut pas dire tout contrôler. Une date, une petite étape et un plan que l’on peut modifier suffisent souvent. Si une échéance dépend aussi d’adultes, de l’argent, de la santé ou d’autres circonstances, tu n’as pas à porter seul toute la responsabilité. Préparer une partie de demain peut justement libérer de l’attention pour ce qui se passe aujourd’hui.",
+      "example": "Noé doit participer à une compétition de natation samedi. Il imagine sans arrêt qu’il va rater son départ et ne profite plus de ses entraînements. Avec son entraîneuse, il prépare une liste courte : vérifier son sac vendredi, dormir à une heure correcte et arriver en avance. Le reste dépendra de sa forme et du déroulement de la course. Après cette préparation, Noé reprend son entraînement du jour. Il ne connaît pas le résultat, mais il ne laisse plus une hypothèse lui voler toute la semaine.",
+      "advice": [
+        "Choisis l’échéance réelle et la prochaine étape, au lieu de suivre toutes les hypothèses.",
+        "Fixe un moment pour préparer, puis un moment où tu reviens à ton activité présente.",
+        "Demande à un adulte de partager la responsabilité quand l’avenir dépasse tes moyens."
+      ],
+      "key_phrase": "Prépare une étape de demain, puis rends ton attention à aujourd’hui.",
+      "questions": [
+        "Quelle action future est vraiment nécessaire maintenant ?",
+        "Qu’est-ce que je suis en train d’imaginer sans pouvoir l’influencer ?",
+        "Qui peut m’aider à préparer ce qui ne dépend pas seulement de moi ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §5 : présent, avenir et prévoyance",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’adaptation tient ensemble prévoyance et présence, sans réduire la règle à une méthode de gestion du temps."
+      },
+      "themes": ["appréciation"],
+      "needs": ["repères", "tranquillité"],
+      "image_alt": "Un jeune sportif prépare son sac puis rejoint calmement son entraînement.",
+      "image_scene": "Illustration jeunesse contemporaine carrée : jeune nageur avec son sac près d’un calendrier sans texte lisible, puis bassin visible en arrière-plan avec une entraîneuse ; mouvement quotidien crédible, contours dessinés, aplats bleu canard, jaune doré et crème, aucun logo."
+    },
+    {
+      "id": "rule-15",
+      "order": 15,
+      "title": "Élargir la perspective sans nier sa peine",
+      "summary": "Quand un problème prend toute la place, regarder la situation plus largement peut aider. Tu peux distinguer ce qui fait vraiment mal, ce qui est encore préservé et ce qui peut être amélioré. Cette comparaison ne rend pas ta difficulté ridicule et ne sert pas à faire taire quelqu’un. Dire « d’autres vivent pire » ne suffit pas à répondre à une peine ou à une injustice. La perspective devient utile seulement si elle permet de retrouver une ressource, une aide ou une prochaine action. Elle ne classe pas les souffrances entre celles qui mériteraient de l’attention et les autres. Si la situation est grave, un adulte doit être associé : relativiser n’est jamais une raison pour rester seul.",
+      "example": "Après une sélection sportive, Hugo n’est pas retenu et regarde les photos des autres joueurs sur le réseau du club. Il se persuade que toute sa saison est inutile. Son coach l’aide à séparer trois éléments : la déception, les progrès réalisés et les points à travailler. Hugo demande aussi à un ami de l’accompagner au prochain entraînement. Il reste déçu, mais la sélection ne résume plus toute son année. La comparaison lui sert à retrouver des appuis, pas à prétendre que sa peine n’existe pas.",
+      "advice": [
+        "Décris d’abord ce qui te fait mal, sans le minimiser ni l’exagérer.",
+        "Cherche ce qui reste disponible : une personne, une ressource ou une action.",
+        "Ne compare jamais la souffrance d’un autre pour empêcher quelqu’un de demander de l’aide."
+      ],
+      "key_phrase": "Voir plus large peut aider à agir, sans rendre la peine moins réelle.",
+      "questions": [
+        "Qu’est-ce qui est difficile précisément dans cette situation ?",
+        "Quel appui ou quelle possibilité la perspective élargie révèle-t-elle ?",
+        "Est-ce le moment de demander l’aide d’un adulte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §10 : envie et comparaison des maux",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La comparaison est conservée comme changement de perspective personnel, jamais comme déni de la souffrance d’autrui."
+      },
+      "themes": ["réduction de la souffrance"],
+      "needs": ["clarté", "sécurité"],
+      "image_alt": "Un jeune sportif observe à la fois sa déception et les progrès qu’il peut poursuivre.",
+      "image_scene": "Illustration jeunesse de type roman graphique : adolescent assis sur un banc de gymnase, ballon posé près de lui, coach et ami présents à distance respectueuse ; lumière qui ouvre l’espace sans effacer son expression déçue, gouache, grain de papier, aucun texte ni marque."
+    },
+    {
+      "id": "rule-16",
+      "order": 16,
+      "title": "Faire une place à la déception ordinaire",
+      "summary": "Une journée ou un événement peut être important sans se dérouler comme prévu. Une pluie, un retard, une activité annulée ou une personne absente peuvent laisser une vraie déception. Elle n’a pas besoin d’être transformée en catastrophe, mais elle ne doit pas non plus être interdite. Faire une place à ce sentiment consiste à reconnaître ce qui manque, puis à voir ce que la journée permet encore. Cela ne demande pas de trouver un côté positif à tout ni d’accepter une injustice. Les autres, le hasard et nos forces ont leurs limites. Un moment imparfait peut rester un moment réel, avec ses bons passages et sa déception.",
+      "example": "Lors d’une sortie de classe, la visite prévue est écourtée parce qu’un problème technique ferme une salle. Naya est déçue : elle attendait cette partie depuis des semaines. Elle le dit à son professeur, puis rejoint ses camarades pour l’atelier restant et garde une question à poser plus tard. La sortie n’est pas réussie comme elle l’espérait, mais elle ne devient pas une journée entièrement ratée. Sa déception a une place, sans effacer tout le reste.",
+      "advice": [
+        "Sépare ce qui est indispensable à ton projet de ce qui serait simplement parfait.",
+        "Prépare une version simple et possible avant d’ajouter des éléments fragiles.",
+        "Continue à réclamer de l’aide ou un droit quand le problème est une injustice réelle."
+      ],
+      "key_phrase": "Une déception peut exister sans effacer toute la journée.",
+      "questions": [
+        "Quelle attente rend-elle ce moment obligatoire à réussir ?",
+        "Quelle version simple resterait acceptable si le plan changeait ?",
+        "Est-ce une déception ordinaire ou un droit qui n’est pas respecté ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitres V, §§1–3, et VI : bonheur instable et attentes",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’adaptation conserve la désillusion sur le bonheur durable sans transformer la modération en renoncement aux ambitions légitimes."
+      },
+      "themes": ["maîtrise de soi"],
+      "needs": ["clarté", "tranquillité"],
+      "image_alt": "Une collégienne accepte une sortie imparfaite et rejoint l’activité qui continue avec sa classe.",
+      "image_scene": "Illustration jeunesse narrative carrée : une collégienne légèrement déçue près d’une porte de musée fermée, puis son groupe qui rejoint un atelier simple avec un professeur ; deux temps lisibles dans une même scène, expressions nuancées, contours dessinés, aplats corail, crème et bleu ciel sourd, aucun texte ni logo."
+    },
+    {
+      "id": "rule-17",
+      "order": 17,
+      "title": "Être dans l’action et prendre du recul",
+      "summary": "Quand une situation te touche, tu la vis de l’intérieur : tu ressens la honte, la colère, la peur ou la fierté. Mais tu peux aussi l’observer comme un épisode parmi d’autres, avec des faits, des causes et des conséquences. Ce second regard ne doit pas effacer ce que tu ressens ni servir à ne rien faire. Il aide à distinguer une remarque blessante, une erreur à corriger et une conclusion excessive sur ta personne. Un livre, une musique, un dessin ou l’avis d’une personne fiable peuvent donner cette distance. Ensuite, il faut revenir à la scène et choisir une action limitée. Prendre du recul n’est pas fuir la réalité : c’est essayer de mieux y répondre.",
+      "example": "Après un exposé, Sami croit que toute la classe s’est moquée de lui. Il veut quitter le groupe de travail. Le soir, il note les faits : deux élèves ont ri, son explication était trop rapide et son amie lui a dit que l’idée était intéressante. Le lendemain, il demande ce qu’elle a réellement observé, signale la moquerie au professeur et prépare une partie plus claire. Le recul ne supprime pas sa gêne, mais il l’empêche d’en faire un verdict sur toute sa scolarité.",
+      "advice": [
+        "Sépare ce que tu as observé de ce que tu en as conclu sur toi.",
+        "Demande le point de vue d’une personne fiable ou prends un temps de recul.",
+        "Reviens ensuite à une action précise, au lieu de rester seulement dans l’analyse."
+      ],
+      "key_phrase": "Prendre du recul aide à agir, mais ne remplace pas l’action.",
+      "questions": [
+        "Que verrait une personne attentive dans cette scène ?",
+        "Quel fait demande une réponse concrète ?",
+        "Est-ce que j’observe pour comprendre ou pour éviter d’agir ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §17 : double vie de l’acteur et du spectateur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La distinction entre expérience subjective et regard objectif est adaptée sans opposer artificiellement émotion et raison."
+      },
+      "themes": ["perspective réaliste"],
+      "needs": ["clarté", "repères"],
+      "image_alt": "Un collégien observe son exposé avec recul avant de retourner parler au professeur.",
+      "image_scene": "Illustration jeunesse de roman graphique : collégien assis avec une feuille de présentation, scène de classe légèrement en arrière-plan comme un souvenir, puis silhouette qui se relève pour parler à un professeur ; composition en deux plans, gouache, aucun texte lisible ni logo."
+    },
+    {
+      "id": "rule-18",
+      "order": 18,
+      "title": "Distinguer les faits des scénarios imaginés",
+      "summary": "L’imagination peut rendre un projet magnifique ou une difficulté terrifiante. Elle réagit parfois à une image comme si cette image était déjà réelle. Une vidéo, un message ou une idée de l’avenir ne sont pourtant pas des preuves. Pour garder une mesure, distingue ce que tu sais, ce que tu supposes et ce que tu souhaites. Cela ne veut pas dire ignorer une alerte : si des faits indiquent un danger, il faut en parler et chercher de la protection. Cela signifie seulement ne pas laisser un film intérieur décider tout seul. L’imagination peut aider à créer, mais elle ne doit pas prendre la place de l’observation et des personnes capables de vérifier avec toi.",
+      "example": "Sur un réseau social, Zoé voit que ses amis se sont réunis sans elle. Elle imagine qu’ils la détestent et veut supprimer son compte. Elle distingue alors le fait visible, une photo publiée, des hypothèses et ce qu’elle ressent. Elle demande à une amie ce qui s’est passé : la rencontre avait été organisée après un entraînement auquel Zoé n’assistait pas. Elle reste déçue, mais elle ne transforme pas une image en verdict. Si les messages étaient menaçants, elle les aurait montrés à un adulte.",
+      "advice": [
+        "Classe ton idée dans une de ces catégories : fait, souvenir, désir ou hypothèse.",
+        "Vérifie une information auprès d’une personne ou d’une source fiable.",
+        "Prends au sérieux les faits inquiétants et demande de l’aide plutôt que de rester seul."
+      ],
+      "key_phrase": "Un scénario peut prévenir ou inventer ; vérifie avant de lui obéir.",
+      "questions": [
+        "Qu’est-ce que je sais vraiment, et qu’est-ce que j’imagine ?",
+        "Quelle vérification simple puis-je faire ?",
+        "Les faits montrent-ils un danger qui demande un adulte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §13 : imagination des plaisirs et des maux possibles",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La fantaisie est présentée comme une force amplificatrice, sans importer une théorie clinique ni banaliser les alertes fondées sur des faits."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["clarté", "sécurité"],
+      "image_alt": "Une adolescente distingue une photo réelle des scénarios qu’elle imagine autour d’elle.",
+      "image_scene": "Illustration jeunesse contemporaine carrée : adolescente avec téléphone et carnet, une petite scène de réseau social réelle reste nette tandis que des formes nuageuses représentent des hypothèses qui se dissipent ; expression réfléchie, contours dessinés, gouache bleu canard, crème et jaune doré, aucun texte ni marque."
+    },
+    {
+      "id": "rule-19",
+      "order": 19,
+      "title": "Ne pas laisser une impression effacer toute une histoire",
+      "summary": "Une impression présente peut devenir si forte qu’elle efface tout le reste. Après une remarque sèche, tu peux croire qu’une relation entière est fausse ou qu’une situation a toujours été ainsi. Pourtant, un moment récent n’est pas toute l’histoire. La règle ne demande pas de nier ta peine, de chercher immédiatement un contrepoids ou d’inventer des explications. Elle invite à laisser le jugement ouvert assez longtemps pour regarder la durée, les épisodes connus et ce qui s’est réellement passé. Tu peux ensuite parler à la personne concernée ou demander l’aide d’un adulte. Une impression compte, mais elle ne raconte pas toujours la totalité.",
+      "example": "Après une remarque sèche de son amie Inès, Léo rentre chez lui en pensant que leur amitié n’a jamais compté. Il relit la conversation et remarque qu’il ne regarde plus que cette phrase. Sa mère l’aide à raconter l’histoire depuis le début, sans décider tout de suite ce qu’elle signifie. Le lendemain, Léo demande à Inès ce qui s’est passé. Il reste blessé, mais il ne condamne pas toute leur relation à partir d’un seul moment.",
+      "advice": [
+        "Décris le moment qui t’a marqué sans en faire toute l’histoire.",
+        "Raconte les épisodes connus de la relation ou de la situation avant de conclure.",
+        "Parle à la personne concernée ou à un adulte si la peine, le danger ou l’injustice continuent."
+      ],
+      "key_phrase": "Un moment compte, mais il n’efface pas toute une histoire.",
+      "questions": [
+        "Quelle impression dirige mon jugement maintenant ?",
+        "Quelle est l’histoire complète de cette relation ou de cette situation ?",
+        "Puis-je en parler à la personne concernée ou à un adulte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitres V, §§5 et 19",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle distingue la force de l’impression présente de l’histoire complète, sans reprendre la méthode de contrepoids de la règle 33 ni la fantaisie de la règle 18."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["clarté", "tranquillité"],
+      "image_alt": "Un adolescent relit l’histoire d’une amitié avant de tirer une conclusion après une remarque blessante.",
+      "image_scene": "Illustration jeunesse narrative carrée : adolescent à une table avec un carnet contenant des souvenirs dessinés sans texte lisible, téléphone posé à côté, puis échange calme avec son amie le lendemain ; la remarque récente ne domine pas toute la scène, expressions nuancées, contours dessinés, gouache bleu ciel sourd, crème et corail, aucun logo."
+    },
+    {
+      "id": "rule-20",
+      "order": 20,
+      "title": "Ne pas offrir sa colère en spectacle",
+      "summary": "La colère peut signaler qu’une limite a été franchie. La montrer en criant, en menaçant ou en envoyant un message blessant ne garantit pourtant ni justice ni réparation. Une explosion peut détourner l’attention du problème, abîmer une relation ou donner aux autres une occasion de retenir seulement ta réaction. Retenir l’impulsion ne veut pas dire approuver, se taire devant une violence ou régler seul une situation dangereuse. Tu peux t’éloigner, garder les faits, demander une médiation, poser une limite ou prévenir un adulte. Dans un conflit ordinaire, quelques minutes peuvent aider à choisir la forme de ta réponse. Dans une situation de harcèlement ou de menace, la priorité est la sécurité et l’aide extérieure, pas la maîtrise parfaite de tes émotions.",
+      "example": "Au club de théâtre, Arthur découvre qu’un camarade a présenté son idée sans le citer. Il écrit un message très dur dans la conversation du groupe, puis le laisse en brouillon. Avec l’animatrice, il rassemble les dates et explique calmement ce qui s’est passé. Le groupe décide de noter les auteurs des prochaines idées. Arthur obtient une correction sans donner à sa colère le contrôle du public et des mots. Si le camarade l’avait menacé, il aurait demandé immédiatement la protection d’un adulte.",
+      "advice": [
+        "Éloigne-toi du clavier ou de la scène avant une parole qui ne peut pas être reprise.",
+        "Sépare les faits, la limite franchie et ce que tu demandes maintenant.",
+        "Si une menace ou une violence existe, cherche immédiatement la protection d’un adulte."
+      ],
+      "key_phrase": "La colère informe ; elle ne doit pas conduire seule la réponse.",
+      "questions": [
+        "Quel fait ou quelle limite ma colère signale-t-elle ?",
+        "Quelle réponse pourrait protéger mes intérêts sans aggraver le conflit ?",
+        "Ma sécurité exige-t-elle l’aide immédiate d’un adulte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §45 : expression de la colère et de la haine",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’exposition de la colère est distinguée de la défense légitime et du recours à un adulte face à la violence."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["sécurité", "clarté"],
+      "image_alt": "Un adolescent met de côté un message colérique et demande l’aide d’une adulte au club.",
+      "image_scene": "Illustration jeunesse de roman graphique : salle de théâtre, adolescent près d’un téléphone posé face contre table, animatrice à ses côtés avec une posture d’écoute ; tension contenue, documents sans texte lisible, contours dessinés, gouache corail, bleu canard et crème, aucun logo ni comportement dangereux."
+    }
+  ]
+}

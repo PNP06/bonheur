@@ -1,0 +1,179 @@
+[
+  {
+    "order": 29,
+    "title": "Distinguer les besoins naturels des désirs fabriqués",
+    "visual_concept": "Un choix de consommation opposant l'utile mesuré à l'objet de prestige.",
+    "scene": "Dans une rue commerçante, une femme remet un téléphone neuf et brillant à un réparateur ; elle récupère une batterie et un ancien téléphone fonctionnel, puis poursuit son chemin avec un fauteuil ergonomique repéré chez un artisan voisin comme besoin concret.",
+    "prompt": "Illustration éditoriale philosophique française, format carré, scène narrative adulte : dans une rue commerçante sobre, une femme remet un téléphone neuf et brillant à un réparateur derrière un petit comptoir sans enseigne, récupère une batterie et un ancien téléphone fonctionnel, puis regarde un fauteuil ergonomique fabriqué par un artisan voisin. Les gestes distinguent l’utile mesuré de l’objet de prestige sans moralisme, passants et vitrines restent discrets, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier discret, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, petites touches vert mousse, lumière douce, légèrement austère et humain, aucun texte visible.",
+    "negative_constraints": ["aucun texte, chiffre, logo, marque ou filigrane", "pas de publicité ni d'opulence", "pas de scène moralisatrice ou caricaturale", "pas de photoréalisme", "pas de composition confuse"]
+  },
+  {
+    "order": 30,
+    "title": "Se donner une activité et des obstacles à franchir",
+    "visual_concept": "Un effort manuel limité donne une forme au temps et crée un lien de voisinage.",
+    "scene": "Un homme restaure une vieille guitare sur un établi dans la cour d'un immeuble ; une voisine tient les cordes neuves et participe, avec quelques étapes visibles mais sans inscription.",
+    "prompt": "Illustration éditoriale philosophique française, carré, adulte : cour intérieure d'un immeuble, homme concentré réparant une vieille guitare sur un établi, outils simples, bois nettoyé et cordes neuves disposés comme étapes concrètes, voisine debout à côté tenant une pièce et participant réellement, lumière de fin d'après-midi, activité assez exigeante mais paisible, narration lisible en petit format, fines lignes gravées, gouache sèche, aplats sérigraphiés, grain de papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde et vert mousse, ton littéraire humain, sans texte.",
+    "negative_constraints": ["aucun texte, aucune partition, aucun logo ni filigrane", "pas de scène de performance ou de compétition", "pas d'atelier encombré illisible", "pas de personnage décoratif", "pas de rendu photo"]
+  },
+  {
+    "order": 31,
+    "title": "Se guider par des concepts plutôt que par des images",
+    "visual_concept": "Une image de réussite perd son pouvoir face à des critères concrets examinés sur une table.",
+    "visual_concept": "Une image de réussite perd son pouvoir face à des critères concrets examinés dans un cadre réel.",
+    "scene": "Une femme traverse le couloir de deux espaces professionnels : elle laisse derrière elle une vitrine muette de prestige et s’arrête dans un atelier simple où elle vérifie une horloge, une chaise confortable et un coin calme avant de choisir.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : femme adulte debout dans le passage entre un hall professionnel brillant sans inscription et un atelier sobre ouvert sur une cour, elle se détourne de la vitrine de prestige et vérifie concrètement une horloge, une chaise confortable et un espace calme avant de choisir. Son visage reste attentif plutôt qu’enthousiaste, l’image oppose une réussite montrée et des critères vécus sans table ni fenêtre dominante, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, sans texte.",
+    "negative_constraints": ["aucun mot, slogan, chiffre, logo ou filigrane", "pas de trophée ni de luxe ostentatoire", "pas de collage abstrait incompréhensible", "pas de sourire publicitaire", "pas de photoréalisme"]
+  },
+  {
+    "order": 32,
+    "title": "Préserver sa santé avant les avantages extérieurs",
+    "visual_concept": "Une personne ferme le travail à temps pour protéger son corps, sans nier la valeur de la mission.",
+    "scene": "À la sortie d’un lieu de travail, un homme ferme son ordinateur avant la nuit et range ses lunettes ; il quitte le bâtiment avec une plante dans les bras, traverse la rue et pousse la porte d’un centre de santé où un rendez-vous l’attend sans indication lisible.",
+    "prompt": "Illustration éditoriale philosophique française, carré, adulte : homme fatigué mais décidé qui rabat doucement l’écran d’un ordinateur à la sortie d’un lieu de travail, range ses lunettes et porte une petite plante en traversant la rue vers un centre de santé ; la porte s’ouvre sur un accueil calme, aucun rendez-vous n’est écrit, la lumière du soir protège son corps sans nier la valeur de sa mission. Lignes fines de gravure, gouache sèche, aplats sérigraphiés, grain de papier, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, retenue humaine, aucun texte.",
+    "negative_constraints": ["aucun texte, aucune donnée médicale, logo ou filigrane", "pas de culpabilisation de la maladie", "pas de corps idéalisé ou sportif", "pas d'ambiance de catastrophe", "pas de photoréalisme"]
+  },
+  {
+    "order": 33,
+    "title": "Contrebalancer l’impression présente avant de décider",
+    "visual_concept": "Une première impression alarmante est replacée parmi les faits vérifiables.",
+    "scene": "Sur le seuil d’un immeuble, une femme tient un message froissé sans signe lisible ; elle s’éloigne de la porte, range son téléphone et demande le lendemain à une voisine de relire avec elle deux faits vérifiables, au lieu de décider sous le choc.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : femme adulte debout sur le seuil d’un immeuble au matin, un court message sans signe lisible est froissé dans sa main ; elle range son téléphone, puis rejoint une voisine qui l’écoute dans la lumière de la rue et l’aide à distinguer deux faits vérifiables. Sa respiration et son recul sont visibles dans la posture, sans miroir ni catastrophe, composition montrant une impression alarmante replacée dans son contexte, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, touches vert mousse, aucun texte.",
+    "negative_constraints": ["aucun caractère lisible, chiffre, logo ou filigrane", "pas de téléphone avec interface visible", "pas de danger réel suggéré", "pas d'expression hystérique", "pas de scène abstraite"]
+  },
+  {
+    "order": 34,
+    "title": "Lire sa vie comme la rencontre des circonstances et des décisions",
+    "visual_concept": "Une trajectoire est relue en séparant les bifurcations choisies du relief imposé par le contexte.",
+    "scene": "À un carrefour de campagne, un homme s’arrête avec une carte pliée sans écriture ; la route choisie derrière lui rejoint une rivière et une pente imposées, tandis qu’il observe devant lui une passerelle réellement accessible et décide de la rejoindre.",
+    "prompt": "Illustration éditoriale philosophique française, carré : homme adulte debout à un carrefour de campagne, il tient une carte pliée sans écriture et regarde derrière lui la route qu’il a choisie, puis devant lui une rivière, une pente et une passerelle simple qui imposent des détours mais laissent une décision possible. Expression lucide sans triomphe, paysage concret et hiérarchie lisible, fines lignes gravées, gouache sèche, aplats sérigraphiés, grain de papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun nom de lieu, légende, flèche écrite ou logo", "pas de destin mystique ni de halo providentiel", "pas de labyrinthe illisible", "pas de posture héroïque", "pas de photoréalisme"]
+  },
+  {
+    "order": 35,
+    "title": "Réviser ses plans quand capacités, intérêts ou situation évoluent",
+    "visual_concept": "Un grand projet change de forme après une expérience réelle, sans être abandonné par réflexe.",
+    "scene": "Une femme transforme le plan d'un restaurant en petit chariot de traiteur installé dans une cuisine d'essai ; plusieurs esquisses muettes sont superposées, et une réserve soigneusement fermée reste visible.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : femme adulte dans une cuisine d'essai, elle replie un grand plan architectural et assemble un petit chariot de traiteur fonctionnel avec quelques plats, un carnet ouvert sans écriture et une boîte de réserve fermée, anciennes esquisses posées derrière elle comme étapes révisées, gestes pratiques, sentiment de continuité et de changement, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun menu, mot, chiffre, logo ou filigrane", "pas de restaurant luxueux", "pas de destruction dramatique du plan", "pas de cuisine surchargée", "pas de photoréalisme"]
+  },
+  {
+    "order": 36,
+    "title": "Limiter son exposition aux grands revers",
+    "visual_concept": "Un projet plaisant est redimensionné pour ne plus porter toute la charge d'une année.",
+    "scene": "Un voyageur remplace un coffre immense par une petite valise équilibrée, conserve une enveloppe de réserve dans sa poche et regarde une route locale qui rejoint un horizon plus vaste.",
+    "prompt": "Illustration éditoriale philosophique française, carré : voyageur adulte dans une gare calme, il ferme une petite valise équilibrée tandis qu'un grand coffre débordant de souvenirs et d'attentes reste ouvert mais abandonné au second plan, une enveloppe neutre de réserve dépasse de sa poche, une courte route commence devant lui et rejoint un horizon plus vaste, plaisir mesuré plutôt que renoncement, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun billet lisible, panneau, logo ou filigrane", "pas de pauvreté spectaculaire", "pas de paysage grandiose qui écrase la scène", "pas de tristesse théâtrale", "pas de photoréalisme"]
+  },
+  {
+    "order": 37,
+    "title": "Laisser la raison préférer la durée aux plaisirs vifs",
+    "visual_concept": "Un plaisir très séduisant est écourté pour préserver un engagement concret et l’équilibre du lendemain.",
+    "scene": "À la sortie d’une fête encore animée, une femme enfile calmement son manteau et refuse un dernier verre. Sur le banc de l’entrée l’attendent un sac de terrain préparé, des chaussures robustes et un thermos pour son engagement matinal.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : dans l’entrée d’un appartement où une fête chaleureuse continue en arrière-plan, une femme adulte sourit sobrement, refuse d’un geste paisible un dernier verre et enfile son manteau. Sur le banc près de la porte, un sac de terrain déjà préparé, des chaussures robustes et un thermos suggèrent un engagement matinal concret. Montrer le choix de préserver la durée sans condamner la joie ni transformer la scène en morale punitive. Fines lignes gravées, gouache sèche, aplats sérigraphiés, grain de papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun texte, marque, logo ou filigrane", "pas d’ivresse caricaturale ni de danger", "pas d’horloge ou de calendrier lisible", "pas de composition sans profondeur", "pas de photoréalisme"]
+  },
+  {
+    "order": 38,
+    "title": "Reconnaître que chacun habite un monde différent",
+    "visual_concept": "Le même espace professionnel devient deux expériences distinctes, corrigées par un aménagement concret.",
+    "scene": "Deux adultes regardent la même rue depuis deux fenêtres voisines : l'une ouverte sur un espace lumineux et animé, l'autre filtrée par un rideau calme ; une responsable déplace une cloison pour créer un coin silencieux.",
+    "prompt": "Illustration éditoriale philosophique française, carré : intérieur de bureau avec deux fenêtres voisines donnant sur la même rue, une femme regarde la lumière et les collègues avec aisance, un homme dans la seconde zone protège son attention derrière un rideau épais, au centre une responsable installe une petite cloison et un fauteuil calme, les trois personnes ont des réactions différentes mais dignes, scène concrète et lisible, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, sans texte.",
+    "negative_constraints": ["aucun écran avec texte, panneau, marque ou filigrane", "pas de contraste caricatural entre heureux et malheureux", "pas d'isolement punitif", "pas de paysage abstrait", "pas de photoréalisme"]
+  },
+  {
+    "order": 39,
+    "title": "Comprendre la nécessité des événements sans leur inventer un sens",
+    "visual_concept": "Une chaîne de causes est reconstruite sans destin moral, tandis qu'un levier d'action reste disponible.",
+    "scene": "Dans un atelier collectif, une responsable et deux ouvriers restent debout devant une commande annulée ; ils vérifient les matériaux livrés, identifient la pièce manquante et déplacent ensemble les outils vers une réparation encore possible, sans attribuer à l’événement un sens moral.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : dans un atelier collectif, une responsable et deux ouvriers debout examinent une commande interrompue, des matériaux livrés et une pièce manquante ; chacun montre une cause concrète de l’arrêt, puis ils déplacent ensemble les outils vers une réparation encore possible. La scène reste humaine et factuelle, sans engrenages ni destinée cachée, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun mot, schéma, flèche, chiffre, logo ou filigrane", "pas d’ange, destin, auréole ou symbolisme providentiel", "pas de machine futuriste ni de métaphore mécanique", "pas de chef héroïque ou de conflit théâtral", "pas de photoréalisme"]
+  },
+  {
+    "order": 40,
+    "title": "Préparer les possibilités désagréables sans les appeler",
+    "visual_concept": "Quelques précautions simples rendent un imprévu supportable sans transformer la vie en surveillance.",
+    "scene": "Avant un départ, une voyageuse prépare une petite trousse, des copies de documents non lisibles et une réserve ; une seule valise ouverte occupe la table, le reste de la pièce demeure paisible.",
+    "prompt": "Illustration éditoriale philosophique française, carré : voyageuse adulte préparant calmement une petite valise avant un départ, trousse de secours, clés, copie de papiers réduite à des formes muettes, petite réserve d'argent symbolisée par une enveloppe fermée, téléphone posé mais non consulté, fenêtre ouverte sur un matin tranquille, préparation proportionnée et non anxieuse, fines lignes gravées, gouache sèche, aplats sérigraphiés, grain papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, touches vert mousse, aucun texte.",
+    "negative_constraints": ["aucun passeport lisible, mot, panneau, logo ou filigrane", "pas de catastrophe, alarmes ou scène anxiogène", "pas de suréquipement survivaliste", "pas de valises débordantes", "pas de photoréalisme"]
+  },
+  {
+    "order": 41,
+    "title": "Cesser de refaire le malheur après coup",
+    "visual_concept": "Une personne distingue les faits réparables du récit imaginaire qui rejoue sans fin l'accident.",
+    "scene": "Une femme s'éloigne d'un escalier brisé ; derrière elle, des silhouettes transparentes de bifurcations impossibles s'effacent, tandis qu'une rampe provisoire et un dossier de réparation ouvrent un chemin réel devant elle.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : femme adulte quittant un escalier d'immeuble avec une marche brisée, derrière elle trois embranchements fantomatiques s'effacent comme des souvenirs impossibles à reprendre, devant elle une rampe provisoire, une trousse de soin et une chemise de réparation posées sur un chemin praticable, douleur reconnue mais action présente rendue visible, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun texte, rapport lisible, logo ou filigrane", "pas de chute montrée ni de blessure graphique", "pas de fantôme horrifique", "pas de destin ou culpabilité morale", "pas de photoréalisme"]
+  },
+  {
+    "order": 42,
+    "title": "Ne pas confier sa vie à un plan trop lointain",
+    "visual_concept": "Un projet de dix ans devient une suite d'étapes réexaminables, sans sacrifier le présent.",
+    "scene": "Un homme déplie une longue carte qui se replie en plusieurs étapes proches ; une petite maison actuelle, un banc auprès d'un proche et une réserve placée à portée de main équilibrent l'horizon lointain.",
+    "prompt": "Illustration éditoriale philosophique française, carré : homme adulte à une table, une longue carte muette se replie en plusieurs segments visibles avec petites maisons, ponts et points de pause, au premier plan une tasse, une petite maison actuelle et un banc partagé avec un proche rappellent la vie présente, une réserve soigneusement rangée reste accessible, il examine la prochaine étape plutôt qu'une destination sacrée, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun nom de lieu, date, chiffre, panneau, logo ou filigrane", "pas de carte au trésor", "pas de route infinie dramatique", "pas de personnage seul et abandonné", "pas de photoréalisme"]
+  },
+  {
+    "order": 43,
+    "title": "Garder du temps pour ce que l’on porte en soi",
+    "visual_concept": "Un temps de loisir protégé fait émerger une activité intérieure que les urgences recouvraient.",
+    "scene": "Après une journée de soins, une femme s’installe dans un jardin public avec un carnet muet et quelques crayons ; son téléphone reste retourné dans son sac, les objets du travail sont restés au vestiaire et un chemin ouvert lui laisse un temps protégé.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : femme adulte assise sur un banc d’un jardin public après une journée de soins, elle dessine avec attention dans un carnet dont les pages ne portent aucun signe lisible, quelques crayons dans une petite trousse, téléphone retourné dans son sac et chemin ouvert autour d’elle. La fatigue reste présente mais l’espace intérieur retrouvé est concret et relié au monde, sans fenêtre ni cloison, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, sans texte.",
+    "negative_constraints": ["aucun dessin lisible, mot, écran, logo ou filigrane", "pas d'atelier luxueux", "pas d'isolement romantisé", "pas de pose de loisir publicitaire", "pas de photoréalisme"]
+  },
+  {
+    "order": 44,
+    "title": "Faire de sa personnalité un refuge sans la croire toute-puissante",
+    "visual_concept": "Des qualités personnelles restent actives pendant qu'une personne demande aussi une aide matérielle réelle.",
+    "scene": "Sur le perron d’un centre d’entraide, un homme répare une vieille radio posée sur ses genoux avec une petite lampe ; une conseillère s’assoit à côté de lui et l’aide à demander un soutien matériel, les pages du dossier restent vierges et illisibles.",
+    "prompt": "Illustration éditoriale philosophique française, carré : homme adulte assis sur le perron d’un centre d’entraide, il répare une vieille radio sur ses genoux avec une petite lampe chaude, tandis qu’une conseillère s’assoit à côté de lui et l’aide à demander un soutien matériel dans un dossier aux pages vierges. Ses qualités personnelles restent actives, mais l’aide réelle n’est ni cachée ni remplacée par l’autonomie, outils et écoute partagée, fines lignes gravées, gouache sèche, aplats sérigraphiés, grain de papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, touches vert mousse, aucun texte.",
+    "negative_constraints": ["aucun formulaire lisible, mot, logo ou filigrane", "pas d'homme héroïque autosuffisant", "pas de pauvreté spectaculaire", "pas de sourire forcé", "pas de photoréalisme"]
+  },
+  {
+    "order": 45,
+    "title": "Reconnaître que les mêmes impressions ne touchent pas tous les esprits",
+    "visual_concept": "Une même plaisanterie ou musique reçoit deux poids différents selon l'histoire et la sensibilité de chacun.",
+    "scene": "Dans une salle familiale calme, deux adultes entendent la même musique jouée par un petit poste : l'une se détend, l'autre se protège du son et sort momentanément vers une pièce plus douce, sans être jugée.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : petite salle familiale adulte, un même poste de radio sans interface lisible diffuse une musique invisible, une femme écoute avec une détente légère tandis qu'un homme récemment éprouvé se protège l'oreille et se déplace vers un fauteuil dans une zone plus calme, une proche baisse le volume et ouvre un espace, réactions différentes mais respectées, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun texte, écran, logo ou filigrane", "pas de casque médical ni de pathologisation visuelle", "pas de conflit théâtral", "pas de foule", "pas de photoréalisme"]
+  },
+  {
+    "order": 46,
+    "title": "Accorder une place à la vie philosophique",
+    "visual_concept": "Une réflexion lente devient une activité concrète, reliée au monde plutôt qu'à une fuite solitaire.",
+    "scene": "Une femme traverse une bibliothèque de quartier avec un livre muet, un carnet et un crayon ; elle s’arrête auprès du chariot de prêt pour parler à un bibliothécaire, puis reprend sa marche vers un cercle de lecture qui l’attend dans la cour.",
+    "prompt": "Illustration éditoriale philosophique française, carré : femme adulte debout dans une bibliothèque de quartier, elle porte un livre sans texte lisible, un carnet et un crayon ; près du chariot de prêt, elle échange calmement avec un bibliothécaire, puis se dirige vers une cour où quelques lecteurs l’attendent. La réflexion lente devient une activité concrète, mobile et reliée au monde, sans fenêtre dominante ni isolement, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier, palette bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, touches vert mousse, aucun texte.",
+    "negative_constraints": ["aucun texte lisible, titre, logo ou filigrane", "pas de sage isolé dans une tour", "pas de symboles mystiques", "pas de bibliothèque monumentale", "pas de photoréalisme"]
+  },
+  {
+    "order": 47,
+    "title": "Comprendre l’amitié comme une appartenance réciproque",
+    "visual_concept": "Une amitié devient plus juste lorsque chacun peut parler, écouter et garder une place dans le lien.",
+    "scene": "Deux amis adultes marchent côte à côte dans un parc ; chacun parle à son tour et ajuste son allure à l’autre, puis une troisième amie les rejoint à un passage piéton pour partager la suite de la promenade, sans transformer le lien en service d’urgence.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : deux amis adultes marchent côte à côte dans un parc de quartier, chacun parle et écoute à son tour, leurs silhouettes restent distinctes et leurs pas se répondent ; une troisième amie les rejoint à un passage piéton, la conversation s’élargit sans qu’aucun personnage ne soit absorbé par les autres. Montrer une appartenance réciproque dans un mouvement ordinaire, sans table ni scène romantique, fines lignes gravées, gouache sèche, aplats sérigraphiés, grain de papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun message, mot, panneau, logo ou filigrane", "pas de poignée de main artificielle", "pas de fusion des corps ni de possession visuelle", "pas de scène romantique ni de foule", "pas de photoréalisme"]
+  },
+  {
+    "order": 48,
+    "title": "Chercher une suffisance intérieure sans s’isoler du monde",
+    "visual_concept": "Une autonomie partielle se construit avec plusieurs appuis, sans couper les cordes qui relient au rivage.",
+    "scene": "Une femme dans une petite barque tient une lampe ; plusieurs cordes distinctes la relient à un rivage où se trouvent une amie, une bibliothèque, une caisse de provisions et une maison de soins.",
+    "prompt": "Illustration éditoriale philosophique française, carré : femme adulte assise dans une petite barque stable sur une eau calme, elle tient une petite lampe intérieure, plusieurs cordes fines relient la barque à un rivage proche où l'on distingue une amie, une bibliothèque, une caisse de provisions et une maison de soins, aucune corde ne domine les autres, autonomie comme marge parmi des soutiens réels, composition claire et paisible, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucun texte.",
+    "negative_constraints": ["aucun texte, enseigne, logo ou filigrane", "pas de barque en pleine mer ni d'isolement héroïque", "pas de château-fort intérieur", "pas de pauvreté symbolique", "pas de photoréalisme"]
+  },
+  {
+    "order": 49,
+    "title": "Examiner l’hypothèse d’une vie heureuse sans la transformer en verdict",
+    "visual_concept": "Une idée vague de bonheur est remplacée par des conditions concrètes qui rendent une journée habitable.",
+    "scene": "Une femme âgée prépare une table de jardin : bacs surélevés, chaise confortable, petite lampe et tasse ; une amie arrive par un chemin, et aucun élément ne prétend représenter une vie parfaite.",
+    "prompt": "Illustration éditoriale philosophique française, format carré, scène adulte sobre et sûre : femme âgée dans un jardin, elle ajuste des bacs surélevés pour ménager son arthrose, une chaise confortable, une petite lampe et une tasse organisent une table simple, une amie arrive par un chemin pour une visite, quelques plantes ordinaires et un logement sûr en arrière-plan, conditions limitées d'une journée habitable plutôt que bonheur parfait, lignes fines de gravure, gouache sèche, aplats sérigraphiés, grain papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, vert mousse, aucune image de mort ou de non-être, aucun texte.",
+    "negative_constraints": ["aucun texte, liste, chiffre, logo ou filigrane", "aucune image de mort, tombe, vide ou non-être", "pas de paradis idéalisé ni de félicité parfaite", "pas de tristesse dramatique", "pas de photoréalisme"]
+  },
+  {
+    "order": 50,
+    "title": "Voir le monde à travers la rencontre du réel et de sa disposition",
+    "visual_concept": "Une même réalité extérieure est reçue différemment, et l'on agit à la fois sur le lieu et sur les conditions intérieures.",
+    "scene": "Une personne observe un même paysage urbain depuis une fenêtre dont la lumière change la perception ; elle installe des rideaux épais, une plante et une lampe, tandis qu'une aide médicale et un lieu de rencontre restent visibles dans la pièce.",
+    "prompt": "Illustration éditoriale philosophique française, format carré : personne adulte dans un appartement donnant sur le même paysage urbain, la fenêtre est divisée par une lumière froide et une lumière chaude qui transforment la réception sans changer la ville, la personne installe des rideaux épais et une lampe, une plante et une bibliothèque de quartier visibles au loin, chaise de consultation et carnet fermé suggèrent histoire corporelle et aides réelles, équilibre entre monde extérieur et disposition subjective, fines lignes de gravure, gouache sèche, aplats sérigraphiés, grain de papier, bleu nuit, ivoire chaud, ocre oxydé, rouille sourde, touches vert mousse, aucun texte.",
+    "negative_constraints": ["aucun texte, panneau, interface, logo ou filigrane", "pas de fenêtre magique ni de transformation surnaturelle", "pas de message accusant la personne de mal penser", "pas de paysage uniforme ou abstrait", "pas de photoréalisme"]
+  }
+]

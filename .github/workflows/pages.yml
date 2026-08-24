@@ -28,10 +28,61 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Build Pages site allowlist
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f index.html
+          test -d assets
+          test -d docs
+          python Artheureux/scripts/validate_download_manifest.py
+
+          rm -rf _site
+          mkdir -p _site
+          cp index.html _site/
+          cp -R assets _site/
+          cp -R docs _site/
+          mkdir -p _site/Artheureux/data
+          cp Artheureux/data/adult.json _site/Artheureux/data/
+          cp Artheureux/data/youth.json _site/Artheureux/data/
+          cp Artheureux/data/reader-paths.json _site/Artheureux/data/
+          cp Artheureux/data/downloads.json _site/Artheureux/data/
+
+          shopt -s nullglob
+          for edition in adult youth; do
+            web_source_dir="Artheureux/assets/images/${edition}/web"
+            web_target_dir="_site/Artheureux/assets/images/${edition}/web"
+            if [[ -d "$web_source_dir" ]]; then
+              mkdir -p "$web_target_dir"
+              web_images=("$web_source_dir"/rule-[0-9][0-9].webp)
+              if (( ${#web_images[@]} )); then
+                cp "${web_images[@]}" "$web_target_dir/"
+              fi
+            fi
+          done
+          shopt -u nullglob
+          if [[ -d downloads ]]; then
+            cp -R downloads _site/
+          fi
+          touch _site/.nojekyll
+
+          forbidden_files="$(find _site -type f \( \
+            -name 'original.pdf' -o \
+            -name '*.docx' -o \
+            -name 'V3 art heureux rapide.pdf' -o \
+            -name 'V1 art heureux rapide.docx' \
+          \) -print)"
+          if [[ -n "$forbidden_files" ]]; then
+            echo "Forbidden files found in _site:"
+            printf '%s\n' "$forbidden_files"
+            exit 1
+          fi
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy
         id: deployment

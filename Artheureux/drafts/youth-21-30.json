@@ -1,0 +1,295 @@
+{
+  "edition": "youth",
+  "rules": [
+    {
+      "id": "rule-21",
+      "order": 21,
+      "title": "Ranger ses soucis pour y voir plus clair",
+      "summary": "Quand plusieurs problèmes se mélangent, chacun semble plus grand. Un devoir à finir rappelle une dispute, qui rappelle ensuite un message à envoyer. La règle propose de traiter une affaire à la fois, comme si l’esprit avait plusieurs tiroirs. Fermer un tiroir ne signifie pas nier ce qu’il contient. Cela veut dire noter le sujet, lui donner un moment précis et revenir à ce qui demande maintenant de l’attention. Cette méthode ne résout ni une injustice ni une souffrance persistante. Une urgence peut aussi obliger à interrompre ce que l’on faisait. Elle sert seulement à éviter qu’une inquiétude envahisse toutes les activités. Le calme obtenu n’est pas garanti : c’est une place temporaire pour penser plus nettement.",
+      "example": "Au local de l’association, Émilien pense à une dispute avec son frère et à la caisse du vide-grenier à compter. Il note les deux sujets sur une feuille : parler à son frère après le dîner, vérifier la caisse avec la responsable. Puis il aide pendant vingt minutes à trier les livres. La dispute n’est pas réglée, mais elle ne dirige plus chaque geste. Si elle devenait menaçante, Émilien demanderait tout de suite l’aide d’un adulte. Les autres tiroirs restent fermés sans être oubliés.",
+      "advice": [
+        "Note les soucis qui reviennent et le moment où tu pourras les reprendre.",
+        "Choisis une seule prochaine action pour l’affaire devant toi.",
+        "Demande l’aide d’un adulte si le problème est urgent, grave ou trop lourd."
+      ],
+      "key_phrase": "Un souci rangé n’est pas oublié : il cesse seulement d’envahir tout le reste.",
+      "questions": [
+        "Quelle affaire mérite mon attention maintenant ?",
+        "Quel sujet puis-je noter pour y revenir à un moment précis ?",
+        "Cette attente est-elle sûre, ou dois-je demander de l’aide tout de suite ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §15 : les tiroirs de la pensée",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La métaphore des tiroirs devient une organisation prudente de l’attention, sans promesse de supprimer les soucis."
+      },
+      "themes": ["tranquillité intérieure", "maîtrise de soi"],
+      "needs": ["clarté", "concentration", "sécurité"],
+      "image_alt": "Un collégien note plusieurs soucis puis se concentre sur un cahier, avec un adulte disponible en arrière-plan.",
+      "image_scene": "Illustration jeunesse narrative carrée, contours dessinés, aplats de gouache et grain de papier : collégien à une table, plusieurs feuilles rangées dans des pochettes sans texte lisible, cahier ouvert devant lui et adulte calme dans l’embrasure ; expression concentrée, scène quotidienne crédible, palette bleu canard, crème, jaune doré et bleu ciel sourd, aucun logo ni filigrane."
+    },
+    {
+      "id": "rule-22",
+      "order": 22,
+      "title": "Rendre une difficulté plus supportable",
+      "summary": "Une difficulté précise peut prendre toute la place, surtout quand on cherche à la faire disparaître d’un coup. La règle propose un objectif plus modeste : rendre cette difficulté plus supportable, en réduisant une peine concrète. Cela peut être préparer une discussion, alléger une tâche ou obtenir un soutien pour une journée difficile. Le problème reste réel et l’amélioration peut être petite ou temporaire. Si la situation concerne une injustice, une maladie, une violence ou un manque de sécurité, le jeune ne doit pas la porter seul : un adulte ou un service doit aider à agir. Il s’agit de diminuer une charge, pas de nier ce qui fait mal.",
+      "example": "Depuis que ses parents se séparent, Inès redoute les changements de maison du dimanche. Elle ne peut pas régler la décision familiale, mais elle explique à sa mère que les départs précipités lui donnent mal au ventre. Ensemble, elles préparent un sac qui reste prêt et un calendrier simple des trajets. Le dimanche suivant est encore triste, mais Inès cherche moins ses affaires et sait qui appeler si l’organisation déraille. Ce petit aménagement ne supprime pas sa peine : il rend un moment précis plus supportable. Si elle se sentait en danger, elle demanderait immédiatement l’aide d’un adulte de confiance.",
+      "advice": [
+        "Nomme la difficulté précise que tu voudrais rendre moins lourde.",
+        "Cherche un petit aménagement ou un soutien qui concerne ce moment.",
+        "Signale à un adulte toute injustice, maladie ou insécurité qui dépasse tes forces."
+      ],
+      "key_phrase": "Réduire une peine précise peut rendre un moment plus supportable.",
+      "questions": [
+        "Quelle difficulté concrète puis-je rendre moins lourde ?",
+        "Quel petit changement allégerait cette peine précise ?",
+        "Ai-je besoin d’un adulte ou d’un service pour que la situation devienne plus sûre ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitres V, §§1–3 : bonheur instable et réalité de la douleur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’adaptation conserve la désillusion sur le bonheur durable et distingue les attentes personnelles des injustices réelles."
+      },
+      "themes": ["réduction de la souffrance", "perspective réaliste"],
+      "needs": ["lucidité", "sécurité", "repères"],
+      "image_alt": "Une adolescente prépare avec sa mère un sac et un calendrier pour rendre un changement familial plus supportable.",
+      "image_scene": "Illustration jeunesse contemporaine carrée, contours dessinés, gouache et grain de papier : adolescente et mère préparent un sac près d’un calendrier aux cases sans texte, deux maisons suggérées par des manteaux et des clés ; expressions tristes mais attentives, aucun conflit montré, palette crème, corail, bleu canard et jaune doré, aucune marque ni dramatisation."
+    },
+    {
+      "id": "rule-23",
+      "order": 23,
+      "title": "Recomposer l’itinéraire après un imprévu",
+      "summary": "Un projet avance rarement dans des conditions parfaitement stables. Une grève, une panne, une fermeture, une météo dangereuse ou une décision prise par d’autres peut rendre l’itinéraire prévu impossible. La règle invite à regarder les circonstances présentes et à recomposer le trajet à partir de ces faits. Le but peut rester le même, mais une étape, un horaire ou un moyen de transport doit changer. Cela ne signifie pas que l’imprévu était mérité ou qu’il révèle une faute personnelle. Parfois, l’événement extérieur impose aussi de reporter ou d’abandonner une partie du projet. Les possibilités dépendent alors des informations, des adultes et des moyens disponibles.",
+      "example": "Maya devait rejoindre sa tante en train pour un week-end. Une inondation ferme la ligne et plusieurs routes sont bloquées. Sa tante suit les informations de la gare et la famille cherche un car disponible, mais aucun départ sûr n’est possible le soir même. Maya reste déçue ; le séjour est reporté et elles organisent un appel vidéo. Quand la circulation reprend, elles choisissent un autre itinéraire et un horaire de jour. Le voyage n’a pas échoué à cause d’elle : des circonstances extérieures ont obligé tout le monde à recomposer le trajet.",
+      "advice": [
+        "Note les circonstances extérieures qui ont changé l’itinéraire.",
+        "Avec un adulte, vérifie les horaires, les informations et les options réellement sûres.",
+        "Reporte, raccourcis ou remplace une étape quand les conditions l’imposent."
+      ],
+      "key_phrase": "Garder une direction n’oblige pas à suivre le même chemin.",
+      "questions": [
+        "Qu’est-ce qui a réellement changé dans ma situation ?",
+        "Quelle partie de mon projet reste importante ?",
+        "Quelle décision ne peux-je pas porter seul ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §48 : plans humains et circonstances",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La métaphore des cartes reçues est transposée dans des projets adolescents, sans faire de l’imprévisibilité une excuse générale."
+      },
+      "themes": ["adaptabilité", "perspective réaliste"],
+      "needs": ["adaptation", "sécurité", "clarté"],
+      "image_alt": "Une adolescente et sa tante recomposent un trajet après la fermeture d’une ligne de train.",
+      "image_scene": "Illustration jeunesse de roman graphique carrée, contours dessinés, aplats de gouache et grain de papier : adolescente et tante devant un panneau de gare sans texte lisible, valise et carte avec signes abstraits, ligne barrée suggérée sans mots ; elles consultent calmement un autre trajet, palette bleu canard, corail, crème et bleu ciel sourd, aucun logo."
+    },
+    {
+      "id": "rule-24",
+      "order": 24,
+      "title": "Grandir, c’est aussi changer ses priorités",
+      "summary": "En grandissant, on ne garde pas exactement les mêmes envies, les mêmes forces ni les mêmes responsabilités. Une activité autrefois essentielle peut devenir moins attirante, tandis qu’un calme nouveau, une transmission ou un projet plus simple prennent de l’importance. La règle ne dit pas qu’il faut renoncer à l’énergie, aux amis ou aux rêves. Elle rappelle que le modèle d’une bonne vie peut changer avec l’âge. Pour un adolescent, cela concerne aussi le passage au lycée, une nouvelle autonomie ou le changement d’un groupe d’amis. Le calme n’est pas un retrait obligatoire. Si une fatigue, une maladie, une contrainte familiale ou un manque d’argent limitent les choix, il faut chercher un soutien au lieu de présenter la privation comme un choix heureux.",
+      "example": "À treize ans, Salomé adorait passer chaque après-midi au skatepark. Depuis son entrée au lycée, le trajet est plus long et elle doit aider davantage à la maison. Elle choisit deux séances par semaine et réserve un moment pour apprendre la photographie avec sa grand-mère. Elle regrette certains après-midis, mais découvre une autre manière de partager et de progresser. Son changement ne vient pas seulement d’une décision personnelle : sa famille et son établissement l’aident à organiser un emploi du temps réaliste. Elle ne doit pas abandonner une activité qui lui plaît sans chercher des aménagements.",
+      "advice": [
+        "Observe ce qui compte encore pour toi et ce qui a changé.",
+        "Cherche une nouvelle forme pour une activité ou un lien que tu veux garder.",
+        "Parle à un adulte quand une contrainte impose des choix que tu n’as pas demandés."
+      ],
+      "key_phrase": "Grandir peut déplacer ses priorités sans effacer ce qui compte.",
+      "questions": [
+        "Quelle activité ou relation dois-je adapter plutôt qu’abandonner ?",
+        "Qu’est-ce qui correspond mieux à mes forces et à mes priorités actuelles ?",
+        "Quel changement vient d’une contrainte et demande du soutien ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre VI : les deux moitiés de la vie",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La jeunesse traduit le déplacement des priorités avec l’âge sans imposer le retrait ni idéaliser les contraintes."
+      },
+      "themes": ["perspective réaliste", "adaptabilité"],
+      "needs": ["adaptation", "tranquillité", "transmission"],
+      "image_alt": "Une adolescente partage une activité nouvelle avec sa grand-mère après avoir réorganisé son temps.",
+      "image_scene": "Illustration jeunesse narrative carrée, contours dessinés, gouache et grain de papier : adolescente et grand-mère photographient une plante sur un balcon, skateboard rangé près d’un sac de cours ; gestes complices mais naturels, aucun écran ni texte lisible, palette crème, corail, jaune doré et bleu ciel sourd, aucune marque."
+    },
+    {
+      "id": "rule-25",
+      "order": 25,
+      "title": "Remarquer ce que l’habitude rend invisible",
+      "summary": "Nous nous habituons vite à ce qui nous aide. Un trajet sûr, un ami disponible, un corps qui fonctionne ou un lieu accueillant peuvent devenir un décor auquel on ne pense plus. La règle propose de regarder un bien présent comme si sa fragilité apparaissait davantage. Il ne s’agit pas d’imaginer des catastrophes ni de se faire peur pour ressentir de la gratitude. Il s’agit de voir le temps, le soin et les personnes qui rendent ce bien possible. Cette attention peut conduire à remercier, entretenir, réparer ou partager. Elle ne doit jamais culpabiliser un jeune qui traverse une violence, une maladie ou un manque : dans ces situations, la priorité est la protection et l’aide réelle.",
+      "example": "Chaque mercredi, Adam trouve sa voisine Mme Rami au portail pour l’accompagner jusqu’au club de musique. Il la remercie à peine, car ce rendez-vous est devenu automatique. Un jour, elle doit s’absenter pour aider son frère. Adam comprend que ce trajet dépendait du temps et de l’attention d’une personne. Avec sa mère, il organise une autre solution et propose à Mme Rami de l’aider pour ses courses le week-end. Il ne dramatique pas l’absence d’une journée : il cesse simplement de considérer son aide comme une obligation invisible.",
+      "advice": [
+        "Choisis un soutien concret que l’habitude te fait oublier.",
+        "Repère le temps ou les soins qui le rendent possible.",
+        "Remercie, entretiens ou protège ce bien sans te forcer à nier une difficulté."
+      ],
+      "key_phrase": "Voir la valeur d’un soutien aide à en prendre soin.",
+      "questions": [
+        "Quel soutien présent est-ce que je traite comme garanti ?",
+        "Quelle action montrerait que je le respecte ?",
+        "Cette réflexion m’aide-t-elle, ou augmente-t-elle une peur inutile ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §14 : considérer les biens après leur perte",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La perte imaginée devient une attention préventive aux liens et aux soutiens, jamais un exercice de peur ou de culpabilité."
+      },
+      "themes": ["appréciation", "relations et confiance"],
+      "needs": ["reconnaissance", "relations", "sécurité"],
+      "image_alt": "Un adolescent remercie une voisine qui l’aide et organise avec sa mère un trajet partagé.",
+      "image_scene": "Illustration jeunesse contemporaine carrée, contours dessinés, aplats de gouache et grain de papier : adolescent devant un immeuble, sac d’instrument, voisine et mère qui organisent un trajet autour d’un vélo ; gestes de coopération, aucun texte lisible, palette bleu canard, crème, corail et jaune doré, aucune marque ni dramatisation."
+    },
+    {
+      "id": "rule-26",
+      "order": 26,
+      "title": "Faire la différence entre envie et possibilité",
+      "summary": "Une envie forte ne suffit pas à rendre une chose possible ou nécessaire. Quand un plan bloque, la colère peut donner l’impression que le monde doit obéir immédiatement. La règle invite à distinguer ce que l’on souhaite, ce qui est indispensable et ce qui peut réellement être fait maintenant. Cela ne veut pas dire accepter une injustice. Une demande claire, une réparation ou l’aide d’un adulte restent nécessaires si un droit n’est pas respecté. La limite concerne plutôt les attentes impossibles : obtenir tout de suite l’accord d’un ami, gagner chaque compétition ou réparer une situation déjà compliquée en une seule fois. Réduire une attente irréaliste libère une action précise, sans rendre le jeune responsable des obstacles sérieux qu’il rencontre.",
+      "example": "Le collège de Rayan refuse d’abord sa demande de changer de groupe après plusieurs moqueries. Rayan est en colère et veut publier un message contre l’établissement. Sa tante l’aide à garder les faits, à demander un rendez-vous et à écrire ce qu’il attend : être protégé et entendu. Il ne renonce pas à sa demande, mais accepte que la réponse prenne une procédure. Si les moqueries continuent ou deviennent menaçantes, la priorité est d’alerter les adultes responsables, pas de réussir à rester calme tout seul.",
+      "advice": [
+        "Sépare ce que tu voudrais, ce qui est nécessaire et ce qui est possible maintenant.",
+        "Formule une demande précise avant de répondre sous l’effet de la colère.",
+        "Cherche une protection adulte quand une injustice ou une menace persiste."
+      ],
+      "key_phrase": "Limiter une attente impossible laisse plus de place pour défendre ce qui est nécessaire.",
+      "questions": [
+        "Quelle part de cette situation puis-je réellement influencer ?",
+        "Quelle demande précise remplacerait mon irritation diffuse ?",
+        "Est-ce une simple frustration ou une injustice qui exige de l’aide ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 26 : modération des désirs, colère et limites humaines",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La limitation des prétentions est adaptée sans confondre modération des attentes et acceptation d’une injustice."
+      },
+      "themes": ["maîtrise de soi", "réduction de la souffrance"],
+      "needs": ["clarté", "justice", "sécurité"],
+      "image_alt": "Un collégien prépare avec sa tante une demande claire après un problème au collège.",
+      "image_scene": "Illustration jeunesse de roman graphique carrée, contours dessinés, gouache et grain de papier : collégien et tante autour d’une table, feuilles vierges et téléphone posé à côté, posture attentive et déterminée ; bâtiment scolaire visible par la fenêtre, aucun texte lisible ni logo, palette corail, crème, bleu canard et jaune doré."
+    },
+    {
+      "id": "rule-27",
+      "order": 27,
+      "title": "Trouver des repères auprès de personnes qui connaissent l’épreuve",
+      "summary": "Quand une épreuve isole, rencontrer une personne qui l’a vécue peut apporter des repères concrets. Elle peut expliquer ce qui l’a aidée, ce qui a été difficile et quelles étapes existent, sans promettre que ton histoire sera la même. Cette solidarité ne consiste pas à comparer les peines ni à dire que quelqu’un souffre davantage. Elle consiste à ne pas rester seul devant une expérience semblable. Un adulte, un proche, un bénévole ou un groupe fiable peut écouter et transmettre des informations. La peine reste réelle, et personne ne doit utiliser son propre parcours pour imposer une solution ou remplacer une protection nécessaire.",
+      "example": "Après le déménagement de sa famille, Nour ne connaît personne dans son nouveau quartier et abandonne l’atelier de danse. Une bénévole de l’association locale lui présente Samia, qui a changé de ville l’année précédente. Samia raconte ses premières semaines, montre comment elle avait trouvé un trajet et propose de l’accompagner à une séance, sans parler à sa place. Nour reste triste, mais elle sait à quoi s’attendre et ose revenir essayer. Si elle subissait des insultes ou se sentait en danger, la bénévole préviendrait avec elle un adulte responsable. L’expérience semblable donne un repère, pas une recette obligatoire.",
+      "advice": [
+        "Cherche une personne fiable qui connaît une expérience semblable.",
+        "Demande-lui un repère concret, sans supposer que son parcours sera le tien.",
+        "Garde le droit de demander une protection ou une aide différente."
+      ],
+      "key_phrase": "Une expérience semblable peut donner un repère sans effacer ta peine.",
+      "questions": [
+        "Qui connaît une expérience semblable et pourrait m’écouter ?",
+        "Quel repère concret puis-je lui demander ?",
+        "Ai-je besoin qu’un adulte ajoute une protection ou une aide ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 27 : comparaison des maux et compagnons d’épreuve",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La comparaison sert à retrouver une proportion et une solidarité, jamais à imposer la gratitude ou le silence."
+      },
+      "themes": ["perspective réaliste", "relations et confiance"],
+      "needs": ["repères", "solidarité", "sécurité"],
+      "image_alt": "Deux adolescentes ayant connu un déménagement échangent dans une association et préparent un retour à la danse.",
+      "image_scene": "Illustration jeunesse narrative carrée, contours dessinés, aplats de gouache et grain de papier : deux adolescentes dans un local associatif, sac de danse et affiche abstraite sans texte, l’une écoute tandis que l’autre montre un trajet sur un plan sans signes lisibles ; bénévole disponible à proximité, solidarité naturelle, palette bleu ciel sourd, crème, corail et jaune doré, aucun logo."
+    },
+    {
+      "id": "rule-28",
+      "order": 28,
+      "title": "Changer la forme d’un plaisir avec le temps",
+      "summary": "Avec l’âge, certaines activités demandent plus d’énergie ou perdent leur urgence. D’autres plaisirs apparaissent : apprendre, transmettre, recevoir des proches, créer plus lentement ou aménager son confort. Cette idée ne transforme pas le vieillissement en règle identique pour tout le monde. Une personne âgée peut encore aimer le risque, le voyage, le travail ou les rencontres. Elle peut aussi être limitée par une maladie, l’isolement ou l’argent. Il faut alors distinguer une adaptation choisie d’une privation imposée. Pour un jeune lecteur, observer un parent ou un grand-parent qui change d’activité permet de comprendre qu’une passion peut garder son intention en prenant une autre forme. Rien ne garantit que cette nouvelle forme supprimera le regret.",
+      "example": "Le grand-père de Jules ne peut plus faire de longues randonnées avec lui à cause de ses genoux. Jules croit d’abord que leurs sorties sont terminées. Avec sa famille, ils choisissent un sentier court près d’un lac et apportent un appareil photo. Le grand-père raconte aussi les chemins qu’il parcourait autrefois et apprend à Jules à lire une carte. La promenade n’a pas la même intensité, et la douleur reste réelle. Pourtant, leur goût de la découverte continue autrement, avec un rythme décidé selon la santé du grand-père.",
+      "advice": [
+        "Cherche le besoin ou le plaisir essentiel derrière l’activité.",
+        "Adapte le rythme, le lieu ou le matériel avant de tout abandonner.",
+        "Prends au sérieux les contraintes de santé et demande un accompagnement adapté."
+      ],
+      "key_phrase": "Une activité peut changer de forme sans perdre ce qui la rend précieuse.",
+      "questions": [
+        "Qu’est-ce qui compte vraiment dans cette activité ?",
+        "Quelle adaptation permettrait de garder une partie du plaisir ?",
+        "La nouvelle limite est-elle choisie ou imposée par une contrainte ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 28 : évolution des plaisirs avec l’âge",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "Le confort, l’étude et la transmission sont conservés, sans présenter les pertes liées à l’âge comme souhaitables."
+      },
+      "themes": ["perspective réaliste", "appréciation"],
+      "needs": ["adaptation", "transmission", "sécurité"],
+      "image_alt": "Un adolescent marche avec son grand-père sur un sentier court et observe une carte sans texte.",
+      "image_scene": "Illustration jeunesse contemporaine carrée, contours dessinés, gouache et grain de papier : adolescent et grand-père sur un sentier près d’un lac, appareil photo et carte aux signes non lisibles, marche adaptée et échanges attentifs ; paysage calme, proportions naturelles, palette bleu canard, crème, jaune doré et bleu ciel sourd, aucun texte ni marque."
+    },
+    {
+      "id": "rule-29",
+      "order": 29,
+      "title": "Distinguer les besoins des envies fabriquées",
+      "summary": "Certaines choses sont nécessaires pour vivre, apprendre, être en sécurité ou rester autonome. D’autres rendent la vie plus confortable. D’autres encore deviennent désirables surtout parce qu’une publicité, un groupe ou une comparaison les présente comme indispensables. Un désir fabriqué n’est pas forcément honteux : il peut procurer un plaisir réel sans devenir un besoin. La règle invite à demander ce que l’achat ou le projet cherche vraiment à résoudre. Cette question ne doit pas servir à juger les familles, car les moyens, la santé, la culture et le travail changent les besoins concrets. Elle peut aider à attendre, réparer, partager ou choisir autrement. La sobriété ne remplace jamais l’accès à l’essentiel.",
+      "example": "Sur son téléphone, Tiago voit les vidéos d’une nouvelle console portable. La sienne fonctionne encore, mais il veut surtout suivre les autres. En rangeant sa chambre, il remarque aussi que la lampe de bureau ne s’allume plus et qu’il travaille dans une lumière mauvaise. Avec sa mère, il achète d’abord une ampoule adaptée, puis attend pour la console. Tiago ne dit pas que la nouveauté est honteuse : il distingue le besoin nécessaire de bien voir, le confort d’un nouvel objet et l’envie fabriquée par la comparaison. Sa famille garde le choix selon ses moyens.",
+      "advice": [
+        "Classe ton envie : besoin nécessaire, confort utile ou recherche de nouveauté.",
+        "Attends avant d’acheter quand la comparaison te pousse à agir vite.",
+        "Ne juge pas les choix d’une autre famille sans connaître ses contraintes."
+      ],
+      "key_phrase": "Une envie peut être forte et rester différente d’un besoin.",
+      "questions": [
+        "Quel besoin concret cette envie cherche-t-elle à satisfaire ?",
+        "Que gagnerais-je à attendre, réparer ou partager ?",
+        "Est-ce un choix libre, ou une contrainte matérielle que je dois signaler ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 29 : distinction épicurienne entre besoins naturels et besoins imaginaires",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La distinction issue d’Épicure et reprise par Schopenhauer est adaptée à la consommation sans transformer la sobriété en reproche."
+      },
+      "themes": ["réduction de la souffrance", "perspective réaliste"],
+      "needs": ["sécurité", "autonomie", "clarté"],
+      "image_alt": "Un adolescent distingue une envie de console du besoin d’une lampe de bureau fonctionnelle.",
+      "image_scene": "Illustration jeunesse de roman graphique carrée, contours dessinés, aplats de gouache et grain de papier : adolescent à un bureau avec une lampe éteinte, ampoule neuve et console portable rangée dans sa boîte ; parent disponible à côté, réflexion calme plutôt que morale, aucune marque ni écran lisible, palette bleu canard, crème, corail et jaune doré."
+    },
+    {
+      "id": "rule-30",
+      "order": 30,
+      "title": "Choisir un défi qui donne une forme au temps",
+      "summary": "Quand tout est vide ou sans résistance, l’ennui peut devenir envahissant. Une activité qui demande un effort réel peut alors donner une forme au temps et retenir l’attention. Le défi n’a pas besoin d’être spectaculaire. Apprendre un morceau, réparer un objet, cuisiner pour d’autres ou s’entraîner par étapes peut suffire. Cette règle ne dit pas qu’il faut travailler sans pause, gagner une compétition ou prouver sa valeur. Une personne épuisée, malade ou en difficulté a d’abord besoin de repos, de soins et de conditions sûres. La taille du défi doit donc dépendre des forces disponibles et parfois être décidée avec un adulte. L’effort peut aider sans garantir le plaisir ni régler tous les problèmes.",
+      "example": "Depuis la fin de la saison de basket, Lina passe ses après-midis à faire défiler des vidéos et se dispute souvent en ligne. Elle ne se force pas à devenir championne. Avec son frère, elle choisit de construire une étagère pour ses mangas : mesurer, poncer, assembler, puis la fixer avec un adulte. Chaque étape produit un résultat visible et ils travaillent ensemble. Lina reste parfois ennuyée et garde du temps pour se reposer. Le projet donne seulement une direction à quelques heures qui partaient dans tous les sens.",
+      "advice": [
+        "Choisis une tâche avec des étapes visibles et une difficulté réelle mais limitée.",
+        "Réduis le défi si ta santé, ton énergie ou tes conditions l’exigent.",
+        "Garde du repos et demande de la compagnie quand le lien compte autant que le résultat."
+      ],
+      "key_phrase": "Un défi à ta mesure donne une direction au temps, sans obligation de réussir.",
+      "questions": [
+        "Quel défi retiendrait mon attention sans m’épuiser ?",
+        "Quelle étape me permettrait de voir un résultat concret ?",
+        "Ai-je besoin d’un défi, ou d’abord de repos et d’aide ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 30 : activité, effort et résistance contre l’ennui",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "L’activité et la résistance sont conservées comme remèdes possibles à l’ennui, avec une limite nette pour la fatigue et les difficultés graves."
+      },
+      "themes": ["maîtrise de soi", "adaptabilité"],
+      "needs": ["concentration", "accomplissement", "relations"],
+      "image_alt": "Une adolescente construit une petite étagère avec son frère, par étapes et avec un adulte présent.",
+      "image_scene": "Illustration jeunesse narrative carrée, contours dessinés, aplats de gouache et grain de papier : adolescente et frère assemblent une petite étagère avec outils adaptés, adulte présent pour la fixation, objets de loisir rangés autour ; activité sûre et crédible, expressions concentrées, aucun texte lisible ni logo, palette crème, corail, bleu canard et jaune doré."
+    }
+  ]
+}

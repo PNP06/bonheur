@@ -1,0 +1,18 @@
+[
+  {
+    "order": 3,
+    "title": "Acquérir une connaissance pratique de son caractère",
+    "visual_concept": "Un réflexe généreux mais coûteux est reconnu et remplacé par une conduite préparée, sans promettre une transformation du tempérament.",
+    "scene": "Dans un atelier associatif, un homme d’une cinquantaine d’années reçoit un nouveau dossier d’une collègue alors que plusieurs tâches sont déjà ouvertes. Il fait un geste calme de pause et consulte son planning avant de répondre.",
+    "prompt": "Illustration éditoriale carrée pour un livre adulte, lignes gravées fines, aplats de gouache mate et grain de papier discret. Dans un atelier associatif lumineux, un homme d’une cinquantaine d’années, silhouette et visage distincts des personnages précédents, reçoit un dossier supplémentaire d’une collègue alors que plusieurs outils et tâches sont déjà disposés devant lui. Au lieu d’accepter automatiquement, il fait un geste calme de pause et consulte un planning à cases sans aucun mot lisible. La collègue attend sans hostilité. Montrer une conduite préparée qui protège un engagement sans effacer la générosité ni le tempérament. Composition narrative lisible, palette bleu nuit, ivoire chaud, ocre oxyde, rouille sourde et petites touches vert mousse.",
+    "negative_constraints": ["aucun texte, aucune lettre, aucun chiffre lisible", "aucun miroir, aucun portrait introspectif", "pas de personnage féminin ressemblant aux règles 02, 05 ou 06", "pas de métamorphose, pas de masque", "aucun logo, aucune marque, aucun filigrane", "pas de diptyque ni de composition en cases"]
+  },
+  {
+    "order": 4,
+    "title": "Limiter ses prétentions plutôt qu’accroître ses biens",
+    "visual_concept": "Des ressources finies sont réparties entre quelques priorités réelles tandis qu’un signe de statut coûteux est volontairement écarté.",
+    "scene": "À une table de cuisine, un homme mûr répartit une quantité limitée de pièces et de jetons entre une dette, une réserve et une formation symbolisées sans texte. Une brochure automobile luxueuse et une clé brillante restent fermées sur le côté.",
+    "prompt": "Illustration éditoriale carrée pour un livre adulte, lignes gravées fines, gouache mate et texture papier. À une table de cuisine simple, un homme mûr au visage distinct de la règle 03 répartit une quantité visiblement limitée de pièces et de jetons entre trois priorités concrètes représentées sans mots : une facture neutre, un petit bocal de réserve et un carnet de formation. Sur le bord de la table, une brochure automobile luxueuse fermée et une clé brillante sont volontairement laissées de côté. La scène doit montrer l’écart entre ressources réelles et prétention de statut, pas un déménagement ni du désencombrement. Ton lucide sans glorifier la pauvreté, palette bleu nuit, ivoire chaud, ocre oxyde, rouille sourde et vert mousse discret.",
+    "negative_constraints": ["aucun texte, aucun montant, aucune marque automobile", "pas de carton de déménagement, pas de tri d’objets décoratifs", "pas de misère caricaturale ni de richesse ostentatoire", "aucune culpabilisation", "aucun logo, aucun filigrane", "pas de diptyque ni de balance symbolique géante"]
+  }
+]

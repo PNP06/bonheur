@@ -1,0 +1,305 @@
+{
+  "edition": "adult",
+  "rules": [
+    {
+      "id": "rule-11",
+      "order": 11,
+      "title": "Cesser de lutter contre le fait accompli",
+      "summary": "Après un événement irréversible, l'esprit cherche spontanément le moment où tout aurait pu bifurquer : le courriel qu'il aurait fallu envoyer, le rendez-vous qu'il ne fallait pas manquer, la parole qui aurait changé l'issue. Cette enquête imaginaire donne parfois l'impression de reprendre la main, mais elle ne modifie pas le fait. La règle consiste à séparer deux tâches. Il faut d'abord reconnaître ce qui s'est effectivement produit, sans ajouter à la perte la répétition mentale de scénarios impossibles à vérifier. Ensuite seulement, on peut examiner une erreur réelle et décider ce qui sera différent la prochaine fois. Accepter n'est donc ni approuver, ni pardonner, ni renoncer à réparer. C'est retirer à l'événement passé le pouvoir de dévorer toute l'attention présente. Cette sobriété est particulièrement utile lorsque la décision ne dépend plus de nous : un refus, une rupture, un accident matériel, une occasion perdue. Elle devient dangereuse si elle sert à étouffer une colère légitime ou à éviter une action encore possible.",
+      "example": "Après six mois de candidature, Samir reçoit un refus pour le poste qu'il visait. Pendant plusieurs jours, il relit son entretien et imagine les réponses qui auraient convaincu le jury. Il finit par écrire deux colonnes : dans la première, les faits désormais clos ; dans la seconde, les éléments qu'il peut encore améliorer. Il demande un retour au recruteur, met à jour son portfolio et prépare trois exemples plus précis pour les prochains entretiens. Il ne transforme pas le refus en verdict sur sa valeur, mais ne prétend pas non plus qu'il n'a rien à apprendre. La rumination perd sa fonction dès qu'une leçon vérifiable et une action concrète ont été dégagées.",
+      "advice": [
+        "Nommer en une phrase le fait irréversible, sans y ajouter d'interprétation sur votre valeur.",
+        "Réserver un temps court à l'examen des erreurs vérifiables, puis fermer ce dossier par écrit.",
+        "Distinguer ce qui peut encore être réparé, contesté ou protégé de ce qui ne le peut plus.",
+        "Transformer une leçon précise en comportement observable pour une situation future."
+      ],
+      "key_phrase": "Reconnaître le fait accompli libère l'attention pour réparer ce qui reste possible.",
+      "questions": [
+        "Quel fait précis suis-je encore en train de négocier mentalement alors qu'il est terminé ?",
+        "Quelle erreur vérifiable puis-je corriger sans réécrire toute l'histoire ?",
+        "À partir de quand l'acceptation deviendrait-elle ici un prétexte pour ne plus me défendre ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Eudämonologie, règle 12 ; thème du fait accompli et des regrets rétrospectifs",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La reconstruction insiste sur le soulagement procuré par l'abandon des scénarios contrefactuels, tout en maintenant l'examen des erreurs utiles pour l'avenir."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne ferme un dossier après avoir séparé les faits passés des actions encore possibles.",
+      "image_scene": "Illustration éditoriale adulte carrée, gravure contemporaine et gouache, bureau calme à la lumière du soir : une personne ferme un dossier contenant une lettre de refus, tandis qu'à côté restent un carnet ouvert et un stylo pour une prochaine démarche ; atmosphère sobre, palette bleu nuit, ivoire et ocre, aucun texte lisible, aucun logo."
+    },
+    {
+      "id": "rule-12",
+      "order": 12,
+      "title": "Ne pas livrer son secret à la conversation",
+      "summary": "La confiance n'est pas une obligation de transparence totale. Une confidence peut créer de la proximité, mais elle peut aussi fournir à quelqu'un une prise sur nos décisions, notre réputation ou notre tranquillité. Parler trop vite de ses projets, de ses difficultés ou de ses conflits répond parfois à la vanité, au besoin d'être rassuré, ou à la simple paresse de garder une affaire pour soi. La prudence ne demande pas de suspecter tout le monde. Elle demande de choisir ce qui doit être dit, à qui, dans quel but et avec quelles conséquences si la parole circule. Un proche fiable n'est pas pour autant tenu de porter chaque détail de notre vie ; inversement, un professionnel, un médecin ou une personne capable de protéger peut avoir besoin d'informations précises. La règle porte donc sur la mesure, non sur l'isolement. Garder une part de silence permet de penser avant de se rendre dépendant d'une approbation ou d'une promesse. Quand un danger, une violence ou une injustice est en jeu, la discrétion ne doit jamais empêcher de chercher de l'aide.",
+      "example": "Avant d'annoncer sa démission, Élodie en parle à toute son équipe et détaille ses désaccords avec sa direction. En deux jours, des versions contradictoires circulent et compliquent sa négociation de départ. Pour son projet suivant, elle adopte une règle simple : elle ne partage d'abord son intention qu'avec une personne de confiance et un conseiller compétent. Elle vérifie ensuite ce qu'elle souhaite rendre public et ce qui relève de sa vie privée. Cette retenue ne la rend pas froide ; elle lui évite seulement de transformer une réflexion encore fragile en information disponible pour tous. Elle parle immédiatement si elle doit signaler un comportement abusif ou se mettre en sécurité.",
+      "advice": [
+        "Avant une confidence, préciser ce que vous en attendez : conseil, soutien, protection ou simple décharge.",
+        "Partager progressivement les informations sensibles et observer la manière dont elles sont traitées.",
+        "Garder privés les projets incertains jusqu'à ce qu'une décision soit réellement engagée.",
+        "Rompre le silence auprès d'une personne ou d'un service compétent dès qu'une protection est nécessaire."
+      ],
+      "key_phrase": "La confiance choisit ses destinataires ; elle ne transforme pas toute parole en preuve d'intimité.",
+      "questions": [
+        "À qui cette information est-elle réellement utile, et qu'est-ce que j'attends de cette personne ?",
+        "Quelle partie de mon récit puis-je garder pour moi le temps de comprendre la situation ?",
+        "Dans quel cas le silence me protégerait-il moins que le recours à une aide extérieure ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §35 : silence, discrétion et confiance",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La transposition contemporaine remplace les affaires de cour et d'honneur par la circulation de l'information, sans faire de la réserve une règle absolue."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Deux personnes échangent discrètement dans un lieu calme, tandis qu'une porte ouverte suggère la possibilité de demander de l'aide.",
+      "image_scene": "Illustration éditoriale adulte carrée en gravure et gouache : deux personnes parlent à voix basse dans un café presque vide, un carnet fermé entre elles, arrière-plan calme avec une porte entrouverte et une lumière protectrice ; gestes attentifs, aucune posture de méfiance caricaturale, palette bleu ardoise, crème et terre cuite, sans texte ni logo."
+    },
+    {
+      "id": "rule-13",
+      "order": 13,
+      "title": "Entretenir la gaieté que la santé rend possible",
+      "summary": "La gaieté n'est pas une décoration ajoutée à une existence réussie : elle modifie immédiatement la manière dont une journée est vécue. Chez Schopenhauer, elle dépend fortement du tempérament, de la constitution et de la santé ; elle ne se commande donc pas par une formule de motivation. Cette précision rend la règle plus exigeante et plus juste. Il ne s'agit pas de se forcer à sourire quand on souffre, ni de reprocher à quelqu'un son humeur. Il s'agit de reconnaître que le corps, le sommeil, la douleur et l'épuisement pèsent sur l'accès même aux plaisirs et aux pensées. Préserver les conditions d'une humeur claire peut alors compter davantage qu'un avantage extérieur. Une promenade, un repas régulier ou un rendez-vous médical ne garantissent pas la bonne humeur, mais ils peuvent retirer des obstacles évitables. La disposition personnelle reste inégale et partiellement donnée. On peut l'entretenir et aménager son environnement ; on ne peut pas promettre de la produire à volonté, surtout en période de deuil, de maladie ou de dépression.",
+      "example": "Depuis plusieurs semaines, Nora achète de petites récompenses pour compenser ses journées difficiles, mais son irritabilité augmente. Elle remarque qu'elle dort cinq heures, saute le déjeuner et reporte un rendez-vous médical pour une douleur persistante. Elle ne décide pas de devenir joyeuse du jour au lendemain. Elle consulte, protège une heure de sommeil supplémentaire et reprend deux repas simples à heures fixes. Au bout d'un mois, elle ne se sent pas heureuse en permanence, mais elle supporte mieux les contrariétés et retrouve l'envie de voir ses amis. Elle comprend aussi que certains jours exigent du soutien plutôt qu'un effort de bonne humeur.",
+      "advice": [
+        "Observer pendant une semaine les liens entre humeur, sommeil, douleur, alimentation, mouvement et isolement.",
+        "Traiter un obstacle corporel persistant avec un professionnel plutôt que de le moraliser.",
+        "Préserver chaque jour une activité légère qui apporte de l'élan sans devenir une performance.",
+        "Demander un accompagnement quand la tristesse ou l'épuisement s'installent et dépassent vos ressources."
+      ],
+      "key_phrase": "La gaieté se cultive parfois, mais elle ne se décrète pas contre le corps et le tempérament.",
+      "questions": [
+        "Quels facteurs corporels ou relationnels influencent concrètement mon humeur cette semaine ?",
+        "Quelle condition simple puis-je protéger pour rendre une journée plus habitable ?",
+        "Est-ce que je demande à la bonne humeur de masquer une souffrance qui nécessite une aide réelle ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre II : santé, tempérament et disposition ; chapitre V, §1",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "medium",
+        "notes": "La source rattache fortement la gaieté à la constitution et à la santé ; l'adaptation refuse d'en faire une compétence entièrement volontaire."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne marche au matin avec une énergie mesurée, après avoir pris soin de sa santé.",
+      "image_scene": "Illustration éditoriale adulte carrée, gouache et encre texturée : personne adulte marchant doucement dans une rue arborée au matin, sac léger, lumière chaude sur le visage mais expression naturelle et non euphorique ; un immeuble médical discret au loin, palette ocre doux, vert grisé et bleu, aucun texte ni logo."
+    },
+    {
+      "id": "rule-14",
+      "order": 14,
+      "title": "Prévoir sans sacrifier le présent",
+      "summary": "L'imprudent laisse demain sans préparation ; l'anxieux y transporte toute sa vie. Entre ces deux excès, il reste une discipline plus sobre : donner au futur la part de prévoyance qui protège l'avenir, puis revenir à ce qui existe effectivement aujourd'hui. Le présent n'est pas seulement une étape vers un résultat. C'est le seul moment où une décision, une conversation ou un repos peuvent avoir lieu. Pourtant, l'invocation du présent devient creuse si elle sert à ignorer une dette, une santé fragile ou une échéance connue. La règle demande donc de distinguer planification et inquiétude. Planifier consiste à choisir une prochaine action, une date et une marge ; s'inquiéter consiste à rejouer des dizaines d'issues sans pouvoir les influencer. Le futur doit être préparé par petites décisions révisables, non habité comme un film catastrophe ou une promesse de salut. Cette mesure protège aussi les relations : une personne qui ne pense qu'à la prochaine étape peut manquer la présence de ceux avec qui elle la franchit.",
+      "example": "Marc sait que son contrat se termine dans trois mois. Chaque soir, il consulte les offres d'emploi jusqu'à minuit et n'écoute plus vraiment sa compagne. Il remplace cette inquiétude diffuse par deux créneaux hebdomadaires pour candidater, un budget de transition et une date pour revoir son plan. Le reste du temps, il ferme les alertes et se rend disponible pour son travail actuel, ses proches et son sommeil. La situation extérieure n'est pas réglée, mais l'avenir possède désormais une place délimitée. Le présent n'est plus sacrifié à une question qui ne peut pas être résolue en continu.",
+      "advice": [
+        "Lister les échéances futures qui exigent une décision réelle et celles qui ne sont encore que des hypothèses.",
+        "Pour chaque échéance, fixer une prochaine action, une date de révision et une limite de temps.",
+        "Créer des plages sans projection ni notifications afin de rendre au présent une attention complète.",
+        "Réviser le plan lorsque les faits changent, au lieu de prolonger mécaniquement l'inquiétude."
+      ],
+      "key_phrase": "Préparer demain en actes limités, puis laisser aujourd'hui recevoir toute votre présence.",
+      "questions": [
+        "Quelle décision future mérite réellement une action maintenant ?",
+        "Quel moment présent est-ce que je néglige en poursuivant une hypothèse ?",
+        "Ma prévoyance protège-t-elle l'avenir, ou cherche-t-elle une certitude qu'aucun plan ne peut offrir ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §5 : présent, avenir et prévoyance",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L'idée tient ensemble la réalité du présent et la nécessité de prévoir ; elle ne se réduit ni à l'instantanéisme ni à la gestion du temps."
+      },
+      "themes": ["appréciation"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne organise quelques échéances sur un calendrier puis profite d'un repas avec un proche.",
+      "image_scene": "Illustration éditoriale adulte carrée en gravure contemporaine et gouache : table partagée, au premier plan un petit calendrier et un stylo avec quelques repères abstraits sans texte lisible, au second plan deux adultes présents l'un à l'autre autour d'un repas ; équilibre entre planification et chaleur du moment, bleu profond, ivoire, ocre, sans logo."
+    },
+    {
+      "id": "rule-15",
+      "order": 15,
+      "title": "Mesurer le malheur sans l'amplifier",
+      "summary": "Comparer sa situation à une situation plus douloureuse peut apporter un soulagement, à condition de ne pas transformer cette comparaison en déni. Le geste n'affirme pas que la peine actuelle est imaginaire ; il remet en question l'idée qu'elle serait le pire scénario possible. L'envie fonctionne souvent à l'inverse : elle fixe le regard sur ce qu'un autre possède et rend invisible ce qui nous soutient encore. Une comparaison utile élargit donc le cadre. Elle peut faire apparaître une ressource négligée, une marge de manœuvre ou simplement la proportion réelle d'une perte. Elle devient cruelle lorsqu'elle sert à faire taire quelqu'un : « d'autres souffrent davantage » n'est pas une réponse à une douleur, encore moins à une injustice. La règle est un instrument de perspective pour soi, pas une hiérarchie morale des souffrances. Elle doit être associée à une action, même minime ; sinon elle ne produit qu'une consolation abstraite. Savoir que la situation pourrait être pire n'interdit ni de la prendre au sérieux, ni de chercher à la rendre meilleure.",
+      "example": "Après une opération qui l'empêche de travailler plusieurs semaines, Claire se surprend à envier les collègues qui poursuivent leurs projets. Son frère lui rappelle les complications qu'elle a évitées, mais elle ne se sent pas immédiatement consolée. Elle reformule alors la comparaison à sa manière : elle note ce qui est perdu, ce qui est préservé et ce qui peut être organisé. Elle demande une aide pour les courses, garde un contact professionnel limité et cesse de regarder les annonces de promotion. La comparaison ne supprime pas la douleur ; elle l'empêche seulement de devenir l'unique réalité de sa convalescence.",
+      "advice": [
+        "Décrire d'abord la difficulté présente sans la relativiser devant vous-même.",
+        "Chercher une comparaison qui révèle une ressource ou une limite concrète, pas une personne à mépriser.",
+        "Ajouter à cette perspective une action qui diminue effectivement la difficulté.",
+        "Ne pas utiliser cette règle pour interrompre la plainte légitime d'une autre personne."
+      ],
+      "key_phrase": "Élargir la perspective peut soulager une peine, sans nier qu'elle mérite attention.",
+      "questions": [
+        "Qu'est-ce qui est réellement douloureux dans ma situation, sans exagération ni minimisation ?",
+        "Quelle ressource ou quelle limite la comparaison rend-elle visible ?",
+        "Suis-je en train de chercher une perspective pour agir, ou une formule pour interdire toute plainte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §10 : envie et comparaison des maux",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle reprend l'effet de soulagement produit par la comparaison, tout en distinguant cet usage personnel de la minimisation d'autrui."
+      },
+      "themes": ["réduction de la souffrance"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne observe une scène plus large depuis une fenêtre et distingue à la fois sa peine et ses ressources.",
+      "image_scene": "Illustration éditoriale adulte carrée, gravure et aplats de gouache : personne assise près d'une fenêtre, un bandage discret ou une béquille suggère une convalescence sans dramatisation, dehors plusieurs immeubles et lumières à des distances différentes ; perspective élargie, expression lucide, palette sourde bleu-gris et ocre, aucun texte."
+    },
+    {
+      "id": "rule-16",
+      "order": 16,
+      "title": "Réduire les attentes devant l'instabilité du bonheur",
+      "summary": "Le bonheur durable auquel nous demandons de justifier notre existence est une promesse trop fragile pour guider chaque décision. Les plaisirs arrivent, passent et peuvent être suivis d'un nouveau manque ; la douleur, elle, attire l'attention avec une force plus immédiate. Cette asymétrie ne commande pas de mépriser toute joie. Elle invite à mesurer autrement la réussite d'une journée : moins par l'intensité d'un gain que par l'absence d'un mal évitable, la stabilité d'une relation, la santé préservée ou la tranquillité gagnée. Réduire ses attentes ne signifie pas viser petit par peur, ni accepter une injustice sans résistance. Cela signifie ne pas convertir chaque désir en condition préalable au contentement. Une ambition peut rester légitime si elle est compatible avec les moyens, les forces et les aléas réels. La lucidité protège alors contre le mouvement qui transforme une amélioration en nouvelle norme, puis la nouvelle norme en déception. La règle est austère : elle ne promet pas une méthode pour devenir heureux, mais une façon de rendre la souffrance moins dépendante de nos exigences.",
+      "example": "Pour son anniversaire, Julien attend une soirée parfaite et prépare une liste d'invités, de plats et de photos à publier. Une dispute entre deux amis et une panne de four bouleversent le programme. Il avait d'abord l'impression que la journée était gâchée ; il décide finalement de conserver le repas simple, de parler séparément aux deux invités et de laisser tomber les images prévues. La soirée n'atteint pas le scénario imaginé, mais elle reste vivable et même chaleureuse par moments. Julien comprend que son attente n'était pas seulement un désir : elle était devenue le prix imposé à toute satisfaction.",
+      "advice": [
+        "Distinguer ce qui est nécessaire à votre bien-être de ce qui rendrait l'expérience plus agréable.",
+        "Prévoir une version suffisante de vos projets avant d'en construire la version idéale.",
+        "Observer quand une amélioration devient une nouvelle obligation qui interdit de se satisfaire.",
+        "Combattre les dommages évitables sans exiger que la vie fournisse une réussite continue."
+      ],
+      "key_phrase": "Moins exiger du bonheur ne supprime pas la joie ; cela réduit le pouvoir de la déception.",
+      "questions": [
+        "Quelle attente transforme actuellement un bien possible en condition obligatoire ?",
+        "Quelle version suffisamment bonne de ce projet préserverait mes forces ?",
+        "À quel moment réduire mes attentes risquerait-il de m'empêcher de réclamer un droit légitime ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §§1–3 ; chapitre VI sur les deux moitiés de la vie",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L'adaptation conserve la thèse du bonheur instable et de la douleur positive, mais ne la transforme pas en refus de toute ambition ou de toute joie."
+      },
+      "themes": ["maîtrise de soi"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une table d'anniversaire imparfaite mais chaleureuse après l'abandon d'un programme trop ambitieux.",
+      "image_scene": "Illustration éditoriale adulte carrée en gouache et encre : table d'anniversaire simple, gâteau légèrement irrégulier, quelques invités conversent avec naturel ; au sol un plan froissé et des décorations inachevées, sans tristesse théâtrale, lumière chaude contre un fond bleu nuit, aucun texte lisible ni logo."
+    },
+    {
+      "id": "rule-17",
+      "order": 17,
+      "title": "Vivre à la fois comme acteur et spectateur",
+      "summary": "Une existence ne se réduit pas à ce que nous ressentons au milieu de l'action. Il existe aussi un point de vue qui observe, compare, comprend et donne une forme à l'expérience. Schopenhauer distingue ainsi la vie subjective de l'acteur, prise dans ses intérêts et ses souffrances, et la vie objective du spectateur, capable de considérer les choses avec davantage de recul. Il ne s'agit pas de supprimer la première : un problème vécu réclame parfois une décision, une protection ou une peine réelle. Mais si nous restons collés à l'événement, chaque détail devient une menace ou une victoire personnelle. Prendre une distance objective peut faire apparaître la structure d'une situation : ce qui dépend de nous, ce qui relève d'une relation, ce qui n'est qu'un épisode. La littérature, la musique, l'étude ou une conversation honnête peuvent offrir ce déplacement. Le risque inverse est de se réfugier dans l'observation pour ne plus agir. Le spectateur utile revient donc vers la scène avec une compréhension plus nette et une décision proportionnée.",
+      "example": "Après une réunion tendue, Inès est convaincue d'avoir été humiliée. Elle annule sa soirée pour rejouer chaque phrase. Le lendemain, elle écrit le compte rendu factuel, demande à une collègue ce qu'elle a observé et relit la situation comme un épisode de travail plutôt que comme un jugement définitif sur elle. Elle constate une remarque déplacée, mais aussi une information qu'elle n'avait pas préparée. Elle signale la première et prépare la seconde. La distance ne transforme pas l'incident en détail insignifiant ; elle lui permet de choisir deux réponses au lieu de confondre blessure, honte et verdict.",
+      "advice": [
+        "Décrire l'événement comme une scène observable, en séparant paroles, interprétations et conséquences.",
+        "Chercher un point de vue extérieur fiable : œuvre, personne, document ou temps de recul.",
+        "Identifier ce qui demande une action concrète avant de poursuivre l'analyse.",
+        "Revenir à la situation avec une décision limitée plutôt qu'avec une nouvelle théorie sur vous-même."
+      ],
+      "key_phrase": "Prendre du recul éclaire l'action ; il ne doit pas devenir une manière de quitter la réalité.",
+      "questions": [
+        "Que verrait un observateur attentif s'il séparait les faits de mon interprétation ?",
+        "Quelle œuvre, personne ou méthode peut m'aider à élargir le cadre ?",
+        "Est-ce que j'observe pour mieux agir, ou pour éviter une décision qui me concerne ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §17 : double vie de l'acteur et du spectateur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La distinction entre point de vue subjectif et objectif est conservée sans opposer artificiellement émotion et raison ni valoriser la fuite hors du monde."
+      },
+      "themes": ["perspective réaliste"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne observe une scène de travail depuis une distance réfléchie avant de revenir agir.",
+      "image_scene": "Illustration éditoriale adulte carrée, mélange de gravure et gouache : une personne assise à une table avec un compte rendu, au fond une réunion apparaît comme une scène encadrée et légèrement distante ; le personnage regarde puis se lève avec calme, composition en deux plans, palette ivoire, bleu pétrole et ocre, aucun texte ni logo."
+    },
+    {
+      "id": "rule-18",
+      "order": 18,
+      "title": "Tenir la fantaisie sous la bride",
+      "summary": "L'imagination agrandit ce qu'elle touche. Elle peut rendre une réussite plus vive, mais elle peut aussi fabriquer des châteaux dans les airs ou dérouler des malheurs qui n'existent pas encore. Dans les deux cas, l'esprit réagit à une image comme s'il possédait déjà une part de la réalité. La règle ne demande pas de devenir froid ni de supprimer toute anticipation. Elle invite à reconnaître le statut de ce que l'on imagine : possibilité, désir, souvenir ou fait. Une image séduisante ne vaut pas une expérience vécue ; un scénario inquiétant ne vaut pas une preuve. Cette distinction protège notamment les décisions prises sous l'effet d'une promesse professionnelle, d'une relation idéalisée ou d'une peur répétée. On peut donner à la fantaisie une place limitée : noter l'hypothèse, vérifier les éléments observables, puis revenir à la prochaine action. Lorsque l'imagination signale un danger réel, il faut enquêter et se protéger, non la rabattre automatiquement. La mesure consiste à empêcher le film intérieur de gouverner seul, sans confondre lucidité et méfiance permanente.",
+      "example": "À la veille d'un premier rendez-vous, Thomas imagine déjà une relation parfaite, puis alterne avec des scènes de rejet et de honte. Il annule presque. Il note ce qu'il sait : un échange agréable et un rendez-vous prévu dans un lieu public. Tout le reste est hypothèse. Il décide d'y aller pour rencontrer cette personne, pas pour vérifier un avenir imaginé. Après la soirée, il évalue ce qu'il a réellement observé et choisit ou non de revoir cette personne. La fantaisie n'a pas disparu ; elle a cessé de se faire passer pour un résultat.",
+      "advice": [
+        "Étiqueter mentalement les images comme faits, souvenirs, désirs ou hypothèses.",
+        "Vérifier une information observable avant de prendre une décision fondée sur un scénario.",
+        "Limiter le temps consacré à une projection et terminer par une action présente et mesurable.",
+        "Prendre au sérieux une alerte répétée lorsqu'elle repose sur des faits, au lieu de la traiter comme une simple fantaisie."
+      ],
+      "key_phrase": "Une image peut orienter l'esprit ; elle ne doit pas se faire passer pour l'événement.",
+      "questions": [
+        "Quelle part de ce que je ressens vient d'un fait observé, et quelle part vient d'un scénario ?",
+        "Quelle vérification simple remplacerait aujourd'hui une longue projection ?",
+        "Est-ce que je réduis une alerte fondée sur des faits au prétexte qu'elle pourrait n'être que de l'imagination ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §13 : châteaux en l'air et imagination des maux possibles",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La scène contemporaine traduit l'effet amplificateur de l'imagination sans importer une théorie clinique de l'anxiété."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne distingue sur un carnet les faits observés des images imaginées avant un rendez-vous.",
+      "image_scene": "Illustration éditoriale adulte carrée en gravure et gouache : personne devant un carnet partagé visuellement entre une petite scène réelle de café et des formes nuageuses de projections qui s'éloignent ; ambiance de discernement, pas de cauchemar, palette bleu profond, crème, ocre et rouge discret, aucun texte lisible."
+    },
+    {
+      "id": "rule-19",
+      "order": 19,
+      "title": "Ne pas laisser l'impression immédiate gouverner",
+      "summary": "Une impression présente, sensible et vive frappe l'esprit avec une force que les raisons abstraites atteignent rarement. C'est pourquoi une mauvaise nouvelle reçue ce matin peut effacer dix années de stabilité, ou une flatterie transformer provisoirement un inconnu en allié sûr. La règle ne conseille pas de mépriser les émotions : elles signalent parfois un danger ou une importance. Elle demande de ne pas leur confier seules le jugement. Pour retrouver une proportion, il faut introduire un élément qui n'est pas absorbé par l'impression dominante : un fait contraire, un délai, un souvenir complet, l'avis d'une personne extérieure. Cette contre-impression ne consiste pas à se répéter que tout va bien. Elle consiste à rétablir dans le champ ce que l'événement spectaculaire a chassé. Une colère peut rester justifiée après examen ; une peur peut conduire à une précaution. Mais la décision gagne à être prise lorsque l'expérience immédiate a cessé de monopoliser l'attention. Le présent mérite d'être vécu, sans devenir le seul tribunal du passé et du futur.",
+      "example": "Un message bref de sa directrice fait croire à Léa qu'elle va être licenciée. Elle prépare aussitôt une réponse agressive et consulte son compte bancaire. Au lieu d'envoyer le message, elle attend le lendemain, relit son contrat et demande le contexte du rendez-vous. Elle découvre que la réunion concerne une réorganisation générale, avec plusieurs options encore ouvertes. Son inquiétude n'était pas absurde, mais elle avait converti une phrase ambiguë en certitude. Léa prépare ses questions et examine ses droits ; elle agit ainsi à partir de la situation, non de son premier éclair émotionnel.",
+      "advice": [
+        "Nommer l'impression dominante et différer les décisions irréversibles lorsqu'aucune urgence ne l'impose.",
+        "Chercher un fait, un souvenir ou un point de vue qui réintroduit la partie absente de la situation.",
+        "Transformer l'émotion en question vérifiable plutôt qu'en accusation ou en prédiction.",
+        "Agir rapidement seulement lorsque la sécurité ou un délai réel le demande, après une vérification minimale."
+      ],
+      "key_phrase": "L'impression immédiate mérite écoute et vérification, pas le pouvoir exclusif de décider.",
+      "questions": [
+        "Quelle impression dirige actuellement mon jugement, et quelle information lui manque-t-il ?",
+        "Quel délai ou quel fait contraire m'aiderait à retrouver une proportion ?",
+        "Dans cette situation précise, attendre serait-il plus dangereux qu'agir malgré l'émotion ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Eudämonologie, règle 33 ; Aphorismen zur Lebensweisheit, chapitre V, §§5 et 19",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle distingue la force de l'impression intuitive de sa vérité complète ; la contre-impression est une opération de mise en proportion, non une négation émotionnelle."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne suspend l'envoi d'un message impulsif et vérifie calmement les faits qui l'entourent.",
+      "image_scene": "Illustration éditoriale adulte carrée, gravure à l'encre et gouache : téléphone posé face contre table à côté d'un carnet, personne prenant une respiration et consultant un document éclairé ; arrière-plan avec une ombre vive qui se dissipe, composition sobre, bleu nuit, ivoire et ocre, aucun texte lisible ni logo."
+    },
+    {
+      "id": "rule-20",
+      "order": 20,
+      "title": "Ne pas exposer sa colère",
+      "summary": "La colère donne souvent envie de montrer qu'elle nous anime : voix plus forte, gestes brusques, message envoyé pour blesser, visage destiné à intimider. Pourtant, l'expression spectaculaire renseigne l'adversaire sur notre vulnérabilité et réduit notre capacité à choisir. Elle peut aussi fournir à l'autre une faute visible qui détourne l'attention du problème initial. Retenir l'expression immédiate ne signifie pas approuver ce qui s'est passé ni devenir docile. Cela signifie refuser de remettre la conduite de l'échange à l'impulsion qui cherche une décharge. Une réponse ferme peut être préparée plus tard : poser une limite, demander réparation, quitter un lieu, documenter un fait ou saisir une autorité. Dans une situation de violence, la priorité est la sécurité, pas la maîtrise élégante de son visage. La règle concerne surtout les conflits où l'explosion promet un soulagement bref et produit une perte durable : relation abîmée, parole exploitable, décision irréversible. La colère peut donc devenir une information sur une limite franchie, mais elle ne doit pas automatiquement devenir un spectacle ni une arme contre soi.",
+      "example": "Dans un groupe de travail, Paul découvre qu'une collègue a présenté son idée sans le citer. Il rédige un message cinglant et s'apprête à l'envoyer à toute l'équipe. Il le sauvegarde, quitte son écran et revient le lendemain avec les documents datés. En entretien, il décrit le fait, demande que la contribution soit reconnue et propose une règle de présentation pour la suite. La collègue corrige le document. Paul n'a pas renoncé à sa revendication ; il a évité de donner à son irritation le contrôle de la forme, du public et de la suite du conflit.",
+      "advice": [
+        "Éloigner-vous quelques minutes de la scène ou du clavier avant toute parole irréversible.",
+        "Conserver les faits, les dates et la demande concrète séparément du jugement porté sur la personne.",
+        "Choisir une réponse proportionnée : limite, réparation, retrait, médiation ou signalement.",
+        "Si une menace ou une violence existe, chercher d'abord une protection extérieure plutôt que négocier seul."
+      ],
+      "key_phrase": "La colère peut signaler une limite ; sa mise en scène ne garantit ni justice ni efficacité.",
+      "questions": [
+        "Quelle limite ou quel fait ma colère signale-t-elle exactement ?",
+        "Quelle réponse ferme protégerait mes intérêts sans élargir inutilement le conflit ?",
+        "Suis-je dans un conflit ordinaire, ou dans une situation où ma sécurité exige une aide immédiate ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen zur Lebensweisheit, chapitre V, §45 : expression de la colère et de la haine",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L'adaptation conserve la critique de l'exhibition de la colère, mais distingue la retenue stratégique du silence imposé face à une violence."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["clarte", "tranquillite"],
+      "image_alt": "Une personne met de côté un message colérique et prépare une réponse factuelle à une injustice professionnelle.",
+      "image_scene": "Illustration éditoriale adulte carrée en gravure contemporaine et gouache : bureau de travail, écran éteint et feuille froissée au premier plan, personne debout rédigeant calmement une réponse factuelle avec des documents datés ; tension contenue mais non effacée, palette bleu pétrole, ivoire, ocre et rouge sombre, aucun texte lisible ni logo."
+    }
+  ]
+}

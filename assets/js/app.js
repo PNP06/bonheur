@@ -917,12 +917,16 @@ const App = (() => {
       QuestionnaireApp.render(app);
     } else if (current.page === 'tableau-de-bord') await renderReader('tableau-de-bord', current.anchor);
     else if (current.page === 'sources') await renderReader('references', current.anchor);
+    else if (current.page === 'art-heureux') {
+      setPageTitle('L’Art d’être heureux');
+      await ArtHeureuxApp.render(app, current);
+    }
     else if (current.page === 'lire' && current.docId === 'rapport-complet') renderReadableReportHub(current.anchor);
     else if (current.page === 'lire') await renderReader(current.docId, current.anchor);
     else renderReadableHome();
 
-    if (!current.anchor && current.page !== 'lire') {
-      const resetScroll = () => document.getElementById('top')?.scrollIntoView({ block: 'start' });
+    if (current.page !== 'lire') {
+      const resetScroll = () => window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
       window.setTimeout(resetScroll, 0);
       window.setTimeout(resetScroll, 80);
       window.setTimeout(resetScroll, 350);
@@ -940,6 +944,12 @@ const App = (() => {
     navToggle.addEventListener('click', () => {
       const open = primaryNav.classList.toggle('is-open');
       navToggle.setAttribute('aria-expanded', String(open));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape' || !primaryNav.classList.contains('is-open')) return;
+      closeNav();
+      navToggle.focus();
     });
 
     app.addEventListener('click', (event) => {

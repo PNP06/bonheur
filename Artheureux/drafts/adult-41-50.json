@@ -1,0 +1,305 @@
+{
+  "edition": "adult",
+  "rules": [
+    {
+      "id": "rule-41",
+      "order": 41,
+      "title": "Cesser de refaire le malheur après coup",
+      "summary": "Après un malheur, l’esprit construit facilement une bifurcation imaginaire : si j’avais répondu autrement, si cette personne avait attendu, si cette décision n’avait pas été prise, tout aurait pu devenir différent. La règle ne nie pas que des choix aient contribué à l’événement. Elle vise le mouvement qui transforme un fait accompli en procès sans fin du possible irréalisé. Une fois le résultat advenu, les chemins non suivis n’existent plus comme solutions disponibles ; ils ne servent qu’à nourrir la comparaison avec une histoire inventée. Cette idée prolonge la réflexion sur la nécessité sans lui ajouter de providence : le malheur n’était pas destiné à nous instruire, et son existence ne le rend ni juste ni mérité. Cesser de le refaire mentalement peut rendre disponibles l’examen des causes, la réparation, la protection et le deuil. Il faut donc distinguer deux gestes. Comprendre ce qui aurait pu être mieux décidé aide parfois l’avenir ; répéter indéfiniment la scène ne change pas le passé. La règle demande de fermer la porte des alternatives irréalisables, pas de fermer celle de l’action encore possible.",
+      "example": "Après une chute dans l’escalier de son immeuble, Farah repasse chaque soir la scène. Elle se reproche d’avoir regardé son téléphone, puis imagine le voisin qui aurait pu nettoyer plus tôt la marche humide. L’assurance lui demande des faits ; son médecin lui conseille une rééducation. Elle note les causes établies, transmet les photos du sol et installe une rampe provisoire chez elle. Quand revient la pensée « si seulement », elle la reconnaît comme une histoire sans accès au passé, puis revient à la séance suivante ou à la démarche utile. La douleur reste réelle, mais elle ne la double plus d’un accident mental répété.",
+      "advice": [
+        "Écrire les faits vérifiables, les responsabilités possibles et les hypothèses qui ne peuvent plus être testées.",
+        "Réserver l’analyse à une question tournée vers la prévention ou la réparation.",
+        "Interrompre la reconstitution d’une scène dès qu’elle ne produit plus aucune action actuelle.",
+        "Chercher une protection ou un soutien lorsque le malheur résulte d’une violence ou d’un danger persistant."
+      ],
+      "key_phrase": "Le passé peut être compris sans être rejoué comme une possibilité encore ouverte.",
+      "questions": [
+        "Quelle leçon vérifiable puis-je tirer de ce qui s’est passé ?",
+        "Quelle partie de mon récit n’est qu’une possibilité que le réel a déjà fermée ?",
+        "Suis-je en train de renoncer à agir, ou de renoncer seulement à refaire le passé ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 41 ; impossibilité de refaire le malheur et distinction avec la nécessité de la règle 39",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La formulation distingue l’abandon des possibles irréalisés de l’examen des causes, de la réparation et de la demande de protection."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["acceptation", "réparation"],
+      "image_alt": "Une femme s’éloigne d’un escalier brisé tandis qu’un chemin praticable reste ouvert devant elle",
+      "image_scene": "Illustration adulte contemporaine en gravure et gouache : une femme quitte un escalier dont une marche est brisée, un carnet de faits fermé dans sa main et une rampe neuve visible plus loin ; symbolique sobre, bleu nuit, ivoire, rouille et vert mousse, sans texte."
+    },
+    {
+      "id": "rule-42",
+      "order": 42,
+      "title": "Ne pas confier sa vie à un plan trop lointain",
+      "summary": "Un long plan donne à l’existence une forme rassurante, mais il suppose une stabilité que ni le monde ni la personne ne possèdent. Les circonstances changent, les obstacles se multiplient et celui qui atteint l’étape finale n’est déjà plus exactement celui qui avait commencé. Plus l’horizon est éloigné, plus les détails nécessaires sont imaginés plutôt que connus. La prudence schopenhauerienne ne conseille pas de vivre sans direction ; elle rappelle que la durée ne se laisse pas commander par une volonté seule. Un projet peut donc servir de repère sans devenir un contrat signé avec l’avenir. Il faut accepter qu’une maladie, une rencontre, une perte de revenu ou une transformation des goûts modifie la route. Cette réserve ne transforme pas le renoncement en sagesse automatique : certains engagements exigent de persévérer malgré l’inconfort, et les plus vulnérables ne disposent pas toujours du luxe de changer de plan. L’enjeu est de ne pas sacrifier toute la vie présente à une image lointaine dont les conditions se dérobent. Une direction raisonnable ménage des étapes, des réserves et des occasions de vérifier si ce qu’elle promet reste désirable.",
+      "example": "Pendant dix ans, Benoît économise pour quitter son emploi à cinquante-cinq ans et vivre dans une région précise. Une réforme de son secteur réduit ses revenus, puis sa mère devient dépendante. Il ne détruit pas son objectif, mais il cesse de le traiter comme une date sacrée. Il loue d’abord une maison quelques semaines, ajuste son budget et envisage un temps partiel plus proche de sa famille. Le grand départ n’est plus la récompense qui justifierait toutes les années précédentes. Il garde une direction, tout en laissant la réalité corriger la forme du projet.",
+      "advice": [
+        "Découper un projet lointain en étapes dont les conditions peuvent réellement être vérifiées.",
+        "Prévoir une réserve de temps, d’argent ou d’énergie pour les événements qui démentent le plan.",
+        "Fixer des dates de réexamen au lieu de traiter l’objectif final comme une obligation sacrée.",
+        "Maintenir aujourd’hui une part de vie qui ne dépend pas de la réussite future."
+      ],
+      "key_phrase": "Une direction aide à avancer ; elle ne garantit pas la forme de l’arrivée.",
+      "questions": [
+        "Quelle partie de mon plan repose sur des conditions que je ne connais pas encore ?",
+        "Quelle étape proche permettrait d’éprouver ce projet sans tout miser dessus ?",
+        "Que suis-je en train de sacrifier au nom d’un avenir devenu incertain ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 42 ; fragilité des plans étendus par la durée, les obstacles et le changement personnel",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "L’application contemporaine conserve le pessimisme sur la durée sans présenter la révision comme une réussite garantie."
+      },
+      "themes": ["adaptabilité"],
+      "needs": ["prévoyance", "mesure"],
+      "image_alt": "Un homme tient une carte dont la longue route se transforme en plusieurs étapes visibles",
+      "image_scene": "Gravure éditoriale adulte en gouache : un homme déplie une carte longue dont le tracé se divise en étapes autour d’un relief réel ; une petite lampe éclaire le prochain segment plutôt que l’horizon entier, bleu nuit, ivoire, ocre et rouille, sans texte."
+    },
+    {
+      "id": "rule-43",
+      "order": 43,
+      "title": "Garder du temps pour ce que l’on porte en soi",
+      "summary": "La richesse intérieure ne se confond pas avec l’accumulation d’occupations, de relations ou de possessions. Elle demande un espace où l’attention puisse lire, observer, composer, réfléchir ou simplement laisser une expérience prendre forme. Sans ce loisir, les capacités personnelles restent disponibles en théorie mais ne deviennent jamais une manière vécue d’habiter le monde. Schopenhauer oppose ainsi la valeur d’une vie intérieure à l’agitation qui cherche sans cesse des distractions extérieures. Cette idée ne doit pas servir à mépriser le travail, les responsabilités ou les plaisirs partagés : beaucoup de personnes manquent de temps parce que leurs conditions matérielles les y contraignent. Réserver du loisir n’est donc pas seulement une affaire de discipline privée ; cela peut nécessiter de négocier une charge, de protéger un espace ou de reconnaître une inégalité. Le temps dégagé ne garantit pas une pensée profonde. Il ouvre seulement la possibilité de découvrir si l’on possède une activité, une curiosité ou une attention capables de soutenir la solitude. La règle invite à défendre ce temps comme un bien réel, non comme le résidu laissé par toutes les urgences.",
+      "example": "Après chaque journée de soins, Salomé s’endort devant des vidéos qu’elle ne choisit pas vraiment. Elle croit ne plus avoir de goût personnel, puis comprend que ses heures libres sont morcelées par les notifications et les tâches imprévues. Elle demande à sa sœur de garder les enfants deux heures le samedi, coupe le téléphone et reprend un carnet de dessins. Les premières pages lui semblent pauvres. Après quelques semaines, elle remarque les formes qu’elle observe dans la rue et organise une petite série. Le loisir n’a pas résolu sa fatigue ni ses obligations, mais il a rendu visible une part d’elle que l’urgence recouvrait.",
+      "advice": [
+        "Identifier une activité qui nourrit votre attention plutôt qu’une distraction qui la disperse.",
+        "Protéger un créneau régulier, même court, contre les sollicitations non urgentes.",
+        "Négocier avec les proches ou le travail les conditions concrètes de ce temps.",
+        "Accepter qu’une pratique intérieure commence sans résultat remarquable ni plaisir immédiat."
+      ],
+      "key_phrase": "Le temps libre révèle une richesse intérieure que l’urgence laisse invisible.",
+      "questions": [
+        "Qu’est-ce que je fais lorsque personne ne me demande de produire ou de répondre ?",
+        "Quelle activité mérite une place protégée dans ma semaine ?",
+        "Quels obstacles matériels rendent ce loisir difficile, et qui pourrait m’aider à les réduire ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 43 ; loisir nécessaire au développement et à la jouissance des richesses intérieures",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "Le temps protégé et les contraintes sociales sont des applications contemporaines ; ils ne sont pas attribués textuellement à Schopenhauer."
+      },
+      "themes": ["appréciation"],
+      "needs": ["loisir", "attention"],
+      "image_alt": "Une personne dessine près d’une fenêtre dans un espace calme protégé des objets du travail",
+      "image_scene": "Illustration éditoriale adulte en gravure et gouache : une personne dessine près d’une fenêtre, un carnet et une tasse sur une petite table, les objets professionnels rangés derrière elle ; calme sans isolement héroïque, bleu nuit, ivoire, ocre et vert mousse, aucun texte."
+    },
+    {
+      "id": "rule-44",
+      "order": 44,
+      "title": "Faire de sa personnalité un refuge sans la croire toute-puissante",
+      "summary": "Ce que l’on possède en propre accompagne chaque déplacement et peut offrir une protection contre deux formes de malheur : l’épreuve qui vient de l’extérieur et l’ennui qui naît de l’absence d’occupation intérieure. Une intelligence vive, une gaieté spontanée ou une capacité à s’intéresser aux choses donnent des ressources que la richesse et la réputation ne remplacent pas facilement. Mais cette hiérarchie ne doit pas devenir un éloge abstrait de la personnalité. Les dispositions sont inégalement distribuées, formées par une histoire, et sensibles à la maladie, à l’épuisement et aux conditions de vie. On ne commande pas à volonté la gaieté qui nous manque. La règle invite plutôt à reconnaître les ressources réellement présentes, à leur faire une place et à ne pas tout investir dans les biens extérieurs. Elle ne permet pas de conclure qu’une personne qui souffre n’aurait pas assez de caractère, ni que l’intellect rend invulnérable. La personnalité peut rendre certaines circonstances plus supportables ; elle ne supprime ni la douleur, ni l’injustice, ni le besoin d’aide. Son avantage est plus modeste : elle constitue parfois un lieu intérieur auquel les événements n’ont pas entièrement accès.",
+      "example": "Quand son entreprise ferme, Idriss perd son revenu, son statut et son cercle professionnel. Il s’aperçoit pourtant qu’il sait expliquer les choses clairement, réparer de vieux appareils et faire rire ses neveux. Ces qualités ne paient pas immédiatement son loyer ; il demande une aide sociale et cherche un emploi. En parallèle, il propose un atelier bénévole dans son quartier, puis utilise cette expérience pour postuler dans une association. Ce qu’il possède n’a pas annulé la perte extérieure. Cela lui a fourni une activité et des relations pendant qu’il reconstruisait des conditions plus sûres.",
+      "advice": [
+        "Lister les capacités ou goûts qui restent disponibles même lorsque le statut change.",
+        "Donner à l’une de ces ressources une activité régulière et située dans le réel.",
+        "Chercher une aide matérielle ou médicale au lieu d’exiger de votre personnalité qu’elle suffise.",
+        "Ne pas transformer une qualité présente en obligation de rester gai ou performant."
+      ],
+      "key_phrase": "Ce qui nous habite peut soutenir la vie, sans abolir ce qui lui arrive.",
+      "questions": [
+        "Quelle ressource personnelle ai-je négligée en dépendant surtout d’un avantage extérieur ?",
+        "Dans quelles conditions cette ressource peut-elle réellement s’exercer ?",
+        "Suis-je en train de me protéger, ou de demander à mon caractère de nier une difficulté ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 44 ; personnalité, gaieté et intellect comme protections distinctes contre douleur et ennui",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle préserve la priorité de ce que l’on est, tout en refusant d’en faire une maîtrise volontaire ou une explication morale de la souffrance."
+      },
+      "themes": ["perspective réaliste"],
+      "needs": ["identité", "soutien"],
+      "image_alt": "Un homme porte une petite lampe intérieure tandis qu’un décor professionnel se défait autour de lui",
+      "image_scene": "Gravure éditoriale contemporaine en gouache : un homme tient une petite lampe allumée devant des éléments de bureau démontés, tandis qu’un établi et des outils apparaissent derrière lui ; symbole discret d’une ressource personnelle, bleu nuit, ivoire, rouille et ocre, sans texte."
+    },
+    {
+      "id": "rule-45",
+      "order": 45,
+      "title": "Reconnaître que les mêmes impressions ne touchent pas tous les esprits",
+      "summary": "Deux constitutions ne reçoivent pas de la même manière ce qui leur arrive. Une bonne nouvelle peut être accueillie avec élan par l’un et avec méfiance par l’autre ; une remarque légère peut blesser profondément une personne et glisser sur une autre. Schopenhauer distingue ainsi des dispositions plus sombres ou plus ouvertes aux impressions favorables, non comme des compétences que l’on acquerrait par simple entraînement, mais comme des manières de sentir qui ont une profondeur propre. Cette distinction aide à comprendre pourquoi un conseil identique produit des effets différents. Elle protège aussi contre l’idée que l’optimisme visible serait la mesure de la valeur d’une vie. La disposition n’est cependant pas une fatalité pratique : le contexte, le corps, les relations et les habitudes peuvent modifier ce qui devient supportable, sans refaire entièrement le tempérament. Il faut donc renoncer à la comparaison morale. On peut aménager une situation, choisir une exposition, chercher une présence fiable ou traiter une difficulté persistante ; on ne peut pas ordonner à quelqu’un de recevoir le monde comme nous. La prudence consiste à tenir ensemble cette marge d’action et cette inégalité de sensibilité.",
+      "example": "Lors d’une réunion familiale, une plaisanterie sur les reconversions fait rire plusieurs personnes. Pour Maud, qui vient de perdre son emploi, elle résonne comme une accusation. Son frère lui conseille de ne pas le prendre personnellement, mais elle lui explique que son humeur n’est pas un simple interrupteur. Elle quitte un moment la table, puis revient lorsqu’un échange plus calme devient possible. Les autres cessent de lui demander d’être immédiatement légère. La plaisanterie n’a pas changé de mots ; la situation, l’histoire et la sensibilité de Maud lui donnaient un autre poids.",
+      "advice": [
+        "Observer les situations qui vous chargent ou vous allègent sans les convertir en défaut moral.",
+        "Réduire une exposition inutile lorsque votre sensibilité est déjà mise à rude épreuve.",
+        "Expliquer à vos proches l’effet réel d’une situation au lieu d’exiger qu’ils devinent.",
+        "Consulter un professionnel si une disposition douloureuse devient persistante ou empêche de vivre."
+      ],
+      "key_phrase": "Une même circonstance change de poids selon l’esprit qui la reçoit.",
+      "questions": [
+        "Quelle impression me touche davantage que les personnes qui m’entourent ?",
+        "Quel aménagement respecte cette sensibilité sans organiser toute ma vie autour d’elle ?",
+        "Suis-je en train de juger une disposition que je ne peux pas simplement commander ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 45 ; Duskolos et Eukolos, dispositions différentes aux impressions favorables et défavorables",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La disposition est présentée comme une constitution à prendre en compte, non comme une compétence psychologique aisément acquise."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["compréhension", "protection"],
+      "image_alt": "Deux adultes entendent la même musique avec des réactions différentes dans une salle calme",
+      "image_scene": "Illustration adulte en gravure et gouache : deux adultes assis dans la même salle écoutent une musique suggérée par des formes lumineuses, l’un se ferme légèrement, l’autre s’ouvre ; expressions nuancées, bleu nuit, ivoire, ocre et vert mousse, aucun texte ni symbole sonore littéral."
+    },
+    {
+      "id": "rule-46",
+      "order": 46,
+      "title": "Accorder une place à la vie philosophique",
+      "summary": "Une vie heureuse, dans l’hypothèse exigeante de cette règle, ne dépend pas seulement de la quantité de plaisirs obtenus. Elle suppose une activité de l’esprit qui cherche à comprendre, à ordonner et à contempler plutôt qu’à courir sans fin après les objets du désir. Le renvoi à Aristote donne à la vie philosophique une supériorité parce qu’elle mobilise ce qu’il y aurait de plus durable dans l’être humain. Schopenhauer reprend cette idée dans un cadre plus pessimiste : la réflexion peut offrir une distance à l’égard du vouloir et des occasions de souffrir, mais elle ne transforme pas le monde en lieu réconcilié. Il ne s’agit donc ni de se proclamer sage, ni de mépriser les métiers manuels, les liens affectifs ou les joies ordinaires. La philosophie est ici une manière d’examiner l’existence et ses illusions, accessible par la lecture, la conversation, l’observation ou l’écriture. Elle exige du temps et rencontre des limites : la pensée peut devenir une fuite, et comprendre une douleur ne la supprime pas. La règle propose une orientation, non une recette de bonheur. Elle demande ce qui mérite notre attention lorsque les satisfactions rapides perdent leur éclat.",
+      "example": "Après une promotion, Hélène remplit ses semaines de rendez-vous et d’achats pour célébrer sa réussite. Les plaisirs s’enchaînent, mais elle ne sait plus ce qu’elle poursuit. Elle rejoint un groupe qui lit un dialogue antique, sans chercher à y trouver une méthode de bien-être. Une discussion sur le désir l’oblige à examiner ses propres choix ; elle commence à écrire quelques pages après chaque séance. Son travail et ses amis restent présents. La réflexion ne la rend pas invulnérable, mais elle lui offre une activité qui ne dépend pas d’une nouveauté permanente.",
+      "advice": [
+        "Choisir une question durable à examiner plutôt qu’une réponse rapide à consommer.",
+        "Réserver un temps de lecture, d’écriture ou de conversation où l’on accepte la difficulté.",
+        "Relier une idée à votre conduite sans prétendre qu’elle supprimera la douleur.",
+        "Conserver des liens et des devoirs concrets lorsque la réflexion vous pousse à vous isoler."
+      ],
+      "key_phrase": "Penser la vie ne la rend pas facile, mais peut changer ce que l’on poursuit.",
+      "questions": [
+        "Quelle question mérite mon attention au-delà de la prochaine satisfaction ?",
+        "Ma réflexion éclaire-t-elle mes choix ou sert-elle à éviter toute décision ?",
+        "Quelle place puis-je donner à cette activité sans mépriser les réalités qui me tiennent ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 46 ; vie philosophique et renvoi à Aristote, Éthique à Nicomaque, X",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Le renvoi aristotélicien est conservé comme source historique ; les modalités de lecture et d’écriture sont des applications contemporaines."
+      },
+      "themes": ["appréciation"],
+      "needs": ["réflexion", "orientation"],
+      "image_alt": "Une femme lit et écrit près d’une fenêtre tandis que la ville s’efface dans une lumière calme",
+      "image_scene": "Gravure éditoriale adulte en gouache : une femme lit un volume sans texte visible et écrit dans un carnet près d’une fenêtre, la ville au dehors reste présente mais en retrait ; composition contemplative, bleu nuit, ivoire, ocre et rouille, sans texte lisible."
+    },
+    {
+      "id": "rule-47",
+      "order": 47,
+      "title": "Comprendre l’amitié comme une appartenance réciproque",
+      "summary": "L’amitié n’est pas seulement le plaisir de fréquenter quelqu’un qui nous plaît. Elle implique une forme de possession réciproque : chacun compte pour l’autre, chacun peut attendre une présence, une loyauté et une attention qui ne soient pas entièrement unilatérales. Le mot possession doit rester métaphorique. Il ne donne aucun droit de surveiller, d’absorber ou de disposer d’une personne comme d’un bien. La réciprocité signifie plutôt que l’amitié se reconnaît dans un lien partagé, où les intérêts et les joies de chacun entrent dans le champ de l’autre. Cette exigence n’impose pas une symétrie parfaite à chaque semaine : une maladie, un deuil ou une période de travail peuvent déséquilibrer les échanges. Elle devient importante lorsque l’asymétrie est permanente, cachée ou exploitée. La réflexion héritée d’Aristote rappelle aussi que toutes les relations agréables ne sont pas des amitiés au même sens. Une relation peut être utile ou plaisante sans supporter l’épreuve de l’absence d’avantage. Pour vivre cette règle aujourd’hui, il faut observer les actes, parler des attentes et respecter les frontières. Un ami n’est ni une propriété ni un service d’urgence ; c’est quelqu’un dont la vie a une place réelle dans la nôtre, et inversement.",
+      "example": "Depuis son divorce, Éric appelle Léon chaque soir pour raconter ses problèmes, mais coupe la conversation lorsque Léon parle de son propre père malade. Après plusieurs semaines, Léon lui dit qu’il veut rester son ami mais ne peut plus tenir ce rôle à sens unique. Ils conviennent de deux appels par semaine et d’un message avant de se confier longuement. Éric accepte d’écouter à son tour et cherche un autre soutien pour les urgences. Leur lien devient moins disponible à la demande, mais plus réciproque et plus durable. Ils retrouvent ainsi une confiance moins automatique.",
+      "advice": [
+        "Observer si chacun connaît réellement les préoccupations et les limites de l’autre.",
+        "Dire explicitement ce que vous pouvez offrir avant qu’une attente implicite ne devienne un reproche.",
+        "Accepter les déséquilibres temporaires sans les confondre avec une relation constamment exploitée.",
+        "Respecter un refus ou une distance sans traiter l’ami comme un bien qui vous serait dû."
+      ],
+      "key_phrase": "L’amitié lie deux libertés ; elle ne transforme aucune en propriété de l’autre.",
+      "questions": [
+        "Qu’est-ce qui montre concrètement que ce lien est partagé ?",
+        "Quelle limite dois-je exprimer pour que la relation reste vivable ?",
+        "Le déséquilibre que j’accepte est-il temporaire, ou constitue-t-il la règle du lien ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 47 ; amitié comme possession réciproque et renvoi à Aristote",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La possession est explicitement traduite comme appartenance réciproque du lien, jamais comme domination ou droit sur la personne."
+      },
+      "themes": ["relations et confiance"],
+      "needs": ["réciprocité", "limites"],
+      "image_alt": "Deux amis se passent une lampe au-dessus d’une table où chacun a une place visible",
+      "image_scene": "Illustration éditoriale adulte en gravure et gouache : deux amis assis de part et d’autre d’une table se passent une petite lampe, chacun dispose d’un carnet et d’un espace distinct ; proximité sans emprise, bleu nuit, ivoire, rouille et vert mousse, sans texte."
+    },
+    {
+      "id": "rule-48",
+      "order": 48,
+      "title": "Chercher une suffisance intérieure sans s’isoler du monde",
+      "summary": "Le bonheur extérieur dépend d’objets que l’on ne maîtrise jamais entièrement : argent, réputation, santé des proches, succès d’un projet ou affection reçue. Une certaine suffisance intérieure peut donc protéger contre les fluctuations de ces biens. Elle ne signifie pas n’avoir besoin de personne ni pouvoir vivre sans sécurité matérielle. Elle signifie que la valeur de la vie ne repose pas entièrement sur une acquisition, une approbation ou une présence particulière. Schopenhauer rapproche cette idée de l’autosuffisance philosophique, avec une réserve pessimiste : plus nos ressources sont placées dehors, plus elles peuvent nous être retirées. Chamfort et Aristote servent ici de repères historiques, non de preuves d’une indépendance émotionnelle absolue. Dans la réalité, les personnes dépendent aussi d’institutions, de soins, de solidarités et de revenus. La règle devient fausse si elle transforme cette dépendance légitime en faiblesse honteuse ou si elle demande à une victime de se suffire à elle-même. Son usage plus juste consiste à diversifier les appuis : entretenir une capacité, un goût, une relation fiable et une organisation matérielle qui ne soit pas suspendue à un seul verdict extérieur. L’autosuffisance est alors une marge, pas une forteresse.",
+      "example": "Après avoir été refusée à un concours, Lina ne répond plus à ses amis et conclut qu’elle n’a aucune valeur. Elle reprend son dossier, mais distingue le résultat de son existence entière. Elle accepte l’aide d’une collègue pour préparer une nouvelle candidature, recommence la photographie qu’elle aimait avant le concours et établit un budget réaliste pour six mois. Le prochain résultat compte toujours, mais il n’est plus le seul support de sa confiance. Elle dépend encore d’autres personnes ; elle ne leur abandonne simplement plus toute la définition d’elle-même. Cette séparation lui permet de recommencer sans se nier.",
+      "advice": [
+        "Repérer le verdict extérieur dont vous faites actuellement la mesure de toute votre valeur.",
+        "Entretenir une activité ou une compétence dont le sens ne dépend pas d’une récompense immédiate.",
+        "Diversifier vos soutiens matériels et relationnels au lieu de viser une indépendance imaginaire.",
+        "Accepter l’aide nécessaire sans confondre dépendance ponctuelle et dépossession complète de soi."
+      ],
+      "key_phrase": "Une suffisance intérieure est un appui parmi d’autres, jamais une vie sans besoin.",
+      "questions": [
+        "Quel bien extérieur est devenu l’unique juge de ma valeur ?",
+        "Quel appui intérieur puis-je entretenir sans refuser l’aide des autres ?",
+        "Quelles dépendances matérielles dois-je reconnaître plutôt que moraliser ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 48 ; autosuffisance du bonheur et renvois à Aristote et Chamfort",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’adaptation conserve l’idée d’une suffisance intérieure tout en refusant d’en déduire l’indépendance émotionnelle ou matérielle complète."
+      },
+      "themes": ["tranquillité intérieure"],
+      "needs": ["autonomie", "soutien"],
+      "image_alt": "Une femme tient une petite lampe tandis que plusieurs cordes d’appui relient sa barque au rivage",
+      "image_scene": "Gravure éditoriale adulte en gouache : une femme dans une petite barque tient une lampe, plusieurs cordes souples relient l’embarcation à un rivage sûr sans l’y enfermer ; autonomie soutenue, bleu nuit, ivoire, ocre et vert mousse, sans texte."
+    },
+    {
+      "id": "rule-49",
+      "order": 49,
+      "title": "Examiner l’hypothèse d’une vie heureuse sans la transformer en verdict",
+      "summary": "La règle 49 pose une hypothèse limite : si une vie était réellement heureuse, sans mélange de souffrance dominante et sans terme qui la rende inachevée, elle serait désirable pour elle-même plutôt que comme moyen vers autre chose. Cette construction philosophique sert à interroger ce que nous appelons une vie heureuse, non à distribuer des notes aux existences réelles. Elle rencontre aussitôt la réserve pessimiste de Schopenhauer : dans le monde tel qu’il le décrit, une félicité durable et complète n’est pas une réalité disponible. Le lecteur ne doit donc pas être conduit à peser sa propre vie contre le non-être, ni à conclure qu’une existence traversée par la douleur aurait moins de valeur. La question utile est plus limitée : quelles conditions rendent une journée, une relation ou un projet suffisamment habitables pour être poursuivis ? Même cette formulation ne promet pas qu’un effort produira du bonheur. Elle permet seulement d’examiner les composantes concrètes d’une amélioration possible, en tenant compte de la maladie, de la précarité, de la violence et des limites qui ne se commandent pas. La règle reste une expérience de pensée austère, pas une consigne existentielle ni une mesure de la dignité de vivre.",
+      "example": "Pour préparer un départ à la retraite, Nora écrit d’abord « être enfin heureuse » dans son carnet. Le mot est trop vaste pour guider quoi que ce soit. Elle le remplace par des conditions observables : pouvoir dormir sans douleur autant que possible, voir une amie chaque semaine, avoir un logement sûr et consacrer deux matinées à son jardin. Une arthrose limite ses projets ; elle demande un aménagement et choisit des bacs surélevés. Son existence ne devient pas parfaite et elle ne prétend pas l’évaluer comme un tout. Elle identifie seulement ce qui rend certaines journées plus habitables et ce qu’elle peut encore défendre.",
+      "advice": [
+        "Transformer l’idée vague de bonheur en conditions concrètes et limitées d’une journée supportable.",
+        "Séparer une hypothèse philosophique sur la vie heureuse de tout jugement porté sur votre propre existence.",
+        "Inclure les obstacles matériels, médicaux ou relationnels au lieu de les attribuer à une volonté insuffisante.",
+        "Chercher un soutien adapté lorsque la souffrance devient dangereuse, persistante ou impossible à porter seul."
+      ],
+      "key_phrase": "Une hypothèse sur le bonheur éclaire la vie ; elle n’en juge pas la valeur.",
+      "questions": [
+        "Quelles conditions concrètes rendraient une journée ou un projet davantage habitable ?",
+        "Quelle limite réelle dois-je intégrer au lieu d’exiger une félicité complète ?",
+        "Suis-je en train d’examiner une idée, ou de transformer cette idée en jugement sur ma propre vie ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 49 ; vie heureuse préférable au non-être et réserve pessimiste sur sa possibilité réelle",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "Garde-fou impératif : l’hypothèse philosophique n’est jamais appliquée à l’évaluation de la vie du lecteur et ne contient aucune image de mort ou de non-être."
+      },
+      "themes": ["réduction de la souffrance"],
+      "needs": ["sécurité", "sens"],
+      "image_alt": "Une femme ajuste calmement plusieurs conditions concrètes autour d’une table de jardin",
+      "image_scene": "Illustration adulte en gravure et gouache : une femme arrange autour d’une table des objets simples évoquant repos, lien, soin et activité, tandis qu’un jardin imparfait reste visible ; scène symbolique sans dramatisation, bleu nuit, ivoire, ocre, rouille et vert mousse, aucun texte."
+    },
+    {
+      "id": "rule-50",
+      "order": 50,
+      "title": "Voir le monde à travers la rencontre du réel et de sa disposition",
+      "summary": "Ce que nous vivons résulte de deux faces qui ne se confondent pas. Il y a l’objet : les événements, les personnes, les ressources, les contraintes et les changements du monde extérieur. Il y a le sujet : la manière dont une conscience reçoit, ordonne et éprouve ce qui lui arrive. Un même logement, un même revenu ou une même nouvelle ne produisent donc pas automatiquement la même expérience. Cette distinction reprend un thème majeur de Schopenhauer : la qualité de la disposition subjective pèse sur le bonheur, parfois davantage que les avantages extérieurs. Elle ne signifie pas que le monde intérieur serait entièrement libre, ni que les circonstances seraient secondaires. Le tempérament, l’histoire personnelle, la santé, l’éducation et la situation matérielle forment cette disposition ; ils ne sont pas choisis à volonté. Une marge d’action existe néanmoins : aménager un environnement, limiter une exposition, chercher des soins, développer une attention ou modifier une habitude peuvent changer la rencontre entre l’objet et le sujet. La règle interdit surtout deux erreurs symétriques. Accuser toute souffrance d’une mauvaise manière de penser ignore le réel. Croire qu’un changement extérieur suffira toujours ignore la personne qui devra le vivre. Comprendre les deux faces permet une intervention plus honnête, sans promettre de contrôler le bonheur.",
+      "example": "Un nouvel appartement semble idéal sur le papier : loyer abordable, lumière et proximité du métro. Après deux mois, Yasmine dort mal à cause du bruit et se sent isolée. Son amie ne lui conseille pas simplement de changer d’état d’esprit. Yasmine négocie une chambre plus calme, installe des rideaux épais et rejoint une bibliothèque du quartier. Elle consulte aussi pour ses insomnies, qui existaient avant le déménagement. Le lieu a une part dans son expérience, mais son histoire corporelle et sociale en a une autre. Aucun des deux aspects ne suffit à expliquer ou à régler toute la situation.",
+      "advice": [
+        "Décrire séparément la circonstance extérieure et la manière dont elle agit sur vous.",
+        "Chercher un aménagement du réel avant de vous reprocher votre sensibilité.",
+        "Observer quelles habitudes ou aides modifient votre réception sans les présenter comme un contrôle total.",
+        "Tenir compte de votre histoire, de votre santé et de vos ressources avant de conclure que vous pouvez simplement changer."
+      ],
+      "key_phrase": "Le bonheur naît d’une rencontre entre le monde reçu et la disposition qui le reçoit.",
+      "questions": [
+        "Quel élément objectif pèse sur mon expérience et mérite d’être modifié ?",
+        "Quelle part de ma disposition est héritée, située ou fragilisée plutôt que librement choisie ?",
+        "Quelle marge d’action réelle puis-je exercer sans prétendre contrôler mon bonheur ?"
+      ],
+      "source": {
+        "work": "Eudämonologie / Die Kunst, glücklich zu sein, reconstruction posthume",
+        "section": "Règle 50 ; moitié objective et moitié subjective de toute réalité vécue",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Garde-fou impératif : la disposition subjective est influente mais non entièrement contrôlable ; tempérament, histoire et contexte matériel sont explicitement distingués de la marge d’action."
+      },
+      "themes": ["perspective réaliste"],
+      "needs": ["lucidité", "adaptation"],
+      "image_alt": "Une personne observe le même paysage à travers une fenêtre dont la lumière transforme la scène",
+      "image_scene": "Gravure éditoriale adulte en gouache : une personne se tient devant une fenêtre ouverte sur un paysage urbain réel, des objets intérieurs et la lumière colorent différemment ce qu’elle voit ; équilibre entre dehors et dedans, bleu nuit, ivoire, ocre, rouille et vert mousse, sans texte."
+    }
+  ]
+}

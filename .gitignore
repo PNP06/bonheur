@@ -1,0 +1,12 @@
+# Private reference material and superseded working editions.
+/Artheureux/original.pdf
+/Artheureux/Version adulte/V1 art heureux rapide.docx
+/Artheureux/Version adulte/V3 art heureux rapide.pdf
+
+# Generated QA intermediates.
+/tmp/
+__pycache__/
+*.py[cod]
+
+# Local editable KDP interiors exceed GitHub's per-file upload limit.
+/Artheureux/releases/**/*.docx

@@ -1,0 +1,178 @@
+[
+  {
+    "order": 7,
+    "title": "Réfléchir avant, accepter l’incertitude après",
+    "visual_concept": "Deux temps visibles dans une seule scène : préparation attentive puis adaptation calme à un imprévu.",
+    "scene": "Dans une cuisine, Jade, 11 ans, prépare une pâte à crêpes avec ses parents quand la farine prévue manque. Elle observe la recette muette, accepte de changer les proportions avec eux et se tourne vers un petit dessert réalisable avec les ingrédients présents ; la déception reste visible, mais le goûter continue.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, 10-15 ans, encre souple, contours dessinés, aplats de gouache et grain de papier. Dans une cuisine familiale, Jade, 11 ans, tient un bol et regarde deux ingrédients posés sur la table : l’un manque, l’autre permet une variante simple. Ses parents l’aident à mesurer et elle commence une préparation différente, sans sourire forcé. Le visage montre une déception mesurée puis une attention nouvelle, avec une fenêtre de pluie et une lumière chaleureuse. Composition claire en profondeur, bleu canard, crème, corail, jaune doré et touches de bleu ciel sourd, diversité naturelle, proportions réalistes, aucun texte visible.",
+    "negative_constraints": ["aucun texte, aucune lettre, aucun chiffre, aucune recette lisible", "aucun logo, aucune marque, aucun filigrane", "pas de style préscolaire, pas de caricature, pas de visage enfantin", "pas de cuisine dangereuse, pas de brûlure, pas de dramatisation", "pas de composition en cases ni de diptyque rigide"]
+  },
+  {
+    "order": 8,
+    "title": "Choisir un cercle qui laisse respirer",
+    "visual_concept": "Une adolescente protège son attention numérique tout en gardant des liens choisis et ouverts.",
+    "scene": "Dans sa chambre, Lina, 14 ans, pose son téléphone face contre table après avoir quitté une conversation agressive. Elle rejoint sur le palier deux amis qui l’attendent calmement, tandis qu’une adulte de confiance est visible au fond, disponible sans s’imposer.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple et gouache texturée sur papier. Lina, 14 ans, pose calmement un téléphone face contre table, écran tourné vers le bas et sans contenu lisible, puis franchit la porte pour rejoindre deux amis dans un couloir lumineux. Les amis lui laissent de l’espace et sourient avec retenue ; une adulte de confiance apparaît en arrière-plan près d’une autre porte, présente mais non intrusive. La scène doit raconter la réduction d’exposition numérique sans isolement : trois jeunes reliés, circulation d’air et espace autour d’eux. Palette bleu canard, crème, corail, jaune doré, touches bleu ciel, expressions nuancées, proportions naturelles.",
+    "negative_constraints": ["aucun texte ou message visible sur le téléphone", "aucun logo de réseau social, aucune marque, aucun filigrane", "pas de téléphone brandi comme menace, pas d’intimidation spectaculaire", "pas d’adultes inquiétants, pas d’isolement total", "pas de style bébé ou préscolaire"]
+  },
+  {
+    "order": 9,
+    "title": "Protéger le calme avant la récompense",
+    "visual_concept": "Un choix de sommeil et de repos face à l’attrait immédiat des messages nocturnes.",
+    "scene": "Théo, 13 ans, dépose son téléphone sur une étagère éloignée de son lit pendant que sa sœur ferme doucement les rideaux. Une petite lampe chaude, un sac d’école prêt et une fenêtre nocturne montrent qu’il protège le lendemain sans renoncer à ses amis.",
+    "prompt": "Illustration carrée, roman graphique jeunesse français, encre souple, gouache mate et grain de papier. Chambre crédible d’un adolescent de 13 ans le soir : Théo pose son téléphone écran tourné vers le bas sur une étagère loin du lit, tandis que sa sœur l’aide à fermer les rideaux. Un sac d’école est préparé près de la porte, une lampe douce éclaire les draps et la fenêtre montre une ville calme sous un ciel bleu nuit. Théo a l’air un peu partagé mais apaisé, pas puni. Narration visuelle simple : plaisir immédiat laissé à distance, sommeil protégé pour demain. Palette bleu canard, crème, corail, jaune doré et bleu ciel sourd.",
+    "negative_constraints": ["aucun texte, aucune notification, aucune heure lisible", "aucune marque ni logo sur le téléphone ou les vêtements", "pas de regard moralisateur, pas de scène de punition", "pas de chambre infantile, pas de gadgets envahissants", "pas d’insomnie dramatique ni de nuit inquiétante"]
+  },
+  {
+    "order": 10,
+    "title": "Laisser la raison examiner l’impulsion",
+    "visual_concept": "Un espace gagné entre la colère d’un message et la réponse, grâce à une vérification avec une proche.",
+    "scene": "Noé, 14 ans, tient un téléphone posé sur la table sans répondre. Sa cousine assise à côté relit avec lui la conversation ; leurs gestes montrent qu’ils vérifient avant d’agir, tandis qu’un brouillon non envoyé reste suggéré sans être lisible.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, contours souples, gouache et grain de papier. À une table de cuisine, Noé, 14 ans, a posé son téléphone au lieu de répondre à chaud ; ses épaules restent tendues mais il respire. Sa cousine, légèrement plus âgée, pointe deux bulles abstraites sur l’écran sans lettres ni signes lisibles, et ils comparent calmement les faits de la conversation. Le téléphone et les mains structurent le premier plan, la pièce familiale chaleureuse donne un cadre sûr. Montrer une émotion réelle et un délai de réflexion, sans rendre Noé parfaitement serein. Palette bleu canard, crème, corail, jaune doré, bleu ciel sourd, diversité naturelle.",
+    "negative_constraints": ["aucun texte, aucune bulle lisible, aucun symbole de messagerie", "aucun logo ou filigrane", "pas de bagarre, pas de menace visuellement spectaculaire", "pas de maîtrise émotionnelle parfaite ni de sourire forcé", "pas de style chibi ou préscolaire"]
+  },
+  {
+    "order": 11,
+    "title": "Après une erreur, préparer la suite sans te condamner",
+    "visual_concept": "Une erreur devient un repère concret pour l’étape suivante, avec l’aide calme d’un adulte.",
+    "scene": "Elsa, 10 ans, regarde un devoir rendu en retard puis entoure au crayon la prochaine étape dans un agenda papier avec son père. Le devoir froissé reste visible mais n’occupe pas toute la scène ; l’attention se déplace vers l’organisation future.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, aplats de gouache et papier granuleux. Elsa, 10 ans, est assise à une table avec un devoir marqué par une erreur de date, sans aucune annotation lisible. Elle ne se cache pas le visage : elle écoute son père, qui l’aide à ouvrir un agenda papier et à tracer une seule prochaine étape. Le papier de l’erreur est au bord de la composition, tandis que le geste vers l’organisation future occupe le centre. Atmosphère d’apprentissage lucide, pas de culpabilité écrasante. Palette bleu canard, crème, corail, jaune doré, accents bleu ciel, silhouettes naturelles de 10-15 ans, aucun écran.",
+    "negative_constraints": ["aucun mot, nombre, note ou annotation lisible", "aucun logo, aucune marque, aucun filigrane", "pas de déchirement théâtral, pas de honte excessive", "pas d’adulte autoritaire ou humiliant", "pas d’agenda rempli de texte visible"]
+  },
+  {
+    "order": 12,
+    "title": "Partager ses secrets avec discernement",
+    "visual_concept": "La confidentialité choisie et la transmission d’un danger à une adulte capable d’aider.",
+    "scene": "Maël, 13 ans, montre discrètement son téléphone à sa tante dans un salon calme. Il garde pour lui une enveloppe et un carnet fermé, mais le geste sérieux vers l’adulte indique qu’un message inquiétant ne doit pas rester secret.",
+    "prompt": "Illustration carrée, roman graphique jeunesse français, encre souple, gouache chaleureuse et grain de papier. Maël, 13 ans, est assis près de sa tante dans un salon familial ; il lui tend un téléphone dont l’écran est visible comme une surface abstraite sans texte, avec une expression sérieuse et confiante. À côté, un carnet fermé et une enveloppe retournée représentent les informations privées qu’il ne diffuse pas. La tante écoute, posture ouverte, prête à protéger sans envahir. La scène doit distinguer discrétion et demande d’aide face à un danger, sans révéler le contenu. Palette bleu canard, crème, corail, jaune doré et touches bleu ciel, atmosphère sobre et rassurante.",
+    "negative_constraints": ["aucun texte ou message lisible sur le téléphone", "aucune marque, aucun logo, aucun filigrane", "pas de secret représenté par un cadenas dramatique", "pas de menace graphique, pas de violence visible", "pas de posture de surveillance ou d’interrogatoire"]
+  },
+  {
+    "order": 13,
+    "title": "Protéger la gaieté que la santé permet",
+    "visual_concept": "Le soin de la santé crée de meilleures conditions sans promettre une humeur parfaite.",
+    "scene": "Yasmine, 14 ans, dessine quelques traits à une table après un échange avec son père. Au second plan, un manteau et des chaussures prêts pour un rendez-vous médical rappellent que la fatigue et la douleur demandent aussi une aide extérieure.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et texture papier. Yasmine, 14 ans, dessine tranquillement à une table près d’une fenêtre, visage encore fatigué mais attentif, sans sourire forcé. Son père s’assoit à côté d’elle et écoute ; près de l’entrée, un manteau et des chaussures préparés suggèrent un rendez-vous de soin sans aucun texte. La scène équilibre petit plaisir accessible, corps éprouvé et soutien adulte : le dessin n’efface pas la douleur, il accompagne un moment de mieux-être. Palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, lumière douce, diversité naturelle.",
+    "negative_constraints": ["aucun texte, aucune ordonnance, aucun symbole médical lisible", "aucune marque ni filigrane", "pas de maladie dramatisée, pas d’hôpital anxiogène", "pas de sourire obligatoire ni de guérison miraculeuse", "pas d’esthétique enfantine ou de coloriage préscolaire"]
+  },
+  {
+    "order": 14,
+    "title": "Préparer demain sans rater aujourd’hui",
+    "visual_concept": "Après l’annulation d’une sortie, une préparation courte aide une adolescente à revenir vers une possibilité accessible aujourd’hui.",
+    "scene": "Nina, 11 ans, choisit un livre à la bibliothèque avant de rejoindre son père à une table de lecture. Une bibliothécaire lui montre deux rayons possibles après l’annulation d’une sortie ; Nina reste déçue, mais son attention revient peu à peu vers l’histoire qu’elle peut commencer aujourd’hui.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, aplats de gouache et grain de papier. Nina, 11 ans, se tient dans une bibliothèque lumineuse avec un livre fermé dans les mains, tandis qu’une bibliothécaire lui indique deux rayons après l’annulation d’une sortie. Son père l’attend à une table et lui laisse le temps de choisir. La déception est réelle mais discrète ; son regard se déplace vers une histoire accessible maintenant. Rayonnages sans titres lisibles, composition calme et claire, palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, proportions naturelles, aucun écran.",
+    "negative_constraints": ["aucun texte, aucun chiffre, aucun titre de livre ou panneau lisible", "aucun logo, aucune marque, aucun filigrane", "pas de bibliothèque inquiétante, pas de foule confuse", "pas de sortie transformée en catastrophe", "pas de sourire forcé ni de posture enfantine"]
+  },
+  {
+    "order": 15,
+    "title": "Élargir la perspective sans nier sa peine",
+    "visual_concept": "Un jeune sportif distingue déception, progrès et prochaine action sans effacer son émotion.",
+    "scene": "Après une sélection, Hugo, 15 ans, est assis avec son coach sur les gradins. Une photo de groupe est retournée à côté de lui ; le coach lui montre ses chaussures usées et une trajectoire d’entraînement, comme trois éléments de son histoire plutôt qu’un verdict unique.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et grain de papier. Dans des gradins de terrain, Hugo, 14 ans, est assis après une sélection sportive, épaules basses mais regard attentif. Son coach ne minimise pas sa déception : il lui montre trois éléments concrets autour d’eux, une photo de groupe retournée sans image lisible, ses chaussures de sport et la piste d’entraînement. Hugo écoute, puis regarde la piste avec une émotion encore présente et une possibilité de suite. Composition en profondeur, pas de tableau de scores ni de classement. Palette bleu canard, crème, corail, jaune doré, bleu ciel sourd.",
+    "negative_constraints": ["aucun texte, aucun score, aucun classement ou nom lisible", "aucun logo de club, aucune marque, aucun filigrane", "pas de coach qui sermonne, pas de défaite humiliante", "pas de joie artificielle ni de peine écrasante", "pas de podium ou de compétition spectaculaire"]
+  },
+  {
+    "order": 16,
+    "title": "Faire une place à la déception ordinaire",
+    "visual_concept": "Une sortie imparfaite garde une place pour la déception tout en continuant avec ce qui reste possible.",
+    "scene": "Naya, 12 ans, écoute son professeur devant une salle fermée pendant une sortie scolaire. Elle tient son carnet de visite avec déception, puis se tourne vers l’atelier qui continue avec ses camarades dans un espace lumineux.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, contours souples, gouache mate et papier texturé. Naya, 12 ans, se tient avec sa classe devant une porte de musée fermée pour raison technique, sans panneau ni texte lisible. Elle exprime une déception réelle, mains serrées sur un carnet vierge, tandis que son professeur explique calmement et que ses camarades se dirigent vers un atelier encore ouvert. La composition montre simultanément ce qui manque et ce qui continue, sans transformer l’imprévu en catastrophe. Palette bleu canard, crème, corail, jaune doré, accents bleu ciel, diversité naturelle, scène claire en petit format.",
+    "negative_constraints": ["aucun texte, aucun panneau, aucune signalétique lisible", "aucun logo de musée, aucune marque, aucun filigrane", "pas de bâtiment en ruine, pas de catastrophe", "pas de sourire forcé ni de colère spectaculaire", "pas de composition surchargée par la foule"]
+  },
+  {
+    "order": 17,
+    "title": "Être dans l’action et prendre du recul",
+    "visual_concept": "Un adolescent observe les faits d’une expérience embarrassante puis revient agir dans la situation réelle.",
+    "scene": "Sami, 13 ans, est assis chez lui avec un carnet où il dessine trois petits symboles abstraits pour séparer les faits. Par la fenêtre, le lendemain, il retourne dans sa salle de classe et lève la main vers son professeur, sans fuir le groupe.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et grain de papier. Scène narrative avec une perspective claire : au premier plan, Sami, 13 ans, assis à un bureau, prend du recul après un exposé gênant et note des faits dans un carnet sans mots ni signes lisibles ; au second plan par une porte ou une fenêtre ouverte, il est montré le lendemain en classe, revenu vers son groupe et parlant à son professeur. Les deux moments doivent se fondre naturellement dans une même image, sans cases. Expression encore embarrassée mais active. Palette bleu canard, crème, corail, jaune doré, bleu ciel sourd, atmosphère intelligente et chaleureuse.",
+    "negative_constraints": ["aucun texte, aucune note lisible, aucun tableau de classe lisible", "aucun logo, aucune marque, aucun filigrane", "pas de dédoublement fantastique ni de scène en bandes dessinées", "pas de moquerie de foule, pas d’humiliation", "pas d’adolescent complètement détaché de ses émotions"]
+  },
+  {
+    "order": 18,
+    "title": "Distinguer les faits des scénarios imaginés",
+    "visual_concept": "Une photo réelle reste petite face aux scénarios que l’imagination pourrait lui faire dire.",
+    "scene": "Zoé, 10 ans, observe une photo de groupe imprimée puis la pose à côté d’une fenêtre. Elle parle à une amie présente dans la pièce ; autour d’elle, des formes de gouache suggèrent des hypothèses qui se dissipent, sans devenir des images de rêve enfantines.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache texturée, grain de papier. Zoé, 10 ans, tient une petite photo imprimée montrant seulement des silhouettes abstraites, sans texte ni détail identifiable. Elle la pose sur une table et se tourne vers une amie qui l’écoute dans une pièce lumineuse. Autour de Zoé, de légères formes de gouache translucides évoquent plusieurs scénarios imaginés puis s’estompent, tandis que la photo réelle reste nette et limitée. L’image doit distinguer observation, supposition et émotion sans symbolisme confus. Palette bleu canard, crème, corail, jaune doré, touches bleu ciel, expressions fines et crédibles, aucun écran.",
+    "negative_constraints": ["aucun texte, aucune légende ou annotation lisible", "aucun logo, aucune marque, aucun filigrane", "pas de bulles de pensée enfantines, pas de fantaisie psychédélique", "pas de menace graphique ni de paranoïa dramatisée", "pas de photo assez détaillée pour identifier des personnes"]
+  },
+  {
+    "order": 19,
+    "title": "Ne pas laisser une impression effacer toute une histoire",
+    "visual_concept": "Une relation est regardée dans sa durée avant qu’un moment blessant ne devienne un verdict total.",
+    "scene": "Léo, 13 ans, relit une suite de souvenirs visuels dans un carnet avec sa mère, puis le lendemain demande une explication à Inès dans la cour. Une seule remarque récente est isolée, mais les deux jeunes restent capables de se parler.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, aplats de gouache et grain de papier. Léo, 13 ans, est assis à une table avec sa mère ; un carnet ouvert contient seulement des vignettes colorées sans texte, montrant plusieurs moments d’une amitié, tandis qu’une petite forme plus sombre évoque la remarque récente. Dans l’arrière-plan, à travers une fenêtre, le lendemain Léo parle avec Inès dans une cour de collège ; ils gardent une distance respectueuse mais se regardent. L’histoire entière reprend sa place sans nier la blessure. Palette bleu canard, crème, corail, jaune doré, bleu ciel sourd, narration lisible.",
+    "negative_constraints": ["aucun texte, aucune bulle, aucune date ou inscription lisible", "aucun logo, aucune marque, aucun filigrane", "pas de montage en cases rigides, pas de flashback fantastique", "pas de dispute théâtrale, pas de réconciliation forcée", "pas de conclusion visuelle qui condamne l’une des personnes"]
+  },
+  {
+    "order": 20,
+    "title": "Ne pas offrir sa colère en spectacle",
+    "visual_concept": "La colère est reconnue puis transformée en faits et en demande de médiation, sans exposition publique.",
+    "scene": "Après un malentendu dans la cour, Clara, 15 ans, pose une feuille blanche sur un banc et demande à son père puis à la surveillante de l’aider à clarifier les faits. Une camarade attend à distance ; Clara reste contrariée, mais choisit une conversation privée plutôt qu’une réaction publique.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et texture papier. Dans une cour de collège calme, Clara, 15 ans, pose une feuille vierge sur un banc et écoute son père et une surveillante qui l’aident à distinguer ce qu’elle sait de ce qu’elle suppose. Une camarade attend à quelques pas, sans être caricaturée en ennemie. Colère encore visible dans le visage de Clara, posture ferme sans être agressive, action centrée sur la médiation et la mise en ordre des faits. Palette bleu canard, crème, corail, jaune doré, bleu ciel sourd, aucun objet numérique.",
+    "negative_constraints": ["aucun texte, aucun message, aucun panneau lisible", "aucun logo, aucune marque, aucun filigrane", "pas de cris représentés par des effets graphiques, pas de menace", "pas de violence ni de public qui se moque", "pas de réaction publique ou de vengeance"]
+  },
+  {
+    "order": 21,
+    "title": "Ranger ses soucis pour y voir plus clair",
+    "visual_concept": "Plusieurs soucis sont notés séparément afin de rendre possible une tâche présente, sans prétendre qu’ils sont résolus.",
+    "scene": "Émilien, 12 ans, écrit deux repères graphiques sur une feuille sans texte : une conversation familiale pour plus tard et une caisse à vérifier maintenant. Il se concentre ensuite sur le tri de livres dans une association, pendant qu’une responsable reste disponible.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et grain de papier. Dans le local chaleureux d’une association, Émilien, 12 ans, pose sur une table une feuille divisée en deux espaces avec seulement des formes et pictogrammes non lisibles, puis se concentre sur le tri de livres dans une caisse. Une responsable adulte est visible en arrière-plan, attentive mais occupée, prête à aider. Le souci familial reste suggéré par une posture soucieuse, il n’est pas effacé ; l’action présente devient simplement plus nette. Composition organisée en deux zones visuelles, palette bleu canard, crème, corail, jaune doré et touches bleu ciel.",
+    "negative_constraints": ["aucun mot, chiffre ou pictogramme reconnaissable", "aucun logo, aucune marque, aucun filigrane", "pas de tiroirs littéraux gigantesques ni de symbolisme enfantin", "pas de problèmes résolus par magie", "pas d’adulte absent alors que l’aide est nécessaire"]
+  },
+  {
+    "order": 22,
+    "title": "Rendre une difficulté plus supportable",
+    "visual_concept": "Un petit aménagement concret allège un moment familial difficile sans prétendre supprimer la peine.",
+    "scene": "Amina, 10 ans, prépare avec sa mère deux petits casiers identiques pour les trajets entre deux maisons et dessine un calendrier visuel sans mots. Le dimanche est encore chargé d’émotion, mais les repères sont prêts et la confusion diminue.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache mate et grain de papier. Amina, 10 ans, et sa mère organisent deux petits casiers identiques dans une entrée chaleureuse ; sur une table, un calendrier coloré montre des blocs et des trajets sans aucun texte ni date lisible. Amina a les yeux un peu tristes mais semble moins débordée grâce à ces repères concrets. La mère écoute et participe sans présenter l’aménagement comme une solution totale. Espace domestique clair, palette bleu canard, crème, corail, jaune doré, touches de bleu ciel, proportions réalistes, aucun écran ni sac.",
+    "negative_constraints": ["aucun texte, aucune date, aucun calendrier lisible", "aucun logo, aucune marque, aucun filigrane", "pas de scène de séparation dramatique, pas de conflit entre adultes", "pas de bonheur instantané ni de peine effacée", "pas de maison coupée en deux de manière symbolique"]
+  },
+  {
+    "order": 23,
+    "title": "Recomposer l’itinéraire après un imprévu",
+    "visual_concept": "Un voyage est reporté puis reconstruit à partir de circonstances extérieures, sans culpabiliser la jeune voyageuse.",
+    "scene": "Maya, 12 ans, consulte avec sa tante une carte de transport pliée après la fermeture d’une ligne. Elles rangent le billet inutilisable et entourent au crayon un itinéraire plus tardif ; le départ sûr sera reporté, sans transformer l’attente en catastrophe.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et papier granuleux. Dans une gare calme, Maya, 12 ans, et sa tante examinent une carte de trajet et un panneau abstrait sans aucune écriture lisible ; une voie fermée est suggérée par une barrière simple, sans danger. La tante range un billet inutilisable et Maya suit du doigt une seconde direction possible sur la carte. Elles sont déçues mais concentrées sur un itinéraire sûr et un plan reporté. Palette bleu canard, crème, corail, jaune doré, touches bleu ciel, scène narrative claire et chaleureuse, aucun écran ni sac.",
+    "negative_constraints": ["aucun texte, aucune destination, aucun horaire ou panneau lisible", "aucun logo de transport, aucune marque, aucun filigrane", "pas de gare en panique, pas d’inondation spectaculaire", "pas de voie dangereuse ni de comportement imprudent", "pas de carte couverte de mots ou de détails illisibles"]
+  },
+  {
+    "order": 24,
+    "title": "Grandir, c’est aussi changer ses priorités",
+    "visual_concept": "Une adolescente réorganise son temps et découvre un plaisir nouveau sans renier l’ancien.",
+    "scene": "Salomé, 14 ans, photographie une plante avec sa grand-mère sur un balcon après avoir rangé sa planche de skate. La planche reste visible et aimée ; l’image raconte une priorité élargie, pas un abandon imposé.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, aplats de gouache et grain de papier. Sur un balcon lumineux, Salomé, 14 ans, photographie une plante et échange avec sa grand-mère autour d’une activité nouvelle. Une planche de skate repose contre un mur, bien entretenue et encore présente, tandis qu’un emploi du temps suggéré par quelques objets rangés indique qu’elle a réduit ses séances sans renoncer à ce qu’elle aimait. Les deux générations partagent une attention calme et complice. Montrer le changement de priorités comme une recomposition soutenue par la famille, palette bleu canard, crème, corail, jaune doré, bleu ciel sourd.",
+    "negative_constraints": ["aucun texte, aucune date, aucune inscription sur les objets", "aucun logo ni marque sur la planche ou l’appareil", "pas de vieillesse caricaturale, pas de posture fragile exagérée", "pas d’abandon triste du skate, pas de choix présenté comme obligatoire", "pas de décor préscolaire ou de couleurs criardes"]
+  },
+  {
+    "order": 25,
+    "title": "Remarquer ce que l’habitude rend invisible",
+    "visual_concept": "Un adolescent prend conscience d’une aide quotidienne et la transforme en remerciement et en organisation partagée.",
+    "scene": "Adam, 11 ans, retrouve sa voisine au portail avec son étui de musique. Il lui offre un petit bouquet simple, puis se tourne vers sa mère qui organise avec lui un autre trajet ; la voisine reste une personne aidante, jamais un décor.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache chaleureuse et grain de papier. Devant un portail de quartier, Adam, 11 ans, remercie sa voisine avec un petit bouquet de fleurs et son étui de musique à l’épaule. Sa mère est à côté, tenant calmement une solution de trajet partagé pour les jours suivants ; la voisine sourit avec pudeur, sans posture de servante. La scène fait sentir le temps et l’attention habituellement invisibles : l’aide quotidienne est reconnue et réorganisée, sans dramatiser une absence. Palette bleu canard, crème, corail, jaune doré, touches bleu ciel, diversité naturelle, composition lisible en petit format.",
+    "negative_constraints": ["aucun texte, aucune adresse ou panneau lisible", "aucun logo, aucune marque, aucun filigrane", "pas de gratitude théâtrale ou de cadeau luxueux", "pas de voisin âgé caricaturé, pas de dépendance humiliée", "pas de scène de danger ou de trajet routier risqué"]
+  },
+  {
+    "order": 26,
+    "title": "Faire la différence entre envie et possibilité",
+    "visual_concept": "Une demande légitime est préparée avec précision, tandis que l’attente d’une réponse immédiate est contenue.",
+    "scene": "Rayan, 14 ans, travaille avec sa tante à une demande claire après des moqueries au collège. Ils classent des faits dans un dossier fermé et préparent un rendez-vous ; Rayan est déterminé, sans afficher de revanche devant les autres.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et texture papier. À une table, Rayan, 14 ans, et sa tante préparent un dossier sobre après des moqueries au collège : quelques feuilles retournées sans texte lisible, un stylo posé et deux chaises prêtes pour un rendez-vous. Rayan montre une détermination calme, sa tante l’aide à préciser ce qu’il demande, sans parler à sa place. La scène oppose visuellement action possible et impatience de tout régler d’un coup, sans minimiser l’injustice. Palette bleu canard, crème, corail, jaune doré et bleu ciel sourd, atmosphère protectrice, aucun écran.",
+    "negative_constraints": ["aucun texte, aucune plainte ou formulaire lisible", "aucun logo d’établissement, aucune marque, aucun filigrane", "pas de revanche publique, pas de harcèlement montré graphiquement", "pas de jeune rendu responsable de sa protection seul", "pas d’adulte autoritaire ou de bureau administratif froid"]
+  },
+  {
+    "order": 27,
+    "title": "Trouver des repères auprès de personnes qui connaissent l’épreuve",
+    "visual_concept": "Une expérience semblable devient un repère partagé, pas une recette imposée.",
+    "scene": "Dans une association de quartier, Nour, 12 ans, rencontre Samia, 15 ans, qui a déjà changé de ville. Samia lui montre le chemin vers un jardin partagé sur une carte sans texte, puis elles partent ensemble avec une bénévole en retrait.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache et grain de papier. Dans un local associatif accueillant, Nour, 12 ans, et Samia, 15 ans, échangent autour d’une carte simple sans mots ni adresses lisibles. Samia montre un itinéraire vers un jardin partagé et écoute Nour, sans prendre sa place ; une bénévole adulte reste disponible à quelques pas. Les deux adolescentes portent des émotions différentes : Nour encore isolée mais curieuse, Samia chaleureuse sans assurance excessive. La scène raconte la solidarité entre personnes ayant connu une épreuve semblable, pas une comparaison des peines. Palette bleu canard, crème, corail, jaune doré, bleu ciel sourd, aucun écran.",
+    "negative_constraints": ["aucun texte, aucune adresse, aucun nom de lieu lisible", "aucun logo d’association, aucune marque, aucun filigrane", "pas de scène de thérapie ou d’interrogatoire", "pas de solution miraculeuse, pas de joie forcée", "pas de comparaison visuelle des souffrances ni de posture de sauveuse"]
+  },
+  {
+    "order": 28,
+    "title": "Changer la forme d’un plaisir avec le temps",
+    "visual_concept": "Le goût de la découverte se transmet et change de rythme quand un grand-parent ne peut plus marcher longtemps.",
+    "scene": "Jules, 12 ans, marche avec son grand-père sur un court sentier près d’un lac. Le grand-père s’appuie sur une canne et montre une carte sans texte ; Jules photographie un détail du paysage, attentif au plaisir devenu plus lent mais toujours partagé.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, aplats de gouache et grain de papier. Sur un sentier court au bord d’un lac, Jules, 12 ans, marche à côté de son grand-père, qui avance avec une canne à son rythme sans être caricaturé. Le grand-père tient une carte sans écriture et montre un détail du paysage ; Jules observe avec un appareil photo simple. Un banc proche et le chemin qui continue indiquent un parcours adapté, tandis que l’eau et les collines ouvrent la composition. Leur plaisir de découvrir reste vivant sous une forme plus lente, avec la santé et le regret présents mais non dramatisés. Palette bleu canard, crème, corail, jaune doré, touches bleu ciel, roman graphique jeunesse français.",
+    "negative_constraints": ["aucun texte, aucune légende, aucune carte lisible", "aucun logo, aucune marque, aucun filigrane", "pas de grand-parent fragile ou infantilisé, pas de chute", "pas de randonnée dangereuse ni de paysage spectaculaire écrasant", "pas de nostalgie sombre ni de plaisir présenté comme disparu"]
+  }
+]

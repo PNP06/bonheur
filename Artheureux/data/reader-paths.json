@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "status": "draft-needs-final-review",
+  "theme_selection_source": "rules[].themes",
+  "themes": [
+    {"id": "reduction-souffrance", "label": "Réduction de la souffrance", "rule_theme": "réduction de la souffrance"},
+    {"id": "maitrise-soi", "label": "Maîtrise de soi", "rule_theme": "maîtrise de soi"},
+    {"id": "perspective-realiste", "label": "Perspective réaliste sur la vie", "rule_theme": "perspective réaliste"},
+    {"id": "tranquillite-interieure", "label": "Tranquillité intérieure", "rule_theme": "tranquillité intérieure"},
+    {"id": "relations-confiance", "label": "Relations et confiance", "rule_theme": "relations et confiance"},
+    {"id": "adaptabilite-acceptation", "label": "Adaptabilité et acceptation", "rule_theme": "adaptabilité"},
+    {"id": "appreciation", "label": "Appréciation", "rule_theme": "appréciation"}
+  ],
+  "categories": [
+    {
+      "id": "choix",
+      "label": "Choix",
+      "entries": [
+        {"id": "decisions-difficiles", "label": "Décisions difficiles", "rule_ids": ["rule-07", "rule-21", "rule-22", "rule-23", "rule-34"]},
+        {"id": "procrastination", "label": "Procrastination", "rule_ids": ["rule-10", "rule-21", "rule-30", "rule-37"]},
+        {"id": "gestion-projet", "label": "Gestion de projet", "rule_ids": ["rule-07", "rule-21", "rule-22", "rule-34"]},
+        {"id": "manque-direction", "label": "Manque de direction", "rule_ids": ["rule-10", "rule-21", "rule-30", "rule-34"]}
+      ]
+    },
+    {
+      "id": "sentiment",
+      "label": "Sentiment du moment",
+      "entries": [
+        {"id": "anxiete", "label": "Anxiété", "rule_ids": ["rule-06", "rule-10", "rule-13", "rule-18"], "support_notice": true},
+        {"id": "colere-haine", "label": "Colère ou haine", "rule_ids": ["rule-06", "rule-20", "rule-44", "rule-18"]},
+        {"id": "recherche-sens", "label": "Recherche de sens", "rule_ids": ["rule-30", "rule-37", "rule-46", "rule-50"]},
+        {"id": "frustration", "label": "Frustration", "rule_ids": ["rule-01", "rule-05", "rule-06", "rule-10", "rule-15"]},
+        {"id": "insatisfaction-generale", "label": "Insatisfaction générale", "rule_ids": ["rule-01", "rule-05", "rule-19", "rule-25", "rule-48"]},
+        {"id": "peur-echec", "label": "Peur de l’échec", "rule_ids": ["rule-06", "rule-10", "rule-22", "rule-30"]},
+        {"id": "solitude", "label": "Solitude", "rule_ids": ["rule-11", "rule-17", "rule-43", "rule-47"]},
+        {"id": "stress", "label": "Stress", "rule_ids": ["rule-02", "rule-06", "rule-10", "rule-12", "rule-13"]},
+        {"id": "tristesse-passagere", "label": "Tristesse passagère", "rule_ids": ["rule-01", "rule-05", "rule-06", "rule-13", "rule-15"]},
+        {"id": "ennui", "label": "Ennui", "rule_ids": ["rule-05", "rule-30", "rule-32", "rule-43", "rule-48"]},
+        {"id": "sentiment-injustice", "label": "Sentiment d’injustice", "rule_ids": ["rule-01", "rule-06", "rule-26", "rule-39"]},
+        {"id": "sentiment-isolement", "label": "Sentiment d’isolement", "rule_ids": ["rule-11", "rule-17", "rule-43", "rule-47"]}
+      ]
+    },
+    {
+      "id": "relations-sociales",
+      "label": "Relations sociales",
+      "entries": [
+        {"id": "conflits-interpersonnels", "label": "Conflits interpersonnels", "rule_ids": ["rule-05", "rule-08", "rule-20", "rule-44", "rule-47"]},
+        {"id": "difficulte-pardonner", "label": "Difficulté à pardonner", "rule_ids": ["rule-20", "rule-44", "rule-47"]},
+        {"id": "relations-sociales", "label": "Relations sociales", "rule_ids": ["rule-08", "rule-11", "rule-17", "rule-47"]}
+      ]
+    },
+    {
+      "id": "temps-qui-passe",
+      "label": "Temps qui passe",
+      "entries": [
+        {"id": "peur-vieillesse", "label": "Peur de la vieillesse", "rule_ids": ["rule-05", "rule-24", "rule-28", "rule-29", "rule-36", "rule-30"]},
+        {"id": "perte-reperes", "label": "Perte de repères", "rule_ids": ["rule-11", "rule-16", "rule-34", "rule-41"]},
+        {"id": "changements", "label": "Changements", "rule_ids": ["rule-22", "rule-23", "rule-35", "rule-38"]},
+        {"id": "peur-inconnu", "label": "Peur de l’inconnu", "rule_ids": ["rule-07", "rule-23", "rule-40", "rule-41"]}
+      ]
+    },
+    {
+      "id": "evenements-vie",
+      "label": "Événements de la vie",
+      "entries": [
+        {"id": "evenement-malheureux", "label": "Événement malheureux", "rule_ids": ["rule-01", "rule-05", "rule-06", "rule-15", "rule-27"]},
+        {"id": "problemes-financiers", "label": "Problèmes financiers", "rule_ids": ["rule-04", "rule-09", "rule-16", "rule-25", "rule-26"]},
+        {"id": "dependance-materielle", "label": "Dépendance matérielle", "rule_ids": ["rule-04", "rule-26", "rule-36", "rule-43"]},
+        {"id": "recherche-bonheur", "label": "Recherche de bonheur", "rule_ids": ["rule-05", "rule-09", "rule-19", "rule-30", "rule-32", "rule-48", "rule-49", "rule-50"]},
+        {"id": "deuil", "label": "Deuil", "rule_ids": ["rule-01", "rule-05", "rule-06", "rule-11", "rule-15"], "support_notice": true},
+        {"id": "gestion-temps", "label": "Gestion du temps", "rule_ids": ["rule-14", "rule-21", "rule-42", "rule-43"]},
+        {"id": "perte-motivation", "label": "Perte de motivation", "rule_ids": ["rule-01", "rule-30", "rule-44", "rule-46"]}
+      ]
+    }
+  ]
+}

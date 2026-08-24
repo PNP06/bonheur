@@ -1,0 +1,18 @@
+[
+  {
+    "order": 3,
+    "title": "Apprendre ses propres réflexes",
+    "visual_concept": "Une adolescente reconnaît son réflexe d’accepter trop vite et utilise une pause préparée avant de répondre à ses coéquipières.",
+    "scene": "Dans un gymnase après l’entraînement, deux coéquipières sollicitent une adolescente de 14 ans. Elle fait un geste calme de pause et consulte son planning avec une entraîneuse adulte à proximité.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, contours d’encre souples, gouache mate et grain de papier. Dans un gymnase après un entraînement de basket, une adolescente de 14 ans, apparence distincte du garçon en sweat bleu des règles précédentes, reçoit deux demandes simultanées de ses coéquipières. Elle ne prépare pas un sac : elle fait un geste calme de pause, puis consulte un petit planning à cases sans texte avec une entraîneuse adulte disponible à proximité. Son expression reste serviable mais réfléchie. Montrer le moment où un réflexe automatique est remplacé par une réponse préparée, sans faire croire à une maîtrise parfaite. Palette bleu canard, crème, corail, jaune doré et bleu ciel sourd.",
+    "negative_constraints": ["aucun texte, aucune lettre, aucun chiffre lisible", "aucun sac en préparation, aucun bureau de chambre", "pas de garçon en sweat bleu comme protagoniste", "pas de magie, pas de double personnalité", "aucun logo sportif, aucune marque, aucun filigrane", "pas de conflit agressif"]
+  },
+  {
+    "order": 4,
+    "title": "Mesurer ses prétentions à ses ressources réelles",
+    "visual_concept": "Une adolescente renonce à cumuler les rôles les plus valorisants après avoir confronté cette prétention au peu de temps et d’aide réellement disponibles.",
+    "scene": "Dans les coulisses d’un spectacle de collège, une professeure montre à Camille un planning très court. Camille garde une pièce de costume pour son rôle et un petit élément de décor, mais transmet le mégaphone de direction et la commande des lumières à deux camarades.",
+    "prompt": "Illustration carrée de roman graphique jeunesse français, encre souple, gouache mate et texture papier. Dans les coulisses d’un spectacle de collège, une professeure montre à Camille, 13 ans, un planning visuellement très court composé de seulement deux cases colorées sans aucun chiffre ni mot. Camille avait réuni plusieurs signes de responsabilités valorisantes ; elle choisit maintenant de garder une seule pièce de costume pour son rôle et un petit panneau de décor qu’elle sait réaliser, tout en transmettant clairement un mégaphone de direction et une commande de lumières sans inscription à deux camarades. Un projecteur éclaire la scène vide à côté, rappelant son envie de reconnaissance sans la caricaturer. Montrer le choix précis de ne pas tout diriger ni tout porter parce que le temps, l’aide et l’expérience sont limités, et non une simple scène de travail d’équipe. Palette bleu canard, crème, corail, jaune doré et bleu ciel sourd.",
+    "negative_constraints": ["aucun texte, aucune affiche, aucun numéro ni symbole lisible", "aucun sac à remplir, aucune chambre, aucune boîte de rangement", "pas de couronne ni de célébrité caricaturale", "pas de garçon en sweat bleu comme protagoniste", "aucun logo scolaire, aucune marque, aucun filigrane", "pas de simple répétition collective sans choix visible"]
+  }
+]

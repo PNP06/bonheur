@@ -1,0 +1,305 @@
+{
+  "edition": "adult",
+  "rules": [
+    {
+      "id": "rule-01",
+      "order": 1,
+      "title": "Mesurer la vie aux douleurs évitées",
+      "summary": "Le bonheur n’est pas présenté ici comme une réserve de plaisirs à remplir. Dans une existence exposée au manque, à la maladie, aux conflits et aux déceptions, il consiste d’abord à ne pas ajouter de souffrance évitable à la souffrance inévitable. Cette perspective, inspirée de Schopenhauer, déplace le critère de décision : avant de demander ce qui nous enthousiasmera, regarder ce qui risque de nous épuiser, de nous endetter ou de nous enfermer. Il ne s’agit pas de mépriser la joie ni de choisir une vie terne, mais de reconnaître que la douleur s’impose avec plus de force qu’un plaisir attendu. Une décision prudente peut donc valoir mieux qu’une promesse brillante. L’idée devient opératoire lorsqu’elle distingue le nécessaire du superflu : protéger son sommeil, quitter une situation dangereuse ou renoncer à une rivalité stérile n’a rien d’une défaite. La règle ne justifie toutefois ni la fuite devant tout effort ni l’acceptation passive d’une injustice : certaines peines sont le prix d’un bien réel ou d’une résistance nécessaire.",
+      "example": "Après plusieurs semaines de fatigue, Léa reçoit une proposition de mission mieux rémunérée mais assortie de déplacements constants et d’un délai irréaliste. Elle commence par calculer le gain, puis note les coûts probables : nuits écourtées, frais avancés, travail principal négligé et tension avec son conjoint. Elle demande si le calendrier peut être réduit et si les frais seront garantis. La réponse reste floue. Elle refuse finalement la mission et utilise son temps pour négocier un projet moins prestigieux, mais compatible avec sa santé. Elle ne devient pas plus joyeuse du jour au lendemain ; elle supprime surtout une source prévisible d’épuisement. Le soulagement concret l’aide à voir la valeur de cette décision.",
+      "advice": [
+        "Avant une décision importante, liste la souffrance prévisible autant que le bénéfice espéré.",
+        "Protège d’abord les conditions qui empêchent une douleur évitable : santé, sécurité, sommeil et finances.",
+        "Demande quelles concessions sont réellement nécessaires et lesquelles ne servent qu’à ton prestige.",
+        "Réserve une place aux plaisirs simples afin que la prudence ne devienne pas une vie rétrécie."
+      ],
+      "key_phrase": "Une vie meilleure commence souvent par une souffrance inutile en moins.",
+      "questions": [
+        "Quelle peine prévisible suis-je en train de minimiser parce qu’un avantage me séduit ?",
+        "Quel renoncement concret réduirait aujourd’hui une tension durable ?",
+        "Quand cette règle risque-t-elle de me faire éviter un effort difficile mais réellement nécessaire ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §1, distinction entre douleur réelle et plaisir positif",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle reprend le noyau de la Schmerzlosigkeit. Les applications contemporaines sont originales ; elles ne prétendent pas traduire le texte."
+      },
+      "themes": ["réduction de la souffrance", "perspective réaliste"],
+      "needs": ["tranquillité", "sécurité", "clarté"],
+      "image_alt": "Une femme examine calmement deux chemins, dont l’un évite un terrain escarpé et sombre.",
+      "image_scene": "Illustration éditoriale adulte en gravure contemporaine et gouache : une femme debout à l’entrée de deux chemins, l’un lumineux mais bordé d’obstacles abrupts, l’autre plus simple et praticable ; quelques pierres retirées du passage, palette bleu nuit, ivoire et ocre, sans texte, cadrage carré."
+    },
+    {
+      "id": "rule-02",
+      "order": 2,
+      "title": "Ne pas mesurer son bonheur à celui d’autrui",
+      "summary": "L’envie naît lorsque le bien d’une autre personne transforme notre propre situation en manque. Schopenhauer la décrit comme une souffrance qui se nourrit d’une comparaison, et non comme un défaut réservé aux mauvaises personnes. La reconnaître permet de séparer deux mouvements souvent confondus : constater une inégalité réelle et souhaiter que l’autre perde ce qu’il possède. Le premier peut conduire à agir, négocier ou contester ; le second nous attache à la vie d’autrui et rend notre humeur dépendante de ses succès. À l’époque des réseaux sociaux, la comparaison est disponible à toute heure, mais elle reste trompeuse : nous opposons notre quotidien complet à la vitrine sélectionnée d’une personne. La règle ne commande pas d’admirer tout le monde ni d’ignorer les injustices. Elle invite à ramener l’attention vers ses besoins, ses possibilités et les critères qui donnent une valeur propre à son existence. Une réussite étrangère peut devenir une information ou un modèle ; elle ne doit pas devenir la mesure exclusive de notre dignité.",
+      "example": "Karim apprend qu’une ancienne collègue vient d’obtenir un poste de direction. Il passe la soirée à vérifier ses publications et se convainc qu’elle a toujours été favorisée. Le lendemain, il distingue ce qu’il sait de ce qu’il imagine : elle a changé de secteur, accepté une mobilité et développé une compétence qu’il ne souhaite pas forcément acquérir. Il garde une part d’amertume, mais l’utilise pour identifier son propre désir : davantage d’autonomie, pas nécessairement un titre. Il demande à son responsable un projet où il pourra exercer cette autonomie. La nouvelle de sa collègue cesse alors d’être un verdict sur sa propre vie et devient un point de départ limité.",
+      "advice": [
+        "Nomme précisément l’objet de l’envie : argent, reconnaissance, liberté, compétence ou sécurité.",
+        "Sépare le fait observé du récit que tu construis sur les avantages secrets de l’autre.",
+        "Transforme la comparaison en demande ou en expérience personnelle qui ne dépend pas de sa défaite.",
+        "Réduis les consultations qui déclenchent mécaniquement la comparaison sans t’apporter d’information utile."
+      ],
+      "key_phrase": "La réussite d’autrui informe parfois ; elle ne mesure jamais à elle seule ma valeur.",
+      "questions": [
+        "Qu’est-ce que j’envie réellement derrière le résultat visible de cette personne ?",
+        "Quelle action m’appartient sans exiger que l’autre échoue ou disparaisse de mon horizon ?",
+        "Que devient cette règle face à une injustice concrète qui mérite au contraire une comparaison publique ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §10, sur l’envie comme vice et malheur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Le terme central est Neid, plus large que la jalousie amoureuse. La distinction entre comparaison, inégalité et ressentiment est une adaptation explicative."
+      },
+      "themes": ["maîtrise de soi", "relations et confiance"],
+      "needs": ["clarté", "estime de soi", "tranquillité"],
+      "image_alt": "Un homme détourne son regard d’une vitrine brillante pour observer son propre carnet de projets.",
+      "image_scene": "Gravure éditoriale contemporaine en gouache et encre : dans une rue, un homme passe devant une vitrine lumineuse où se reflète une silhouette admirée, puis regarde un carnet ouvert dans ses mains ; contraste calme entre reflet et chemin personnel, bleu ardoise, ocre et crème, sans texte, carré."
+    },
+    {
+      "id": "rule-03",
+      "order": 3,
+      "title": "Acquérir une connaissance pratique de son caractère",
+      "summary": "Nous ne choisissons pas librement notre tempérament, mais nous pouvons apprendre à nous conduire avec plus de constance. Schopenhauer distingue le caractère inné, qui revient dans les situations décisives, et un caractère acquis : un ensemble d’habitudes, de règles et de façons de se présenter que l’expérience rend plus fiables. Cette distinction évite deux illusions opposées. La première promet une transformation totale par la seule volonté ; la seconde conclut que tout est joué et qu’aucun apprentissage n’est possible. Une personne impatiente peut apprendre à ne pas répondre immédiatement, sans devenir naturellement patiente. Une personne réservée peut préparer une prise de parole, sans se changer en extravertie. Le caractère acquis est donc moins un masque mensonger qu’une discipline pratique : connaître ses tendances, organiser son environnement et répéter des conduites qui servent ses engagements. Il faut cependant vérifier que cette forme travaillée reste soutenable. Si elle exige une surveillance permanente ou contredit toutes nos forces, elle ne construit pas une liberté ; elle fabrique un rôle qui finira par céder.",
+      "example": "Nora sait qu’elle accepte trop vite les demandes de ses collègues, puis travaille tard pour tenir ses propres délais. Elle ne se promet pas de devenir indifférente. Elle adopte une règle visible : toute nouvelle demande reçoit d’abord la réponse « Je vérifie mon planning et je te réponds demain ». Elle prépare aussi deux phrases pour refuser ou négocier. Après un mois, elle accepte encore certaines urgences, mais moins par réflexe. Ses collègues comprennent mieux ses limites et elle garde du temps pour son travail. Elle reste généreuse ; elle a seulement acquis une manière plus fiable de protéger cette générosité.",
+      "advice": [
+        "Observe la tendance qui revient sous pression, sans la confondre avec une identité définitive.",
+        "Choisis une règle de conduite simple, formulée pour les moments où ton réflexe prend le dessus.",
+        "Répète cette règle dans de petites situations et note les circonstances qui facilitent sa tenue.",
+        "Conserve une marge d’authenticité : une habitude utile n’a pas besoin de nier ton tempérament."
+      ],
+      "key_phrase": "On ne refait pas entièrement son tempérament ; on peut rendre ses conduites plus fiables.",
+      "questions": [
+        "Quel réflexe me met régulièrement en difficulté malgré mes bonnes intentions ?",
+        "Quelle conduite préparée pourrait m’aider lors de la prochaine occasion ?",
+        "À partir de quel point l’effort pour jouer un rôle devient-il plus coûteux que le problème initial ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §30, distinction entre caractère inné et caractère acquis",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’idée de pratique des maximes est conservée avec sa limite : la nature réapparaît. L’adaptation ne promet pas une refonte psychologique."
+      },
+      "themes": ["perspective réaliste", "maîtrise de soi"],
+      "needs": ["clarté", "autonomie", "relations et confiance"],
+      "image_alt": "Une personne répète un geste de préparation devant un miroir, avec des fiches rangées à côté d’elle.",
+      "image_scene": "Illustration adulte en encre et gouache : une personne ajuste calmement sa veste devant un miroir, une petite pile de fiches et une horloge posées sur une table ; le reflet montre une posture préparée mais naturelle, ambiance d’atelier, palette ivoire, bleu profond et terre cuite, sans texte, carré."
+    },
+    {
+      "id": "rule-04",
+      "order": 4,
+      "title": "Limiter ses prétentions plutôt qu’accroître ses biens",
+      "summary": "La richesse ne se mesure pas seulement à ce que nous possédons, mais à l’écart entre nos possessions et nos prétentions. Un revenu élevé peut laisser une personne insatisfaite si son train de vie, son statut attendu ou ses envies augmentent au même rythme. À l’inverse, une ressource modeste peut suffire à une vie stable lorsque les besoins ont été distingués des signes de réussite. Cette idée ne demande pas de romantiser la pauvreté ni de culpabiliser celles et ceux qui manquent de sécurité. Elle rappelle plutôt que les objets, les promotions et les expériences coûteuses ne résolvent pas automatiquement une inquiétude qui se déplace. Pour la rendre praticable, il faut examiner les dépenses qui protègent réellement la vie et celles qui achètent surtout une image de soi. La limite est importante : réduire ses prétentions ne remplace ni un salaire juste, ni des droits sociaux, ni une lutte contre l’exploitation. La règle concerne la part de désir que nous pouvons clarifier ; elle ne transforme pas une contrainte matérielle en choix personnel.",
+      "example": "Après une augmentation, Thomas conserve quelques mois son ancien budget. Il remarque qu’il pensait surtout à changer de voiture parce que ses collègues le font et que son appartement lui paraît désormais « en retard ». Il calcule plutôt trois priorités : rembourser une dette, constituer une réserve et financer une formation. Il s’autorise ensuite un voyage raisonnable, choisi pour son intérêt et non pour les photos à publier. Son niveau de vie progresse, mais ses nouvelles prétentions ne dévorent pas immédiatement le gain. Cette décision ne résout pas les charges du foyer ; elle évite qu’une hausse de revenu ne se transforme en nouvelle course.",
+      "advice": [
+        "Classe chaque dépense entre besoin de sécurité, plaisir choisi, confort et signe de statut.",
+        "Calcule le coût récurrent d’une envie avant de considérer seulement son prix d’achat.",
+        "Fixe un seuil de suffisance pour une catégorie importante, puis réévalue-le à intervalles réguliers.",
+        "Ne transforme pas une contrainte collective ou un manque de revenu en reproche adressé à toi-même."
+      ],
+      "key_phrase": "La tranquillité dépend aussi de ce que nos biens nous font attendre.",
+      "questions": [
+        "Quelle prétention nouvelle rend mon revenu actuel insuffisant à mes propres yeux ?",
+        "Quel usage de mon argent soutiendrait réellement ma sécurité ou ma liberté ?",
+        "Suis-je en train d’appeler choix personnel une difficulté produite par des conditions matérielles injustes ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre III, Von dem, was einer hat, passages sur possessions et prétentions",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La source traite plus largement du rang, de l’honneur et du luxe ; le titre est resserré pour l’application contemporaine sans réduire la thèse au matériel."
+      },
+      "themes": ["tranquillité intérieure", "perspective réaliste"],
+      "needs": ["sécurité", "clarté", "autonomie"],
+      "image_alt": "Une personne dispose quelques objets essentiels et met de côté une carte bancaire dans une boîte sobre.",
+      "image_scene": "Gravure éditoriale en gouache : une personne assise à une table trie calmement des objets, garde une lampe, un carnet et une tasse, tandis qu’une boîte accueille des achats superflus ; atmosphère domestique élégante, bleu nuit, ocre et ivoire, aucun logo ni texte, cadrage carré."
+    },
+    {
+      "id": "rule-05",
+      "order": 5,
+      "title": "Reconnaître son tempérament comme condition du bonheur",
+      "summary": "Certaines différences de bien-être ne viennent pas d’un événement particulier, mais de la manière durable dont une personne reçoit le monde. Schopenhauer accorde au tempérament, à la santé et à la disposition de l’humeur un poids considérable : une même réussite peut réjouir l’un et laisser l’autre presque indifférent. Cette observation oblige à se méfier des recettes universelles. Changer de travail, déménager ou acheter davantage peut modifier les circonstances sans transformer la tonalité intérieure qui les accueille. Il reste possible d’agir sur des conditions concrètes, mais l’effet attendu doit être proportionné. Reconnaître une disposition n’est pas se condamner à la subir ni se coller une étiquette médicale. C’est repérer ce qui revient lorsque la nouveauté disparaît : fatigue, inquiétude, ennui, besoin de solitude ou goût du mouvement. Cette lucidité permet de choisir un cadre compatible avec soi au lieu d’envier sans fin la vie d’un tempérament différent. La règle a aussi une limite éthique : elle ne doit jamais servir à nier une dépression, une violence ou une précarité qui réclament une aide et des changements réels.",
+      "example": "Sofia change d’entreprise en pensant que son malaise vient uniquement de son poste. Le nouvel environnement est plus agréable, mais après quelques mois elle retrouve sa tendance à anticiper les problèmes et à s’isoler quand elle est fatiguée. Elle cesse de conclure que tout changement est inutile. Elle consulte pour son sommeil, aménage une matinée sans réunions et choisit un travail où les urgences sont rares. Elle ne devient pas spontanément enthousiaste ; elle construit des conditions qui réduisent l’effet de sa disposition. Le problème n’était ni entièrement intérieur ni entièrement extérieur.",
+      "advice": [
+        "Observe ton humeur sur plusieurs semaines plutôt que de juger une journée exceptionnelle.",
+        "Distingue ce qui revient avec ton tempérament de ce qui provient clairement d’un cadre nocif.",
+        "Choisis des rythmes, relations et lieux de travail compatibles avec ta manière de récupérer.",
+        "Demande une aide professionnelle si une disposition douloureuse devient persistante ou invalidante."
+      ],
+      "key_phrase": "Connaître sa tonalité intérieure aide à choisir un monde extérieur qui ne l’aggrave pas.",
+      "questions": [
+        "Quelle humeur ou sensibilité revient malgré des circonstances pourtant différentes ?",
+        "Quel aménagement concret respecterait cette disposition sans lui laisser toute la conduite de ma vie ?",
+        "Qu’est-ce que j’attribue à mon tempérament alors qu’il faudrait d’abord traiter une cause extérieure ou médicale ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre II, passages sur ce que l’on est, la santé et le tempérament ; complément chapitre VI",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "medium",
+        "notes": "La cartographie rattache cette règle à plusieurs passages plutôt qu’à un paragraphe numéroté unique. Le terme moderne niveau basal est abandonné au profit de tempérament."
+      },
+      "themes": ["perspective réaliste", "tranquillité intérieure"],
+      "needs": ["santé", "clarté", "tranquillité"],
+      "image_alt": "Une personne choisit un fauteuil calme dans une pièce ouverte sur un paysage agité.",
+      "image_scene": "Illustration adulte à la gouache et à l’encre : une personne assise dans un fauteuil près d’une fenêtre, intérieur calme au premier plan, paysage venteux dehors ; aucun enfermement dramatique, expression attentive, palette bleu gris, crème et ocre, style gravure éditoriale, carré."
+    },
+    {
+      "id": "rule-06",
+      "order": 6,
+      "title": "Faire ce que l’on peut, supporter ce qu’il faut",
+      "summary": "Une existence lucide demande deux efforts différents. Le premier consiste à employer ses capacités réelles : agir, décider, travailler, demander, réparer lorsque quelque chose dépend encore de nous. Le second consiste à supporter ce qui ne peut plus être évité ou changé, sans gaspiller toute son énergie à protester contre le fait lui-même. Schopenhauer ne décrit pas une victoire mentale sur l’adversité ; il recommande une discipline austère du possible et du nécessaire. Cette distinction protège contre deux erreurs symétriques. On peut se croire impuissant devant une difficulté que l’on pourrait encore traiter, ou s’accuser sans fin d’un événement devenu irréversible. L’application contemporaine doit rester prudente : supporter ne signifie pas se soumettre à la violence, au harcèlement ou à une maladie sans soin. Il faut parfois agir précisément pour faire cesser ce qui est présenté comme inévitable. La règle sert donc à séparer l’action encore ouverte de la douleur déjà donnée, afin que chacune reçoive une réponse adaptée et que le regret ne prenne pas la place de la décision.",
+      "example": "Après un licenciement, Marc passe plusieurs jours à relire le courriel et à imaginer la réunion qui aurait pu tout changer. Il vérifie d’abord s’il existe un recours ou une erreur administrative. Une fois ces démarches faites, il accepte que le poste ne reviendra pas par la seule force de ses arguments. Il établit alors deux listes : candidatures, contacts et formation d’un côté ; colère, hypothèses et souvenirs de l’autre. Il réserve un temps court à la seconde, puis revient à la première. La perte reste pénible, mais elle ne commande plus chaque heure de sa journée.",
+      "advice": [
+        "Écris séparément ce qui peut encore être influencé et ce qui est déjà un fait accompli.",
+        "Traite l’action ouverte par une étape datée, même petite, plutôt que par une promesse générale.",
+        "Accorde à la peine un espace réel sans lui demander de produire immédiatement une leçon.",
+        "Cherche protection, justice ou soin lorsque la situation n’est pas réellement inévitable."
+      ],
+      "key_phrase": "Agir là où une prise existe ; cesser de se battre contre ce qui est déjà arrivé.",
+      "questions": [
+        "Quelle part de cette situation dépend encore d’une décision ou d’une démarche précise ?",
+        "Quel fait dois-je reconnaître pour retrouver une énergie utilisable ?",
+        "Est-ce que j’appelle nécessité ce qui pourrait encore être contesté, réparé ou protégé ?"
+      ],
+      "source": {
+        "work": "Eudämonologie, reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 6, formule du faire volontairement ce que l’on peut et du souffrir ce que l’on doit ; appuis dans Aphorismen, chap. V, §§11–12",
+        "public_url": "https://sammlungen.ub.uni-frankfurt.de/schopenhauer/content/titleinfo/7187123",
+        "confidence": "high",
+        "notes": "La formule est une règle reconstruite à partir du Nachlass. Le mot résilience est écarté pour conserver la tension entre capacité, nécessité et renoncement."
+      },
+      "themes": ["adaptabilité", "réduction de la souffrance"],
+      "needs": ["clarté", "autonomie", "tranquillité"],
+      "image_alt": "Une personne avance avec une valise légère après avoir laissé derrière elle des débris immobiles.",
+      "image_scene": "Gravure contemporaine en gouache : une personne marche sur un chemin avec une valise légère, derrière elle des débris immobiles et devant une passerelle en réparation ; posture décidée mais non triomphante, textures d’encre, bleu nuit, ocre et ivoire, sans texte, carré."
+    },
+    {
+      "id": "rule-07",
+      "order": 7,
+      "title": "Délibérer avant, lâcher prise après",
+      "summary": "Décider raisonnablement ne consiste pas à prévoir toutes les conséquences. Il s’agit de recueillir les informations utiles, comparer quelques options, mesurer les risques puis reconnaître qu’une part du résultat restera soumise aux circonstances. Schopenhauer conseille de réfléchir avant l’action, puis de laisser l’affaire suivre son cours, parce que le hasard, les erreurs et les décisions des autres échappent à notre calcul. Cette règle ne valorise ni l’improvisation ni l’indifférence. Elle demande une limite claire à la délibération : à partir d’un certain point, chercher une certitude supplémentaire ne fait qu’alimenter l’angoisse. Dans une décision professionnelle, familiale ou financière, on peut préparer un scénario principal, un seuil d’arrêt et une solution de repli. Ensuite, il faut accepter de juger la décision avec les informations disponibles au moment où elle a été prise, plutôt qu’avec le résultat connu après coup. L’aléatoire n’abolit pas la responsabilité ; il empêche seulement de confondre responsabilité et contrôle total. Une bonne décision peut produire un résultat défavorable, et une mauvaise décision peut parfois réussir par chance.",
+      "example": "Ana doit choisir entre deux offres de logement. Elle compare le loyer, le trajet, l’état du bâtiment et la solidité du bail. Elle visite, demande les charges et fixe un montant maximal. Elle retient l’appartement le plus cohérent, tout en gardant une réserve pour un déménagement imprévu. Deux mois plus tard, la ligne de bus est modifiée et le trajet s’allonge. Elle ne conclut pas qu’elle aurait pu tout prévoir. Elle évalue le nouveau coût, négocie ses horaires et décide après quelques semaines s’il faut chercher ailleurs. La décision initiale était préparée ; elle n’était pas une garantie contre les événements.",
+      "advice": [
+        "Définis trois critères essentiels et une information qui pourrait réellement changer la décision.",
+        "Prépare un plan principal, un seuil de renoncement et une solution de repli proportionnée.",
+        "Fixe une date de décision pour éviter que la recherche d’informations ne devienne une fuite.",
+        "Après le résultat, analyse les faits et le raisonnement d’alors sans attribuer tout le succès ou l’échec au mérite."
+      ],
+      "key_phrase": "Préparer sérieusement une décision, puis accepter que son résultat ne nous appartienne pas entièrement.",
+      "questions": [
+        "Quelle information manque vraiment pour décider, et laquelle ne ferait que prolonger mon hésitation ?",
+        "Quel risque puis-je absorber et quel seuil m’obligerait à changer de plan ?",
+        "Suis-je en train de juger ma décision avec un savoir que je ne possédais pas au départ ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §11, délibération puis abandon de l’affaire au cours des événements",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La transposition en décision contemporaine reste une application originale. Le hasard n’est pas présenté comme une excuse qui supprimerait la responsabilité."
+      },
+      "themes": ["appréciation", "adaptabilité"],
+      "needs": ["clarté", "autonomie", "sécurité"],
+      "image_alt": "Une personne pose des cartes sur une table avant de quitter la pièce sans les emporter.",
+      "image_scene": "Illustration éditoriale en gravure et gouache : table couverte de quelques cartes, notes et boussole, une personne vient de choisir une direction et s’éloigne vers une porte entrouverte ; composition sobre, bleu ardoise, ocre et crème, aucun texte lisible, carré."
+    },
+    {
+      "id": "rule-08",
+      "order": 8,
+      "title": "Réduire le cercle pour préserver la tranquillité",
+      "summary": "Chaque relation apporte des échanges, mais aussi des attentes, des obligations, des risques de conflit et une nouvelle surface d’exposition. La prudence de Schopenhauer envers l’extension du cercle social ne commande pas de mépriser les autres. Elle invite à mesurer le prix d’une disponibilité illimitée et à reconnaître que la solitude peut protéger l’indépendance du jugement. Dans une vie contemporaine saturée de messages, de groupes et d’invitations, limiter son cercle signifie surtout choisir où l’on investit son attention. Toutes les relations n’ont pas à devenir intimes, et toute conversation ne mérite pas l’accès à nos affaires. Une relation peu fréquente peut être solide ; une présence quotidienne peut être épuisante. La règle devient utile lorsqu’elle aide à distinguer la confiance, la courtoisie et la simple habitude. Sa limite est décisive : se retirer d’un réseau protecteur par peur ou par méfiance peut aggraver la souffrance. Il ne s’agit donc ni de glorifier l’isolement ni de supprimer la solidarité, mais de donner une forme à ses liens afin qu’ils restent compatibles avec le repos, la discrétion et les responsabilités choisies.",
+      "example": "Depuis qu’elle dirige une petite équipe, Élodie répond à trois groupes de discussion professionnels jusque tard le soir. Elle accepte aussi des invitations par peur de paraître distante. Elle conserve ses liens importants, mais quitte deux groupes sans rôle clair, désactive les notifications après 19 heures et réserve une soirée à ses proches. Elle constate que certaines relations disparaissent faute de sollicitations permanentes, tandis que deux amitiés deviennent plus franches. Elle ne vit pas seule et ne cesse pas d’aider son équipe ; elle réduit simplement le bruit autour des liens qu’elle veut vraiment entretenir.",
+      "advice": [
+        "Classe tes relations selon le degré de confiance, d’obligation et d’énergie qu’elles demandent.",
+        "Choisis des horaires de disponibilité et rends-les explicites aux personnes concernées.",
+        "Protège quelques liens fiables par une attention régulière plutôt que de promettre une présence partout.",
+        "Vérifie que ta réduction du cercle ne te coupe pas d’un soutien nécessaire ou d’une protection collective."
+      ],
+      "key_phrase": "Limiter ses liens n’est pas mépriser les autres ; c’est choisir ce que son attention peut vraiment porter.",
+      "questions": [
+        "Quelle relation mérite une présence réelle, et laquelle repose surtout sur la culpabilité ou l’habitude ?",
+        "Quelle limite de disponibilité rendrait mes liens plus paisibles et plus honnêtes ?",
+        "Mon retrait protège-t-il ma tranquillité, ou masque-t-il une peur qui aurait besoin de soutien ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §6, extension du cercle d’action, soucis et prudence de la solitude",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La source défend une limitation plus austère. Les notions de lien fiable et de notifications sont des traductions pratiques, pas une idéalisation des relations profondes."
+      },
+      "themes": ["réduction de la souffrance", "relations et confiance"],
+      "needs": ["tranquillité", "relations et confiance", "autonomie"],
+      "image_alt": "Une personne éteint calmement plusieurs lanternes autour d’une table où restent quelques lumières choisies.",
+      "image_scene": "Gravure adulte à la gouache : une personne dans une pièce sombre éteint plusieurs petites lanternes, tandis que trois lumières restent allumées autour d’une table accueillante ; image de sélection et de repos, jamais d’isolement menaçant, palette bleu nuit, ocre et ivoire, carré."
+    },
+    {
+      "id": "rule-09",
+      "order": 9,
+      "title": "Préférer la non-douleur au plaisir",
+      "summary": "Cette règle reprend une distinction fondamentale : le plaisir apparaît souvent comme une transition, tandis que la douleur s’impose avec une force plus directe. Chercher la non-douleur ne signifie donc pas déclarer tout plaisir suspect. Cela signifie reconnaître qu’une existence stable, libérée d’une inquiétude constante, d’une dette écrasante ou d’un conflit répétitif peut avoir plus de valeur qu’une succession de sensations fortes. La règle 1 posait un critère de décision général ; celle-ci précise l’attitude à adopter devant la promesse du plaisir. L’intensité n’est pas la même chose que la qualité, et la nouveauté peut masquer son coût futur. Une personne peut choisir un voyage, une fête ou une ambition, à condition de regarder aussi la fatigue, le risque et l’après-coup. Cette sobriété n’est pas une doctrine de privation : le repos, l’amitié et la curiosité ont besoin de place. Elle demande simplement de ne pas sacrifier une tranquillité durable à une gratification qui réclame aussitôt d’être renouvelée. La limite tient aux situations où un effort pénible ouvre une possibilité importante : éviter toute douleur conduirait alors à laisser la peur décider à notre place.",
+      "example": "Jules envisage de financer une soirée luxueuse par un crédit renouvelable. Il imagine l’ambiance, la reconnaissance de ses amis et le plaisir d’une occasion exceptionnelle. En regardant le mois suivant, il voit les intérêts, les heures supplémentaires nécessaires et la tension déjà présente dans son budget. Il choisit une formule plus simple, sans faire de cette modération une vertu publique. La soirée est réussie parce que les invités peuvent participer et que Jules ne passe pas les semaines suivantes à rembourser une image. Il a renoncé à une intensité, pas à la convivialité.",
+      "advice": [
+        "Compare le plaisir immédiat avec son coût différé en temps, argent, santé et relations.",
+        "Cherche une version moins intense de l’expérience qui conserve ce qui compte réellement.",
+        "Protège une base de repos et de sécurité avant d’ajouter une gratification exceptionnelle.",
+        "Accepte qu’un effort inconfortable soit parfois nécessaire pour une liberté ou une relation importante."
+      ],
+      "key_phrase": "Le plaisir attire ; la tranquillité durable mérite aussi d’entrer dans le calcul.",
+      "questions": [
+        "Quel plaisir suis-je en train de confondre avec une preuve de réussite ou de valeur ?",
+        "Quelle version plus simple préserverait l’essentiel sans créer un coût disproportionné ?",
+        "À quel moment la recherche de non-douleur devient-elle une façon de ne jamais risquer ni aimer ni agir ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §1, bonheur négatif et priorité de la non-douleur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle est volontairement distinguée de la règle 1 : elle traite le rapport au plaisir et à l’intensité, sans prétendre fournir un second principe identique."
+      },
+      "themes": ["maîtrise de soi", "réduction de la souffrance"],
+      "needs": ["tranquillité", "sécurité", "clarté"],
+      "image_alt": "Une personne choisit une lampe douce plutôt qu’un feu d’artifice éclatant au-dessus d’une ville.",
+      "image_scene": "Illustration adulte en gouache et encre : une personne assise sur un balcon tient une petite lampe chaude, tandis qu’un feu d’artifice lointain éclaire brièvement le ciel ; contraste entre éclat fugitif et lumière stable, bleu profond, ocre et crème, sans texte, carré."
+    },
+    {
+      "id": "rule-10",
+      "order": 10,
+      "title": "Faire exercer la raison sur les impulsions",
+      "summary": "La raison peut comparer les conséquences, conserver une maxime et rappeler une décision lorsque l’impression du moment pousse dans une autre direction. Elle ne supprime pourtant ni le désir ni le tempérament. Chez Schopenhauer, les règles générales doivent être apprises puis exercées longtemps avant de modifier réellement la conduite ; la nature finit par réapparaître dans les circonstances qui nous atteignent le plus. La règle ne consiste donc pas à soumettre chaque émotion à un tribunal froid. Elle consiste à donner à la pensée une place avant l’achat, la réponse agressive ou l’engagement irréversible. Une idée claire peut servir de garde-fou, à condition d’être traduite en geste concret et répétée dans des situations modestes. La raison n’est pas un outil qui garantit le bonheur : elle peut surtout éviter certaines fautes prévisibles et nous faire mesurer le prix d’une décision. Elle doit aussi accepter ses limites, car une personne épuisée, menacée ou bouleversée ne délibère pas comme dans un cabinet. Penser avant d’agir est une discipline ; croire que l’on peut tout contrôler par la pensée serait une nouvelle illusion.",
+      "example": "À la suite d’un message humiliant, Claire rédige une réponse très dure et s’apprête à l’envoyer à toute l’équipe. Elle applique une règle préparée : aucune réponse importante après 22 heures et aucune diffusion sans relecture le lendemain. Le matin, elle conserve les faits utiles, retire les attaques et demande un entretien avec son supérieur. La colère n’a pas disparu ; elle a cessé de décider seule. L’entretien révèle un problème de procédure qui peut être corrigé. Claire défend sa position avec plus de force parce qu’elle n’a pas dissipé son énergie dans une riposte publique.",
+      "advice": [
+        "Formule une maxime courte pour les situations où ton impulsion habituelle devient coûteuse.",
+        "Ajoute un délai, une relecture ou un témoin avant une décision difficile à annuler.",
+        "Teste la maxime dans des cas peu risqués jusqu’à ce qu’elle devienne une habitude disponible.",
+        "Réduis tes exigences de contrôle lorsque la fatigue, la peur ou l’urgence rendent le jugement fragile."
+      ],
+      "key_phrase": "La raison ne commande pas tout ; elle peut cependant gagner quelques secondes décisives.",
+      "questions": [
+        "Quelle impulsion récurrente mériterait une règle pratique plutôt qu’une nouvelle promesse ?",
+        "Quel délai ou quel geste de vérification peut protéger ma prochaine décision ?",
+        "Dans quelles circonstances suis-je trop épuisé ou menacé pour exiger de moi un raisonnement idéal ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §30 sur le caractère acquis et §18 sur les maximes et la pratique",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Le titre ne signifie pas que toute la vie serait contrôlable par la raison. La limite de la nature et de la pratique est constitutive de la règle."
+      },
+      "themes": ["perspective réaliste", "maîtrise de soi"],
+      "needs": ["clarté", "tranquillité", "relations et confiance"],
+      "image_alt": "Une main suspend une lettre au-dessus d’une table, entre une horloge et une lampe allumée.",
+      "image_scene": "Gravure éditoriale contemporaine : une main tient une lettre non envoyée au-dessus d’une table, avec une horloge, une lampe et un verre d’eau ; tension contenue avant l’action, textures de gouache et d’encre, bleu nuit, ivoire et ocre, aucun mot lisible, carré."
+    }
+  ]
+}

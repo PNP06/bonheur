@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "adult": {
+    "available": true,
+    "path": "downloads/artheureux-adulte.pdf",
+    "bytes": 11616536,
+    "sha256": "a26474bafa6c4ebb0e2639eeda76d9881dba8f5a7da0724b9a9d11b6fa1dee1c"
+  },
+  "youth": {
+    "available": true,
+    "path": "downloads/artheureux-jeunesse.pdf",
+    "bytes": 10548822,
+    "sha256": "95c6c5586c2d4e8c93836a561c71fb57cff4efce4c59d48edb90784212a06e19"
+  }
+}

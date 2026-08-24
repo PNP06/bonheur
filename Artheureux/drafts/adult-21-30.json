@@ -1,0 +1,305 @@
+{
+  "edition": "adult",
+  "rules": [
+    {
+      "id": "rule-21",
+      "order": 21,
+      "title": "Fermer les autres tiroirs pendant qu’on en ouvre un",
+      "summary": "Notre esprit supporte mal de garder ouvertes plusieurs affaires à la fois. Une conversation difficile revient pendant une réunion ; une facture se mêle à la préparation d’un dossier ; une décision ancienne colore chaque tâche présente. Schopenhauer propose une image très concrète : nos pensées devraient fonctionner comme des tiroirs que l’on ouvre séparément. Il ne s’agit pas de nier les problèmes, mais de leur donner successivement une place délimitée. Cette discipline protège la force de jugement : pendant l’action en cours, les préoccupations ajournées cessent momentanément de réclamer une réponse. La règle n’est ni une méthode de productivité ni une promesse de calme permanent. Certaines urgences doivent interrompre le travail, et une souffrance persistante ne disparaît pas parce qu’on la range. L’enjeu est plus modeste : empêcher une difficulté de contaminer toutes les autres. Traiter une affaire à la fois permet aussi de voir plus nettement ce qui dépend réellement de nous, ce qui doit attendre et ce qui peut être abandonné.",
+      "example": "À 9 heures, Nadia doit préparer une présentation pour l’après-midi. Elle pense pourtant à la discussion tendue de la veille et au devis qu’elle n’a pas encore accepté. Au lieu de passer d’un onglet à l’autre, elle note ces deux sujets sur une feuille : appeler son frère à 18 heures, relire le devis demain matin. Elle ferme sa messagerie et travaille quarante minutes sur la présentation. La discussion n’est pas résolue, mais elle n’a plus besoin de se rappeler sans cesse qu’elle existe. À midi, Nadia constate que son travail est terminé et que le devis mérite une lecture plus attentive qu’elle ne pouvait lui donner entre deux notifications.",
+      "advice": [
+        "Écrire les préoccupations concurrentes au lieu de les laisser circuler mentalement.",
+        "Définir une prochaine action et un moment de reprise pour chaque sujet reporté.",
+        "Réserver un intervalle sans interruption à l’affaire réellement prioritaire.",
+        "Rouvrir un tiroir si une urgence concrète l’exige, pas seulement parce qu’une pensée revient."
+      ],
+      "key_phrase": "Une affaire bien délimitée pèse moins que cinq soucis mêlés.",
+      "questions": [
+        "Quelle affaire mérite aujourd’hui toute mon attention ?",
+        "Quel sujet puis-je noter et reprendre à un moment précis ?",
+        "Que se passe-t-il si le problème reporté est en réalité urgent ou trop douloureux pour attendre ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen, chapitre V, §15 : les tiroirs de la pensée",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La métaphore des tiroirs est adaptée en pratique d’attention séquentielle ; elle ne prétend pas supprimer les causes réelles des soucis."
+      },
+      "themes": ["tranquillité intérieure", "maîtrise de soi"],
+      "needs": ["clarté", "tranquillité", "concentration"],
+      "image_alt": "Une femme ferme des tiroirs étiquetés par des objets symboliques avant de se concentrer sur un dossier ouvert",
+      "image_scene": "Illustration carrée de gravure éditoriale contemporaine et gouache : bureau calme vu de trois quarts, femme adulte concentrée sur un dossier ouvert, plusieurs tiroirs en bois autour d’elle contenant discrètement une enveloppe, un téléphone et une clé, palette bleu nuit, ivoire et ocre, texture d’encre, sans texte lisible ni logo."
+    },
+    {
+      "id": "rule-22",
+      "order": 22,
+      "title": "Remplacer l’idéal de bonheur par une vie supportable",
+      "summary": "La recherche d’un bonheur éclatant rend vulnérable aux comparaisons et aux déceptions. Dans la pensée de Schopenhauer, le plaisir est bref et dépend d’un manque qui vient d’être satisfait ; la douleur, elle, s’impose avec davantage de réalité. La conséquence pratique n’est pas de mépriser toute joie, mais de changer le critère de jugement. Une journée réussie peut être celle où une tension évitable a été réduite, où la santé n’a pas été sacrifiée, où une relation n’a pas été inutilement abîmée. Cette perspective donne une valeur particulière à la prévention, à la mesure et aux satisfactions ordinaires. Elle protège aussi contre les images de vie parfaite qui transforment une existence convenable en échec apparent. Il faut toutefois maintenir une réserve : réduire la souffrance ne suffit pas à résoudre une injustice, une maladie ou une précarité. Une personne privée de sécurité ne doit pas recevoir une leçon de modération à la place d’un soutien concret. Le réalisme porte sur nos attentes ; il ne justifie ni l’indifférence ni la résignation.",
+      "example": "Après plusieurs mois à comparer son quotidien à celui de créateurs suivis en ligne, Marc conclut que son appartement, son emploi et ses week-ends sont médiocres. Il se fixe alors un objectif moins spectaculaire : dormir régulièrement, terminer une formation qui lui ouvrira une mobilité et cesser de consulter les annonces immobilières avant de connaître son budget. Trois mois plus tard, sa vie n’est pas devenue idéale. Il a pourtant moins de dettes, davantage d’énergie et une décision professionnelle plus claire. Quand une collègue lui parle de son épuisement, Marc ne lui répond pas de se contenter de peu : il l’aide à chercher une solution réelle.",
+      "advice": [
+        "Remplacer l’objectif vague d’une vie parfaite par une souffrance précise à réduire.",
+        "Comparer vos attentes à vos moyens réels avant de conclure à l’échec.",
+        "Identifier les images et récits qui transforment une amélioration modeste en déception.",
+        "Distinguer une limite personnelle d’une injustice qui demande une action ou un soutien."
+      ],
+      "key_phrase": "Une vie moins douloureuse vaut mieux qu’un idéal qui rend chaque jour insuffisant.",
+      "questions": [
+        "Quelle souffrance concrète puis-je raisonnablement diminuer cette semaine ?",
+        "Quelle joie simple ai-je tendance à disqualifier parce qu’elle n’est pas spectaculaire ?",
+        "Est-ce une attente excessive qui me fait souffrir, ou une situation réellement injuste qui exige de l’aide ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen, chapitre V, §§1–3 : bonheur négatif et réalité de la douleur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La critique des médias et l’exemple numérique sont des applications contemporaines originales, non des thèses attribuées au texte historique."
+      },
+      "themes": ["réduction de la souffrance", "perspective réaliste"],
+      "needs": ["lucidité", "sécurité", "tranquillité"],
+      "image_alt": "Un homme éteint un écran montrant des silhouettes idéalisées et regarde une table simple avec une tasse et un carnet",
+      "image_scene": "Illustration carrée en gouache et encre, adulte assis devant un écran dont les formes brillantes s’éteignent, puis une table réelle avec tasse, carnet et fenêtre ouverte vers une rue ordinaire, contraste entre éclat artificiel et lumière douce, bleu pétrole, ivoire, ocre, sans mots ni marques."
+    },
+    {
+      "id": "rule-23",
+      "order": 23,
+      "title": "Jouer son plan avec les cartes reçues",
+      "summary": "Nous préparons notre vie comme si les circonstances allaient respecter notre scénario. Or une décision professionnelle, une rencontre, une maladie ou un événement politique peut redistribuer les possibilités. Schopenhauer invite à distinguer le plan que nous formons et les cartes que le destin met effectivement entre nos mains. Cette image n’abolit pas la décision : il faut choisir, prévoir et agir avec les moyens disponibles. Elle rappelle seulement qu’un projet n’est pas une garantie. La sagesse consiste donc à conserver un cap sans confondre le cap avec l’itinéraire imaginé. Quand les faits changent, on réévalue l’action au lieu de défendre par orgueil une stratégie devenue impossible. Le point délicat est de ne pas transformer l’imprévisibilité en excuse universelle. Certaines conséquences viennent de nos erreurs ; les reconnaître permet d’apprendre. D’autres résultent de circonstances que personne ne pouvait maîtriser. Dans les deux cas, l’adaptation commence par une description honnête de la situation présente, non par le récit rassurant de ce qui aurait dû arriver.",
+      "example": "Leïla avait prévu de quitter son emploi après avoir validé une formation, puis l’entreprise a supprimé son service avant la fin du cursus. Son premier réflexe est de maintenir le calendrier initial pour ne pas perdre la face. Elle liste finalement ses ressources : indemnité limitée, compétences acquises, réseau de collègues, six mois de dépenses. Elle reporte le déménagement, transforme son dossier pour deux types de postes et accepte une mission temporaire. Ce détour ne réalise pas son projet original, mais il préserve une partie de son objectif sans l’obliger à nier les cartes réellement distribuées.",
+      "advice": [
+        "Décrire les faits nouveaux séparément du projet initial et de la déception ressentie.",
+        "Conserver l’objectif qui reste pertinent, puis abandonner les étapes devenues irréalistes.",
+        "Prévoir deux options de repli qui utilisent des ressources déjà disponibles.",
+        "Attribuer vos erreurs sans vous attribuer les événements que vous ne pouviez pas prévoir."
+      ],
+      "key_phrase": "Un bon plan indique une direction ; les circonstances imposent parfois le chemin.",
+      "questions": [
+        "Quelle partie de mon projet mérite d’être conservée malgré le changement ?",
+        "Quelles cartes ai-je réellement en main aujourd’hui ?",
+        "Suis-je en train de m’adapter aux faits, ou de protéger mon ancienne image de la réussite ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Eudämonologie, règle 23 : le jeu du plan humain et du destin",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La source publique sert à repérer la règle reconstruite ; la métaphore et les applications professionnelles sont rédigées à neuf."
+      },
+      "themes": ["adaptabilité", "perspective réaliste"],
+      "needs": ["clarté", "adaptation", "sécurité"],
+      "image_alt": "Une joueuse adulte réorganise des cartes sur une table après qu’un courant d’air a déplacé sa stratégie",
+      "image_scene": "Gravure éditoriale contemporaine en gouache : table vue de dessus, mains d’une femme adulte réorganisant des cartes vierges, quelques cartes emportées vers une fenêtre ouverte, carnet et boussole sans inscription lisible, composition claire, bleu nuit et ocre sur papier ivoire, aucune marque."
+    },
+    {
+      "id": "rule-24",
+      "order": 24,
+      "title": "Avec l’âge, déplacer le bonheur vers la tranquillité",
+      "summary": "La vie ne conserve pas les mêmes promesses à chaque âge. Schopenhauer décrit une première moitié tournée vers les projets, les conquêtes et les plaisirs attendus, puis une période où l’expérience conduit davantage à rechercher la sécurité, le calme et l’absence de dommages. Cette observation n’est pas une invitation à mépriser la vieillesse ni à déclarer les désirs éteints. Elle rappelle que le bonheur espéré change de forme lorsque changent le corps, les responsabilités, les pertes et les besoins. Une existence bien conduite peut donc consister à réviser ses critères plutôt qu’à poursuivre un modèle devenu étranger. La tranquillité ne signifie pas isolement : elle peut inclure des liens choisis, la transmission, l’étude ou le soin d’un lieu. Cette règle reste située historiquement et ne doit pas enfermer chaque personne âgée dans un rôle de retrait. Certains continuent à créer, aimer, travailler ou commencer. L’idée utile est plus générale : lorsque nos forces et nos priorités évoluent, préserver la paix quotidienne devient parfois plus raisonnable que mesurer toute valeur à l’intensité d’autrefois.",
+      "example": "À soixante-dix ans, André ne veut plus diriger les associations et voyages qu’il organisait à cinquante. Il regrette d’abord de ne plus avoir la même endurance. Puis il choisit une bibliothèque de quartier où il accompagne une fois par semaine des adultes qui apprennent le français. Il réserve aussi ses matinées à la marche et à la musique. Ses activités sont moins nombreuses, mais elles correspondent à son énergie et à son désir de transmettre. Sa fille, plus jeune, comprend que cette tranquillité n’est pas un abandon : c’est une nouvelle manière de participer.",
+      "advice": [
+        "Observer ce que votre âge, votre santé et vos responsabilités rendent réellement possible.",
+        "Remplacer une activité perdue par une forme voisine de lien, d’étude ou de transmission.",
+        "Protéger des rythmes calmes sans présenter le retrait comme une obligation générale.",
+        "Laisser les personnes concernées définir elles-mêmes ce qu’elles souhaitent encore entreprendre."
+      ],
+      "key_phrase": "Quand la vie change de saison, la tranquillité peut devenir une réussite à part entière.",
+      "questions": [
+        "Quelle ambition ancienne ne correspond plus à mes forces ou à mes priorités ?",
+        "Quelle activité plus calme pourrait préserver son intention essentielle ?",
+        "Est-ce une adaptation choisie, ou une limitation imposée par la santé, l’argent ou le regard des autres ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen, chapitre VI : les deux moitiés de la vie",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Le texte historique est sombre sur le vieillissement ; l’adaptation conserve la réorientation vers la tranquillité sans en faire une norme biographique."
+      },
+      "themes": ["perspective réaliste", "tranquillité intérieure"],
+      "needs": ["tranquillité", "transmission", "adaptation"],
+      "image_alt": "Une personne âgée écoute de la musique dans une bibliothèque tandis qu’un jeune adulte range des livres près d’elle",
+      "image_scene": "Illustration carrée adulte, gravure à l’encre et gouache chaleureuse : personne âgée assise près d’une fenêtre avec un instrument posé à côté, jeune adulte rangeant des livres, lumière d’après-midi et plantes sobres, atmosphère de transmission paisible, palette ivoire, bleu grisé et ocre, sans texte."
+    },
+    {
+      "id": "rule-25",
+      "order": 25,
+      "title": "Voir chaque bien avec les yeux de la perte",
+      "summary": "L’habitude transforme rapidement un bien en décor. Nous remarquons davantage une présence après son absence, une santé après une alerte, un logement après un déménagement. Schopenhauer propose de regarder volontairement ce que nous avons comme si nous pouvions le perdre. Il ne s’agit pas de provoquer l’angoisse ni de jouer avec des catastrophes imaginaires. Il s’agit de corriger l’indifférence produite par l’habitude. Cette perspective rend visibles les conditions concrètes d’un bien : le temps d’un proche, l’entretien d’un corps, la confiance d’une relation, la stabilité d’un lieu. Elle peut conduire à une action simple, comme remercier, réparer ou consacrer une heure à ce qui compte. Ces gestes ordinaires ont parfois plus d’effet qu’une émotion recherchée. La limite est essentielle : personne ne doit culpabiliser de ne pas éprouver de gratitude dans une situation de violence, de maladie ou de privation. Imaginer une perte ne remplace pas la protection ni la justice. La règle vaut surtout pour les biens réellement présents et négligés, afin que leur valeur ne soit pas découverte trop tard.",
+      "example": "Depuis des années, Chloé compte sur son père pour garder ses enfants le mercredi. Elle considère cette aide comme acquise et annule souvent leur café prévu. Après une hospitalisation bénigne de son père, elle mesure tout ce que cette disponibilité rend possible. Elle réorganise son budget pour acheter deux après-midis de garde par mois et garde le mercredi soir pour dîner avec lui. Elle ne dramatise pas chaque semaine ; elle cesse simplement de traiter une générosité régulière comme une ressource automatique. Leur relation devient plus réciproque et moins fondée sur l’habitude.",
+      "advice": [
+        "Choisir un bien concret que l’habitude vous fait négliger, plutôt qu’imaginer toutes les pertes possibles.",
+        "Nommer le travail, le temps ou la fragilité qui rendent ce bien possible.",
+        "Transformer cette prise de conscience en entretien, remerciement ou temps partagé.",
+        "Écarter l’exercice lorsqu’il nourrit une anxiété excessive ou culpabilise face à une situation grave."
+      ],
+      "key_phrase": "Ce que l’habitude rend invisible mérite parfois d’être regardé avant de disparaître.",
+      "questions": [
+        "Quel bien présent suis-je en train de traiter comme automatique ?",
+        "Quelle action concrète montrerait que j’en reconnais la valeur ?",
+        "Cette réflexion m’aide-t-elle à prendre soin, ou augmente-t-elle inutilement ma peur de perdre ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Aphorismen, chapitre V, §14 : considérer les biens après leur perte",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La règle est adaptée comme exercice d’attention et d’entretien ; elle ne doit pas devenir une pratique anxieuse de visualisation des catastrophes."
+      },
+      "themes": ["appréciation", "relations et confiance"],
+      "needs": ["reconnaissance", "relations", "sécurité"],
+      "image_alt": "Deux adultes entretiennent ensemble une vieille bicyclette devant une maison, avec attention et gratitude silencieuse",
+      "image_scene": "Gouache et gravure éditoriale contemporaine : deux adultes de générations différentes entretiennent une bicyclette ancienne devant une maison, outils simples, geste d’aide réciproque, lumière douce du matin, palette bleu ardoise, ocre et ivoire, aucun texte ni logo."
+    },
+    {
+      "id": "rule-26",
+      "order": 26,
+      "title": "Fixer une limite au désirable",
+      "summary": "Une grande part de la souffrance vient de l’écart entre ce que nous voulons et ce que les circonstances peuvent fournir. La règle 26 rassemble trois limites : réduire les désirs démesurés, contenir la colère qui exige que le monde obéisse immédiatement, et reconnaître que certaines difficultés sont inévitables. Cela ne revient pas à rendre les ambitions modestes par principe. Une demande peut être légitime même si elle rencontre un obstacle ; une colère peut signaler un tort réel. Mais l’intensité du désir ne crée ni droit supplémentaire ni pouvoir magique. Ramener une attente au possible aide à choisir une action proportionnée : négocier, renoncer, patienter ou demander réparation. La distinction entre ce qui est souhaitable et ce qui est accessible évite aussi de confondre frustration et catastrophe. Schopenhauer reste plus austère que cette formulation pratique : il ne promet pas qu’une meilleure gestion des attentes rendra le monde juste. La règle sert seulement à ne pas ajouter une lutte intérieure à une difficulté déjà présente, tout en conservant la capacité de protester contre ce qui peut réellement être changé.",
+      "example": "Un client reçoit un produit défectueux après une livraison importante. Sa première réaction est d’écrire un message furieux et d’exiger une solution immédiate. Il vérifie ensuite ses droits, rassemble les photos et demande un remplacement avant une date précise. Le vendeur refuse d’abord ; il saisit alors le médiateur prévu. Le défaut reste pénible, mais la colère n’a plus besoin de diriger chaque décision. Dans une autre affaire, le délai du transporteur est réellement incompressible : l’accepter permet de prévenir le client plutôt que de promettre l’impossible. Il reste ferme sans transformer le retard en affront personnel.",
+      "advice": [
+        "Séparer le résultat souhaité, le résultat nécessaire et le résultat actuellement possible.",
+        "Formuler une demande vérifiable avant de laisser la colère parler à votre place.",
+        "Prévoir un délai ou une procédure lorsque la solution ne peut pas être immédiate.",
+        "Maintenir la protestation et la demande de réparation quand un tort réel peut être corrigé."
+      ],
+      "key_phrase": "Réduire l’impossible dans nos attentes libère l’action qui reste possible.",
+      "questions": [
+        "Quelle part de mon attente dépend-elle réellement de quelqu’un ou de quelque chose ?",
+        "Quelle demande précise remplacerait mon irritation diffuse ?",
+        "Suis-je en train de modérer une exigence irréaliste, ou de m’habituer à subir une injustice ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 26 : modération des désirs, colère et limites humaines",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La règle reconstruite s’appuie notamment sur la limitation des prétentions et l’acceptation du nécessaire ; l’application aux réclamations contemporaines est originale."
+      },
+      "themes": ["maîtrise de soi", "réduction de la souffrance"],
+      "needs": ["clarté", "justice", "tranquillité"],
+      "image_alt": "Une personne remplace une pile de papiers froissés par une lettre claire posée à côté d’un dossier",
+      "image_scene": "Gravure éditoriale en gouache : adulte à une table, papiers froissés d’un côté, dossier organisé et lettre claire de l’autre, posture passée de la tension à la décision, lumière latérale, bleu nuit, ocre et ivoire, aucun texte lisible."
+    },
+    {
+      "id": "rule-27",
+      "order": 27,
+      "title": "Comparer ses maux aux maux plus grands",
+      "summary": "La douleur devient parfois plus lourde lorsqu’elle est isolée dans notre imagination. La règle 27 propose de la replacer parmi d’autres expériences humaines : un problème peut rester sérieux tout en n’étant pas le pire qui puisse arriver. Cette comparaison peut rendre une épreuve plus mesurée et empêcher l’esprit de la grossir jusqu’à ne plus voir aucune issue. Schopenhauer mentionne aussi le réconfort que procure la rencontre de personnes confrontées à une difficulté comparable ; la souffrance n’est alors plus entièrement privée. Mais l’exercice comporte un danger moral. Dire à quelqu’un que d’autres souffrent davantage peut servir à l’abandonner à son mal au lieu de l’aider. La comparaison n’annule ni la douleur, ni la responsabilité de la traiter. Elle est utile lorsqu’elle élargit le champ de vision et rend une action possible, pas lorsqu’elle impose le silence. On peut reconnaître à la fois que son problème est réel et qu’il existe des ressources, des solidarités ou des issues que l’émotion du moment faisait oublier.",
+      "example": "Après l’échec d’un concours, Thomas ne répond plus aux messages et se décrit comme définitivement incapable. Son amie ne lui oppose pas la souffrance de personnes en guerre ; elle l’invite à rencontrer une ancienne candidate qui a dû repasser l’épreuve tout en travaillant. Thomas comprend que son échec est réel, mais non définitif. Il demande le détail de ses notes, consulte un conseiller et reprend un emploi à temps partiel. La comparaison n’a pas diminué artificiellement sa déception : elle l’a replacée dans une histoire où plusieurs chemins restent encore ouverts.",
+      "advice": [
+        "Décrire précisément votre difficulté avant de la comparer, afin de ne pas la nier.",
+        "Chercher une comparaison qui ouvre une possibilité ou une solidarité, non une humiliation.",
+        "Parler à quelqu’un qui connaît une épreuve proche et peut partager des moyens concrets.",
+        "Renoncer à cet exercice si vous l’utilisez pour refuser une aide nécessaire ou minimiser un danger."
+      ],
+      "key_phrase": "Une douleur peut être réelle sans être toute l’histoire.",
+      "questions": [
+        "Qu’est-ce qui, dans mon problème, mérite d’être reconnu sans exagération ?",
+        "Quelle expérience voisine pourrait m’apporter un repère ou une aide ?",
+        "La comparaison élargit-elle ma vision, ou sert-elle à faire taire ma souffrance ou celle d’un autre ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 27 : comparaison des maux et compagnons d’épreuve",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La comparaison est conservée comme instrument de proportion, avec une limite éthique explicite absente de la formulation ancienne."
+      },
+      "themes": ["perspective réaliste", "relations et confiance"],
+      "needs": ["repères", "solidarité", "clarté"],
+      "image_alt": "Deux personnes assises côte à côte comparent leurs chemins sur une carte, sans qu’une épreuve soit présentée comme insignifiante",
+      "image_scene": "Illustration adulte en gravure et gouache : deux personnes assises sur un banc regardent une carte dépliée avec plusieurs chemins, l’une écoute l’autre, paysage urbain discret au loin, expressions graves mais non dramatiques, bleu grisé et terre cuite, sans texte."
+    },
+    {
+      "id": "rule-28",
+      "order": 28,
+      "title": "Vieillir : remplacer certains plaisirs par le confort et la transmission",
+      "summary": "Les plaisirs ne valent pas de la même manière lorsque les besoins et les forces changent. Dans la règle 28, Schopenhauer observe qu’avec l’âge certains désirs perdent de leur urgence ; la sécurité, le confort, la connaissance et la transmission peuvent alors prendre davantage de place. Son analyse est marquée par son époque et par un pessimisme prononcé sur le déclin du corps. Il serait donc trompeur d’en faire une loi universelle : vieillir n’impose ni retrait, ni sagesse automatique, ni renoncement aux relations et aux projets. L’idée opérationnelle consiste plutôt à reconnaître qu’une activité qui convenait autrefois peut coûter trop cher en énergie, tandis qu’une autre devient enfin désirable. Réviser son emploi du temps n’est pas déclarer sa vie finie. Cela peut permettre de continuer autrement : apprendre sans courir, recevoir des proches, transmettre un métier, aménager un logement, cultiver une œuvre. Le changement n’est bénéfique que s’il reste choisi ou négocié ; une personne malade, isolée ou appauvrie ne doit pas voir ses privations rebaptisées « joies simples ».",
+      "example": "Mireille a longtemps associé les vacances à des randonnées quotidiennes. À soixante-deux ans, une douleur au genou l’oblige à ralentir ; elle refuse d’abord toute escapade. Avec son médecin, elle choisit un village accessible, des promenades courtes et une maison où elle peut cuisiner avec ses petits-enfants. Elle conserve le goût du voyage, mais change son rythme. Plus tard, elle leur apprend à reconnaître les plantes locales et rassemble ses recettes familiales. Ce qui semblait une perte devient aussi une occasion de transmettre, sans prétendre que la douleur était souhaitable ou bénéfique.",
+      "advice": [
+        "Identifier le besoin essentiel derrière une activité devenue trop coûteuse.",
+        "Adapter le rythme, l’équipement ou le lieu avant de conclure qu’il faut tout abandonner.",
+        "Réserver une place à la transmission, à l’étude ou au plaisir calme si cela vous attire.",
+        "Nommer les contraintes de santé, d’argent ou d’isolement au lieu de les présenter comme un choix heureux."
+      ],
+      "key_phrase": "Changer de forme n’oblige pas à renoncer à ce qui donnait sens à l’activité.",
+      "questions": [
+        "Quel besoin demeure important derrière un plaisir que je ne peux plus poursuivre de la même façon ?",
+        "Quelle adaptation concrète me permettrait de le préserver ?",
+        "Suis-je en train de choisir une nouvelle forme de vie, ou de normaliser une privation imposée ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 28 : évolution des plaisirs avec l’âge",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "L’adaptation conserve les thèmes du confort, de l’étude et de la transmission, tout en corrigeant la tendance à présenter les pertes liées à l’âge comme naturelles ou désirables."
+      },
+      "themes": ["perspective réaliste", "appréciation"],
+      "needs": ["adaptation", "transmission", "sécurité"],
+      "image_alt": "Une femme âgée montre des plantes à deux jeunes adultes dans un jardin calme, dans une scène de transmission choisie",
+      "image_scene": "Gouache éditoriale et gravure : femme âgée agenouillée près d’un carré de jardin, deux jeunes adultes l’écoutent et observent une plante, outils simples, gestes naturels, lumière chaude, palette vert sourd, bleu ardoise et ocre, aucune inscription."
+    },
+    {
+      "id": "rule-29",
+      "order": 29,
+      "title": "Distinguer les besoins naturels des désirs fabriqués",
+      "summary": "La règle 29 reprend une distinction attribuée à Épicure et commentée par Schopenhauer : certains besoins sont naturels et nécessaires, d’autres naturels mais non nécessaires, d’autres encore ne sont ni naturels ni nécessaires. Cette classification aide à voir pourquoi les richesses imaginaires sont sans limite alors que les besoins fondamentaux ont une mesure. Elle ne commande pas de vivre pauvrement ni de mépriser le confort. Elle demande plutôt de reconnaître le prix différent d’un repas, d’un logement sûr, d’un soin, d’un statut ou d’un objet acheté pour être reconnu. Un désir fabriqué peut devenir puissant sans devenir indispensable. Le regarder comme tel rend possible une décision moins automatique : attendre, louer, réparer, partager, ou acheter en connaissance de cause. La frontière n’est pas identique pour tous. Le travail, la culture, la mobilité et les relations ont des besoins matériels réels selon les situations. Schopenhauer simplifie parfois les conditions sociales ; notre adaptation doit donc éviter de transformer la sobriété en reproche adressé à ceux qui manquent déjà de l’essentiel. La question n’est pas « combien posséder ? », mais « que ce désir prétend-il réellement résoudre ? ».",
+      "example": "Avant de changer de téléphone, Samira note trois raisons : la batterie ne tient plus, une application professionnelle ne fonctionne plus et elle veut le modèle le plus visible. Elle remplace la batterie, vérifie les exigences de son travail, puis décide que l’appareil actuel suffit encore pour son quotidien professionnel. Elle épargne plutôt pour un fauteuil adapté à son dos, besoin moins séduisant mais plus important. Son choix ne supprime pas le plaisir légitime d’un bel objet ; il sépare ce qui facilite sa vie de ce qui cherche surtout l’approbation des autres.",
+      "advice": [
+        "Classer un désir entre besoin nécessaire, confort utile et recherche de statut ou de nouveauté.",
+        "Attendre quelques jours avant un achat motivé par la comparaison ou l’urgence publicitaire.",
+        "Financer d’abord ce qui protège la santé, la sécurité, le travail ou l’autonomie.",
+        "Refuser de juger les choix d’autrui sans connaître ses contraintes matérielles et sociales."
+      ],
+      "key_phrase": "Un désir peut être intense sans être nécessaire.",
+      "questions": [
+        "Quel besoin concret cet achat ou cette ambition cherche-t-il à satisfaire ?",
+        "Que gagnerais-je en attendant, réparant ou choisissant une solution plus simple ?",
+        "Ma distinction oublie-t-elle une contrainte réelle, un plaisir légitime ou une inégalité de moyens ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 29 : distinction épicurienne entre besoins naturels et besoins imaginaires",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "Schopenhauer reprend ici des catégories d’Épicure ; l’exemple de consommation et la limite sociale sont une adaptation contemporaine originale."
+      },
+      "themes": ["réduction de la souffrance", "perspective réaliste"],
+      "needs": ["sécurité", "autonomie", "clarté"],
+      "image_alt": "Une personne compare calmement deux objets sur une table, dont un outil utile et un objet brillant laissé de côté",
+      "image_scene": "Illustration carrée en gouache et encre : adulte devant une table, petit outil utile et objet technologique brillant placés à distance, carnet budgétaire sans écriture lisible, geste de choix réfléchi, palette ivoire, bleu profond et ocre, sans marques."
+    },
+    {
+      "id": "rule-30",
+      "order": 30,
+      "title": "Se donner une activité et des obstacles à franchir",
+      "summary": "L’absence complète d’effort ne produit pas nécessairement la paix. Schopenhauer observe qu’un être humain a besoin d’occuper ses forces et de rencontrer une résistance ; lorsque tout est trop facile ou vide, l’ennui peut devenir si pesant qu’il invente des conflits et des préoccupations. La règle 30 ne glorifie pas le travail sans repos, la compétition ni le dépassement permanent. Un défi utile est une activité qui mobilise réellement, donne un retour visible et reste proportionnée aux ressources de la personne. Il peut s’agir d’apprendre, de réparer, de créer, de soigner ou de s’engager dans une tâche commune. La difficulté doit soutenir l’attention, non servir à mesurer la valeur morale de chacun. Une personne épuisée n’a pas besoin qu’on lui ajoute un obstacle ; elle a d’abord besoin de récupération et de conditions vivables. Inversement, supprimer toute exigence à quelqu’un qui dispose de temps et de force peut renforcer sa vacuité. L’équilibre consiste à choisir un effort assez concret pour résister à la dispersion, assez limité pour rester compatible avec la santé, et assez signifiant pour ne pas être une agitation de plus.",
+      "example": "Après une année de travail très intense, Julien prend plusieurs mois sans projet et découvre que ses journées se remplissent de disputes en ligne et de réparations toujours repoussées. Il ne se force pas à reprendre un emploi immédiatement. Il choisit de restaurer une vieille guitare, deux séances par semaine, puis propose un atelier gratuit dans son immeuble. Les étapes sont visibles : nettoyer, remplacer les cordes, jouer un morceau. Cette activité ne résout pas toutes ses difficultés, mais elle donne une forme à son temps et crée un lien réel avec ses voisins.",
+      "advice": [
+        "Choisir un défi dont le résultat peut être observé en quelques étapes.",
+        "Prévoir une difficulté réelle, mais réduire la taille de la tâche si la santé ou l’épuisement l’exige.",
+        "Alterner effort, repos et activité gratuite pour éviter de transformer toute vie en performance.",
+        "Partager le projet avec une autre personne lorsque le lien compte autant que le résultat."
+      ],
+      "key_phrase": "Une difficulté choisie peut donner une forme à l’énergie que le vide disperse.",
+      "questions": [
+        "Quelle activité exige assez de moi pour retenir mon attention sans m’épuiser ?",
+        "Quel résultat concret me permettra de constater un progrès ?",
+        "Ai-je besoin d’un défi, ou d’abord de repos, de soins et de meilleures conditions de vie ?"
+      ],
+      "source": {
+        "work": "Eudämonologie — reconstruction des règles de Die Kunst, glücklich zu sein",
+        "section": "Règle 30 : activité, effort et résistance contre l’ennui",
+        "public_url": "https://ministeriodeeducacion.gob.do/docs/biblioteca-virtual/ZZzF-schopenhauer-arthur-el-arte-de-ser-feliz-1pdf.pdf",
+        "confidence": "high",
+        "notes": "La règle historique lie activité et résistance ; l’adaptation ajoute une limite explicite pour les personnes épuisées et refuse l’idéal de performance continue."
+      },
+      "themes": ["maîtrise de soi", "adaptabilité"],
+      "needs": ["concentration", "accomplissement", "relations"],
+      "image_alt": "Un adulte répare une guitare sur un établi pendant qu’une voisine observe et participe à l’atelier",
+      "image_scene": "Gravure éditoriale contemporaine en gouache : petit atelier d’immeuble, adulte réparant une guitare sur un établi, voisine attentive tenant un outil, étapes visibles mais aucun texte, ambiance de concentration et de lien, palette bleu nuit, bois chaud et ivoire, sans logo."
+    }
+  ]
+}

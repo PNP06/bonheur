@@ -1,0 +1,38 @@
+{
+  "adult": {
+    "title": "L’ART D’ÊTRE HEUREUX",
+    "subtitle": "Cinquante règles pratiques inspirées de la pensée de Schopenhauer",
+    "front_line": "Une philosophie du quotidien, mise en pratique.",
+    "edition_label": "ÉDITION ADULTE",
+    "back_heading": "Chercher une existence plus lucide et plus supportable",
+    "back_paragraphs": [
+      "Et si être heureux consistait moins à poursuivre chaque plaisir qu’à éviter les souffrances que nous pouvons encore prévenir ?",
+      "À partir des tensions centrales de la pensée de Schopenhauer, David DEVESA propose cinquante règles originales, concrètes et lisibles pour examiner ses choix, ses habitudes, ses relations et son rapport au temps."
+    ],
+    "back_points": [
+      "un résumé clair de chaque règle",
+      "un exemple tiré de la vie quotidienne",
+      "des conseils d’application",
+      "une phrase clé et des questions pour réfléchir"
+    ],
+    "back_note": "Une adaptation pratique originale : les phrases clés ne sont pas des citations de Schopenhauer."
+  },
+  "youth": {
+    "title": "L’ART D’ÊTRE HEUREUX",
+    "subtitle": "Cinquante idées pour réfléchir à ce que tu vis",
+    "front_line": "Choisir, comprendre, demander de l’aide et avancer sans tout porter seul.",
+    "edition_label": "ÉDITION 10–15 ANS",
+    "back_heading": "Cinquante points de départ pour mieux comprendre ce que tu vis",
+    "back_paragraphs": [
+      "Se comparer, hésiter, se mettre en colère, perdre confiance, s’ennuyer ou ne plus savoir par où commencer : ces expériences font partie de la vie.",
+      "Inspiré par plusieurs idées de Schopenhauer, ce livre les transforme en règles accessibles pour les 10–15 ans, sans promettre de solution magique et sans demander de tout régler seul."
+    ],
+    "back_points": [
+      "une explication simple mais jamais simpliste",
+      "une situation concrète proche du quotidien",
+      "des actions prudentes à essayer",
+      "des questions à discuter seul ou avec un adulte"
+    ],
+    "back_note": "Ce livre ne remplace ni la protection, ni les soins, ni l’aide d’un adulte de confiance."
+  }
+}

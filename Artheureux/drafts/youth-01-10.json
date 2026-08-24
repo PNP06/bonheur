@@ -1,0 +1,295 @@
+{
+  "edition": "youth",
+  "rules": [
+    {
+      "id": "rule-01",
+      "order": 1,
+      "title": "Éviter une peine inutile",
+      "summary": "Une vie agréable ne consiste pas à collectionner les plaisirs. Elle comporte aussi des limites, des déceptions et des efforts. Une idée inspirée de Schopenhauer consiste à regarder d’abord la souffrance qu’une décision pourrait ajouter. Cela peut vouloir dire protéger son sommeil, ne pas entrer dans une dispute prévue pour humilier, ou refuser un défi qui met quelqu’un en danger. Cette prudence ne demande pas de fuir tout ce qui est difficile. Apprendre, réparer une erreur ou défendre une personne peut coûter, tout en restant nécessaire. Elle ne promet pas le bonheur et ne rend pas le jeune responsable de tout ce qui lui arrive. Quand un problème est grave, injuste ou dangereux, il faut en parler à un adulte de confiance.",
+      "example": "Pour gagner sa place dans un groupe, Yan accepte de diffuser une photo gênante d’un camarade. Il comprend que le rire serait bref, tandis que la blessure et les conséquences en ligne pourraient durer. Il ne partage pas l’image, prévient le camarade et signale la publication reçue. Certains amis lui reprochent de casser l’ambiance. Yan perd peut-être leur approbation immédiate, mais il évite d’ajouter une humiliation et demande l’aide de la professeure principale. La situation n’est pas réglée par sa seule décision : l’adulte intervient aussi. La prudence a simplement empêché une peine prévisible.",
+      "advice": [
+        "Avant de te lancer, note le bénéfice espéré et la peine possible pour toi ou pour quelqu’un.",
+        "Protège d’abord le sommeil, la sécurité et la santé ; demande de l’aide si ces bases sont menacées.",
+        "Distingue un effort utile d’une souffrance imposée pour impressionner, obéir ou appartenir au groupe."
+      ],
+      "key_phrase": "Éviter une peine inutile est déjà une manière d’agir.",
+      "questions": [
+        "Quelle conséquence pénible est-ce que je minimise en ce moment ?",
+        "Cet effort sert-il un but important, ou seulement le regard des autres ?",
+        "À quel adulte puis-je parler si la situation dépasse mes forces ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §1, priorité de l’absence de douleur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Adaptation originale du noyau de la Schmerzlosigkeit ; elle ne promet pas une vie sans difficulté."
+      },
+      "themes": ["réduction de la souffrance", "sécurité"],
+      "needs": ["sécurité", "clarté", "tranquillité"],
+      "image_alt": "Un adolescent évite un passage dangereux et demande de l’aide près d’un chemin calme.",
+      "image_scene": "Illustration narrative de roman graphique jeunesse, contours dessinés et gouache : un adolescent devant deux chemins, écarte une passerelle instable et se tourne vers une adulte qui arrive avec une lampe ; expression attentive, palette bleu canard, crème, corail et jaune doré, scène quotidienne, aucun texte, cadrage carré."
+    },
+    {
+      "id": "rule-02",
+      "order": 2,
+      "title": "Ne pas laisser la comparaison décider",
+      "summary": "Voir la réussite d’un autre peut faire apparaître un manque. Mais envier quelqu’un ne signifie pas seulement trouver une situation injuste : c’est aussi laisser son propre équilibre dépendre de ce que l’autre possède ou reçoit. Sur les réseaux, cette comparaison est trompeuse, car on montre surtout les moments choisis. La règle ne demande ni d’admirer tout le monde ni de fermer les yeux sur une inégalité réelle. Elle invite à distinguer le fait, l’histoire que l’on imagine et le besoin caché derrière l’envie. Peut-être cherche-t-on de la liberté, de la reconnaissance ou un sentiment de sécurité. Cette distinction n’efface pas l’émotion. Elle évite seulement qu’un succès extérieur devienne la mesure de sa valeur.",
+      "example": "Au collège, Inès voit les vidéos d’une élève qui semble toujours entourée et reçoit beaucoup de commentaires. Elle se croit moins intéressante et commence à publier des choses qu’elle n’aime pas. Avec son frère, elle sépare ce qu’elle sait de ce qu’elle suppose : elle ne connaît ni les journées difficiles de cette élève ni les raisons de sa popularité. Inès comprend qu’elle envie surtout la facilité pour parler aux autres. Elle rejoint l’atelier théâtre et laisse son téléphone hors de sa chambre pendant les devoirs. Elle ne devient pas populaire d’un coup, mais elle construit des rencontres qui lui ressemblent davantage.",
+      "advice": [
+        "Nomme ce qui te manque vraiment derrière la réussite visible : temps, attention, liberté, compétence ou sécurité.",
+        "Sépare le fait observé de l’histoire que ton imagination ajoute sur la vie de l’autre.",
+        "Transforme l’envie en une demande ou une activité qui ne dépend pas de l’échec d’une autre personne."
+      ],
+      "key_phrase": "La vie des autres n’est pas la règle qui mesure ta valeur.",
+      "questions": [
+        "Qu’est-ce que cette personne semble avoir, et qu’est-ce que j’en déduis sans preuve ?",
+        "Quelle action pourrait répondre à mon besoin sans souhaiter la défaite de quelqu’un ?",
+        "Suis-je face à une simple comparaison ou à une injustice qui mérite d’être signalée ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §10, envie et comparaison",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La distinction entre envie, jalousie et injustice est une reformulation contemporaine originale."
+      },
+      "themes": ["maîtrise de soi", "relations et confiance"],
+      "needs": ["estime de soi", "clarté", "relations et confiance"],
+      "image_alt": "Une collégienne range son téléphone et rejoint un atelier avec d’autres jeunes.",
+      "image_scene": "Illustration jeunesse en contours dessinés, gouache et grain de papier : une collégienne pose son téléphone face contre table puis entre dans une salle d’atelier où trois jeunes préparent une scène ; expressions naturelles, palette bleu canard, crème, corail et bleu ciel sourd, aucun écran lisible ni texte, carré."
+    },
+    {
+      "id": "rule-03",
+      "order": 3,
+      "title": "Apprendre ses propres réflexes",
+      "summary": "On ne choisit pas entièrement son tempérament. Certains réagissent vite, d’autres hésitent, se fatiguent dans les groupes ou cherchent spontanément à aider. Schopenhauer distingue cette disposition de ce qu’une personne apprend à faire avec elle. Une habitude préparée peut rendre la conduite plus fiable, sans transformer quelqu’un en une autre personne. Un jeune impatient peut attendre avant d’envoyer un message ; un jeune réservé peut préparer une phrase pour participer en classe. La règle n’autorise pas à se coller une étiquette ni à croire que tout dépend de la volonté. Elle propose d’observer les situations qui déclenchent un réflexe, puis de construire une petite réponse répétable. Si l’effort devient épuisant ou si le problème est grave, un adulte doit aider à chercher une solution.",
+      "example": "Malo dit oui à toutes les demandes de son équipe de basket, puis oublie ses devoirs. Il remarque qu’il veut éviter de décevoir, surtout quand on lui demande quelque chose devant les autres. Avant l’entraînement suivant, il prépare une phrase : « Je regarde ce que j’ai déjà à faire et je te réponds après ». Il l’utilise une fois, puis demande à son père de l’aider à organiser la semaine. Malo accepte encore des services, mais il ne répond plus automatiquement. Il reste serviable ; il a acquis une façon plus sûre de protéger son temps.",
+      "advice": [
+        "Repère le réflexe qui revient quand tu es pressé, fatigué ou observé par les autres.",
+        "Prépare une phrase ou un geste simple pour le moment où ce réflexe apparaît.",
+        "Teste cette réponse dans une petite situation et demande à un adulte de t’aider à l’ajuster."
+      ],
+      "key_phrase": "Ton tempérament compte, mais il n’est pas toute ton histoire.",
+      "questions": [
+        "Quel réflexe me crée souvent un problème, même quand mon intention est bonne ?",
+        "Quelle réponse préparée pourrais-je essayer la prochaine fois ?",
+        "Comment savoir si je dois apprendre seul ou demander un accompagnement ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §30, caractère inné et caractère acquis",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’adaptation conserve la limite : une habitude utile ne remplace pas le tempérament."
+      },
+      "themes": ["perspective réaliste", "maîtrise de soi"],
+      "needs": ["autonomie", "clarté", "relations et confiance"],
+      "image_alt": "Un adolescent prépare une réponse sur une fiche avant un entraînement.",
+      "image_scene": "Scène narrative jeunesse en gouache : un adolescent assis sur un banc de gymnase écrit quelques repères sur une petite fiche avant l’entraînement, ballon posé au sol et coéquipiers au loin ; posture concentrée mais naturelle, palette corail, crème, bleu canard et jaune doré, aucun mot visible, carré."
+    },
+    {
+      "id": "rule-04",
+      "order": 4,
+      "title": "Mesurer ses prétentions à ses ressources réelles",
+      "summary": "On peut avoir des ressources réelles, mais attendre de la vie un statut, une réussite ou une reconnaissance qui les dépasse. L’idée philosophique est de regarder l’écart entre ce que l’on peut effectivement mobiliser et ce que l’on croit devoir obtenir pour se sentir important. Ses ressources ne sont pas seulement de l’argent : ce sont aussi du temps, de l’aide, des compétences, de l’énergie et des occasions. Pour un jeune, elles dépendent souvent d’adultes et de conditions qu’il n’a pas choisies. Les réduire ou les augmenter n’est pas une faute morale. La règle propose seulement d’ajuster ses prétentions au réel, sans renoncer à progresser ni confondre une limite actuelle avec sa valeur.",
+      "example": "Camille veut être la vedette du spectacle du collège et pense qu’elle doit aussi diriger les répétitions pour être reconnue. Elle a pourtant peu de temps après les cours et manque encore d’assurance pour organiser un groupe. Avec la professeure, elle regarde ses ressources réelles : deux répétitions possibles, une amie pour l’aider et une expérience solide du décor. Camille choisit un rôle important sur scène et propose une idée de mise en scène, sans promettre de tout porter. Le spectacle fonctionne, et elle reçoit des compliments sans avoir dû obtenir toute la reconnaissance.",
+      "advice": [
+        "Nomme les ressources disponibles : temps, énergie, aide, compétences et occasions réelles.",
+        "Compare ce que tu peux faire maintenant avec le statut ou la reconnaissance que tu espères.",
+        "Demande à un adulte de t’aider à ajuster le projet, sans traiter une limite actuelle comme une faute."
+      ],
+      "key_phrase": "Ajuster ses prétentions au réel ne diminue pas sa valeur.",
+      "questions": [
+        "Quelles ressources puis-je réellement mobiliser pour ce projet ?",
+        "Est-ce que je vise une action possible, ou surtout un statut et la reconnaissance des autres ?",
+        "Quelle ambition puis-je ajuster sans abandonner ce qui compte pour moi ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre III, passages sur les possessions et les prétentions",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La transposition jeunesse porte sur l’écart entre ressources réelles et prétentions de statut, réussite ou reconnaissance ; elle ne reprend pas la distinction des besoins naturels de la règle 29."
+      },
+      "themes": ["tranquillité intérieure", "perspective réaliste"],
+      "needs": ["clarté", "autonomie", "reconnaissance"],
+      "image_alt": "Une adolescente ajuste son rôle dans un spectacle avec une professeure et une camarade.",
+      "image_scene": "Illustration narrative jeunesse dans une salle de répétition : une adolescente échange avec une professeure et une camarade près d’un décor en cours, un planning simple posé sur une table sans texte lisible ; gestes collaboratifs, expression soulagée et concentrée, contours dessinés, aplats de gouache bleu canard, crème, corail et jaune doré, aucun logo ni filigrane, carré."
+    },
+    {
+      "id": "rule-05",
+      "order": 5,
+      "title": "Repérer ce qui vient de soi et du contexte",
+      "summary": "Deux personnes peuvent vivre le même événement et ne pas le recevoir de la même façon. Le tempérament, la fatigue et la santé influencent l’humeur, mais le cadre compte aussi : bruit, pression scolaire, conflit, solitude ou sécurité à la maison. Reconnaître une disposition personnelle aide à choisir un rythme qui ne l’aggrave pas. Cela ne signifie ni que l’on est condamné à rester pareil, ni qu’un problème extérieur serait « dans la tête ». Une tristesse persistante, une peur, une violence ou un épuisement demandent un adulte et parfois un professionnel. La règle invite seulement à ne pas attendre d’un changement spectaculaire qu’il répare automatiquement une difficulté intérieure. Elle aide à chercher plusieurs leviers, sans attribuer au jeune la responsabilité de conditions qu’il ne maîtrise pas.",
+      "example": "Après un changement de classe, Élodie pense que ses difficultés viennent uniquement de sa timidité. Pourtant, elle dort mal parce que les devoirs s’accumulent et redoute les moqueries d’un groupe. Elle parle à sa professeure et à son père. La professeure organise un binôme de travail, tandis que son père prend rendez-vous pour les problèmes de sommeil. Élodie garde une tendance à se mettre en retrait, mais elle n’est plus seule face à elle. Le changement de classe n’aurait pas suffi ; son tempérament n’expliquait pas tout non plus.",
+      "advice": [
+        "Observe sur plusieurs jours ce qui revient dans ton humeur et ce qui change selon les lieux ou les personnes.",
+        "Distingue une sensibilité personnelle d’un cadre qui te met réellement en difficulté.",
+        "Parle à un adulte de confiance si une souffrance dure, empêche de vivre normalement ou vient d’une violence."
+      ],
+      "key_phrase": "Se connaître aide à choisir un cadre, pas à s’accuser.",
+      "questions": [
+        "Qu’est-ce qui revient même quand le contexte change ?",
+        "Quel élément extérieur faudrait-il modifier ou signaler ?",
+        "À qui puis-je parler si ma fatigue ou ma peur devient trop importante ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitres II et VI, tempérament, santé et humeur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "medium",
+        "notes": "La règle rassemble plusieurs passages et ajoute une limite jeunesse explicite sur les causes extérieures et l’aide."
+      },
+      "themes": ["perspective réaliste", "tranquillité intérieure"],
+      "needs": ["santé", "sécurité", "clarté"],
+      "image_alt": "Une collégienne échange avec une professeure tandis qu’un camarade attend près d’elle.",
+      "image_scene": "Scène de collège en roman graphique jeunesse : une collégienne parle avec une professeure dans un espace calme, un camarade tient une feuille de travail à quelques pas ; expressions attentives, pas de dramatisation, contours dessinés et aplats de gouache bleu ciel sourd, crème, corail et bleu canard, aucun texte lisible, carré."
+    },
+    {
+      "id": "rule-06",
+      "order": 6,
+      "title": "Faire ce qui est possible, demander du soutien",
+      "summary": "Certaines difficultés peuvent être affrontées par une action à sa portée. D’autres dépassent les forces, l’âge ou les responsabilités d’un jeune. La pensée de Schopenhauer distingue ce que l’on peut faire de ce qu’il faut supporter quand on ne peut pas encore modifier la situation. Pour un adolescent, cette idée ne doit jamais devenir un ordre de tout endurer. Une dispute peut demander une pause ou une explication ; du harcèlement, une violence, une maladie ou un danger demandent la protection d’adultes. Agir selon ses moyens, c’est parfois ranger une partie d’un problème, parfois dire non, parfois transmettre les faits. Accepter qu’un événement ne soit pas immédiatement réglable n’empêche ni de protester, ni de chercher de l’aide, ni de préparer la suite.",
+      "example": "La mère de Jules perd son emploi et l’ambiance familiale devient tendue. Jules ne peut pas résoudre les finances ni consoler tout le monde. Il peut toutefois préparer son sac la veille, parler à sa tante quand il s’inquiète et dire à sa mère qu’il a besoin d’un moment calme pour ses devoirs. Sa tante explique qu’un adulte peut accompagner la famille dans les démarches. Jules ne porte donc pas la crise sur ses épaules. Une petite organisation et une demande d’aide lui rendent une marge d’action sans faire croire qu’il contrôle la situation.",
+      "advice": [
+        "Sépare ce qui dépend de toi aujourd’hui de ce qui nécessite une décision d’adulte ou d’un service compétent.",
+        "Choisis une action limitée et visible : noter les faits, prendre une pause, protéger ton travail ou demander un rendez-vous.",
+        "Si quelqu’un te menace, te blesse ou te demande de garder un danger secret, parle vite à un adulte fiable."
+      ],
+      "key_phrase": "Faire sa part n’oblige pas à porter tout le problème.",
+      "questions": [
+        "Quelle petite action est réellement à ma portée ?",
+        "Qu’est-ce qui doit être pris en charge par un adulte ?",
+        "Est-ce que je confonds patience et obligation de subir une situation dangereuse ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §§11-12 et fragments du Nachlass",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "L’idée d’agir selon ses capacités est adaptée avec une protection renforcée pour les situations graves."
+      },
+      "themes": ["adaptabilité", "sécurité"],
+      "needs": ["sécurité", "repères", "soutien"],
+      "image_alt": "Un adolescent organise ses affaires pendant qu’une tante l’écoute à la table familiale.",
+      "image_scene": "Illustration jeunesse narrative dans une cuisine familiale : un adolescent range ses cahiers dans un sac tandis qu’une tante assise l’écoute avec attention ; lumière douce, détails quotidiens, contours dessinés, gouache crème, corail, bleu canard et jaune doré, aucun texte ni écran lisible, carré."
+    },
+    {
+      "id": "rule-07",
+      "order": 7,
+      "title": "Réfléchir avant, accepter l’incertitude après",
+      "summary": "Avant une décision, il est utile d’examiner plusieurs possibilités. Après, on ne peut plus refaire exactement le moment passé : les circonstances et les réactions des autres ont leur propre part d’incertitude. Cette règle ne dit pas qu’il faut tout prévoir ni que l’on est coupable si le résultat déçoit. Elle propose deux temps différents. D’abord, poser des questions, demander conseil et choisir avec les informations disponibles. Ensuite, regarder le résultat sans inventer une infinité de mondes meilleurs qui n’existent plus. On peut apprendre d’une erreur, réparer un tort et modifier la prochaine étape. On ne peut pas exiger que le réel prenne la forme imaginée. Un jeune n’a pas à décider seul lorsqu’un choix concerne sa sécurité ou une situation grave.",
+      "example": "Avant de s’inscrire à un séjour sportif, Amina vérifie le transport, le niveau demandé et la personne à contacter en cas de problème. Elle demande à son entraîneur et à ses parents de relire les informations. Sur place, la météo annule deux activités. Amina est déçue, mais cesse de répéter qu’elle aurait dû choisir un autre séjour : personne ne connaissait cette météo. Elle participe à l’atelier de remplacement et note ce qu’elle vérifiera la prochaine fois. Préparer n’a pas supprimé l’incertitude ; cela a rendu son choix plus solide.",
+      "advice": [
+        "Avant de choisir, vérifie les faits importants et demande l’avis d’une personne concernée ou expérimentée.",
+        "Après le résultat, distingue ce qui était prévisible de ce qui ne dépendait de personne.",
+        "Garde une leçon pour la suite, mais abandonne le film des possibilités irréalisables qui te condamne à regretter."
+      ],
+      "key_phrase": "Prépare ton choix, puis laisse au réel sa part d’incertitude.",
+      "questions": [
+        "Quelle information importante me manque avant de décider ?",
+        "Qu’est-ce qui, dans le résultat, ne dépendait pas de moi ?",
+        "Quelle leçon utile puis-je garder sans me rendre responsable de tout ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §11, délibération avant l’action",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La distinction entre préparation et résultat reprend le noyau sans transformer la règle en simple gestion des risques."
+      },
+      "themes": ["appréciation", "perspective réaliste"],
+      "needs": ["clarté", "repères", "autonomie"],
+      "image_alt": "Une adolescente vérifie son sac avant une activité puis regarde une météo changée.",
+      "image_scene": "Scène jeunesse en deux plans dans un style roman graphique : une adolescente vérifie son sac avec un adulte, puis observe par la fenêtre un terrain de sport sous la pluie ; continuité narrative claire, expressions nuancées, gouache bleu ciel sourd, crème, corail et jaune doré, aucun symbole ni texte, carré."
+    },
+    {
+      "id": "rule-08",
+      "order": 8,
+      "title": "Choisir un cercle qui laisse respirer",
+      "summary": "Avoir beaucoup de contacts ne signifie pas être en sécurité ou en paix. Plus on se mêle à des groupes, des disputes et des attentes, plus on peut recevoir de pression. La règle propose de garder un cercle assez limité pour savoir à qui l’on parle et ce que l’on accepte. Elle ne conseille pas de s’isoler ni de considérer les autres comme des dangers. Une amitié solide peut laisser de la place au désaccord, à la solitude et à d’autres liens. Dans le numérique, quitter une conversation, régler ses notifications ou ne pas répondre tout de suite peut protéger son attention. Si un groupe menace, humilie ou contrôle, le jeune n’a pas à régler cela seul : il doit conserver les preuves utiles et demander la protection d’un adulte.",
+      "example": "Dans un groupe de discussion, plusieurs élèves envoient des messages tardifs et se moquent de celles et ceux qui ne répondent pas. Lina coupe les notifications pendant la nuit et quitte le fil où les insultes circulent. Elle garde une capture pour la montrer à son père et à la CPE. Deux amis la contactent ensuite en privé, sans lui demander de choisir un camp. Lina comprend que réduire son exposition ne signifie pas perdre toutes ses relations. Elle retrouve du calme et conserve des liens où elle peut dire non.",
+      "advice": [
+        "Observe les relations après lesquelles tu te sens respecté, tendu, obligé ou constamment surveillé.",
+        "Fixe une limite concrète : horaires de messages, sujets privés, invitations acceptées ou conversations quittées.",
+        "Si un groupe humilie, menace ou fait pression, garde les éléments utiles et demande l’aide d’un adulte."
+      ],
+      "key_phrase": "Un cercle plus petit peut laisser davantage de place pour respirer.",
+      "questions": [
+        "Avec qui puis-je être en désaccord sans craindre une punition ou une humiliation ?",
+        "Quelle limite numérique ou réelle protégerait mon attention cette semaine ?",
+        "Qui peut intervenir si un groupe devient dangereux ou me contrôle ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §6, limitation du cercle d’action",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La solitude prudente est transposée en limites de groupe sans en faire un idéal d’isolement."
+      },
+      "themes": ["réduction de la souffrance", "relations et confiance"],
+      "needs": ["sécurité", "tranquillité", "relations et confiance"],
+      "image_alt": "Une adolescente quitte calmement une conversation de groupe et rejoint deux amis.",
+      "image_scene": "Illustration jeunesse contemporaine : une adolescente pose son téléphone en mode silencieux puis marche vers deux amis dans un parc, tandis qu’un groupe plus lointain reste séparé ; aucune interface lisible, contours dessinés, aplats de gouache bleu canard, crème, corail et bleu ciel sourd, aucun texte, carré."
+    },
+    {
+      "id": "rule-09",
+      "order": 9,
+      "title": "Protéger le calme avant la récompense",
+      "summary": "Le plaisir attire l’attention, mais l’absence d’une peine peut compter davantage dans la durée. Cette idée ressemble à la première règle, mais son angle est différent : il s’agit ici de ne pas échanger une tranquillité réelle contre une récompense courte. Une victoire, un achat ou une soirée très excitante peuvent sembler importants, tandis que la fatigue, la dispute ou le risque apparaissent plus tard. Cela ne veut pas dire qu’il faut refuser les joies, les défis ou les fêtes. Il faut regarder leur prix et choisir si celui-ci reste supportable. Un jeune ne peut pas toujours éviter une douleur imposée par les adultes ou les circonstances. Il peut toutefois signaler ce qu’il ressent, demander une pause et chercher un cadre plus sûr avec de l’aide.",
+      "example": "Pour impressionner ses amis, Théo veut rester connecté toute la nuit avant un contrôle. Il imagine les messages amusants et oublie la journée suivante. Sa sœur lui propose de répondre jusqu’à vingt-deux heures, de charger le téléphone hors de la chambre et de garder une sortie prévue le week-end. Théo accepte : il ne renonce pas à ses amis, mais évite une fatigue certaine pour un plaisir bref. Le lendemain, il est encore déçu de manquer quelques messages. La règle n’a pas promis une joie parfaite ; elle a protégé un calme utile.",
+      "advice": [
+        "Pour une récompense courte, regarde aussi la fatigue, le conflit ou le risque qui pourrait suivre.",
+        "Décide à l’avance d’une limite de temps, d’argent ou d’exposition et partage-la avec un adulte si nécessaire.",
+        "Garde une place pour le plaisir choisi : protéger le calme ne signifie pas rendre ta vie sans joie."
+      ],
+      "key_phrase": "Une joie brève ne vaut pas toujours le calme qu’elle coûte.",
+      "questions": [
+        "Quel prix cette récompense risque-t-elle de me faire payer demain ?",
+        "Quelle limite me permettrait de garder le plaisir sans perdre ma sécurité ?",
+        "Est-ce une décision libre, ou une pression à laquelle je n’ose pas résister ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §1, priorité de la non-douleur",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "Cette version distingue l’évaluation d’un coût immédiat de la règle 1, centrée sur la souffrance évitable."
+      },
+      "themes": ["maîtrise de soi", "réduction de la souffrance"],
+      "needs": ["sommeil", "sécurité", "tranquillité"],
+      "image_alt": "Un adolescent pose son téléphone à distance et se prépare à dormir après une soirée.",
+      "image_scene": "Scène de chambre jeunesse réaliste : un adolescent pose son téléphone sur une étagère hors du lit, ferme un carnet et éteint une lampe, avec une invitation de sortie rangée sans texte ; contours dessinés, gouache crème, bleu canard, corail et jaune doré, atmosphère calme, aucun écran lisible, carré."
+    },
+    {
+      "id": "rule-10",
+      "order": 10,
+      "title": "Laisser la raison examiner l’impulsion",
+      "summary": "Une impulsion pousse à agir avant que l’on ait regardé les conséquences. La raison ne supprime pas les émotions et ne remplace pas le tempérament. Elle peut cependant fournir des repères appris : attendre, vérifier, comparer plusieurs interprétations ou demander ce qui arrivera ensuite. Avec l’exercice, ces repères deviennent plus disponibles au moment critique. Cela ne rend pas le jeune responsable d’un geste provoqué par la peur, la pression, une violence ou une situation qu’il ne pouvait pas comprendre seul. Réfléchir sert à gagner un peu d’espace entre l’envie et l’action, pas à exiger une maîtrise parfaite. Dans les cas graves, la priorité est la sécurité et l’appel à un adulte de confiance, non une longue analyse solitaire.",
+      "example": "En recevant un message accusateur, Noé commence à taper une réponse insultante. Il pose le téléphone et montre le message à sa cousine. Ensemble, ils vérifient si l’expéditeur est bien la personne annoncée et relisent la conversation : une phrase pouvait être comprise de deux façons. Noé répond plus tard, sans insulte, et bloque le compte quand d’autres messages menaçants arrivent. Il n’a pas cessé d’être en colère. Une règle répétée lui a donné assez de temps pour ne pas aggraver la situation et pour obtenir de l’aide.",
+      "advice": [
+        "Apprends un signal d’arrêt pour les moments rapides : poser le téléphone, respirer ou demander dix minutes.",
+        "Vérifie les faits et cherche une autre explication avant d’accuser ou de transmettre un message.",
+        "Si la peur, la menace ou la violence est présente, va directement vers un adulte plutôt que de gérer seul."
+      ],
+      "key_phrase": "Une pause laisse à la raison une chance d’examiner l’impulsion.",
+      "questions": [
+        "Qu’est-ce que je sais vraiment, et qu’est-ce que mon émotion ajoute ?",
+        "Quelle pause simple pourrais-je utiliser avant un message ou une décision ?",
+        "La situation exige-t-elle surtout l’intervention immédiate d’un adulte ?"
+      ],
+      "source": {
+        "work": "Parerga und Paralipomena — Aphorismen zur Lebensweisheit",
+        "section": "Chapitre V, §§18 et 30, exercice des concepts et conduite",
+        "public_url": "https://de.wikiversity.org/wiki/Aphorismen_zur_Lebensweisheit._Maximen.",
+        "confidence": "high",
+        "notes": "La raison est présentée comme un repère exercé, non comme une force qui remplacerait la nature ou l’émotion."
+      },
+      "themes": ["perspective réaliste", "maîtrise de soi"],
+      "needs": ["clarté", "sécurité", "relations et confiance"],
+      "image_alt": "Un adolescent pose son téléphone et demande conseil avant de répondre.",
+      "image_scene": "Illustration de roman graphique jeunesse : un adolescent tient un téléphone retourné sur une table et montre une conversation à une cousine attentive ; gestes retenus, expressions nuancées, intérieur quotidien, contours dessinés, gouache bleu canard, crème, corail et jaune doré, aucune interface ni texte lisible, cadrage carré."
+    }
+  ]
+}

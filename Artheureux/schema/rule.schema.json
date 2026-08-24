@@ -1,0 +1,342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bonheur.local/artheureux/schema/rule.schema.json",
+  "title": "Artheureux canonical content",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "rules"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project",
+        "title",
+        "author",
+        "language",
+        "content_version",
+        "schema_version",
+        "edition",
+        "edition_label",
+        "editorial_status",
+        "source_policy",
+        "private_inputs",
+        "kdp"
+      ],
+      "properties": {
+        "project": {
+          "const": "Artheureux"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "const": "fr-FR"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "edition": {
+          "enum": [
+            "adult",
+            "youth"
+          ]
+        },
+        "edition_label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pdf_web_slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "editorial_status": {
+          "enum": [
+            "work-in-progress",
+            "ready-for-review",
+            "published"
+          ]
+        },
+        "source_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "private_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "content_contract": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kdp": {
+          "$ref": "#/$defs/kdp"
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "minItems": 50,
+      "maxItems": 50,
+      "items": {
+        "$ref": "#/$defs/rule"
+      }
+    }
+  },
+  "$defs": {
+    "kdp": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "color",
+        "paper",
+        "bleed",
+        "minimum_effective_dpi",
+        "minimum_text_size_pt",
+        "interior_pages",
+        "ai_declaration_required"
+      ],
+      "properties": {
+        "format": {
+          "const": "paperback"
+        },
+        "color": {
+          "const": "premium color"
+        },
+        "paper": {
+          "const": "white"
+        },
+        "bleed": {
+          "const": "none"
+        },
+        "minimum_effective_dpi": {
+          "const": 300
+        },
+        "minimum_text_size_pt": {
+          "const": 7
+        },
+        "interior_pages": {
+          "const": "single"
+        },
+        "ai_declaration_required": {
+          "type": "boolean"
+        },
+        "trim_size_in": {
+          "type": "string"
+        },
+        "adult": {
+          "type": "object"
+        },
+        "youth": {
+          "type": "object"
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "print_path",
+        "web_path",
+        "alt",
+        "status"
+      ],
+      "properties": {
+        "print_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "web_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "alt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "ready",
+            "published"
+          ]
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "work",
+        "section",
+        "public_url",
+        "confidence",
+        "notes"
+      ],
+      "properties": {
+        "work": {
+          "type": "string",
+          "minLength": 1
+        },
+        "section": {
+          "type": "string",
+          "minLength": 1
+        },
+        "public_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "slug",
+        "status"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "ready",
+            "published"
+          ]
+        }
+      }
+    },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "order",
+        "title",
+        "status",
+        "summary",
+        "example",
+        "advice",
+        "key_phrase",
+        "questions",
+        "themes",
+        "needs",
+        "image",
+        "source",
+        "publication"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^rule-(0[1-9]|[1-4][0-9]|50)$"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "parent_rule_id": {
+          "type": "string",
+          "pattern": "^rule-(0[1-9]|[1-4][0-9]|50)$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "ready",
+            "published"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example": {
+          "type": "string",
+          "minLength": 1
+        },
+        "advice": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "key_phrase": {
+          "type": "string",
+          "minLength": 1
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "themes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "needs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "image": {
+          "$ref": "#/$defs/image"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "publication": {
+          "$ref": "#/$defs/publication"
+        }
+      }
+    }
+  }
+}
