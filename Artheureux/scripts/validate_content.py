@@ -10,7 +10,7 @@ from typing import Any
 
 EXPECTED_IDS = [f"rule-{i:02d}" for i in range(1, 51)]
 CONTRACTS = {
-    "adult": {"summary": (140, 210), "example": (90, 150), "key_phrase": (1, 18), "total": (350, 500), "advice": (3, 4), "questions": (3, 3)},
+    "adult": {"summary": (55, 85), "example": (90, 150), "key_phrase": (1, 18), "total": (240, 340), "advice": (3, 4), "questions": (3, 3)},
     "youth": {"summary": (80, 130), "example": (70, 110), "key_phrase": (1, 14), "total": (220, 320), "advice": (3, 3), "questions": (2, 3)},
 }
 
