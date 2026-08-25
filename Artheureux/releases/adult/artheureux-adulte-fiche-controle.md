@@ -1,24 +1,24 @@
 # Fiche de contrôle KDP — édition adulte
 
-Générée le 2026-08-24 à partir des fichiers de livraison.
+Générée le 2026-08-25 à partir des fichiers de livraison.
 
 ## Fichiers contrôlés
 
 - Source éditable : `artheureux-adulte-interieur.docx`
 - Intérieur KDP : `artheureux-adulte-interieur-kdp.pdf`
 - Couverture complète KDP : `artheureux-adulte-couverture-kdp.pdf`
-- PDF allégé pour le site : `artheureux-adulte-web.pdf` (10.8 Mo)
+- PDF allégé pour le site : `artheureux-adulte-web.pdf` (11.0 Mo)
 
 ## Paramètres calculés
 
 | Paramètre | Valeur |
 |---|---:|
 | Format fini | 6 × 9 pouces |
-| Nombre de pages intérieur | 154 |
+| Nombre de pages intérieur | 162 |
 | Marge intérieure configurée | 0.860 pouce (minimum KDP 0.500) |
 | Marges extérieure / haute / basse | 0.58 / 0.62 / 0.62 pouce |
-| Dos premium couleur, papier blanc | 0.3614 pouce (9.18 mm) |
-| Planche de couverture avec fond perdu | 12.6114 × 9.2500 pouces |
+| Dos premium couleur, papier blanc | 0.3802 pouce (9.66 mm) |
+| Planche de couverture avec fond perdu | 12.6302 × 9.2500 pouces |
 | Illustration de couverture | 1254 × 1254 px, 313.5 DPI effectifs |
 
 ## Contrôles automatisés réussis par la chaîne de livraison

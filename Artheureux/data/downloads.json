@@ -3,8 +3,8 @@
   "adult": {
     "available": true,
     "path": "downloads/artheureux-adulte.pdf",
-    "bytes": 11363546,
-    "sha256": "81c0792163d7d9327f82f12882d53b2ad7a54a24af3e90c4622b19b0969e781e"
+    "bytes": 11514486,
+    "sha256": "71c78958ceea0b6246110c8115d78d181d86c068dd7e13d719c08a7ab150c6f0"
   },
   "youth": {
     "available": true,
