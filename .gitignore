@@ -10,3 +10,8 @@ __pycache__/
 
 # Local editable KDP interiors exceed GitHub's per-file upload limit.
 /Artheureux/releases/**/*.docx
+
+# Site généré par scripts/bundle.py (publié par GitHub Actions).
+/site/
+/dist/
+node_modules/

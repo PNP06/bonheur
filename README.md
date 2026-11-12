@@ -1,4 +1,9 @@
-# Le Guide Opérationnel du Bonheur Humain
+# Bonheur, guide opérationnel
+- Objectif : rendre accessible ce que la science sait aujourd’hui du bonheur, et aider chacun à choisir quoi changer maintenant (questionnaire d’auto-orientation, plan sur 7 jours, L’Art d’être heureux).
+- Adresse : https://bonheur.ddlab.fr (public)
+- Statut : En ligne
+- Hébergement : Worker Cloudflare `bonheur` (déployé par Workers Builds à chaque push sur `main`) ; données : aucune (réponses dans le navigateur)
+- Prochaine action : relire la refonte calquée sur Psytest (accueil, Comprendre, questionnaire par parties, plan imprimable).
 
 Ce dépôt contient un rapport scientifique, critique et opérationnel sur le bonheur humain, structuré en fichiers Markdown.
 
@@ -6,25 +11,47 @@ Objectif : conserver l'intégralité du rapport initial, ses sources, ses distin
 
 ## Site web
 
-Le dépôt contient un site statique publié avec GitHub Pages :
+Le site a la même structure que [Psytest](https://psytest.ddlab.fr) : même charte DD Lab, même navigation, même découpage du code.
 
-<https://pnp06.github.io/bonheur/>
+| Page | Adresse | Contenu |
+|---|---|---|
+| Accueil | `#` | La promesse, une scène animée (exemple fictif), le parcours Comprendre → questionnaire → plan, ce que le guide n’est pas. |
+| Comprendre | `#comprendre` | L’essentiel en six idées, puis les huit chapitres du guide (`docs/01` à `docs/08`) avec fils d’Ariane latéraux et encadrés « À retenir ». |
+| Le questionnaire | `#questionnaire` | Présentation, puis une partie par domaine (`#questionnaire/1` à `/12`). |
+| Votre plan | `#plan` | Priorités, plan 7 jours, points à maintenir, scores, réponses ; imprimable en PDF. |
+| L’Art d’être heureux | `#art/adulte`, `#art/jeunesse` | Les 50 règles, par ressenti, thème ou au hasard. |
+| Méthode et sources | `#methode` | Principes, niveaux de preuve, calcul du questionnaire, documents complémentaires (`#lire/<document>`). |
 
-L'interface est organisée autour de trois usages :
+Les anciennes adresses (`#/synthese`, `#/guide`, `#/lire/…`, `#/art-heureux/…`, `#/tableau-de-bord`, `#/sources`) redirigent vers les nouvelles. Les réponses déjà enregistrées dans le navigateur sont conservées (même clé de stockage).
 
-1. **Lire la synthèse** : comprendre l'essentiel en quelques minutes.
-2. **Explorer le guide complet** : lire le rapport détaillé par grands thèmes.
-3. **Faire le questionnaire** : obtenir une auto-orientation opérationnelle avec scores par domaine, plan d’action sur 7 jours, priorités probables, points forts à maintenir, copie/téléchargement de synthèse et stockage local dans le navigateur.
+### Organisation du code (comme Psytest)
 
-Pour lancer le site en local :
+| Dossier ou fichier | Rôle |
+|---|---|
+| `app/index.html` | Squelette de la page |
+| `app/main.js` | Navigation, questionnaire, pause et reprise, rapport, fils d’Ariane |
+| `app/home.js`, `comprendre.js`, `presentation.js`, `methode.js`, `art.js` | Une page chacun |
+| `app/engine.js` | Calcul des scores, priorités et plan (fonctions pures, testées) |
+| `app/resume.js` | Fichier de reprise (.txt) |
+| `app/report.js` | Rapport « Votre plan » |
+| `app/markdown.js` | Rendu des documents `docs/*.md` |
+| `app/content.js`, `app/data/questionnaire.json` | Textes du site et questionnaire |
+| `app/style.css`, `app/home.css` | Charte et pages reprises de Psytest ; `app/bonheur.css` pour les compléments |
+| `scripts/bundle.py` | Assemble `site/` : une page autonome (polices, contenus et code intégrés) + images et PDF |
+| `tests/` | `npm test` (node --test) |
+
+Construire et voir le site en local :
 
 ```bash
-python -m http.server 8000
+python3 scripts/bundle.py
+python3 -m http.server 8000 -d site
 ```
 
-Puis ouvrir `http://localhost:8000`.
+Puis ouvrir `http://localhost:8000`. Le fond reste dans `docs/*.md` : modifier un document suffit, la page est régénérée.
 
-Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) publie automatiquement le site sur GitHub Pages à chaque push sur `main`.
+En ligne : le Worker Cloudflare `bonheur` ([`wrangler.jsonc`](wrangler.jsonc), [`worker.js`](worker.js)) sert `site/` sous bonheur.ddlab.fr. Workers Builds lance `python3 -X utf8 scripts/bundle.py` puis `npx wrangler deploy` à chaque push sur `main`. Avec Wrangler authentifié sur le compte DD Lab : `python3 -X utf8 scripts/bundle.py && npx wrangler deploy`.
+
+Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) lance les tests et publie aussi une copie sur GitHub Pages (ancienne adresse pnp06.github.io/bonheur).
 
 ## Structure du dépôt
 
@@ -58,7 +85,7 @@ Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) publie aut
 ## Usage recommandé
 
 1. Lire d'abord la [`synthèse exécutive`](docs/09-synthese-executive.md).
-2. Passer le questionnaire interactif du site pour repérer 1 à 3 domaines prioritaires.
+2. Passer le questionnaire du site pour repérer 1 à 3 domaines prioritaires.
 3. Appliquer une à trois actions concrètes pendant 7 jours, sans transformer le questionnaire en diagnostic.
 4. Conserver les domaines protecteurs identifiés dans la synthèse.
 5. Réévaluer dans 2 à 4 semaines, puis approfondir avec le [`tableau de bord`](docs/tableau-de-bord-risques-bonheur.md), la [`matrice actions`](docs/matrice-actions.md) ou le [`rapport complet`](docs/00-rapport-complet.md).
