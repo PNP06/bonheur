@@ -76,6 +76,7 @@ def main():
     (SITE / "index.html").write_text(full, encoding="utf-8")
     (SITE / "_headers").write_text(HEADERS.format(csp=csp), encoding="utf-8")
     (SITE / ".nojekyll").write_text("", encoding="utf-8")
+    (SITE / ".assetsignore").write_text(".nojekyll\n", encoding="utf-8")  # fichier propre à GitHub Pages, inutile sur le Worker
 
     # Images web des règles : uniquement les fichiers rule-NN.webp publiés.
     n_img = 0

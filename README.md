@@ -2,7 +2,7 @@
 - Objectif : rendre accessible ce que la science sait aujourd’hui du bonheur, et aider chacun à choisir quoi changer maintenant (questionnaire d’auto-orientation, plan sur 7 jours, L’Art d’être heureux).
 - Adresse : https://bonheur.ddlab.fr (public)
 - Statut : En ligne
-- Hébergement : GitHub Pages (servi sous bonheur.ddlab.fr par le Worker `ddlab-passerelle`) ; données : aucune (réponses dans le navigateur)
+- Hébergement : Worker Cloudflare `bonheur` (déployé par Workers Builds à chaque push sur `main`) ; données : aucune (réponses dans le navigateur)
 - Prochaine action : relire la refonte calquée sur Psytest (accueil, Comprendre, questionnaire par parties, plan imprimable).
 
 Ce dépôt contient un rapport scientifique, critique et opérationnel sur le bonheur humain, structuré en fichiers Markdown.
@@ -49,7 +49,9 @@ python3 -m http.server 8000 -d site
 
 Puis ouvrir `http://localhost:8000`. Le fond reste dans `docs/*.md` : modifier un document suffit, la page est régénérée.
 
-Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) lance les tests, génère `site/` et le publie sur GitHub Pages à chaque push sur `main`.
+En ligne : le Worker Cloudflare `bonheur` ([`wrangler.jsonc`](wrangler.jsonc), [`worker.js`](worker.js)) sert `site/` sous bonheur.ddlab.fr. Workers Builds lance `python3 -X utf8 scripts/bundle.py` puis `npx wrangler deploy` à chaque push sur `main`. Avec Wrangler authentifié sur le compte DD Lab : `python3 -X utf8 scripts/bundle.py && npx wrangler deploy`.
+
+Le workflow GitHub Actions [`pages.yml`](.github/workflows/pages.yml) lance les tests et publie aussi une copie sur GitHub Pages (ancienne adresse pnp06.github.io/bonheur).
 
 ## Structure du dépôt
 

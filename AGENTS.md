@@ -28,8 +28,9 @@ python3 -m http.server 8000 -d site
 
 ## Publication
 
-GitHub Pages, par `.github/workflows/pages.yml` (tests, génération de `site/`, publication) à chaque push sur `main`.
-L'adresse bonheur.ddlab.fr passe par le Worker `ddlab-passerelle` (dépôt `PNP06/ddlab`) : ne rien changer chez l'hébergeur
-sans lire les règles de `PNP06/ddlab/AGENTS.md`.
+Worker Cloudflare `bonheur` (Custom Domain bonheur.ddlab.fr), comme Psytest : Workers Builds relie ce dépôt au Worker
+et lance `python3 -X utf8 scripts/bundle.py` puis `npx wrangler deploy` à chaque push sur `main` (voir `wrangler.jsonc`).
+Le workflow `.github/workflows/pages.yml` lance aussi les tests et publie une copie sur GitHub Pages (ancienne adresse).
+Lire les règles de `PNP06/ddlab/AGENTS.md` avant de toucher au domaine ou au Worker.
 
 Ne jamais publier `Artheureux/original.pdf` ni les fichiers `.docx` de travail (le workflow le vérifie).
