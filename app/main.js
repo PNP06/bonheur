@@ -6,7 +6,8 @@ import { serialize, parse } from './resume.js';
 import { reportHTML, REPORT_SECTIONS } from './report.js';
 import { methodeHTML } from './methode.js';
 import { homeHTML, homeAnim } from './home.js';
-import { comprendreHTML, comprendreSpy, resetComprendreSpy } from './comprendre.js';
+import { comprendreHTML, comprendreSpy, resetComprendreSpy, comprendrePageOf } from './comprendre.js';
+import { wireFormation } from './formation.js';
 import { presentationHTML } from './presentation.js';
 import { artHTML, artBind } from './art.js';
 import { CHAPTERS, ANNEXES } from './content.js';
@@ -18,7 +19,7 @@ const esc = escapeHtml;
 const STORAGE_KEY = 'bonheur-questionnaire-v3'; // même clé que l'ancien site : les réponses déjà saisies sont conservées
 
 let cfg, DOCS = {}, ART = null;
-const state = { view: 'home', screen: 0, sub: [], q: null, notice: null, meta: { date: new Date().toLocaleDateString('fr-FR'), who: '' } };
+const state = { view: 'home', screen: 0, pos: 'open', landing: null, sub: [], q: null, notice: null, meta: { date: new Date().toLocaleDateString('fr-FR'), who: '' } };
 
 function readJSON(id) {
   const el = document.getElementById(id);
@@ -113,7 +114,13 @@ function route() {
   const [page = '', ...sub] = decodeURIComponent(location.hash.replace(/^#/, '')).split('/').filter(Boolean);
   state.sub = sub;
   if (page === 'comprendre') state.view = 'comprendre';
-  else if (page === 'questionnaire' && sub[0] && /^\d+$/.test(sub[0])) { state.view = 'screen'; state.screen = Math.min(Math.max(+sub[0] - 1, 0), cfg.domains.length - 1); }
+  else if (page === 'questionnaire' && sub[0] && /^\d+$/.test(sub[0])) {
+    const screen = Math.min(Math.max(+sub[0] - 1, 0), cfg.domains.length - 1);
+    // Nouvelle partie : on arrive sur son ouverture (ou sur son résumé quand on revient en arrière).
+    if (state.view !== 'screen' || screen !== state.screen) state.pos = state.landing || 'open';
+    state.landing = null;
+    state.view = 'screen'; state.screen = screen;
+  }
   else if (page === 'questionnaire') state.view = 'questionnaire';
   else if (page === 'plan') state.view = 'end';
   else if (page === 'art' && ART) state.view = 'art';
@@ -168,9 +175,7 @@ function homeView() {
   return `${header('Bonheur')}${homeHTML({ started: started(), notice: state.notice })}${siteFooter()}`;
 }
 function comprendreView() {
-  return `${header('Comprendre')}${comprendreHTML(DOCS, resolveDoc)}
-  <div class="actions" style="margin-top:8px"><a class="btn primary" href="#questionnaire/${firstOpen() + 1}">${startLabel()}</a><a class="btn" href="#questionnaire">Découvrir le questionnaire</a></div>
-  ${siteFooter()}`;
+  return `${header('Comprendre')}${comprendreHTML(DOCS, resolveDoc, state.sub[0], cfg.domains)}${siteFooter()}`;
 }
 function questionnaireView() {
   return `${header('Le questionnaire')}${presentationHTML(cfg, { started: started() })}
@@ -210,26 +215,101 @@ function lireView() {
   ${siteFooter()}`;
 }
 
-// ---------- Questionnaire ----------
-function questionHTML(d, i) {
-  const v = state.q.answers[d.id]?.[i];
-  const name = `q-${d.id}-${i}`;
-  const gauge = (code) => `<span class="gauge g5" aria-hidden="true">${[0, 1, 2, 3, 4].map((k) => `<i class="${k <= code ? 'on' : ''}"></i>`).join('')}</span>`;
-  const choices = cfg.scale.map((s) => `<label class="choice"><input type="radio" name="${name}" id="${name}-${s.code}" value="${s.code}" data-d="${d.id}" data-i="${i}" ${v === s.code ? 'checked' : ''}><span class="opt"><b class="opt-n">${s.code}</b> ${esc(s.label)}${gauge(s.code)}</span></label>`).join('');
-  return `<li class="q ${Number.isInteger(v) ? 'answered' : 'unanswered'}" id="item-${d.id}-${i}">
-    <div class="q-head"><span class="q-num" aria-hidden="true">${i + 1}</span><div class="q-body">
-      <p class="q-text" id="${name}-label"><span class="sr-only">Question ${i + 1} : </span>${esc(d.questions[i])}</p>
-    </div></div>
-    <fieldset class="choices c5" role="radiogroup" aria-labelledby="${name}-label">${choices}</fieldset>
-  </li>`;
+// ---------- Questionnaire : une question à la fois (comme Papillon, PNP06/Psytest 2.0.13) ----------
+// Chaque domaine : un écran d'ouverture, ses cinq questions une par une, puis un résumé de la partie.
+// state.pos : 'open' (ouverture), un numéro de question (0 à 4) ou 'review' (résumé).
+
+const WHEN_DEFAULT = 'Ces dernières semaines';
+const WHEN_RE = /^(Sur les 7 derniers jours|Cette semaine),\s*/;
+const capFirst = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+/** Période d'une question et texte affiché : le début de phrase qui répète la période passe dans la pastille. */
+function questionParts(d, i) {
+  const q = d.questions[i];
+  const m = q.match(WHEN_RE);
+  return m ? { when: 'Ces 7 derniers jours', text: capFirst(q.slice(m[0].length)) } : { when: WHEN_DEFAULT, text: q };
+}
+/** Souligne les mots clés de la question (questionnaire.json, champ keys), à l'écran seulement. */
+function keyed(text, keys) {
+  if (!keys?.length) return esc(text);
+  const low = text.toLowerCase(), spans = [];
+  for (const k of [...keys].sort((a, b) => b.length - a.length)) {
+    const i = low.indexOf(k.toLowerCase());
+    if (i >= 0 && !spans.some(([a, b]) => i < b && i + k.length > a)) spans.push([i, i + k.length]);
+  }
+  spans.sort((a, b) => a[0] - b[0]);
+  let out = '', p = 0;
+  for (const [a, b] of spans) { out += `${esc(text.slice(p, a))}<mark class="kw">${esc(text.slice(a, b))}</mark>`; p = b; }
+  return out + esc(text.slice(p));
 }
 
-function navStatus(st) {
-  if (st.skipped) return `<span class="done">${icon('check')} Domaine ignoré</span>`;
-  const left = st.total - st.answered;
-  return left
-    ? `<span>${left} question${left > 1 ? 's' : ''} sans réponse dans cette partie</span><button class="btn link" id="first-missing">Aller à la première</button>`
-    : `<span class="done">${icon('check')} Partie complète · ${st.score.toFixed(1).replace('.', ',')}/4, ${classify(cfg, st.score).label}</span>`;
+const answerOf = (d, i) => state.q.answers[d.id]?.[i];
+const isAnswered = (d, i) => Number.isInteger(answerOf(d, i));
+const firstMissingQ = (d) => d.questions.findIndex((_, i) => !isAnswered(d, i));
+
+function answersHTML(d, i) {
+  const v = answerOf(d, i);
+  const gauge = (k) => `<span class="gauge g5" aria-hidden="true">${[0, 1, 2, 3, 4].map((j) => `<i class="${j <= k ? 'on' : ''}"></i>`).join('')}</span>`;
+  return `<div class="answers graded" role="radiogroup" aria-labelledby="q-label">${cfg.scale.map((s, k) =>
+    `<button type="button" class="ans${v === s.code ? ' sel' : ''}" role="radio" aria-checked="${v === s.code}" data-a="${s.code}"><span class="key" aria-hidden="true">${k + 1}</span><span class="lbl">${esc(s.label)}</span>${gauge(k)}</button>`).join('')}</div>`;
+}
+
+function questionCard(d, i) {
+  const { when, text } = questionParts(d, i);
+  const before = i > 0 ? questionParts(d, i - 1).when : null;
+  const changed = before && before !== when;
+  return `<article class="qcard" id="item-${d.id}-${i}">
+    <p class="when${changed ? ' changed' : ''}">${icon('clock')}<span>${esc(when)}</span></p>${changed ? '<p class="when-chg" role="status">La période change</p>' : ''}
+    <h2 class="qt" id="q-label" tabindex="-1"><span class="sr-only">Question ${i + 1} sur ${d.questions.length}, ${esc(when)} : </span>${keyed(text, d.keys?.[i])}</h2>
+    ${answersHTML(d, i)}
+  </article>`;
+}
+
+function openingView(d) {
+  const st = domainScore(state.q, d);
+  const first = state.screen === 0;
+  const n = cfg.domains.length;
+  const whens = [...new Set(d.questions.map((_, i) => questionParts(d, i).when))];
+  let body;
+  if (st.skipped) {
+    body = `<div class="note gate"><p>Vous avez indiqué que ce domaine ne vous concerne pas en ce moment : il n’entre pas dans le plan.</p><div class="actions"><button class="btn primary" id="next">${state.screen === n - 1 ? 'Voir mon plan' : 'Partie suivante'}${icon('right')}</button><button class="btn small" id="unskip">Y répondre finalement</button></div></div>`;
+  } else {
+    body = `<div class="actions"><button class="btn primary big" id="begin">${st.answered && !st.complete ? 'Reprendre' : st.complete ? 'Revoir mes réponses' : 'Commencer'}${icon('right')}</button>${d.optional ? '<button class="btn" id="skip-domain">Ce domaine ne me concerne pas</button>' : ''}</div>`;
+  }
+  return `<section class="opening">
+    <p class="k">Partie ${state.screen + 1} sur ${n}${d.optional ? ' · facultative' : ''}</p>
+    <h2 tabindex="-1" id="q-label">${esc(d.title)}</h2>
+    <p class="opening-focus">${esc(d.focus)}</p>
+    <p class="when-big">${icon('clock')}<span>${esc(WHEN_DEFAULT)}</span></p>
+    <p class="muted">${d.questions.length} questions${st.answered ? `, dont ${st.answered} déjà répondue${st.answered > 1 ? 's' : ''}` : ''}. ${whens.length > 1 ? 'Elles portent sur votre situation de ces dernières semaines, sauf quand une autre période est indiquée au-dessus de la question.' : 'Répondez selon votre situation réelle, pas selon celle que vous voudriez.'}</p>
+    ${d.optional ? '<p class="muted small">Cette partie est facultative : si elle ne vous concerne pas en ce moment, elle n’entre pas dans le calcul.</p>' : ''}
+    ${first ? `<p class="kbd-tip"><b>Pour aller vite.</b> Touchez une réponse : la question suivante arrive d’elle-même, au même endroit. « Précédente » permet toujours de revenir.<span class="only-fine"> Sur ordinateur, les touches <kbd>1</kbd> à <kbd>5</kbd> répondent, <kbd>←</kbd> pour revenir, <kbd>→</kbd> pour passer.</span></p>` : ''}
+    ${body}
+  </section>`;
+}
+
+/** Résumé de la partie : chaque réponse (un toucher ramène à la question), puis ce que donne le domaine. */
+function reviewView(d) {
+  const st = domainScore(state.q, d);
+  const last = state.screen === cfg.domains.length - 1;
+  const missing = st.total - st.answered;
+  const cls = classify(cfg, st.score);
+  const enough = st.answered >= cfg.thresholds.minAnswers;
+  const row = (_, i) => {
+    const v = answerOf(d, i);
+    return `<li><button type="button" data-jump="${i}" class="${Number.isInteger(v) ? '' : 'miss'}"><span class="rv-q">${esc(questionParts(d, i).text)}</span><span class="rv-a">${Number.isInteger(v) ? esc(cfg.scale[v].label) : '<i>Sans réponse</i>'}</span></button></li>`;
+  };
+  return `<section class="review">
+    <p class="k">Fin de la partie ${state.screen + 1}</p>
+    <h2 tabindex="-1" id="q-label">${esc(d.title)}</h2>
+    <p class="muted">${missing ? `${missing} question${missing > 1 ? 's' : ''} sans réponse. Vous pouvez y revenir, ou continuer : rien n’est bloquant.` : 'Toutes les questions ont une réponse.'} Touchez une ligne pour changer la réponse.</p>
+    <ol class="rv-list">${d.questions.map(row).join('')}</ol>
+    ${enough ? `<div class="rv-result lvl-${cls.lvl}"><p class="pre-label">Ce que donne ce domaine</p><p><b>${esc(capFirst(cls.label))}</b> · ${st.score.toFixed(1).replace('.', ',')} sur 4</p></div>` : ''}
+    <div class="bh-help">
+      <div><b>Si ce domaine ressort bas</b><p>${esc(d.primaryActions?.[0] || d.actions)}</p></div>
+      <div><b>Si ce domaine est solide</b><p>${esc(d.maintain)}</p></div>
+    </div>
+    <div class="actions"><button class="btn primary big" id="next">${last ? 'Voir mon plan' : 'Partie suivante'}${icon('right')}</button></div>
+  </section>`;
 }
 
 function partsFil() {
@@ -240,44 +320,30 @@ function partsFil() {
     return `<li class="${cls}"><button data-go="${d.index}" style="--p:${p}%" ${d.index === state.screen ? 'aria-current="step"' : ''}><span class="num">${d.index + 1}</span><span>${esc(d.title)}</span><span class="cnt">${d.skipped ? '—' : `${d.answered}/${d.total}`}</span></button></li>`;
   }).join('')}</ol>`;
 }
-function questionsFil(d) {
-  return `<ol class="fil qfil">${d.questions.map((_, i) => `<li data-q="${i}" class="${Number.isInteger(state.q.answers[d.id]?.[i]) ? 'past' : ''}"><a href="#item-${d.id}-${i}" data-anchor="item-${d.id}-${i}" aria-label="Question ${i + 1}">${i + 1}</a></li>`).join('')}</ol>`;
-}
 
 function screenView() {
   const d = cfg.domains[state.screen];
-  const st = domainScore(state.q, d);
-  const pr = progress(cfg, state.q);
-  const last = state.screen === cfg.domains.length - 1;
-  const [ic, tint] = look(d);
+  if (typeof state.pos === 'number' && (state.pos < 0 || state.pos >= d.questions.length)) state.pos = 'open';
+  if (state.q.skipped[d.id] && state.pos !== 'open') state.pos = 'open';
+  const pr = progress(cfg, state.q), st = domainScore(state.q, d);
   const n = cfg.domains.length;
+  const qi = typeof state.pos === 'number' ? state.pos : null;
+  const [ic, tint] = look(d);
+  const body = qi !== null ? questionCard(d, qi) : state.pos === 'review' ? reviewView(d) : openingView(d);
+  const dots = `<ol class="qdots" aria-hidden="true">${d.questions.map((_, i) => `<li class="${i === qi ? 'cur' : isAnswered(d, i) ? 'done' : ''}"></li>`).join('')}</ol>`;
+  const answered = qi !== null && isAnswered(d, qi);
   return `${header(d.title, `Partie ${state.screen + 1}/${n} · <span id="top-count">${pr.done}</span>/${pr.total}<span class="lbl-long"> réponses</span>`)}
-  <div class="layout">
-    <aside class="rail rail-left" aria-label="Domaines du questionnaire"><p class="rail-title">Les ${n} domaines</p><div id="parts-fil">${partsFil()}</div></aside>
-    <div class="content">
-      <section class="screen-head">
-        <span class="ti t-${tint}">${icon(ic)}</span>
-        <div><p class="k">Partie ${state.screen + 1} sur ${n}${d.optional ? ' · facultative' : ''}</p><h2>${esc(d.title)}</h2></div>
-        <span class="n" id="block-count">${st.skipped ? '—' : `${st.answered}<small>/${st.total}</small>`}</span>
-      </section>
-      <p class="period">${icon('clock')}<span>${esc(d.focus)} ${esc(cfg.period)}</span></p>
-      ${state.notice ? `<div class="note warn">${state.notice}</div>` : ''}
-      ${d.optional ? `<label class="nsp bh-skip"><input type="checkbox" id="skip" ${state.q.skipped[d.id] ? 'checked' : ''}><span>Ce domaine ne me concerne pas en ce moment : l’ignorer dans le plan</span></label>` : ''}
-      ${state.q.skipped[d.id] ? '<div class="note"><p>Domaine ignoré : il n’entre pas dans le calcul. Décochez la case pour y répondre.</p></div>' : `<ol class="qlist">${d.questions.map((_, i) => questionHTML(d, i)).join('')}</ol>`}
-      <div class="bh-help">
-        <div><b>Si ce domaine ressort bas</b><p>${esc(d.primaryActions?.[0] || d.actions)}</p></div>
-        <div><b>Si ce domaine est solide</b><p>${esc(d.maintain)}</p></div>
-      </div>
-      <nav class="nav" aria-label="Navigation entre les parties">
-        <div class="nav-status" id="left" aria-live="polite">${navStatus(st)}</div>
-        <div class="nav-buttons">
-          <button class="btn" id="prev">${icon('left')}${state.screen === 0 ? 'Présentation' : 'Précédente'}</button>
-          <button class="btn primary" id="next">${last ? 'Voir mon plan' : 'Partie suivante'}${icon('right')}</button>
-        </div>
-      </nav>
-      <details class="parts only-narrow"><summary>Tous les domaines</summary><div id="parts-fil-2">${partsFil()}</div></details>
+  <div class="qwrap">
+    <div class="qbar">
+      ${qi === null ? `<button class="btn ghost small" id="prev">${icon('left')}${state.pos === 'open' && state.screen === 0 ? 'Présentation' : 'Précédente'}</button>` : '<span></span>'}
+      <span class="qpart"><span class="ti t-${tint}">${icon(ic)}</span><span>${esc(d.title)}</span></span>
+      <span class="qcount">${qi !== null ? `Question <b>${qi + 1}</b>/${d.questions.length}` : st.skipped ? '—' : `${st.answered}/${st.total}`}</span>
     </div>
-    <aside class="rail rail-right" aria-label="Questions de cette partie"><p class="rail-title">Dans cette partie</p><div id="q-fil">${questionsFil(d)}</div></aside>
+    ${dots}
+    ${state.notice ? `<div class="note warn">${state.notice}</div>` : ''}
+    <div class="stage${qi !== null ? ' is-q' : ''}" id="stage" aria-live="polite">${body}</div>
+    ${qi !== null ? `<div class="qnav"><button class="btn ghost small" id="prev2">${icon('left')}Précédente</button><button class="btn ${answered ? 'primary' : 'ghost'} small" id="skip">${answered ? 'Suivante' : 'Passer'}${icon('right')}</button></div>` : ''}
+    <details class="parts"><summary>Tous les domaines</summary><div id="parts-fil">${partsFil()}</div></details>
   </div>`;
 }
 
@@ -325,7 +391,7 @@ function render() {
   resetComprendreSpy();
   const views = { home: homeView, comprendre: comprendreView, questionnaire: questionnaireView, methode: methodeView, art: artView, lire: lireView, screen: screenView, end: endView };
   app.innerHTML = (views[state.view] || homeView)();
-  document.title = { home: 'Bonheur · Guide opérationnel', comprendre: 'Comprendre · Bonheur', questionnaire: 'Le questionnaire · Bonheur', methode: 'Méthode et sources · Bonheur', art: 'L’Art d’être heureux · Bonheur', lire: `${ANNEXES.find((a) => a.id === state.sub[0])?.title || 'Lire'} · Bonheur`, screen: `${cfg.domains[state.screen].title} · Questionnaire`, end: 'Votre plan · Bonheur' }[state.view];
+  document.title = { home: 'Bonheur · Guide opérationnel', comprendre: `${{ intro: 'Comprendre', garder: 'Pour finir' }[comprendrePageOf(state.sub[0])] || CHAPTERS.find((c) => c.id === state.sub[0])?.short || 'Comprendre'} · Bonheur`, questionnaire: 'Le questionnaire · Bonheur', methode: 'Méthode et sources · Bonheur', art: 'L’Art d’être heureux · Bonheur', lire: `${ANNEXES.find((a) => a.id === state.sub[0])?.title || 'Lire'} · Bonheur`, screen: `${cfg.domains[state.screen].title} · Questionnaire`, end: 'Votre plan · Bonheur' }[state.view];
   bind();
   // Menu défilant sur téléphone : la page en cours reste visible.
   const nav = document.querySelector('.site-nav'), curLink = nav?.querySelector('[aria-current]');
@@ -358,15 +424,10 @@ function spy() {
   cancelAnimationFrame(spyFrame);
   spyFrame = requestAnimationFrame(() => {
     const line = window.innerHeight * 0.35;
-    if (state.view === 'comprendre') comprendreSpy();
-    else if (state.view === 'screen') {
-      let cur = null;
-      for (const li of document.querySelectorAll('.q')) { if (li.getBoundingClientRect().top <= line) cur = li; else break; }
-      cur = cur || document.querySelector('.q');
-      document.querySelectorAll('.q.here').forEach((li) => li !== cur && li.classList.remove('here'));
-      cur?.classList.add('here');
-      const i = cur?.id.split('-').pop();
-      document.querySelectorAll('#q-fil li').forEach((li) => li.classList.toggle('here', li.dataset.q === i));
+    if (state.view === 'comprendre') {
+      comprendreSpy();
+      const box = $('#ch-sub');
+      if (box?.dataset.fresh) { delete box.dataset.fresh; box.querySelectorAll('[data-anchor]').forEach(bindAnchor); }
     } else if (state.view === 'lire') {
       const subs = [...document.querySelectorAll('#doc [data-sub]')];
       let cur = null;
@@ -412,37 +473,86 @@ function bindAnchor(a) {
   });
 }
 
-function refreshChrome() {
+// ---------- Questionnaire : avancer, revenir, répondre ----------
+let advanceTimer = 0;
+const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/** Redessine l'écran du questionnaire sans bouger la page : la carte reste au même endroit. */
+function show(focus = true) {
+  clearTimeout(advanceTimer);
+  render();
+  window.scrollTo(0, 0);
+  state.notice = null;
+  if (focus) $('#q-label')?.focus({ preventScroll: true });
+}
+function nextDomain() { if (state.screen === cfg.domains.length - 1) goHash('#plan'); else goScreen(state.screen + 1); }
+/** Domaine précédent : on arrive sur son résumé. */
+function prevDomain() {
+  if (state.screen === 0) { goHash('#questionnaire'); return; }
+  state.landing = 'review';
+  goScreen(state.screen - 1);
+}
+/** Question suivante du domaine, ou son résumé, ou le domaine suivant. */
+function stepForward() {
   const d = cfg.domains[state.screen];
-  const top = document.querySelector('.top .progress');
-  if (top) top.outerHTML = progressBar();
-  const c = $('#top-count'); if (c) c.textContent = progress(cfg, state.q).done;
-  const st = domainScore(state.q, d);
-  const l = $('#left'); if (l) { l.innerHTML = navStatus(st); $('#first-missing')?.addEventListener('click', focusFirstMissing); }
-  const bc = $('#block-count'); if (bc) bc.innerHTML = `${st.answered}<small>/${st.total}</small>`;
-  for (const id of ['#parts-fil', '#parts-fil-2']) { const el = $(id); if (el) { el.innerHTML = partsFil(); el.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => goScreen(Number(b.dataset.go)))); } }
-  document.querySelectorAll('#q-fil li').forEach((li) => li.classList.toggle('past', Number.isInteger(state.q.answers[d.id]?.[+li.dataset.q])));
+  if (state.pos === 'open') {
+    if (state.q.skipped[d.id]) { nextDomain(); return; }
+    const m = firstMissingQ(d);
+    state.pos = m >= 0 ? m : 0;
+  } else if (state.pos === 'review') { nextDomain(); return; }
+  else state.pos = state.pos < d.questions.length - 1 ? state.pos + 1 : 'review';
+  show();
 }
-
-function focusFirstMissing() {
-  const li = document.querySelector('.q.unanswered');
-  if (!li) return;
-  li.scrollIntoView({ behavior: smooth(), block: 'center' });
-  li.querySelector('input')?.focus({ preventScroll: true });
+function stepBack() {
+  const d = cfg.domains[state.screen];
+  if (state.pos === 'review') state.pos = d.questions.length - 1;
+  else if (typeof state.pos === 'number') state.pos = state.pos > 0 ? state.pos - 1 : 'open';
+  else { prevDomain(); return; }
+  show();
 }
-
-function setAnswer(id, i, v, { advance = false } = {}) {
-  state.q.answers[id][i] = v;
-  state.q.skipped[id] = false;
+/** Après une réponse : la suivante arrive d'elle-même. */
+function setAnswer(i, v) {
+  const d = cfg.domains[state.screen];
+  state.q.answers[d.id][i] = v;
+  state.q.skipped[d.id] = false;
   saveAnswers();
-  const li = document.getElementById(`item-${id}-${i}`);
-  if (li) { li.classList.add('answered'); li.classList.remove('unanswered'); }
-  refreshChrome();
-  if (advance) {
-    const items = [...document.querySelectorAll('.q')];
-    const next = items.slice(items.indexOf(li) + 1).find((x) => x.classList.contains('unanswered'));
-    if (next && next.getBoundingClientRect().top > window.innerHeight * 0.55) setTimeout(() => next.scrollIntoView({ behavior: smooth(), block: 'center' }), 180);
-  }
+  show(false);
+  document.querySelector('.ans.sel')?.focus({ preventScroll: true });
+  advanceTimer = setTimeout(() => { if (state.view === 'screen' && state.pos === i) stepForward(); }, reduced() ? 120 : 380);
+}
+
+// Clavier : chiffres pour répondre, flèches pour avancer ou revenir, Entrée pour continuer.
+document.addEventListener('keydown', (e) => {
+  if (state.view !== 'screen' || e.ctrlKey || e.metaKey || e.altKey || document.querySelector('dialog[open]')) return;
+  if (e.target.closest?.('input, textarea, select, summary, a')) return;
+  const qi = typeof state.pos === 'number' ? state.pos : null;
+  if (e.key === 'ArrowLeft') { e.preventDefault(); stepBack(); return; }
+  if (e.key === 'ArrowRight') { e.preventDefault(); stepForward(); return; }
+  if (e.key === 'Enter' && !e.target.closest?.('button')) { e.preventDefault(); stepForward(); return; }
+  if (qi === null) return;
+  const k = Number(e.key);
+  if (k >= 1 && k <= cfg.scale.length) { e.preventDefault(); setAnswer(qi, cfg.scale[k - 1].code); }
+});
+
+/** Conseils avant la première question (une fois par visite, tant qu'aucune réponse n'est donnée). */
+let tipsSeen = false;
+const START_TIPS = [
+  ['Pensez à une semaine ordinaire.', 'Ni votre pire semaine, ni la meilleure : votre situation réelle de ces dernières semaines, sauf quand une autre période est indiquée au-dessus de la question.'],
+  ['Répondez à la première impression.', 'Celle qui vous vient en premier est souvent la plus juste. Les mots soulignés disent ce qui compte dans la question.'],
+  ['Dans le doute, passez.', '« Passer » laisse la question sans réponse : elle ne compte pas dans le calcul. Mieux vaut cela que deviner.'],
+  ['Décrivez, ne vous jugez pas.', 'Une réponse basse n’est pas une faute : c’est elle qui permet au plan de choisir où agir d’abord.'],
+];
+function openTips() {
+  tipsSeen = true;
+  const d = dialog(`<p class="eyebrow">Avant de commencer · 10 à 15 minutes, en une ou plusieurs fois</p>
+    <h2 id="tips-title">Quatre conseils pour bien répondre</h2>
+    <ol class="start-tips">${START_TIPS.map(([h, p]) => `<li><b>${h}</b> <span>${p}</span></li>`).join('')}</ol>
+    <p class="privacy">${icon('lock')}<span>Vos réponses restent <b>dans ce navigateur</b>, rien n’est envoyé. Pour changer d’appareil, « Pause et sauvegarde » télécharge un fichier.</span></p>
+    <div class="actions"><button class="btn primary" data-close>J’ai compris, je commence</button><button class="btn" id="tips-resume">Reprendre grâce à mon fichier</button></div>`);
+  d.classList.add('start-dialog');
+  d.setAttribute('aria-labelledby', 'tips-title');
+  $('#tips-resume', d).addEventListener('click', () => { d.close(); openResume(); });
+  d.addEventListener('close', () => $('#q-label')?.focus({ preventScroll: true }));
 }
 
 async function copyText(text) {
@@ -472,18 +582,20 @@ function bind() {
     if (!confirm('Effacer toutes vos réponses de ce navigateur ?')) return;
     state.q = emptyState(cfg); saveAnswers(); goHash('#questionnaire');
   });
-  $('#prev')?.addEventListener('click', () => (state.screen === 0 ? goHash('#questionnaire') : goScreen(state.screen - 1)));
-  $('#next')?.addEventListener('click', () => (state.screen === cfg.domains.length - 1 ? goHash('#plan') : goScreen(state.screen + 1)));
   document.querySelectorAll('[data-go]').forEach((b) => b.addEventListener('click', () => goScreen(Number(b.dataset.go))));
-  $('#skip')?.addEventListener('change', (e) => { state.q.skipped[cfg.domains[state.screen].id] = e.target.checked; saveAnswers(); const y = window.scrollY; render(); window.scrollTo(0, y); });
-  // Un clic ou un toucher fait avancer ; la navigation au clavier (flèches) ne déplace pas l'écran.
-  let pointer = false;
-  document.querySelectorAll('.choices').forEach((g) => g.addEventListener('pointerdown', () => { pointer = true; }));
-  document.querySelectorAll('.choices input').forEach((inp) => inp.addEventListener('change', () => {
-    setAnswer(inp.dataset.d, Number(inp.dataset.i), Number(inp.value), { advance: pointer });
-    pointer = false;
-  }));
-  $('#first-missing')?.addEventListener('click', focusFirstMissing);
+  if (state.view === 'screen') {
+    const d = cfg.domains[state.screen];
+    $('#prev')?.addEventListener('click', stepBack);
+    $('#prev2')?.addEventListener('click', stepBack);
+    $('#skip')?.addEventListener('click', stepForward);
+    $('#begin')?.addEventListener('click', stepForward);
+    $('#next')?.addEventListener('click', nextDomain);
+    $('#skip-domain')?.addEventListener('click', () => { state.q.skipped[d.id] = true; saveAnswers(); nextDomain(); });
+    $('#unskip')?.addEventListener('click', () => { state.q.skipped[d.id] = false; saveAnswers(); state.pos = 0; show(); });
+    document.querySelectorAll('.ans[data-a]').forEach((b) => b.addEventListener('click', () => setAnswer(state.pos, Number(b.dataset.a))));
+    document.querySelectorAll('[data-jump]').forEach((b) => b.addEventListener('click', () => { state.pos = Number(b.dataset.jump); show(); }));
+  }
+  wireFormation();
 }
 
 // ---------- Pause et reprise par fichier ----------
@@ -541,12 +653,17 @@ function openResume() {
 
 // ---------- Démarrage ----------
 function onRoute() {
+  document.querySelectorAll('dialog[open]').forEach((d) => d.close()); // une fenêtre ne suit pas d'une page à l'autre
   route();
   render();
-  // Lien direct vers un chapitre ou une sous-partie : #comprendre/<chapitre>, #lire/<doc>/<ancre>
-  const target = state.view === 'comprendre' && state.sub[0] ? `ch-${state.sub[0]}` : state.view === 'lire' && state.sub[1] ? `doc-${state.sub[1]}` : '';
+  // Lien direct vers une sous-partie : #comprendre/<chapitre>/<ancre>, #lire/<doc>/<ancre>
+  const target = state.view === 'comprendre' && state.sub[1] ? `ch-${state.sub[0]}-${state.sub[1]}` : state.view === 'lire' && state.sub[1] ? `doc-${state.sub[1]}` : '';
   const el = target && document.getElementById(target);
   if (el) requestAnimationFrame(() => el.scrollIntoView()); else window.scrollTo(0, 0);
+  if (state.view === 'screen') {
+    $('#q-label')?.focus({ preventScroll: true });
+    if (!tipsSeen && !started()) openTips();
+  }
   state.notice = null; // un avertissement de reprise ne s'affiche qu'une fois
 }
 

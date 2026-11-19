@@ -19,7 +19,7 @@ export function presentationHTML(cfg, ctx) {
   <section class="home-section" aria-labelledby="q-steps">
     <h2 id="q-steps">Comment ça se passe</h2>
     <ol class="home-facts">
-      <li><h3>1. Vous répondez</h3><p>${n} questions réparties en ${cfg.domains.length} domaines, de 0 (très défavorable) à 4 (solide). Dix à quinze minutes, en une ou plusieurs fois, dans l’ordre que vous voulez.</p></li>
+      <li><h3>1. Vous répondez</h3><p>${n} questions réparties en ${cfg.domains.length} domaines, <b>une question à la fois</b>, de « Non, pas du tout » à « Oui, tout à fait ». Dix à quinze minutes, en une ou plusieurs fois. À la fin de chaque domaine, un résumé permet de revoir vos réponses.</p></li>
       <li><h3>2. Vous lisez votre plan</h3><p>Trois priorités au plus, les actions à tester cette semaine, les domaines protecteurs à maintenir et vos scores par domaine.</p></li>
       <li><h3>3. Vous réévaluez</h3><p>Une à trois actions pendant 7 jours, sans tout changer. Puis vous repassez le questionnaire dans 2 à 4 semaines pour voir ce qui a bougé.</p></li>
     </ol>
