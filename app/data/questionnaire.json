@@ -1,27 +1,27 @@
 {
-  "version": "2026.11.12",
+  "version": "2026.11.19",
   "title": "Questionnaire d’auto-orientation",
   "period": "Répondez selon votre situation réelle des derniers jours ou semaines.",
   "scale": [
     {
       "code": 0,
-      "label": "très défavorable"
+      "label": "Non, pas du tout"
     },
     {
       "code": 1,
-      "label": "fragile"
+      "label": "Plutôt non"
     },
     {
       "code": 2,
-      "label": "moyen"
+      "label": "En partie"
     },
     {
       "code": 3,
-      "label": "plutôt favorable"
+      "label": "Plutôt oui"
     },
     {
       "code": 4,
-      "label": "solide"
+      "label": "Oui, tout à fait"
     }
   ],
   "thresholds": {
@@ -51,6 +51,27 @@
         "Avez-vous reçu de la lumière naturelle le matin ou en début de journée ?",
         "Votre fin de journée limite-t-elle ce qui retarde l’endormissement : écrans, notifications, caféine, alcool, ruminations ?",
         "Au réveil, avez-vous assez d’énergie pour démarrer sans lutter pendant une heure ?"
+      ],
+      "keys": [
+        [
+          "réellement permis de récupérer"
+        ],
+        [
+          "heure de réveil",
+          "stable"
+        ],
+        [
+          "lumière naturelle",
+          "le matin"
+        ],
+        [
+          "fin de journée",
+          "retarde l’endormissement"
+        ],
+        [
+          "assez d’énergie",
+          "démarrer"
+        ]
       ]
     },
     {
@@ -70,6 +91,27 @@
         "Une personne fiable sait-elle concrètement ce qui est important ou difficile pour vous en ce moment ?",
         "Vos liens principaux vous soutiennent-ils davantage qu’ils ne vous épuisent ou vous mettent en alerte ?",
         "Faites-vous activement vivre vos relations : message, appel, invitation, écoute, aide donnée ou reçue ?"
+      ],
+      "keys": [
+        [
+          "deux personnes",
+          "parler franchement"
+        ],
+        [
+          "deux échanges",
+          "réellement relié"
+        ],
+        [
+          "personne fiable",
+          "important ou difficile"
+        ],
+        [
+          "soutiennent",
+          "épuisent"
+        ],
+        [
+          "activement vivre"
+        ]
       ]
     },
     {
@@ -89,6 +131,26 @@
         "Avez-vous fait au moins une séance de renforcement, mobilité ou activité structurée ?",
         "Votre manière de bouger est-elle réaliste, agréable ou au moins soutenable pour votre corps actuel ?",
         "Votre corps vous donne-t-il un minimum d’énergie, de mobilité ou de maîtrise dans la journée ?"
+      ],
+      "keys": [
+        [
+          "20 minutes",
+          "4 journées ou plus"
+        ],
+        [
+          "150 minutes"
+        ],
+        [
+          "renforcement",
+          "mobilité"
+        ],
+        [
+          "soutenable pour votre corps"
+        ],
+        [
+          "énergie",
+          "mobilité ou de maîtrise"
+        ]
       ]
     },
     {
@@ -108,6 +170,27 @@
         "Votre stress reste-t-il le plus souvent dans une zone gérable, sans débordement durable ?",
         "Vos compensations restent-elles compatibles avec votre sommeil, votre santé et vos relations ?",
         "Après une période chargée, prévoyez-vous une vraie récupération plutôt que de simplement tenir ?"
+      ],
+      "keys": [
+        [
+          "pris au sérieux",
+          "suivis"
+        ],
+        [
+          "fatigue",
+          "assez de marge"
+        ],
+        [
+          "stress",
+          "zone gérable"
+        ],
+        [
+          "compensations",
+          "compatibles"
+        ],
+        [
+          "vraie récupération"
+        ]
       ]
     },
     {
@@ -127,6 +210,24 @@
         "Pouvez-vous refuser ou renégocier certaines demandes sans coût disproportionné ?",
         "Vos limites sont-elles suffisamment respectées dans votre environnement professionnel, familial ou social ?",
         "Avez-vous au moins un domaine où vous pouvez essayer, ajuster et décider librement ?"
+      ],
+      "keys": [
+        [
+          "vraie marge de décision"
+        ],
+        [
+          "choix volontaires"
+        ],
+        [
+          "refuser ou renégocier"
+        ],
+        [
+          "limites",
+          "respectées"
+        ],
+        [
+          "décider librement"
+        ]
       ]
     },
     {
@@ -146,6 +247,24 @@
         "Recevez-vous un feedback qui vous aide réellement à progresser ?",
         "Vos efforts vous donnent-ils parfois un sentiment de maîtrise, d’efficacité ou d’absorption ?",
         "Votre recherche de compétence reste-t-elle compatible avec repos, santé et relations ?"
+      ],
+      "keys": [
+        [
+          "amélioré quelque chose de concret"
+        ],
+        [
+          "assez précis"
+        ],
+        [
+          "feedback",
+          "progresser"
+        ],
+        [
+          "sentiment de maîtrise"
+        ],
+        [
+          "compatible avec repos"
+        ]
       ]
     },
     {
@@ -165,6 +284,25 @@
         "Avez-vous une contribution, un rôle ou une responsabilité qui dépasse le plaisir immédiat ?",
         "Vos objectifs actuels restent-ils cohérents avec la vie que vous voulez construire ?",
         "Votre recherche de sens protège-t-elle aussi votre santé, votre sommeil et vos relations ?"
+      ],
+      "keys": [
+        [
+          "pourquoi vos efforts"
+        ],
+        [
+          "alignée avec vos valeurs"
+        ],
+        [
+          "contribution",
+          "dépasse le plaisir immédiat"
+        ],
+        [
+          "cohérents",
+          "la vie que vous voulez"
+        ],
+        [
+          "protège-t-elle aussi"
+        ]
       ]
     },
     {
@@ -184,6 +322,27 @@
         "Avez-vous une marge minimale pour absorber un imprévu sans panique immédiate ?",
         "Vos dépenses servent-elles surtout sécurité, santé, temps, relations ou compétence plutôt que statut et comparaison ?",
         "Votre situation financière vous donne-t-elle une marge de choix acceptable ?"
+      ],
+      "keys": [
+        [
+          "charges fixes",
+          "marge mensuelle"
+        ],
+        [
+          "logement",
+          "soins de base",
+          "sécurisés"
+        ],
+        [
+          "imprévu"
+        ],
+        [
+          "dépenses",
+          "statut et comparaison"
+        ],
+        [
+          "marge de choix"
+        ]
       ]
     },
     {
@@ -203,6 +362,28 @@
         "Avez-vous chaque jour une plage sans téléphone ni interruption choisie ?",
         "Votre attention reste-t-elle disponible pour lire, travailler profondément, discuter ou vous reposer ?",
         "Les informations que vous consommez débouchent-elles sur des actions possibles plutôt que sur une inquiétude passive ?"
+      ],
+      "keys": [
+        [
+          "notifications",
+          "réellement utiles"
+        ],
+        [
+          "réseaux sociaux",
+          "relie",
+          "compare"
+        ],
+        [
+          "plage sans téléphone"
+        ],
+        [
+          "attention",
+          "disponible"
+        ],
+        [
+          "actions possibles",
+          "inquiétude passive"
+        ]
       ]
     },
     {
@@ -222,6 +403,26 @@
         "Votre travail nourrit-il au moins partiellement compétence, utilité ou reconnaissance réaliste ?",
         "Vos temps de récupération sont-ils planifiés plutôt que laissés aux restes de la semaine ?",
         "Si votre travail vous abîme, avez-vous une stratégie réaliste de modification, négociation ou transition ?"
+      ],
+      "keys": [
+        [
+          "charge de travail",
+          "compatible"
+        ],
+        [
+          "marge d’autonomie"
+        ],
+        [
+          "compétence, utilité ou reconnaissance"
+        ],
+        [
+          "récupération",
+          "planifiés"
+        ],
+        [
+          "vous abîme",
+          "stratégie réaliste"
+        ]
       ]
     },
     {
@@ -242,6 +443,26 @@
         "L’intimité ou la sexualité est-elle plutôt une source de connexion qu’une pression ?",
         "La relation protège-t-elle sommeil, santé, autonomie et liens sociaux plutôt qu’elle ne les dégrade ?",
         "Les responsabilités pratiques sont-elles suffisamment visibles, discutées et équilibrées ?"
+      ],
+      "keys": [
+        [
+          "sûre, respectueuse et coopérative"
+        ],
+        [
+          "réparer"
+        ],
+        [
+          "intimité",
+          "connexion",
+          "pression"
+        ],
+        [
+          "protège-t-elle"
+        ],
+        [
+          "responsabilités pratiques",
+          "équilibrées"
+        ]
       ]
     },
     {
@@ -261,6 +482,28 @@
         "Vos loisirs sont-ils assez souvent actifs, sociaux, créatifs ou absorbants ?",
         "Votre temps libre vous récupère-t-il réellement plutôt que vous anesthésier ?",
         "Votre logement ou votre organisation réduit-il la friction pour dormir, bouger, cuisiner, lire ou appeler quelqu’un ?"
+      ],
+      "keys": [
+        [
+          "environnement quotidien",
+          "facilite"
+        ],
+        [
+          "lumière",
+          "nature"
+        ],
+        [
+          "loisirs",
+          "actifs, sociaux"
+        ],
+        [
+          "temps libre",
+          "récupère",
+          "anesthésier"
+        ],
+        [
+          "réduit-il la friction"
+        ]
       ]
     }
   ]

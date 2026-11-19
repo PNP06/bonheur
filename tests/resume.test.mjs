@@ -22,7 +22,7 @@ test('le fichier est lisible par la personne', () => {
   s.answers.sommeil[0] = 4;
   const txt = serialize(cfg, s);
   assert.match(txt, /== Sommeil et rythmes ==/);
-  assert.match(txt, /Réponse : 4 · solide/);
+  assert.match(txt, /Réponse : 4 · Oui, tout à fait/);
   assert.match(txt, /Réponses données : 1 sur 60/);
 });
 

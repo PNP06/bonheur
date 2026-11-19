@@ -16,13 +16,17 @@ Le site a la même structure que [Psytest](https://psytest.ddlab.fr) : même cha
 | Page | Adresse | Contenu |
 |---|---|---|
 | Accueil | `#` | La promesse, une scène animée (exemple fictif), le parcours Comprendre → questionnaire → plan, ce que le guide n’est pas. |
-| Comprendre | `#comprendre` | L’essentiel en six idées, puis les huit chapitres du guide (`docs/01` à `docs/08`) avec fils d’Ariane latéraux et encadrés « À retenir ». |
-| Le questionnaire | `#questionnaire` | Présentation, puis une partie par domaine (`#questionnaire/1` à `/12`). |
+| Comprendre | `#comprendre`, `#comprendre/<chapitre>`, `#comprendre/garder` | Conduit comme une formation (modèle : la chrysalide de Papillon) : une entrée (objectif, parcours en quatre temps, l’essentiel en six idées), puis un chapitre par page (`docs/01` à `docs/08`) avec objectifs, idée de départ, « À retenir », exercice « À vous de jouer », liens vers le questionnaire et « précédent / suivant ». « Pour finir » : dix actions, six erreurs et un test final. |
+| Le questionnaire | `#questionnaire` | Présentation, puis une partie par domaine (`#questionnaire/1` à `/12`) : écran d’ouverture, **une question à la fois** (réponse au toucher ou au clavier, la suivante arrive d’elle-même, mots clés soulignés, période en pastille), puis un résumé de la partie. Comme sur Papillon (papillon.ddlab.fr). |
 | Votre plan | `#plan` | Priorités, plan 7 jours, points à maintenir, scores, réponses ; imprimable en PDF. |
 | L’Art d’être heureux | `#art/adulte`, `#art/jeunesse` | Les 50 règles, par ressenti, thème ou au hasard. |
 | Méthode et sources | `#methode` | Principes, niveaux de preuve, calcul du questionnaire, documents complémentaires (`#lire/<document>`). |
 
 Les anciennes adresses (`#/synthese`, `#/guide`, `#/lire/…`, `#/art-heureux/…`, `#/tableau-de-bord`, `#/sources`) redirigent vers les nouvelles. Les réponses déjà enregistrées dans le navigateur sont conservées (même clé de stockage).
+
+### Journal du questionnaire
+
+- **2026.11.19** : les réponses s’écrivent en mots (« Non, pas du tout », « Plutôt non », « En partie », « Plutôt oui », « Oui, tout à fait ») au lieu de « très défavorable » à « solide » ; codes 0 à 4, questions, seuils et calcul inchangés (les fichiers de reprise se relisent sans avertissement). Ajout de 1 à 3 mots clés par question (champ `keys`), soulignés à l’écran seulement.
 
 ### Organisation du code (comme Psytest)
 
@@ -31,6 +35,7 @@ Les anciennes adresses (`#/synthese`, `#/guide`, `#/lire/…`, `#/art-heureux/�
 | `app/index.html` | Squelette de la page |
 | `app/main.js` | Navigation, questionnaire, pause et reprise, rapport, fils d’Ariane |
 | `app/home.js`, `comprendre.js`, `presentation.js`, `methode.js`, `art.js` | Une page chacun |
+| `app/formation.js` | Accompagnement de Comprendre : objectifs, idées de départ, exercices, test final (le fond reste dans `docs/`) |
 | `app/engine.js` | Calcul des scores, priorités et plan (fonctions pures, testées) |
 | `app/resume.js` | Fichier de reprise (.txt) |
 | `app/report.js` | Rapport « Votre plan » |

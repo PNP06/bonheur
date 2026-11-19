@@ -1,6 +1,6 @@
 // Moteur du questionnaire d'auto-orientation : scores par domaine, classement et plan d'action.
 // Fonctions pures, sans accès au navigateur (testées par tests/engine.test.mjs).
-// Échelle : 0 très défavorable → 4 solide. Score d'un domaine = moyenne des réponses données.
+// Échelle : 0 « Non, pas du tout » → 4 « Oui, tout à fait » (toutes les questions sont posées dans le sens favorable). Score d'un domaine = moyenne des réponses données.
 
 /** État vide : { answers: { domaine: [null × 5] }, skipped: { domaine: false } } */
 export function emptyState(cfg) {

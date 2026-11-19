@@ -36,7 +36,7 @@ const HV_STEPS = [
   { tag: 'Étape 1', title: 'Comprendre', kind: 'comprendre', time: '8 chapitres · lecture libre', href: '#comprendre', more: 'Lire Comprendre',
     items: ['Ce que « bonheur » veut dire en science', 'Ce que la neuroscience permet vraiment de dire', 'Les déterminants, classés par niveau de preuve', 'Les illusions qui faussent nos choix', 'Ce que les philosophes avaient compris', 'Un système de pilotage et un plan d’action'] },
   { tag: 'Étape 2', title: 'Le questionnaire', kind: 'test', time: '12 domaines · 60 questions · 10 à 15 min', href: '#questionnaire', more: 'Voir comment se passe le questionnaire',
-    items: ['Sommeil, relations, activité, santé', 'Autonomie, compétence, sens', 'Finances, numérique, travail', 'Couple (facultatif) et environnement', 'Une échelle de 0 (défavorable) à 4 (solide)'] },
+    items: ['Sommeil, relations, activité, santé', 'Autonomie, compétence, sens', 'Finances, numérique, travail', 'Couple (facultatif) et environnement', 'Une question à la fois, de « Non, pas du tout » à « Oui, tout à fait »'] },
   { tag: 'À la fin', title: 'Votre plan', kind: 'plan', time: 'à réévaluer dans 2 à 4 semaines', out: true,
     items: ['Vos priorités probables (trois au plus)', 'Les actions à tester cette semaine', 'Ce qui vous protège déjà, à maintenir', 'Vos scores par domaine, à imprimer ou garder'] },
 ];

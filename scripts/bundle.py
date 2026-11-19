@@ -19,7 +19,7 @@ ART = ROOT / "Artheureux"
 
 # Ordre de concaténation : chaque module avant ceux qui l'utilisent.
 MODULES = ["markdown.js", "content.js", "engine.js", "resume.js", "report.js", "methode.js",
-           "presentation.js", "comprendre.js", "art.js", "home.js", "main.js"]
+           "presentation.js", "formation.js", "comprendre.js", "art.js", "home.js", "main.js"]
 STYLES = ["style.css", "home.css", "bonheur.css"]
 # Seule ressource externe : la bibliothèque de diagrammes, chargée uniquement sur la page Visualisations.
 MERMAID = "https://cdn.jsdelivr.net"

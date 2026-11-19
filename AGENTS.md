@@ -8,6 +8,8 @@ Le site suit la structure de Psytest (dépôt `PNP06/Psytest`), demandée par Da
 mêmes pages de lecture (accueil, Comprendre, page de présentation du questionnaire, Méthode), même questionnaire
 par parties avec fils d'Ariane latéraux, même rapport imprimable, même charte DD Lab (`app/style.css` et
 `app/home.css` sont repris de Psytest), même assemblage en une page par `scripts/bundle.py`.
+Depuis le 19 novembre 2026, la référence d’ergonomie est Papillon (papillon.ddlab.fr, même dépôt Psytest) : Comprendre conduit comme sa chrysalide
+(`app/formation.js`), questionnaire une question à la fois comme le sien (`app/main.js`).
 Bonheur garde son propre contenu : le guide (`docs/*.md`), le questionnaire (`app/data/questionnaire.json`)
 et L'Art d'être heureux (`Artheureux/`).
 
