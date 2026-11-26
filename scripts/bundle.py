@@ -23,6 +23,8 @@ MODULES = ["markdown.js", "content.js", "engine.js", "resume.js", "report.js", "
 STYLES = ["style.css", "home.css", "bonheur.css"]
 # Seule ressource externe : la bibliothèque de diagrammes, chargée uniquement sur la page Visualisations.
 MERMAID = "https://cdn.jsdelivr.net"
+# Pied de page commun aux projets DDlab (© David Devesa, lien vers les mentions légales).
+PIED = "https://ddlab.fr/pied.js"
 
 HEADERS = """/*
   Content-Security-Policy: {csp}; frame-ancestors 'none'
@@ -59,7 +61,7 @@ def main():
                             for r in art[k]["rules"]]}
 
     h = base64.b64encode(hashlib.sha256(js.encode("utf-8")).digest()).decode()
-    csp = (f"default-src 'none'; script-src 'sha256-{h}' {MERMAID}; style-src 'unsafe-inline'; img-src 'self' data:; "
+    csp = (f"default-src 'none'; script-src 'sha256-{h}' {MERMAID} {PIED}; style-src 'unsafe-inline'; img-src 'self' data:; "
            "font-src data:; form-action 'none'; base-uri 'none'")
     head = (APP / "index.html").read_text(encoding="utf-8")
     head = re.sub(r'content="default-src[^"]*"', f'content="{csp}"', head)
